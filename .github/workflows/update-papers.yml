@@ -1,9 +1,9 @@
-name: Update Papers
+name: 3D Gaussian Splatting 论文自动更新
 
 on:
   schedule:
     - cron: '0 0 * * *'  # 每天 UTC 0:00 运行
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:      # 允许手动触发
 
 jobs:
   update:
@@ -13,44 +13,44 @@ jobs:
     - name: 检出代码
       uses: actions/checkout@v4
       
-    - name: 设置Python
+    - name: 设置 Python 3.11
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
+        python-version: '3.11'
         
     - name: 安装依赖
       run: |
-        python3 -m pip install --upgrade pip
-        pip3 install -r requirements.txt
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4 tqdm pytz
+        pip list
         
-        
-    - name: 验证必要文件
+    - name: 创建必要目录
       run: |
-        echo "📁 检查必要文件..."
-        ls -la data/
-        test -f data/keywords.json || { echo "❌ keywords.json 文件不存在"; exit 1; }
-        test -f data/search_config.json || { echo "❌ search_config.json 文件不存在"; exit 1; }
-        echo "✅ 所有必要文件存在"
+        echo "创建数据目录..."
+        mkdir -p data
+        ls -la
         
-    - name: 运行爬虫
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: 运行爬虫脚本
       run: |
-        echo "🕷️ 开始运行爬虫..."
-        python3 scripts/arxiv_crawler.py
+        echo "🕷️ 开始运行 arXiv 爬虫..."
+        python arxiv_crawler.py
         echo "✅ 爬虫运行完成"
+        echo "爬虫输出文件:"
+        ls -l data/
         
     - name: 验证爬虫输出
       run: |
         echo "📊 验证爬虫输出..."
-        ls -la data/papers_*.json || { echo "❌ 没有生成论文数据文件"; exit 1; }
+        test -f data/papers_*.json || { echo "❌ 没有生成论文数据文件"; exit 1; }
         echo "✅ 论文数据文件生成成功"
         
-    - name: 更新README
+    - name: 更新 README
       run: |
-        echo "📝 更新 README..."
-        python3 scripts/readme_generator.py
+        echo "📝 开始更新 README..."
+        python readme.py
         echo "✅ README 更新完成"
+        echo "README 文件状态:"
+        ls -l README.md
         
     - name: 检查是否有更改
       id: verify-changed-files
@@ -58,6 +58,8 @@ jobs:
         if [ -n "$(git status --porcelain)" ]; then
           echo "has_changes=true" >> $GITHUB_OUTPUT
           echo "📈 检测到更改，准备提交"
+          git status
+          git diff --cached
         else
           echo "has_changes=false" >> $GITHUB_OUTPUT
           echo "📊 没有检测到更改"
@@ -69,14 +71,14 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add data/ README.md
-        git commit -m "🤖 自动更新: $(date +'%Y-%m-%d %H:%M UTC')"
+        git commit -m "🤖 自动更新论文列表: $(date +'%Y-%m-%d %H:%M UTC')"
         
     - name: 推送更改
       if: steps.verify-changed-files.outputs.has_changes == 'true'
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        branch: main  # 或者 ${{ github.ref }}
         
     - name: 工作流程完成通知
       run: |
@@ -85,3 +87,45 @@ jobs:
         else
           echo "✅ 工作流程完成！没有新的更改需要提交。"
         fi
+```
+
+### 关键配置说明：
+
+1. **Python 3.11 支持**：
+   ```yaml
+   with:
+     python-version: '3.11'
+   ```
+   确保使用您指定的 Python 版本
+
+2. **依赖安装**：
+   ```yaml
+   pip install requests beautifulsoup4 tqdm pytz
+   ```
+   包含了爬虫和 README 生成器可能需要的基础库
+
+3. **目录处理**：
+   ```yaml
+   - name: 创建必要目录
+     run: |
+       echo "创建数据目录..."
+       mkdir -p data
+   ```
+   确保 `data/` 目录存在，防止文件写入错误
+
+4. **详细调试信息**：
+   ```yaml
+   echo "爬虫输出文件:"
+   ls -l data/
+   
+   echo "README 文件状态:"
+   ls -l README.md
+   
+   git status
+   git diff --cached
+   ```
+   添加了多个调试输出，帮助排查"找不到文件"的问题
+
+5. **分支设置**：
+   ```yaml
+   branch: main  # 或者 ${{ github.ref }}
