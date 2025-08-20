@@ -1,0 +1,91 @@
+name: Update Papers
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天 UTC 0:00 运行
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 设置Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: 安装依赖
+      run: |
+        python3 -m pip install --upgrade pip
+        pip3 install -r requirements.txt
+        
+    - name: 验证搜索配置
+      run: |
+        echo "🔍 验证搜索配置文件..."
+        python3 scripts/validate_search_config.py
+        
+    - name: 验证必要文件
+      run: |
+        echo "📁 检查必要文件..."
+        ls -la data/
+        test -f data/keywords.json || { echo "❌ keywords.json 文件不存在"; exit 1; }
+        test -f data/search_config.json || { echo "❌ search_config.json 文件不存在"; exit 1; }
+        echo "✅ 所有必要文件存在"
+        
+    - name: 运行爬虫
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "🕷️ 开始运行爬虫..."
+        python3 scripts/arxiv_crawler.py
+        echo "✅ 爬虫运行完成"
+        
+    - name: 验证爬虫输出
+      run: |
+        echo "📊 验证爬虫输出..."
+        ls -la data/papers_*.json || { echo "❌ 没有生成论文数据文件"; exit 1; }
+        echo "✅ 论文数据文件生成成功"
+        
+    - name: 更新README
+      run: |
+        echo "📝 更新 README..."
+        python3 scripts/readme_generator.py
+        echo "✅ README 更新完成"
+        
+    - name: 检查是否有更改
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "📈 检测到更改，准备提交"
+        else
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+          echo "📊 没有检测到更改"
+        fi
+        
+    - name: 提交更改
+      if: steps.verify-changed-files.outputs.has_changes == 'true'
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add data/ README.md
+        git commit -m "🤖 自动更新: $(date +'%Y-%m-%d %H:%M UTC')"
+        
+    - name: 推送更改
+      if: steps.verify-changed-files.outputs.has_changes == 'true'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+        
+    - name: 工作流程完成通知
+      run: |
+        if [ "${{ steps.verify-changed-files.outputs.has_changes }}" == "true" ]; then
+          echo "🎉 工作流程完成！已更新并推送更改。"
+        else
+          echo "✅ 工作流程完成！没有新的更改需要提交。"
+        fi

@@ -1,0 +1,24 @@
+{
+    "common_keywords": {
+        "description": "Common keywords that appear frequently across papers",
+        "keywords": [
+            "gaussian splatting",
+            "3d gaussian",
+            "neural rendering",
+            "real-time rendering",
+            "3d reconstruction",
+            "nerf"
+        ]
+    },
+    "categories": {
+        "3DGS Surveys": {
+            "keywords": ["survey"],
+            "description": "Survey papers and benchmarks about 3D Gaussian Splatting"
+        },
+        
+        "Model Compression": {
+            "keywords": ["compression", "compact", "efficient", "lightweight"],
+            "description": "Papers about model compression and optimization"
+        }
+    }
+} 
