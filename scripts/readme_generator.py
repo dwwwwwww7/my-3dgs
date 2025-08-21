@@ -258,9 +258,9 @@ def format_paper_entry(paper: dict, index: int) -> str:
         pub_date = paper["published_date"]
         update_date = paper["updated_date"]
         if pub_date==update_date:
-            entry += f"-**⏳发布**：{pub_date}  \n"
+            entry += f"- **⏳发布**：{pub_date}  \n"
         else:
-            entry += f"-**⏳发布**：{pub_date}（更新：{update_date}）  \n"
+            entry += f"- **⏳发布**：{pub_date}（更新：{update_date}）  \n"
 
         # 作者
         authors = paper["authors"]
@@ -268,11 +268,11 @@ def format_paper_entry(paper: dict, index: int) -> str:
             authors_str = ", ".join(authors[:3]) + " et al."
         else:
             authors_str = ", ".join(authors)
-        entry += f"-**🧑‍🔬作者**：{authors_str}  \n"
+        entry += f"- **🧑‍🔬作者**：{authors_str}  \n"
 
         #被引
         #citations =paper["citations"]
-        #entry += f"-**📚被引**：{citations}  \n"
+        #entry += f"- **📚被引**：{citations}  \n"
 
         # 链接
         links = []
@@ -299,7 +299,7 @@ def format_paper_entry(paper: dict, index: int) -> str:
                     links.append(f"[Project]({url})")
                     break
 
-        entry += f"-**🔗链接**：{' · '.join(links)}  \n"
+        entry += f"- **🔗链接**：{' · '.join(links)}  \n"
 
         # 摘要
         abstract = paper["abstract"]
@@ -307,7 +307,7 @@ def format_paper_entry(paper: dict, index: int) -> str:
         words = abstract.split()
         if len(words) > 150:
             abstract = ' '.join(words[:150]) + " ..."
-        entry += f"-**📝摘要**：{abstract}  \n"
+        entry += f"- **📝摘要**：{abstract}  \n"
 
         # 中文摘要（如果存在）
         if "abstract_zh" in paper and paper["abstract_zh"]:
@@ -317,11 +317,11 @@ def format_paper_entry(paper: dict, index: int) -> str:
                 # 限制中文摘要长度
                 if len(abstract_zh) > 500:
                     abstract_zh = abstract_zh[:500] + "..."
-                entry += f"-**📝翻译**: {abstract_zh}  \n\n"
+                entry += f"- **📝翻译**: {abstract_zh}  \n\n"
             else:
-                entry += f"-**📝翻译失败**: {abstract_zh}  \n\n"
+                entry += f"- **📝翻译失败**: {abstract_zh}  \n\n"
         else:
-            entry += "-**📝翻译未启用或未翻译**  \n\n"
+            entry += "- **📝翻译未启用或未翻译**  \n\n"
 
         return entry
 
