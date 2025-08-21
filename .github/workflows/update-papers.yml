@@ -94,20 +94,9 @@ jobs:
          MD_CONTENT=$(cat "$LATEST_UPDATE")
          HTML_CONTENT=$(python -c "import markdown; print(markdown.markdown('''$MD_CONTENT'''))")
 
-         # 添加CSS样式
-         FULL_HTML="<!DOCTYPE html><html><head><style>
-          body { font-family: Arial, sans-serif; line-height: 1.6; }
-          h1, h2, h3 { color: #2c3e50; }
-          a { color: #3498db; text-decoration: none; }
-          a:hover { text-decoration: underline; }
-          code { background-color: #f8f9fa; padding: 2px 4px; border-radius: 4px; }
-          pre { background-color: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto; }
-         </style></head><body>$HTML_CONTENT</body></html>"
-
          # 设置输出变量
          echo "FORMATTED_DATE=$FORMATTED_DATE" >> $GITHUB_OUTPUT
          echo "HTML_CONTENT<<EOF" >> $GITHUB_OUTPUT
-         echo "$FULL_HTML" >> $GITHUB_OUTPUT
          echo "EOF" >> $GITHUB_OUTPUT
 
          echo "✅ Markdown已转换为HTML"       
