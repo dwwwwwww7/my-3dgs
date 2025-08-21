@@ -543,13 +543,13 @@ def save_cumulative_update_log(update_dir: Path, content: str):
     # 确保更新目录存在
     update_dir.mkdir(parents=True, exist_ok=True)
 
-    # 从传入内容中提取最后两行
-    content_lines = content.splitlines()
-    last_two_lines = "\n".join(content_lines[-3:-1]) if len(content_lines) >= 3 else content
+    # 从传入内容中提取最后两行（发现有误，不能直接取最后两行）
+    #content_lines = content.splitlines()
+    #last_two_lines = "\n".join(content_lines[-3:-1]) if len(content_lines) >= 3 else content
 
     # 为当前更新内容添加时间戳标题
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    timestamped_content = f"# {timestamp}\n\n{last_two_lines}"
+    timestamped_content = f"# {timestamp}\n\n{content}"  #全文都加到日志里，也可以选择只记录两行
 
     # 添加分隔线
     separator = "\n\n---\n\n"
