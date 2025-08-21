@@ -632,10 +632,10 @@ def main():
     # ===== 更新日志逻辑结束 =====
 
     # 直接启用翻译功能（内置开关）
-    enable_translation = False  # 如果要禁用，改为False
+    #enable_translation = False  # 如果要禁用，改为False
 
-    # 如果启用翻译
-    if enable_translation:
+    # 如果启用翻译,命令行控制
+    if args.translate:
         print("启用摘要翻译功能...")
         try:
             translator = EdgeTranslator()
