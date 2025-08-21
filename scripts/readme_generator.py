@@ -544,8 +544,8 @@ def save_cumulative_update_log(update_dir: Path, content: str):
     update_dir.mkdir(parents=True, exist_ok=True)
 
     # 从传入内容中提取最后两行（发现有误，不能直接取最后两行）
-    #content_lines = content.splitlines()
-    #last_two_lines = "\n".join(content_lines[-3:-1]) if len(content_lines) >= 3 else content
+    # content_lines = content.splitlines()
+    # last_two_lines = "\n".join(content_lines[-3:-1]) if len(content_lines) >= 3 else content
 
     # 为当前更新内容添加时间戳标题
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
