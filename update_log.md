@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 2025-08-21 19:38:55
 
 # 论文更新日志  
@@ -8,6 +9,17 @@
 **变动论文数量**: 0  
 
 ## 更新详情  
+=======
+# 2025-08-21 11:05:10
+
+
+248. [Text-to-3D using Gaussian Splatting](http://arxiv.org/abs/2309.16585v4) (ID: 2309.16585v4)
+
+---
+
+<<<<<<< HEAD
+# 2025-08-21 18:55:01
+>>>>>>> 8ffcba4097a9787eba48a1b95d4409411f029647
 
 ### 新增论文  
 1. [GeMS: Efficient Gaussian Splatting for Extreme Motion Blur](http://arxiv.org/abs/2508.14682v1) (ID: 2508.14682v1)
