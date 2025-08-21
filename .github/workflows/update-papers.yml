@@ -106,7 +106,7 @@ jobs:
 
          # 设置输出变量
          echo "FORMATTED_DATE=$FORMATTED_DATE" >> $GITHUB_OUTPUT
-         echo "HTML_CONTENT<<EOF" >> $GITHUB_OUTPUT
+         echo "FULL_HTML<<EOF" >> $GITHUB_OUTPUT
          echo "$FULL_HTML" >> $GITHUB_OUTPUT
          echo "EOF" >> $GITHUB_OUTPUT
 
