@@ -148,8 +148,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "real-time rendering"
+      "real-time rendering",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -303,8 +303,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "real-time rendering"
+      "real-time rendering",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -363,8 +363,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "3d reconstruction"
+      "3d reconstruction",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -387,8 +387,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -415,8 +415,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -443,8 +443,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "real-time rendering"
+      "real-time rendering",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -525,9 +525,9 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
+      "real-time rendering",
       "gaussian splatting",
-      "real-time rendering"
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -601,8 +601,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -649,9 +649,9 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
+      "real-time rendering",
       "gaussian splatting",
-      "real-time rendering"
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -753,8 +753,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -831,8 +831,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "real-time rendering"
+      "real-time rendering",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -907,8 +907,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "real-time rendering"
+      "real-time rendering",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -981,8 +981,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "3d reconstruction"
+      "3d reconstruction",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1009,8 +1009,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "real-time rendering"
+      "real-time rendering",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1039,8 +1039,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1140,9 +1140,9 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
+      "real-time rendering",
       "gaussian splatting",
-      "real-time rendering"
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1278,8 +1278,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1458,11 +1458,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "real-time rendering",
       "nerf",
-      "gaussian splatting",
-      "3d reconstruction"
+      "real-time rendering",
+      "3d reconstruction",
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1559,8 +1559,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d reconstruction"
+      "3d reconstruction",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1832,8 +1832,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2085,9 +2085,9 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
+      "3d reconstruction",
       "gaussian splatting",
-      "3d reconstruction"
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2110,8 +2110,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "nerf"
+      "nerf",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2352,8 +2352,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "3d reconstruction"
+      "3d reconstruction",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2378,8 +2378,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "real-time rendering"
+      "real-time rendering",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2458,8 +2458,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2585,8 +2585,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "real-time rendering"
+      "real-time rendering",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2659,8 +2659,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "real-time rendering"
+      "real-time rendering",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2714,9 +2714,9 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
+      "real-time rendering",
       "gaussian splatting",
-      "real-time rendering"
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2772,8 +2772,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2901,8 +2901,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2927,8 +2927,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3008,8 +3008,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3117,8 +3117,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "real-time rendering"
+      "real-time rendering",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3228,8 +3228,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3254,9 +3254,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
+      "real-time rendering",
       "neural rendering",
-      "real-time rendering"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3332,8 +3332,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splatting",
-      "real-time rendering"
+      "real-time rendering",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3357,9 +3357,9 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
+      "real-time rendering",
       "gaussian splatting",
-      "real-time rendering"
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3410,8 +3410,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3465,9 +3465,9 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
+      "real-time rendering",
       "gaussian splatting",
-      "real-time rendering"
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3490,8 +3490,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
