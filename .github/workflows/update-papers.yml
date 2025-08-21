@@ -79,13 +79,14 @@ jobs:
         
         # 获取当天日期
         TODAY=$(date +'%Y-%m-%d')
-        UPDATE_FILE="update/update_${TODAY}.md"
         
-        # 检查更新日志文件是否存在
-        if [ ! -f "$UPDATE_FILE" ]; then
-          echo "❌ 未找到今天的更新日志: $UPDATE_FILE"
-          exit 0  # 非关键错误，继续执行
+        # 查找最新的更新日志文件
+        LATEST_UPDATE=$(ls -t update/update_*.md | head -n 1)
+        if [ -z "$LATEST_UPDATE" ]; then
+          echo "❌ 未找到任何更新日志文件"
+          exit 0
         fi
+        echo "📄 找到最新更新日志: $LATEST_UPDATE"
         
         # 获取更新日志内容
         UPDATE_CONTENT=$(cat "$UPDATE_FILE")
