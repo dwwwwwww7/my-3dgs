@@ -1,3 +1,10 @@
+# 2025-08-21 11:05:10
+
+
+248. [Text-to-3D using Gaussian Splatting](http://arxiv.org/abs/2309.16585v4) (ID: 2309.16585v4)
+
+---
+
 <<<<<<< HEAD
 # 2025-08-21 18:55:01
 
