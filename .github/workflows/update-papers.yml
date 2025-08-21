@@ -26,7 +26,7 @@ jobs:
     - name: 安装依赖
       run: |
         python -m pip install --upgrade pip
-        pip install arxiv requests urllib3
+        pip install arxiv requests urllib3 markdown
         
     - name: 验证必要文件
       run: |
@@ -91,11 +91,26 @@ jobs:
          FORMATTED_DATE=$(echo "$UPDATE_DATE" | sed -E 's/([0-9]{4})([0-9]{2})([0-9]{2})/\1-\2-\3/')
 
          # 获取文件内容
-         CONTENT=$(cat "$LATEST_UPDATE") 
-         
-         echo "CONTENT<<EOF" >> $GITHUB_OUTPUT
-         echo "$CONTENT" >> $GITHUB_OUTPUT
+         MD_CONTENT=$(cat "$LATEST_UPDATE")
+         HTML_CONTENT=$(python -c "import markdown; print(markdown.markdown('''$MD_CONTENT'''))")
+
+         # 添加CSS样式
+         FULL_HTML="<!DOCTYPE html><html><head><style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; }
+          h1, h2, h3 { color: #2c3e50; }
+          a { color: #3498db; text-decoration: none; }
+          a:hover { text-decoration: underline; }
+          code { background-color: #f8f9fa; padding: 2px 4px; border-radius: 4px; }
+          pre { background-color: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto; }
+         </style></head><body>$HTML_CONTENT</body></html>"
+
+         # 设置输出变量
+         echo "FORMATTED_DATE=$FORMATTED_DATE" >> $GITHUB_OUTPUT
+         echo "HTML_CONTENT<<EOF" >> $GITHUB_OUTPUT
+         echo "$FULL_HTML" >> $GITHUB_OUTPUT
          echo "EOF" >> $GITHUB_OUTPUT
+
+         echo "✅ Markdown已转换为HTML"       
       env:
          TZ: Asia/Shanghai
 
@@ -108,12 +123,11 @@ jobs:
         server_port: ${{ secrets.SMTP_PORT }}         # SMTP端口
         username: ${{ secrets.SMTP_USER }}            # SMTP用户名
         password: ${{ secrets.SMTP_PASSWORD }}        # SMTP密码/授权码
-        subject:  "📚 3DGS论文更新日志  ${{ steps.get-update-content.outputs.UPDATE_DATE }}"
-        body: ${{ steps.get-update-content.outputs.CONTENT }}
+        subject:  "📚 3DGS论文更新日志  ${{ steps.get-update-content.outputs.FORMATTED_DATE }}"
+        html_body: ${{ steps.get-update-content.outputs.HTML_CONTENT }}
         convert_markdown: true 
         to: ${{ secrets.EMAIL_RECEIVER }}             # 接收邮件的地址
         from: GitHub Actions                          # 发件人名称
-        secure: true                                  # 强制使用SSL/TLS  
       continue-on-error: true     # 即使发送失败也继续
 
         
