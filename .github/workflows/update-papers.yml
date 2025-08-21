@@ -2,7 +2,7 @@ name: Update Papers
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # 每周三 UTC 0:00 自动运行
+    - cron: '0 0 * * 0'  # 每周三 UTC 0:00 自动运行
   workflow_dispatch:  # 允许手动触发
 
 permissions:
@@ -56,8 +56,8 @@ jobs:
         python readme_generator.py \
           --data-dir ../data \
           --output ../README.md \
-          --update-dir ../update 
-                                       #控制摘要翻译，--translate为开启
+          --update-dir ../update \
+          --translate   #控制摘要翻译，--translate为开启                           
         echo "✅ README 更新完成"
       working-directory: ./scripts         
         
