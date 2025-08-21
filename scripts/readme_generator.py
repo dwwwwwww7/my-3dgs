@@ -252,15 +252,15 @@ def format_paper_entry(paper: dict, index: int) -> str:
         title = paper['title'].replace('\n', ' ').replace('  ', ' ').strip()
 
         # 序号和标题
-        entry = f"[{index}] {title}  \n"
+        entry = f"### [{index}] {title}  \n"
 
         # 发布时间
         pub_date = paper["published_date"]
         update_date = paper["updated_date"]
         if pub_date==update_date:
-            entry += f"⏳ 发布：{pub_date}  \n"
+            entry += f"-**⏳发布**：{pub_date}  \n"
         else:
-            entry += f"⏳ 发布：{pub_date}（更新：{update_date}）  \n"
+            entry += f"-**⏳发布**：{pub_date}（更新：{update_date}）  \n"
 
         # 作者
         authors = paper["authors"]
@@ -268,11 +268,11 @@ def format_paper_entry(paper: dict, index: int) -> str:
             authors_str = ", ".join(authors[:3]) + " et al."
         else:
             authors_str = ", ".join(authors)
-        entry += f"🧑‍🔬 作者：{authors_str}  \n"
+        entry += f"-**🧑‍🔬作者**：{authors_str}  \n"
 
         #被引
         #citations =paper["citations"]
-        #entry += f"📚 被引：{citations}  \n"
+        #entry += f"-**📚被引**：{citations}  \n"
 
         # 链接
         links = []
@@ -299,15 +299,15 @@ def format_paper_entry(paper: dict, index: int) -> str:
                     links.append(f"[Project]({url})")
                     break
 
-        entry += f"🔗 链接：{' · '.join(links)}  \n"
+        entry += f"-**🔗链接**：{' · '.join(links)}  \n"
 
         # 摘要
         abstract = paper["abstract"]
         # 简略摘要（最多150词）
         words = abstract.split()
         if len(words) > 150:
-            abstract = ' '.join(words[:150]) + "..."
-        entry += f"📝 摘要：{abstract}  \n"
+            abstract = ' '.join(words[:150]) + " ..."
+        entry += f"-**📝摘要**：{abstract}  \n"
 
         # 中文摘要（如果存在）
         if "abstract_zh" in paper and paper["abstract_zh"]:
@@ -317,11 +317,11 @@ def format_paper_entry(paper: dict, index: int) -> str:
                 # 限制中文摘要长度
                 if len(abstract_zh) > 500:
                     abstract_zh = abstract_zh[:500] + "..."
-                entry += f"📝 翻译: {abstract_zh}  \n\n"
+                entry += f"-**📝翻译**: {abstract_zh}  \n\n"
             else:
-                entry += f"📝 摘要翻译失败: {abstract_zh}  \n\n"
+                entry += f"-**📝翻译失败**: {abstract_zh}  \n\n"
         else:
-            entry += "📝 摘要翻译:未启用或未翻译  \n\n"
+            entry += "-**📝翻译未启用或未翻译**  \n\n"
 
         return entry
 
@@ -334,10 +334,10 @@ def generate_markdown_content(papers_by_month: dict) -> str:
     """生成Markdown内容（包含翻译说明）"""
     # 标题
     markdown = "# 3D Gaussian Splatting 论文列表\n\n"
-    markdown += "> 最后更新: " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
+    markdown += "> **最后更新**： " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
 
     # 翻译说明
-    markdown += "> **摘要翻译说明:** 中文摘要由Edge浏览器翻译API自动生成，可能存在不准确之处。"
+    markdown += "> **翻译说明**： 中文摘要由Edge浏览器翻译API自动生成，可能存在不准确之处。"
     markdown += "如需查看精确表达请参考原文摘要。\n\n"
 
     # 按月分组并按时间倒序排列
@@ -469,17 +469,17 @@ def clean_title(title: str) -> str:
 def generate_update_log(last_update_time: str, new_papers: list, updated_papers: list) -> str:
     """生成更新日志内容"""
     current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    log = f"# 论文列表更新日志\n\n"
-    log += f"上次更新时间: {last_update_time}\n"
-    log += f"本次更新时间: {current_time}\n"
-    log += f"新增论文数量: {len(new_papers)}\n"
-    log += f"更新论文数量: {len(updated_papers)}\n\n"
+    log = f"# 论文列表更新日志  \n\n"
+    log += f"**上次更新时间**: {last_update_time}  \n"
+    log += f"**本次更新时间**: {current_time}  \n"
+    log += f"**新增论文数量**: {len(new_papers)}  \n"
+    log += f"**更新论文数量**: {len(updated_papers)}  \n\n"
 
     if new_papers or updated_papers:
-        log += "## 更新详情\n"
+        log += "## 更新详情  \n"
 
         if new_papers:
-            log += "\n### 新增论文\n"
+            log += "\n### 新增论文  \n"
             for i, paper in enumerate(new_papers, start=1):
                 # 清理标题中的多余空格和换行符
                 title = clean_title(paper['title'])
@@ -488,31 +488,31 @@ def generate_update_log(last_update_time: str, new_papers: list, updated_papers:
                 #log += f" (ID: {paper_id})\n\n"
 
         if updated_papers:
-            log += "\n### 更新论文\n"
+            log += "\n### 更新论文  \n"
             for i, update_info in enumerate(updated_papers, start=1):
                 paper = update_info["paper"]
                 # 清理标题中的多余空格和换行符
                 title = clean_title(paper['title'])
                 paper_id = paper["arxiv_url"].split('/')[-1]
 
-                log += f"{i}. [{title}]({paper['arxiv_url']}) (ID: {paper_id})\n"
-                log += f"   - **变更类型**: {', '.join(update_info['changes'])}\n"
+                log += f"{i}. [{title}]({paper['arxiv_url']}) (ID: {paper_id})  \n"
+                log += f"   - **变更类型**: {', '.join(update_info['changes'])}  \n"
 
                 # 清理原标题中的多余空格和换行符
                 previous_title = clean_title(update_info['previous_title'])
 
                 # 显示具体变更
                 if "标题变更" in update_info["changes"]:
-                    log += f"   - 原标题: {previous_title}\n"
-                    log += f"   - 新标题: {title}\n"
+                    log += f"   - 原标题: {previous_title}  \n"
+                    log += f"   - 新标题: {title}  \n"
 
                 if "arXiv版本更新" in update_info["changes"]:
-                    log += f"   - 原版本: v{update_info['previous_version'].split('v')[-1]}\n"
-                    log += f"   - 新版本: v{paper_id.split('v')[-1]}\n"
+                    log += f"   - 原版本: v{update_info['previous_version'].split('v')[-1]}  \n"
+                    log += f"   - 新版本: v{paper_id.split('v')[-1]}  \n"
 
                 if "更新日期变化" in update_info["changes"]:
-                    log += f"   - 原更新: {update_info['previous_updated']}\n"
-                    log += f"   - 新更新: {paper['updated_date']}\n"
+                    log += f"   - 原更新: {update_info['previous_updated']}  \n"
+                    log += f"   - 新更新: {paper['updated_date']}  \n"
 
                 log += "\n"
 
@@ -543,9 +543,13 @@ def save_cumulative_update_log(update_dir: Path, content: str):
     # 确保更新目录存在
     update_dir.mkdir(parents=True, exist_ok=True)
 
+    # 从传入内容中提取最后两行
+    content_lines = content.splitlines()
+    last_two_lines = "\n".join(content_lines[-3:-1]) if len(content_lines) >= 3 else content
+
     # 为当前更新内容添加时间戳标题
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    timestamped_content = f"# 更新于 {timestamp}\n\n{content}"
+    timestamped_content = f"# {timestamp}\n\n{last_two_lines}"
 
     # 添加分隔线
     separator = "\n\n---\n\n"
