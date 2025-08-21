@@ -84,6 +84,13 @@ jobs:
          fi
          echo "📄 找到最新更新日志: $LATEST_UPDATE"
 
+         # 从文件名中提取日期 (格式: update_20250821.md)
+         UPDATE_DATE=$(basename "$LATEST_UPDATE" | sed 's/update_//;s/\.md//')
+    
+         # 格式化日期为 YYYY-MM-DD
+         FORMATTED_DATE=$(echo "$UPDATE_DATE" | sed -E 's/([0-9]{4})([0-9]{2})([0-9]{2})/\1-\2-\3/')
+
+         # 获取文件内容
          CONTENT=$(cat "$LATEST_UPDATE") 
          
          echo "CONTENT<<EOF" >> $GITHUB_OUTPUT
@@ -101,12 +108,12 @@ jobs:
         server_port: ${{ secrets.SMTP_PORT }}         # SMTP端口
         username: ${{ secrets.SMTP_USER }}            # SMTP用户名
         password: ${{ secrets.SMTP_PASSWORD }}        # SMTP密码/授权码
-        subject:  "📚 3DGS论文更新日志 - ${{ steps.get-date.outputs.TODAY }}"
+        subject:  "📚 3DGS论文更新日志  ${{ steps.get-update-content.outputs.UPDATE_DATE }}"
         body: ${{ steps.get-update-content.outputs.CONTENT }}
+        convert_markdown: true 
         to: ${{ secrets.EMAIL_RECEIVER }}             # 接收邮件的地址
         from: GitHub Actions                          # 发件人名称
-        secure: true                                  # 强制使用SSL/TLS
-        convert_markdown: true    
+        secure: true                                  # 强制使用SSL/TLS  
       continue-on-error: true     # 即使发送失败也继续
 
         
