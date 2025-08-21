@@ -305,8 +305,8 @@ def format_paper_entry(paper: dict, index: int) -> str:
         abstract = paper["abstract"]
         # 简略摘要（最多150词）
         words = abstract.split()
-        if len(words) > 150:
-            abstract = ' '.join(words[:150]) + " ..."
+        if len(words) > 200:
+            abstract = ' '.join(words[:200]) + " ..."
         entry += f"- **📝摘要**：{abstract}  \n"
 
         # 中文摘要（如果存在）
@@ -315,8 +315,8 @@ def format_paper_entry(paper: dict, index: int) -> str:
             # 检查翻译失败的情况
             if "[翻译失败]" not in abstract_zh and "[翻译错误]" not in abstract_zh:
                 # 限制中文摘要长度
-                if len(abstract_zh) > 500:
-                    abstract_zh = abstract_zh[:500] + "..."
+                if len(abstract_zh) > 1000:
+                    abstract_zh = abstract_zh[:1000] + "..."
                 entry += f"- **📝翻译**: {abstract_zh}  \n\n"
             else:
                 entry += f"- **📝翻译失败**: {abstract_zh}  \n\n"
