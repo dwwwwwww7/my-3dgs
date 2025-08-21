@@ -5,9 +5,14 @@ on:
     - cron: '0 0 * * *'  # 每天 UTC 0:00 运行
   workflow_dispatch:  # 允许手动触发
 
+permissions:
+  contents: write          # 允许推送代码更改
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     steps:
     - name: 检出代码
@@ -16,17 +21,12 @@ jobs:
     - name: 设置Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
+        python-version: '3.11'
         
     - name: 安装依赖
       run: |
-        python3 -m pip install --upgrade pip
-        pip3 install -r requirements.txt
-        
-    - name: 验证搜索配置
-      run: |
-        echo "🔍 验证搜索配置文件..."
-        python3 scripts/validate_search_config.py
+        python -m pip install --upgrade pip
+        pip install arxiv requests urllib3 markdown
         
     - name: 验证必要文件
       run: |
@@ -36,13 +36,13 @@ jobs:
         test -f data/search_config.json || { echo "❌ search_config.json 文件不存在"; exit 1; }
         echo "✅ 所有必要文件存在"
         
-    - name: 运行爬虫
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: 运行爬虫 
       run: |
         echo "🕷️ 开始运行爬虫..."
-        python3 scripts/arxiv_crawler.py
+        python -c "from utils.logger import setup_logger; setup_logger('workflow')"
+        python arxiv_crawler.py
         echo "✅ 爬虫运行完成"
+      working-directory: ./scripts 
         
     - name: 验证爬虫输出
       run: |
@@ -53,8 +53,13 @@ jobs:
     - name: 更新README
       run: |
         echo "📝 更新 README..."
-        python3 scripts/readme_generator.py
+        python readme_generator.py \
+          --data-dir ../data \
+          --output ../README.md \
+          --update-dir ../update \
+          --translate
         echo "✅ README 更新完成"
+      working-directory: ./scripts         
         
     - name: 检查是否有更改
       id: verify-changed-files
@@ -66,21 +71,71 @@ jobs:
           echo "has_changes=false" >> $GITHUB_OUTPUT
           echo "📊 没有检测到更改"
         fi
+
+    - name: 获取更新日志内容
+      if: steps.verify-changed-files.outputs.has_changes == 'true'
+      id: get-update-content
+      run: |
+         LATEST_UPDATE=$(ls -t update/update_*.md | head -n 1)
+         if [ -z "$LATEST_UPDATE" ]; then
+           echo "❌ 未找到任何更新日志文件"
+           echo "CONTENT=" >> $GITHUB_OUTPUT
+            exit 0
+         fi
+         echo "📄 找到最新更新日志: $LATEST_UPDATE"
+
+         # 从文件名中提取日期 (格式: update_20250821.md)
+         UPDATE_DATE=$(basename "$LATEST_UPDATE" | sed 's/update_//;s/\.md//')
+    
+         # 格式化日期为 YYYY-MM-DD
+         FORMATTED_DATE=$(echo "$UPDATE_DATE" | sed -E 's/([0-9]{4})([0-9]{2})([0-9]{2})/\1-\2-\3/')
+
+         # 获取文件内容
+         MD_CONTENT=$(cat "$LATEST_UPDATE")
+         HTML_CONTENT=$(python -c "import markdown; print(markdown.markdown('''$MD_CONTENT'''))")
+
+         # 设置输出变量
+         echo "FORMATTED_DATE=$FORMATTED_DATE" >> $GITHUB_OUTPUT
+         echo "HTML_CONTENT<<EOF" >> $GITHUB_OUTPUT
+         echo "$HTML_CONTENT" >> $GITHUB_OUTPUT
+         echo "EOF" >> $GITHUB_OUTPUT
+
+         echo "✅ Markdown已转换为HTML"       
+      env:
+         TZ: Asia/Shanghai
+
+
+    - name: 发送更新日志到邮箱
+      if: steps.verify-changed-files.outputs.has_changes == 'true' && steps.get-update-content.outputs.HTML_CONTENT != ''
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: ${{ secrets.SMTP_SERVER }}    # SMTP服务器地址
+        server_port: ${{ secrets.SMTP_PORT }}         # SMTP端口
+        username: ${{ secrets.SMTP_USER }}            # SMTP用户名
+        password: ${{ secrets.SMTP_PASSWORD }}        # SMTP密码/授权码
+        subject:  "📚 3DGS论文更新日志  ${{ steps.get-update-content.outputs.FORMATTED_DATE }}"
+        html_body: ${{ steps.get-update-content.outputs.HTML_CONTENT }}
+        convert_markdown: true 
+        to: ${{ secrets.EMAIL_RECEIVER }}             # 接收邮件的地址
+        from: GitHub Actions                          # 发件人名称
+      continue-on-error: true     # 即使发送失败也继续
+
         
     - name: 提交更改
       if: steps.verify-changed-files.outputs.has_changes == 'true'
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add data/ README.md
-        git commit -m "🤖 自动更新: $(date +'%Y-%m-%d %H:%M UTC')"
+        git add data/ README.md update_log.md update/
+        git commit -m "🤖 自动更新: $(date +'%Y-%m-%d %H:%M UTC')" 
         
     - name: 推送更改
       if: steps.verify-changed-files.outputs.has_changes == 'true'
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        github_token: ${{ secrets.REPO_PUSH_TOKEN }}
+        branch: ${{ github.ref }} 
+  
         
     - name: 工作流程完成通知
       run: |

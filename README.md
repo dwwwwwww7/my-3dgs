@@ -1,34 +1,45 @@
 # 3D Gaussian Splatting 论文列表
 
+<<<<<<< HEAD
 > **最后更新**： 2025-08-21 15:03:31
+=======
+> **最后更新**： 2025-08-21 07:22:53
+>>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
 
 > **翻译说明**： 中文摘要由Edge浏览器翻译API自动生成，可能存在不准确之处。如需查看精确表达请参考原文摘要。
 
 
 ## August 2025
 
-### [1] EntropyGS: An Efficient Entropy Coding on 3D Gaussian Splatting  
+### [1] GeMS: Efficient Gaussian Splatting for Extreme Motion Blur  
+- **⏳发布**：2025-08-20  
+- **🧑‍🔬作者**：Gopi Raju Matta, Trisha Reddypalli, Vemunuri Divya Madhuri, Kaushik Mitra  
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.14682v1)    
+- **📝摘要**：We introduce GeMS, a framework for 3D Gaussian Splatting (3DGS) designed to handle severely motion-blurred images. State-of-the-art deblurring methods for extreme blur, such as ExBluRF, as well as Gaussian Splatting-based approaches like Deblur-GS, typically assume access to sharp images for camera pose estimation and point cloud generation, an unrealistic assumption. Methods relying on COLMAP initialization, such as BAD-Gaussians, also fail due to unreliable feature correspondences under severe blur. To address these challenges, we propose GeMS, a 3DGS framework that reconstructs scenes directly from extremely blurred images. GeMS integrates: (1) VGGSfM, a deep learning-based Structure-from-Motion pipeline that estimates poses and generates point clouds directly from blurred inputs; (2) 3DGS-MCMC, which enables robust scene initialization by treating Gaussians as samples from a probability distribution, eliminating heuristic densification and pruning; and (3) joint optimization of camera trajectories and Gaussian parameters for stable reconstruction. While this pipeline produces strong results, inaccuracies may remain when ...  
+- **📝翻译未启用或未翻译**  
+
+### [2] EntropyGS: An Efficient Entropy Coding on 3D Gaussian Splatting  
 - **⏳发布**：2025-08-13  
 - **🧑‍🔬作者**：Yuning Huang, Jiahao Pang, Fengqing Zhu, Dong Tian  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.10227v1)    
 - **📝摘要**：As an emerging novel view synthesis approach, 3D Gaussian Splatting (3DGS) demonstrates fast training/rendering with superior visual quality. The two tasks of 3DGS, Gaussian creation and view rendering, are typically separated over time or devices, and thus storage/transmission and finally compression of 3DGS Gaussians become necessary. We begin with a correlation and statistical analysis of 3DGS Gaussian attributes. An inspiring finding in this work reveals that spherical harmonic AC attributes precisely follow Laplace distributions, while mixtures of Gaussian distributions can approximate rotation, scaling, and opacity. Additionally, harmonic AC attributes manifest weak correlations with other attributes except for inherited correlations from a color space. A factorized and parameterized entropy coding method, EntropyGS, is hereinafter proposed. During encoding, distribution parameters of each Gaussian attribute are estimated to assist their entropy coding. The quantization for entropy coding is adaptively performed according to Gaussian attribute types. EntropyGS demonstrates about 30x rate reduction on benchmark ...  
 - **📝翻译未启用或未翻译**  
 
-### [2] Communication Efficient Robotic Mixed Reality with Gaussian Splatting  Cross-Layer Optimization  
+### [3] Communication Efficient Robotic Mixed Reality with Gaussian Splatting  Cross-Layer Optimization  
 - **⏳发布**：2025-08-12  
 - **🧑‍🔬作者**：Chenxuan Liu, He Li, Zongze Li et al.  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.08624v1)    
 - **📝摘要**：Realizing low-cost communication in robotic mixed reality (RoboMR) systems presents a challenge, due to the necessity of uploading high-resolution images through wireless channels. This paper proposes Gaussian splatting (GS) RoboMR (GSMR), which enables the simulator to opportunistically render a photo-realistic view from the robot's pose by calling ``memory'' from a GS model, thus reducing the need for excessive image uploads. However, the GS model may involve discrepancies compared to the actual environments. To this end, a GS cross-layer optimization (GSCLO) framework is further proposed, which jointly optimizes content switching (i.e., deciding whether to upload image or not) and power allocation (i.e., adjusting to content profiles) across different frames by minimizing a newly derived GSMR loss function. The GSCLO problem is addressed by an accelerated penalty optimization (APO) algorithm that reduces computational complexity by over $10$x compared to traditional branch-and-bound and search algorithms. Moreover, variants of GSCLO are presented to achieve ...  
 - **📝翻译未启用或未翻译**  
 
-### [3] 3DGS-VBench: A Comprehensive Video Quality Evaluation Benchmark for 3DGS  Compression  
+### [4] 3DGS-VBench: A Comprehensive Video Quality Evaluation Benchmark for 3DGS  Compression  
 - **⏳发布**：2025-08-09  
 - **🧑‍🔬作者**：Yuke Xing, William Gordon, Qi Yang et al.  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.07038v1)    
 - **📝摘要**：3D Gaussian Splatting (3DGS) enables real-time novel view synthesis with high visual fidelity, but its substantial storage requirements hinder practical deployment, prompting state-of-the-art (SOTA) 3DGS methods to incorporate compression modules. However, these 3DGS generative compression techniques introduce unique distortions lacking systematic quality assessment research. To this end, we establish 3DGS-VBench, a large-scale Video Quality Assessment (VQA) Dataset and Benchmark with 660 compressed 3DGS models and video sequences generated from 11 scenes across 6 SOTA 3DGS compression algorithms with systematically designed parameter levels. With annotations from 50 participants, we obtained MOS scores with outlier removal and validated dataset reliability. We benchmark 6 3DGS compression algorithms on storage efficiency and visual quality, and evaluate 15 quality assessment metrics across multiple paradigms. Our work enables specialized VQA model training for 3DGS, serving as a catalyst for compression and quality assessment research. The dataset is available at https://github.com/YukeXing/3DGS-VBench.  
 - **📝翻译未启用或未翻译**  
 
-### [4] SA-3DGS: A Self-Adaptive Compression Method for 3D Gaussian Splatting  
+### [5] SA-3DGS: A Self-Adaptive Compression Method for 3D Gaussian Splatting  
 - **⏳发布**：2025-08-05  
 - **🧑‍🔬作者**：Liheng Zhang, Weihao Yu, Zubo Lu, Haozhi Gu, Jin Huang  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.03017v1)    
