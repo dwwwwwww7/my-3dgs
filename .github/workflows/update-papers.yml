@@ -8,6 +8,8 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     steps:
     - name: 检出代码
@@ -16,12 +18,12 @@ jobs:
     - name: 设置Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
+        python-version: '3.11'
         
     - name: 安装依赖
       run: |
-        python3 -m pip install --upgrade pip
-        pip3 install -r requirements.txt
+        python -m pip install --upgrade pip
+        pip install arxiv requests urllib3
         
     - name: 验证必要文件
       run: |
@@ -31,13 +33,13 @@ jobs:
         test -f data/search_config.json || { echo "❌ search_config.json 文件不存在"; exit 1; }
         echo "✅ 所有必要文件存在"
         
-    - name: 运行爬虫
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: 运行爬虫 
       run: |
         echo "🕷️ 开始运行爬虫..."
-        python3 scripts/arxiv_crawler.py
+        python -c "from utils.logger import setup_logger; setup_logger('workflow')"
+        python arxiv_crawler.py
         echo "✅ 爬虫运行完成"
+      working-directory: ./scripts 
         
     - name: 验证爬虫输出
       run: |
@@ -48,8 +50,12 @@ jobs:
     - name: 更新README
       run: |
         echo "📝 更新 README..."
-        python3 scripts/readme_generator.py
+        python readme_generator.py \
+          --data-dir ./data \
+          --output ./README.md \
+          --update-dir ./update \
         echo "✅ README 更新完成"
+      working-directory: ./scripts         
         
     - name: 检查是否有更改
       id: verify-changed-files
