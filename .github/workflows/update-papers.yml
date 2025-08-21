@@ -72,42 +72,47 @@ jobs:
           echo "📊 没有检测到更改"
         fi
 
-    - name: 发送更新日志到GitHub邮箱
+    - name: 获取更新日志内容
       if: steps.verify-changed-files.outputs.has_changes == 'true'
+      id: get-update-content
       run: |
-        echo "📧 准备发送更新日志到GitHub邮箱..."
-        
-        # 获取当天日期
-        TODAY=$(date +'%Y-%m-%d')
-        
-        # 查找最新的更新日志文件
-        LATEST_UPDATE=$(ls -t update/update_*.md | head -n 1)
-        if [ -z "$LATEST_UPDATE" ]; then
-          echo "❌ 未找到任何更新日志文件"
-          exit 0
-        fi
-        echo "📄 找到最新更新日志: $LATEST_UPDATE"
-        
-        # 获取更新日志内容
-        UPDATE_CONTENT=$(cat "$LATEST_UPDATE")
-        
-        # 构造邮件主题和内容
-        SUBJECT="📚 3DGS论文更新日志 - $TODAY"
-        BODY=$(echo -e "以下是今天的论文更新日志：\n\n$UPDATE_CONTENT\n\n-- 自动生成，请勿回复 --")
-        
-        # 发送到GitHub通知邮箱（使用GitHub的私密通知地址）
-        curl -X POST \
-          -H "Authorization: token ${{ secrets.REPO_PUSH_TOKEN }}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          https://api.github.com/user/emails \
-          -d "{\"emails\": [\"${{ github.actor }}@users.noreply.github.com\"], \"subject\": \"$SUBJECT\", \"body\": \"$BODY\"}"
-        
-        echo "✅ 更新日志已发送到您的GitHub通知邮箱"
-      env:
-        TZ: Asia/Shanghai
-      continue-on-error: true  # 即使发送失败也继续
-        
+         LATEST_UPDATE=$(ls -t update/update_*.md | head -n 1)
+         if [ -z "$LATEST_UPDATE" ]; then
+           echo "❌ 未找到任何更新日志文件"
+           echo "CONTENT=" >> $GITHUB_OUTPUT
+            exit 0
+         fi
+         echo "📄 找到最新更新日志: $LATEST_UPDATE"
 
+         CONTENT=$(cat "$LATEST_UPDATE") 
+         
+         echo "CONTENT<<EOF" >> $GITHUB_OUTPUT
+         echo "$CONTENT" >> $GITHUB_OUTPUT
+         echo "EOF" >> $GITHUB_OUTPUT
+      env:
+         TZ: Asia/Shanghai
+
+
+    - name: 发送更新日志到邮箱
+      if: steps.verify-changed-files.outputs.has_changes == 'true' && steps.get-update-content.outputs.CONTENT != ''
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: ${{ secrets.SMTP_SERVER }}    # SMTP服务器地址
+        server_port: ${{ secrets.SMTP_PORT }}         # SMTP端口
+        username: ${{ secrets.SMTP_USER }}            # SMTP用户名
+        password: ${{ secrets.SMTP_PASSWORD }}        # SMTP密码/授权码
+        subject: "📚 3DGS论文更新日志 - $(date +'%Y-%m-%d')"
+        body: |
+          以下是今天的论文更新日志：
+      
+          ${{ steps.get-update-content.outputs.CONTENT }}
+      
+          -- 自动生成，请勿回复 --
+        to: ${{ secrets.EMAIL_RECEIVER }}             # 接收邮件的地址
+        from: GitHub Actions                          # 发件人名称
+        content_type: text/plain                       # 邮件内容格式
+        secure: true                                  # 强制使用SSL/TLS
+      continue-on-error: true     # 即使发送失败也继续
 
         
     - name: 提交更改
