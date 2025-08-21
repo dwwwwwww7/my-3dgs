@@ -350,7 +350,7 @@ def generate_markdown_content(papers_by_month: dict) -> str:
     # 添加论文数据
     for month in sorted_months:
         # 添加月份标题
-        markdown += f"## {month}\n\n"
+        markdown += f"\n## {month}\n\n"
 
         # 按月内日期倒序排列论文
         papers = sorted(
