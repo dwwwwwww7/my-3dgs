@@ -78,11 +78,18 @@ jobs:
         git commit -m "🤖 自动更新: $(date +'%Y-%m-%d %H:%M UTC')"
         
     - name: 推送更改
-      if: steps.verify-changed-files.outputs.has_changes == 'true'
-      uses: ad-m/github-push-action@master
+      uses: actions/github-script@v6
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main  
+        script: |
+          await github.rest.repos.createOrUpdateFileContents ({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            path: '',
+            message: '🤖 自动更新',
+            content: Buffer.from(JSON.stringify(context.payload)).toString('base64'),
+            branch: 'main'
+          })
+  
         
     - name: 工作流程完成通知
       run: |
