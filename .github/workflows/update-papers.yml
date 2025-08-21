@@ -101,17 +101,12 @@ jobs:
         server_port: ${{ secrets.SMTP_PORT }}         # SMTP端口
         username: ${{ secrets.SMTP_USER }}            # SMTP用户名
         password: ${{ secrets.SMTP_PASSWORD }}        # SMTP密码/授权码
-        subject: "📚 3DGS论文更新日志 - $(date +'%Y-%m-%d')"
-        body: |
-          以下是今天的论文更新日志：
-      
-          ${{ steps.get-update-content.outputs.CONTENT }}
-      
-          -- 自动生成，请勿回复 --
+        subject:  "📚 3DGS论文更新日志 - ${{ steps.get-date.outputs.TODAY }}"
+        body: ${{ steps.get-update-content.outputs.CONTENT }}
         to: ${{ secrets.EMAIL_RECEIVER }}             # 接收邮件的地址
         from: GitHub Actions                          # 发件人名称
-        content_type: text/html                       # 邮件内容格式
         secure: true                                  # 强制使用SSL/TLS
+        convert_markdown: true    
       continue-on-error: true     # 即使发送失败也继续
 
         
