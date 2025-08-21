@@ -110,7 +110,7 @@ jobs:
           -- 自动生成，请勿回复 --
         to: ${{ secrets.EMAIL_RECEIVER }}             # 接收邮件的地址
         from: GitHub Actions                          # 发件人名称
-        content_type: text/plain                       # 邮件内容格式
+        content_type: text/html                       # 邮件内容格式
         secure: true                                  # 强制使用SSL/TLS
       continue-on-error: true     # 即使发送失败也继续
 
