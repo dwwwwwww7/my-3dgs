@@ -71,6 +71,43 @@ jobs:
           echo "has_changes=false" >> $GITHUB_OUTPUT
           echo "📊 没有检测到更改"
         fi
+
+    - name: 发送更新日志到GitHub邮箱
+      if: steps.verify-changed-files.outputs.has_changes == 'true'
+      run: |
+        echo "📧 准备发送更新日志到GitHub邮箱..."
+        
+        # 获取当天日期
+        TODAY=$(date +'%Y-%m-%d')
+        UPDATE_FILE="update/update_${TODAY}.md"
+        
+        # 检查更新日志文件是否存在
+        if [ ! -f "$UPDATE_FILE" ]; then
+          echo "❌ 未找到今天的更新日志: $UPDATE_FILE"
+          exit 0  # 非关键错误，继续执行
+        fi
+        
+        # 获取更新日志内容
+        UPDATE_CONTENT=$(cat "$UPDATE_FILE")
+        
+        # 构造邮件主题和内容
+        SUBJECT="📚 3DGS论文更新日志 - $TODAY"
+        BODY=$(echo -e "以下是今天的论文更新日志：\n\n$UPDATE_CONTENT\n\n-- 自动生成，请勿回复 --")
+        
+        # 发送到GitHub通知邮箱（使用GitHub的私密通知地址）
+        curl -X POST \
+          -H "Authorization: token ${{ secrets.REPO_PUSH_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/user/emails \
+          -d "{\"emails\": [\"${{ github.actor }}@users.noreply.github.com\"], \"subject\": \"$SUBJECT\", \"body\": \"$BODY\"}"
+        
+        echo "✅ 更新日志已发送到您的GitHub通知邮箱"
+      env:
+        TZ: Asia/Shanghai
+      continue-on-error: true  # 即使发送失败也继续
+        
+
+
         
     - name: 提交更改
       if: steps.verify-changed-files.outputs.has_changes == 'true'
