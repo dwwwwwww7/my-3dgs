@@ -2,7 +2,7 @@ name: Update Papers
 
 on:
   schedule:
-    - cron: '0 9 * * *'  # 每周三 UTC 0:00 自动运行
+    - cron: '*/5 * * * *'  # 每周三 UTC 0:00 自动运行
   workflow_dispatch:  # 允许手动触发
 
 permissions:
