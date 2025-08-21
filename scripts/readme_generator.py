@@ -469,11 +469,11 @@ def clean_title(title: str) -> str:
 def generate_update_log(last_update_time: str, new_papers: list, updated_papers: list) -> str:
     """生成更新日志内容"""
     current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    log = f"# 论文列表更新日志  \n\n"
+    log = f"# 论文更新日志  \n\n"
     log += f"**上次更新时间**: {last_update_time}  \n"
     log += f"**本次更新时间**: {current_time}  \n"
     log += f"**新增论文数量**: {len(new_papers)}  \n"
-    log += f"**更新论文数量**: {len(updated_papers)}  \n\n"
+    log += f"**变动论文数量**: {len(updated_papers)}  \n\n"
 
     if new_papers or updated_papers:
         log += "## 更新详情  \n"
@@ -485,7 +485,7 @@ def generate_update_log(last_update_time: str, new_papers: list, updated_papers:
                 title = clean_title(paper['title'])
                 paper_id = paper["arxiv_url"].split('/')[-1]
                 log += f"{i}. [{title}]({paper['arxiv_url']})"
-                #log += f" (ID: {paper_id})\n\n"
+                log += f" (ID: {paper_id})\n\n"
 
         if updated_papers:
             log += "\n### 更新论文  \n"
