@@ -89,7 +89,7 @@ jobs:
         echo "📄 找到最新更新日志: $LATEST_UPDATE"
         
         # 获取更新日志内容
-        UPDATE_CONTENT=$(cat "$UPDATE_FILE")
+        UPDATE_CONTENT=$(cat "$LATEST_UPDATE")
         
         # 构造邮件主题和内容
         SUBJECT="📚 3DGS论文更新日志 - $TODAY"
