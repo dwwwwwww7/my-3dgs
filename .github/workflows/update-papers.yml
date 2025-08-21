@@ -116,7 +116,7 @@ jobs:
 
 
     - name: 发送更新日志到邮箱
-      if: steps.verify-changed-files.outputs.has_changes == 'true' && steps.get-update-content.outputs.CONTENT != ''
+      if: steps.verify-changed-files.outputs.has_changes == 'true' && steps.get-update-content.outputs.HTML_CONTENT != ''
       uses: dawidd6/action-send-mail@v3
       with:
         server_address: ${{ secrets.SMTP_SERVER }}    # SMTP服务器地址
