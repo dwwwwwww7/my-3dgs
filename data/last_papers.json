@@ -450,6 +450,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "real-time rendering",
       "efficient",
@@ -722,6 +723,10 @@
     "keywords": [
       "pruning",
       "gaussian splat",
+=======
+      "real-time rendering",
+      "3d gaussian",
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
       "gaussian splatting"
     ],
     "citations": 0,
@@ -924,12 +929,18 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "compression",
       "gaussian splatting",
       "real-time rendering",
       "gaussian splat",
       "3d gaussian",
       "pruning"
+=======
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1188,7 +1199,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "nerf",
       "3d gaussian",
+<<<<<<< HEAD
       "compact",
       "gaussian splat",
       "gaussian splatting"
@@ -1256,6 +1269,9 @@
       "3dgs",
       "gaussian splat",
       "3d gaussian"
+=======
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1281,6 +1297,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compression",
       "gaussian splat",
@@ -1288,6 +1305,11 @@
       "3d gaussian",
       "pruning",
       "nerf"
+=======
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1406,12 +1428,18 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "compression",
       "gaussian splatting",
       "compact",
       "real-time rendering",
       "gaussian splat",
       "3d gaussian"
+=======
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1439,6 +1467,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "pruning",
       "compressed ",
       "gaussian splat",
@@ -1510,6 +1539,11 @@
       "gaussian splat",
       "3dgs",
       "3d gaussian"
+=======
+      "neural rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1568,6 +1602,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "real-time rendering",
       "efficient",
@@ -1576,6 +1611,12 @@
       "3d gaussian",
       "pruning",
       "nerf"
+=======
+      "nerf",
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1691,6 +1732,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compact",
       "gaussian splat",
@@ -1721,6 +1763,10 @@
     "keywords": [
       "pruning",
       "gaussian splat",
+=======
+      "nerf",
+      "3d gaussian",
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
       "gaussian splatting"
     ],
     "citations": 0,
@@ -1771,6 +1817,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "vector quantization",
       "gaussian splatting",
       "real-time rendering",
@@ -1781,6 +1828,12 @@
       "3d gaussian",
       "pruning",
       "nerf"
+=======
+      "nerf",
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1974,6 +2027,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compression",
       "efficient",
@@ -1981,6 +2035,11 @@
       "3dgs",
       "3d gaussian",
       "nerf"
+=======
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2090,6 +2149,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "3d gaussian",
       "compact",
       "real-time rendering",
@@ -2152,6 +2212,9 @@
       "efficient",
       "gaussian splat",
       "3dgs",
+=======
+      "real-time rendering",
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
       "3d gaussian"
     ],
     "citations": 0,
@@ -2177,11 +2240,66 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "compressed ",
       "compression",
       "gaussian splatting",
       "compact",
       "gaussian splat"
+=======
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "EDGS: Eliminating Densification for Efficient Convergence of 3DGS",
+    "authors": [
+      "Dmytro Kotovenko",
+      "Olga Grebenkova",
+      "Björn Ommer"
+    ],
+    "abstract": "3D Gaussian Splatting reconstructs scenes by starting from a sparse Structure-from-Motion initialization and iteratively refining under-reconstructed regions. This process is inherently slow, as it requires multiple densification steps where Gaussians are repeatedly split and adjusted, following a lengthy optimization path. Moreover, this incremental approach often leads to suboptimal renderings, particularly in high-frequency regions where detail is critical.   We propose a fundamentally different approach: we eliminate densification process with a one-step approximation of scene geometry using triangulated pixels from dense image correspondences. This dense initialization allows us to estimate rough geometry of the scene while preserving rich details from input RGB images, providing each Gaussian with well-informed colors, scales, and positions. As a result, we dramatically shorten the optimization path and remove the need for densification. Unlike traditional methods that rely on sparse keypoints, our dense initialization ensures uniform detail across the scene, even in high-frequency regions where 3DGS and other methods struggle. Moreover, since all splats are initialized in parallel at the start of optimization, we eliminate the need to wait for densification to adjust new Gaussians.   Our method not only outperforms speed-optimized models in training efficiency but also achieves higher rendering quality than state-of-the-art approaches, all while using only half the splats of standard 3DGS. It is fully compatible with other 3DGS acceleration techniques, making it a versatile and efficient solution that can be integrated with existing approaches.",
+    "arxiv_url": "http://arxiv.org/abs/2504.13204v1",
+    "pdf_url": "http://arxiv.org/pdf/2504.13204v1",
+    "published_date": "2025-04-15",
+    "updated_date": "2025-04-15",
+    "categories": [
+      "cs.GR"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "3DAffordSplat: Efficient Affordance Reasoning with 3D Gaussians",
+    "authors": [
+      "Zeming Wei",
+      "Junyi Lin",
+      "Yang Liu",
+      "Weixing Chen",
+      "Jingzhou Luo",
+      "Guanbin Li",
+      "Liang Lin"
+    ],
+    "abstract": "3D affordance reasoning is essential in associating human instructions with the functional regions of 3D objects, facilitating precise, task-oriented manipulations in embodied AI. However, current methods, which predominantly depend on sparse 3D point clouds, exhibit limited generalizability and robustness due to their sensitivity to coordinate variations and the inherent sparsity of the data. By contrast, 3D Gaussian Splatting (3DGS) delivers high-fidelity, real-time rendering with minimal computational overhead by representing scenes as dense, continuous distributions. This positions 3DGS as a highly effective approach for capturing fine-grained affordance details and improving recognition accuracy. Nevertheless, its full potential remains largely untapped due to the absence of large-scale, 3DGS-specific affordance datasets. To overcome these limitations, we present 3DAffordSplat, the first large-scale, multi-modal dataset tailored for 3DGS-based affordance reasoning. This dataset includes 23,677 Gaussian instances, 8,354 point cloud instances, and 6,631 manually annotated affordance labels, encompassing 21 object categories and 18 affordance types. Building upon this dataset, we introduce AffordSplatNet, a novel model specifically designed for affordance reasoning using 3DGS representations. AffordSplatNet features an innovative cross-modal structure alignment module that exploits structural consistency priors to align 3D point cloud and 3DGS representations, resulting in enhanced affordance recognition accuracy. Extensive experiments demonstrate that the 3DAffordSplat dataset significantly advances affordance learning within the 3DGS domain, while AffordSplatNet consistently outperforms existing methods across both seen and unseen settings, highlighting its robust generalization capabilities.",
+    "arxiv_url": "http://arxiv.org/abs/2504.11218v2",
+    "pdf_url": "http://arxiv.org/pdf/2504.11218v2",
+    "published_date": "2025-04-15",
+    "updated_date": "2025-04-16",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2323,12 +2441,18 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compression",
       "real-time rendering",
       "gaussian splat",
       "3dgs",
       "3d gaussian"
+=======
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2356,6 +2480,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compact",
       "3d gaussians",
@@ -2363,6 +2488,11 @@
       "gaussian splat",
       "3d gaussian",
       "nerf"
+=======
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2445,12 +2575,19 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "gaussian splat",
       "3dgs",
       "3d gaussian",
       "pruning",
       "nerf"
+=======
+      "nerf",
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2682,6 +2819,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compression",
       "efficient",
@@ -2689,6 +2827,11 @@
       "3dgs",
       "3d gaussian",
       "nerf"
+=======
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3132,9 +3275,14 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
+=======
+      "nerf",
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
       "gaussian splatting",
       "compression",
       "real-time rendering",
+<<<<<<< HEAD
       "3d gaussians",
       "3d reconstruction",
       "efficient",
@@ -3142,6 +3290,10 @@
       "gaussian splat",
       "3d gaussian",
       "nerf"
+=======
+      "3d gaussian",
+      "3d reconstruction"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3660,6 +3812,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compact",
       "3d gaussians",
@@ -3668,6 +3821,11 @@
       "gaussian splat",
       "3d gaussian",
       "neural rendering"
+=======
+      "neural rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3814,6 +3972,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compact",
       "3d gaussians",
@@ -3821,6 +3980,34 @@
       "gaussian splat",
       "3d gaussian",
       "nerf"
+=======
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Gaussian Splatting for Efficient Satellite Image Photogrammetry",
+    "authors": [
+      "Luca Savant Aira",
+      "Gabriele Facciolo",
+      "Thibaud Ehret"
+    ],
+    "abstract": "Recently, Gaussian splatting has emerged as a strong alternative to NeRF, demonstrating impressive 3D modeling capabilities while requiring only a fraction of the training and rendering time. In this paper, we show how the standard Gaussian splatting framework can be adapted for remote sensing, retaining its high efficiency. This enables us to achieve state-of-the-art performance in just a few minutes, compared to the day-long optimization required by the best-performing NeRF-based Earth observation methods. The proposed framework incorporates remote-sensing improvements from EO-NeRF, such as radiometric correction and shadow modeling, while introducing novel components, including sparsity, view consistency, and opacity regularizations.",
+    "arxiv_url": "http://arxiv.org/abs/2412.13047v2",
+    "pdf_url": "http://arxiv.org/pdf/2412.13047v2",
+    "published_date": "2024-12-17",
+    "updated_date": "2025-03-22",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "nerf",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4411,12 +4598,17 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "compressed ",
       "3d gaussians",
       "efficient",
       "3dgs",
       "3d gaussian",
       "nerf"
+=======
+      "nerf",
+      "3d gaussian"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4913,6 +5105,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compact",
       "gaussian splat",
@@ -4975,6 +5168,11 @@
       "gaussian splat",
       "3dgs",
       "3d gaussian"
+=======
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5000,6 +5198,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "compression",
       "gaussian splatting",
       "compact",
@@ -5094,12 +5293,16 @@
       "3d gaussian",
       "compression",
       "gaussian splat",
+=======
+      "3d gaussian",
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
       "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
   },
   {
+<<<<<<< HEAD
     "title": "PRoGS: Progressive Rendering of Gaussian Splats",
     "authors": [
       "Brent Zoomers",
@@ -5144,11 +5347,27 @@
     "pdf_url": "http://arxiv.org/pdf/2408.17223v1",
     "published_date": "2024-08-30",
     "updated_date": "2024-08-30",
+=======
+    "title": "GaussianOcc: Fully Self-supervised and Efficient 3D Occupancy Estimation\n  with Gaussian Splatting",
+    "authors": [
+      "Wanshui Gan",
+      "Fang Liu",
+      "Hongbin Xu",
+      "Ningkai Mo",
+      "Naoto Yokoya"
+    ],
+    "abstract": "We introduce GaussianOcc, a systematic method that investigates the two usages of Gaussian splatting for fully self-supervised and efficient 3D occupancy estimation in surround views. First, traditional methods for self-supervised 3D occupancy estimation still require ground truth 6D poses from sensors during training. To address this limitation, we propose Gaussian Splatting for Projection (GSP) module to provide accurate scale information for fully self-supervised training from adjacent view projection. Additionally, existing methods rely on volume rendering for final 3D voxel representation learning using 2D signals (depth maps, semantic maps), which is both time-consuming and less effective. We propose Gaussian Splatting from Voxel space (GSV) to leverage the fast rendering properties of Gaussian splatting. As a result, the proposed GaussianOcc method enables fully self-supervised (no ground truth pose) 3D occupancy estimation in competitive performance with low computational cost (2.7 times faster in training and 5 times faster in rendering). The relevant code is available in https://github.com/GANWANSHUI/GaussianOcc.git.",
+    "arxiv_url": "http://arxiv.org/abs/2408.11447v4",
+    "pdf_url": "http://arxiv.org/pdf/2408.11447v4",
+    "published_date": "2024-08-21",
+    "updated_date": "2025-07-14",
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     "categories": [
       "cs.CV"
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compact",
       "3d gaussians",
@@ -5156,11 +5375,15 @@
       "3dgs",
       "gaussian splat",
       "3d gaussian"
+=======
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
   },
   {
+<<<<<<< HEAD
     "title": "LapisGS: Layered Progressive 3D Gaussian Splatting for Adaptive\n  Streaming",
     "authors": [
       "Yuang Shi",
@@ -5230,14 +5453,37 @@
     "pdf_url": "http://arxiv.org/pdf/2408.12677v3",
     "published_date": "2024-08-22",
     "updated_date": "2024-11-15",
+=======
+    "title": "GS-CPR: Efficient Camera Pose Refinement via 3D Gaussian Splatting",
+    "authors": [
+      "Changkun Liu",
+      "Shuai Chen",
+      "Yash Bhalgat",
+      "Siyan Hu",
+      "Ming Cheng",
+      "Zirui Wang",
+      "Victor Adrian Prisacariu",
+      "Tristan Braud"
+    ],
+    "abstract": "We leverage 3D Gaussian Splatting (3DGS) as a scene representation and propose a novel test-time camera pose refinement (CPR) framework, GS-CPR. This framework enhances the localization accuracy of state-of-the-art absolute pose regression and scene coordinate regression methods. The 3DGS model renders high-quality synthetic images and depth maps to facilitate the establishment of 2D-3D correspondences. GS-CPR obviates the need for training feature extractors or descriptors by operating directly on RGB images, utilizing the 3D foundation model, MASt3R, for precise 2D matching. To improve the robustness of our model in challenging outdoor environments, we incorporate an exposure-adaptive module within the 3DGS framework. Consequently, GS-CPR enables efficient one-shot pose refinement given a single RGB query and a coarse initial pose estimation. Our proposed approach surpasses leading NeRF-based optimization methods in both accuracy and runtime across indoor and outdoor visual localization benchmarks, achieving new state-of-the-art accuracy on two indoor datasets. The project page is available at https://xrim-lab.github.io/GS-CPR/.",
+    "arxiv_url": "http://arxiv.org/abs/2408.11085v4",
+    "pdf_url": "http://arxiv.org/pdf/2408.11085v4",
+    "published_date": "2024-08-20",
+    "updated_date": "2025-03-01",
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     "categories": [
       "cs.CV"
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "3d gaussian",
       "compact",
       "gaussian splat",
+=======
+      "nerf",
+      "3d gaussian",
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
       "gaussian splatting"
     ],
     "citations": 0,
@@ -5288,6 +5534,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "vector quantization",
       "gaussian splatting",
       "compression",
@@ -5297,6 +5544,11 @@
       "gaussian splat",
       "3dgs",
       "3d gaussian"
+=======
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5472,6 +5724,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compression",
       "real-time rendering",
@@ -5539,6 +5792,11 @@
       "efficient",
       "gaussian splat",
       "3d gaussian"
+=======
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5596,6 +5854,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compression",
       "real-time rendering",
@@ -5605,6 +5864,12 @@
       "3d gaussian",
       "pruning",
       "nerf"
+=======
+      "nerf",
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5658,12 +5923,18 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compact",
       "efficient",
       "gaussian splat",
       "3d gaussian",
       "nerf"
+=======
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5896,6 +6167,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compression",
       "compact",
@@ -6054,6 +6326,11 @@
       "3d gaussian",
       "pruning",
       "nerf"
+=======
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6077,6 +6354,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compact",
       "3d gaussians",
@@ -6084,6 +6362,11 @@
       "gaussian splat",
       "3d gaussian",
       "nerf"
+=======
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6407,6 +6690,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "vector quantization",
       "gaussian splatting",
       "compact",
@@ -6414,6 +6698,11 @@
       "3dgs",
       "3d gaussian",
       "pruning"
+=======
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6644,11 +6933,17 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "compact",
       "real-time rendering",
       "gaussian splat",
       "3d gaussian"
+=======
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6713,6 +7008,66 @@
     "semantic_url": ""
   },
   {
+<<<<<<< HEAD
+=======
+    "title": "GSEdit: Efficient Text-Guided Editing of 3D Objects via Gaussian\n  Splatting",
+    "authors": [
+      "Francesco Palandra",
+      "Andrea Sanchietti",
+      "Daniele Baieri",
+      "Emanuele Rodolà"
+    ],
+    "abstract": "We present GSEdit, a pipeline for text-guided 3D object editing based on Gaussian Splatting models. Our method enables the editing of the style and appearance of 3D objects without altering their main details, all in a matter of minutes on consumer hardware. We tackle the problem by leveraging Gaussian splatting to represent 3D scenes, and we optimize the model while progressively varying the image supervision by means of a pretrained image-based diffusion model. The input object may be given as a 3D triangular mesh, or directly provided as Gaussians from a generative model such as DreamGaussian. GSEdit ensures consistency across different viewpoints, maintaining the integrity of the original object's information. Compared to previously proposed methods relying on NeRF-like MLP models, GSEdit stands out for its efficiency, making 3D editing tasks much faster. Our editing process is refined via the application of the SDS loss, ensuring that our edits are both precise and accurate. Our comprehensive evaluation demonstrates that GSEdit effectively alters object shape and appearance following the given textual instructions while preserving their coherence and detail.",
+    "arxiv_url": "http://arxiv.org/abs/2403.05154v2",
+    "pdf_url": "http://arxiv.org/pdf/2403.05154v2",
+    "published_date": "2024-03-08",
+    "updated_date": "2024-05-21",
+    "categories": [
+      "cs.CV",
+      "cs.GR",
+      "68T45",
+      "I.2.10; I.3.8"
+    ],
+    "github_url": "",
+    "keywords": [
+      "nerf",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Radiative Gaussian Splatting for Efficient X-ray Novel View Synthesis",
+    "authors": [
+      "Yuanhao Cai",
+      "Yixun Liang",
+      "Jiahao Wang",
+      "Angtian Wang",
+      "Yulun Zhang",
+      "Xiaokang Yang",
+      "Zongwei Zhou",
+      "Alan Yuille"
+    ],
+    "abstract": "X-ray is widely applied for transmission imaging due to its stronger penetration than natural light. When rendering novel view X-ray projections, existing methods mainly based on NeRF suffer from long training time and slow inference speed. In this paper, we propose a 3D Gaussian splatting-based framework, namely X-Gaussian, for X-ray novel view synthesis. Firstly, we redesign a radiative Gaussian point cloud model inspired by the isotropic nature of X-ray imaging. Our model excludes the influence of view direction when learning to predict the radiation intensity of 3D points. Based on this model, we develop a Differentiable Radiative Rasterization (DRR) with CUDA implementation. Secondly, we customize an Angle-pose Cuboid Uniform Initialization (ACUI) strategy that directly uses the parameters of the X-ray scanner to compute the camera information and then uniformly samples point positions within a cuboid enclosing the scanned object. Experiments show that our X-Gaussian outperforms state-of-the-art methods by 6.5 dB while enjoying less than 15% training time and over 73x inference speed. The application on sparse-view CT reconstruction also reveals the practical values of our method. Code is publicly available at https://github.com/caiyuanhao1998/X-Gaussian . A video demo of the training process visualization is at https://www.youtube.com/watch?v=gDVf_Ngeghg .",
+    "arxiv_url": "http://arxiv.org/abs/2403.04116v3",
+    "pdf_url": "http://arxiv.org/pdf/2403.04116v3",
+    "published_date": "2024-03-07",
+    "updated_date": "2024-10-26",
+    "categories": [
+      "eess.IV",
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     "title": "3DGStream: On-the-Fly Training of 3D Gaussians for Efficient Streaming\n  of Photo-Realistic Free-Viewpoint Videos",
     "authors": [
       "Jiakai Sun",
@@ -6732,6 +7087,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "compact",
       "real-time rendering",
       "3d gaussians",
@@ -6739,6 +7095,11 @@
       "3dgs",
       "3d gaussian",
       "neural rendering"
+=======
+      "neural rendering",
+      "real-time rendering",
+      "3d gaussian"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6848,6 +7209,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "compressed ",
       "gaussian splatting",
       "compact",
@@ -6855,6 +7217,11 @@
       "gaussian splat",
       "3dgs",
       "3d gaussian"
+=======
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6877,6 +7244,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "gaussian splatting",
       "real-time rendering",
       "3d gaussians",
@@ -6885,6 +7253,12 @@
       "3d gaussian",
       "pruning",
       "nerf"
+=======
+      "nerf",
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7086,6 +7460,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "vector quantization",
       "gaussian splatting",
       "3d gaussians",
@@ -7093,6 +7468,11 @@
       "gaussian splat",
       "3d gaussian",
       "nerf"
+=======
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7117,6 +7497,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "vector quantization",
       "gaussian splatting",
       "compression",
@@ -7188,6 +7569,11 @@
       "efficient",
       "gaussian splat",
       "3d gaussian",
+=======
+      "neural rendering",
+      "3d gaussian",
+      "gaussian splatting",
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
       "nerf"
     ],
     "citations": 0,
@@ -7213,6 +7599,7 @@
     ],
     "github_url": "",
     "keywords": [
+<<<<<<< HEAD
       "vector quantization",
       "gaussian splatting",
       "compression",
@@ -7224,6 +7611,36 @@
       "gaussian splat",
       "3d gaussian",
       "nerf"
+=======
+      "nerf",
+      "real-time rendering",
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh\n  Reconstruction and High-Quality Mesh Rendering",
+    "authors": [
+      "Antoine Guédon",
+      "Vincent Lepetit"
+    ],
+    "abstract": "We propose a method to allow precise and extremely fast mesh extraction from 3D Gaussian Splatting. Gaussian Splatting has recently become very popular as it yields realistic rendering while being significantly faster to train than NeRFs. It is however challenging to extract a mesh from the millions of tiny 3D gaussians as these gaussians tend to be unorganized after optimization and no method has been proposed so far. Our first key contribution is a regularization term that encourages the gaussians to align well with the surface of the scene. We then introduce a method that exploits this alignment to extract a mesh from the Gaussians using Poisson reconstruction, which is fast, scalable, and preserves details, in contrast to the Marching Cubes algorithm usually applied to extract meshes from Neural SDFs. Finally, we introduce an optional refinement strategy that binds gaussians to the surface of the mesh, and jointly optimizes these Gaussians and the mesh through Gaussian splatting rendering. This enables easy editing, sculpting, rigging, animating, compositing and relighting of the Gaussians using traditional softwares by manipulating the mesh instead of the gaussians themselves. Retrieving such an editable mesh for realistic rendering is done within minutes with our method, compared to hours with the state-of-the-art methods on neural SDFs, while providing a better rendering quality. Our project page is the following: https://anttwo.github.io/sugar/",
+    "arxiv_url": "http://arxiv.org/abs/2311.12775v3",
+    "pdf_url": "http://arxiv.org/pdf/2311.12775v3",
+    "published_date": "2023-11-21",
+    "updated_date": "2023-12-02",
+    "categories": [
+      "cs.GR",
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "nerf",
+      "3d gaussian",
+      "gaussian splatting"
+>>>>>>> ef3da905358d66384aa84e0f2940419a973ff6e5
     ],
     "citations": 0,
     "semantic_url": ""
