@@ -2,7 +2,7 @@ name: Update Papers
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天 UTC 0:00 运行
+    - cron: '0 0 * * 3'  # 每周三 UTC 0:00 自动运行
   workflow_dispatch:  # 允许手动触发
 
 permissions:
@@ -57,7 +57,7 @@ jobs:
           --data-dir ../data \
           --output ../README.md \
           --update-dir ../update \
-          --translate
+          --translate               #控制摘要翻译，--no-translate为关闭
         echo "✅ README 更新完成"
       working-directory: ./scripts         
         
@@ -105,8 +105,8 @@ jobs:
          TZ: Asia/Shanghai
 
 
-    - name: 发送更新日志到邮箱
-      if: steps.verify-changed-files.outputs.has_changes == 'true' && steps.get-update-content.outputs.HTML_CONTENT != ''
+    - name: 发送更新日志到邮箱 只有自动触发时才会发送邮件
+      if: github.event_name == 'schedule' && steps.verify-changed-files.outputs.has_changes == 'true' && steps.get-update-content.outputs.HTML_CONTENT != ''
       uses: dawidd6/action-send-mail@v3
       with:
         server_address: ${{ secrets.SMTP_SERVER }}    # SMTP服务器地址
