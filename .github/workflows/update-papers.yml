@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *'  # 每天 UTC 0:00 运行
   workflow_dispatch:  # 允许手动触发
 
+permissions:
+  contents: write          # 允许推送代码更改
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -81,7 +84,7 @@ jobs:
       if: steps.verify-changed-files.outputs.has_changes == 'true'
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.REPO_PUSH_TOKEN }}
         branch: ${{ github.ref }} 
   
         
