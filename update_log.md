@@ -1,3 +1,10 @@
+# 2025-08-21 07:40:54
+
+
+137. [DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content  Creation](http://arxiv.org/abs/2309.16653v2) (ID: 2309.16653v2)
+
+---
+
 <<<<<<< HEAD
 # 2025-08-21 15:03:31
 
