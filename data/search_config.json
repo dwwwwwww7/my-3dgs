@@ -7,15 +7,15 @@
       "compact",
       "compacted",
       "compressed ",
-      "efficient",
       "pruning",
       "vector quantization",
-      "mini-splatting"
+      "hash-grid",
+      "lod",
+      "f-3dgs"
     ],
     "abstract_only": [ 
       "gaussian",
-      "gaussians",
-      "splatting"
+      "gaussians"
     ],
     "title_only": [
       "gaussian splatting",
@@ -23,7 +23,11 @@
       "3d gaussians",
       "gaussian splat",
       "3dgs",
-      "4d gaussian"
+      "compact 3d scene representation",
+      "mini-splatting",
+      "scaffold-gs",
+      "spacetime gaussian",
+      "4dgs"
     ],
     "notes": {
       "both_abstract_and_title": "这些关键词将在摘要(abs)和题目(ti)中搜索",

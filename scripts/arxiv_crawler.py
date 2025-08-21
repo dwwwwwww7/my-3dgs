@@ -92,7 +92,7 @@ class ArxivCrawler:
             # Keywords for both abstract and title
             both_keywords = search_config.get("both_abstract_and_title", [])
             for keyword in both_keywords:
-                #query_parts_both.append(f'abs:"{keyword}"')
+                query_parts_both.append(f'abs:"{keyword}"')
                 query_parts_both.append(f'ti:"{keyword}"')
             
             # Keywords for abstract only
@@ -105,7 +105,7 @@ class ArxivCrawler:
             for keyword in title_keywords:
                 query_parts_title.append(f'ti:"{keyword}"')
             
-            if not query_parts_both or not query_parts_abs or not query_parts_title:
+            if not query_parts_both and not query_parts_abs and not query_parts_title:
                 self.logger.warning("No search keywords found in config, using default query")
                 return '(abs:"gaussian splatting" OR ti:"gaussian splatting")'
             

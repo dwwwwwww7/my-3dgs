@@ -1,3 +1,73 @@
+# 2025-08-21 18:55:01
+
+### 新增论文  
+1. [Spacetime Gaussian Feature Splatting for Real-Time Dynamic View  Synthesis](http://arxiv.org/abs/2312.16812v2) (ID: 2312.16812v2)
+
+---
+
+# 2025-08-21 18:54:49
+
+**新增论文数量**: 0  
+**变动论文数量**: 0  
+
+---
+
+# 2025-08-21 18:54:36
+
+**新增论文数量**: 0  
+**变动论文数量**: 0  
+
+---
+
+# 2025-08-21 18:54:22
+
+**新增论文数量**: 0  
+**变动论文数量**: 0  
+
+---
+
+# 2025-08-21 18:53:52
+
+
+2. [Spacetime Gaussian Feature Splatting for Real-Time Dynamic View  Synthesis](http://arxiv.org/abs/2312.16812v2) (ID: 2312.16812v2)
+
+---
+
+# 2025-08-21 18:48:16
+
+**新增论文数量**: 0  
+**变动论文数量**: 0  
+
+---
+
+# 2025-08-21 18:33:03
+
+
+8. [Octree-GS: Towards Consistent Real-time Rendering with LOD-Structured 3D  Gaussians](http://arxiv.org/abs/2403.17898v2) (ID: 2403.17898v2)
+
+---
+
+# 2025-08-21 18:29:44
+
+### 新增论文  
+1. [Mini-Splatting: Representing Scenes with a Constrained Number of  Gaussians](http://arxiv.org/abs/2403.14166v3) (ID: 2403.14166v3)
+
+---
+
+# 2025-08-21 18:29:26
+
+**新增论文数量**: 0  
+**变动论文数量**: 0  
+
+---
+
+# 2025-08-21 18:28:39
+
+
+149. [Text-to-3D using Gaussian Splatting](http://arxiv.org/abs/2309.16585v4) (ID: 2309.16585v4)
+
+---
+
 # 2025-08-21 07:52:49
 
 **新增论文数量**: 0  
