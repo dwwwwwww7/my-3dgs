@@ -41,13 +41,1483 @@
     ],
     "github_url": "",
     "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Communication Efficient Robotic Mixed Reality with Gaussian Splatting\n  Cross-Layer Optimization",
+    "authors": [
+      "Chenxuan Liu",
+      "He Li",
+      "Zongze Li",
+      "Shuai Wang",
+      "Wei Xu",
+      "Kejiang Ye",
+      "Derrick Wing Kwan Ng",
+      "Chengzhong Xu"
+    ],
+    "abstract": "Realizing low-cost communication in robotic mixed reality (RoboMR) systems presents a challenge, due to the necessity of uploading high-resolution images through wireless channels. This paper proposes Gaussian splatting (GS) RoboMR (GSMR), which enables the simulator to opportunistically render a photo-realistic view from the robot's pose by calling ``memory'' from a GS model, thus reducing the need for excessive image uploads. However, the GS model may involve discrepancies compared to the actual environments. To this end, a GS cross-layer optimization (GSCLO) framework is further proposed, which jointly optimizes content switching (i.e., deciding whether to upload image or not) and power allocation (i.e., adjusting to content profiles) across different frames by minimizing a newly derived GSMR loss function. The GSCLO problem is addressed by an accelerated penalty optimization (APO) algorithm that reduces computational complexity by over $10$x compared to traditional branch-and-bound and search algorithms. Moreover, variants of GSCLO are presented to achieve robust, low-power, and multi-robot GSMR. Extensive experiments demonstrate that the proposed GSMR paradigm and GSCLO method achieve significant improvements over existing benchmarks on both wheeled and legged robots in terms of diverse metrics in various scenarios. For the first time, it is found that RoboMR can be achieved with ultra-low communication costs, and mixture of data is useful for enhancing GS performance in dynamic scenarios.",
+    "arxiv_url": "http://arxiv.org/abs/2508.08624v1",
+    "pdf_url": "http://arxiv.org/pdf/2508.08624v1",
+    "published_date": "2025-08-12",
+    "updated_date": "2025-08-12",
+    "categories": [
+      "cs.RO",
+      "cs.IT",
+      "math.IT"
+    ],
+    "github_url": "",
+    "keywords": [
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "3DGS-VBench: A Comprehensive Video Quality Evaluation Benchmark for 3DGS\n  Compression",
+    "authors": [
+      "Yuke Xing",
+      "William Gordon",
+      "Qi Yang",
+      "Kaifa Yang",
+      "Jiarui Wang",
+      "Yiling Xu"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) enables real-time novel view synthesis with high visual fidelity, but its substantial storage requirements hinder practical deployment, prompting state-of-the-art (SOTA) 3DGS methods to incorporate compression modules. However, these 3DGS generative compression techniques introduce unique distortions lacking systematic quality assessment research. To this end, we establish 3DGS-VBench, a large-scale Video Quality Assessment (VQA) Dataset and Benchmark with 660 compressed 3DGS models and video sequences generated from 11 scenes across 6 SOTA 3DGS compression algorithms with systematically designed parameter levels. With annotations from 50 participants, we obtained MOS scores with outlier removal and validated dataset reliability. We benchmark 6 3DGS compression algorithms on storage efficiency and visual quality, and evaluate 15 quality assessment metrics across multiple paradigms. Our work enables specialized VQA model training for 3DGS, serving as a catalyst for compression and quality assessment research. The dataset is available at https://github.com/YukeXing/3DGS-VBench.",
+    "arxiv_url": "http://arxiv.org/abs/2508.07038v1",
+    "pdf_url": "http://arxiv.org/pdf/2508.07038v1",
+    "published_date": "2025-08-09",
+    "updated_date": "2025-08-09",
+    "categories": [
+      "eess.IV",
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "SA-3DGS: A Self-Adaptive Compression Method for 3D Gaussian Splatting",
+    "authors": [
+      "Liheng Zhang",
+      "Weihao Yu",
+      "Zubo Lu",
+      "Haozhi Gu",
+      "Jin Huang"
+    ],
+    "abstract": "Recent advancements in 3D Gaussian Splatting have enhanced efficient and high-quality novel view synthesis. However, representing scenes requires a large number of Gaussian points, leading to high storage demands and limiting practical deployment. The latest methods facilitate the compression of Gaussian models but struggle to identify truly insignificant Gaussian points in the scene, leading to a decline in subsequent Gaussian pruning, compression quality, and rendering performance. To address this issue, we propose SA-3DGS, a method that significantly reduces storage costs while maintaining rendering quality. SA-3DGS learns an importance score to automatically identify the least significant Gaussians in scene reconstruction, thereby enabling effective pruning and redundancy reduction. Next, the importance-aware clustering module compresses Gaussians attributes more accurately into the codebook, improving the codebook's expressive capability while reducing model size. Finally, the codebook repair module leverages contextual scene information to repair the codebook, thereby recovering the original Gaussian point attributes and mitigating the degradation in rendering quality caused by information loss. Experimental results on several benchmark datasets show that our method achieves up to 66x compression while maintaining or even improving rendering quality. The proposed Gaussian pruning approach is not only adaptable to but also improves other pruning-based methods (e.g., LightGaussian), showcasing excellent performance and strong generalization ability.",
+    "arxiv_url": "http://arxiv.org/abs/2508.03017v1",
+    "pdf_url": "http://arxiv.org/pdf/2508.03017v1",
+    "published_date": "2025-08-05",
+    "updated_date": "2025-08-05",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Robust and Efficient 3D Gaussian Splatting for Urban Scene\n  Reconstruction",
+    "authors": [
+      "Zhensheng Yuan",
+      "Haozhi Huang",
+      "Zhen Xiong",
+      "Di Wang",
+      "Guanghua Yang"
+    ],
+    "abstract": "We present a framework that enables fast reconstruction and real-time rendering of urban-scale scenes while maintaining robustness against appearance variations across multi-view captures. Our approach begins with scene partitioning for parallel training, employing a visibility-based image selection strategy to optimize training efficiency. A controllable level-of-detail (LOD) strategy explicitly regulates Gaussian density under a user-defined budget, enabling efficient training and rendering while maintaining high visual fidelity. The appearance transformation module mitigates the negative effects of appearance inconsistencies across images while enabling flexible adjustments. Additionally, we utilize enhancement modules, such as depth regularization, scale regularization, and antialiasing, to improve reconstruction fidelity. Experimental results demonstrate that our method effectively reconstructs urban-scale scenes and outperforms previous approaches in both efficiency and quality. The source code is available at: https://yzslab.github.io/REUrbanGS.",
+    "arxiv_url": "http://arxiv.org/abs/2507.23006v1",
+    "pdf_url": "http://arxiv.org/pdf/2507.23006v1",
+    "published_date": "2025-07-30",
+    "updated_date": "2025-07-30",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
       "gaussian splatting",
+      "real-time rendering"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "SD-GS: Structured Deformable 3D Gaussians for Efficient Dynamic Scene\n  Reconstruction",
+    "authors": [
+      "Wei Yao",
+      "Shuzhao Xie",
+      "Letian Li",
+      "Weixiang Zhang",
+      "Zhixin Lai",
+      "Shiqi Dai",
+      "Ke Zhang",
+      "Zhi Wang"
+    ],
+    "abstract": "Current 4D Gaussian frameworks for dynamic scene reconstruction deliver impressive visual fidelity and rendering speed, however, the inherent trade-off between storage costs and the ability to characterize complex physical motions significantly limits the practical application of these methods. To tackle these problems, we propose SD-GS, a compact and efficient dynamic Gaussian splatting framework for complex dynamic scene reconstruction, featuring two key contributions. First, we introduce a deformable anchor grid, a hierarchical and memory-efficient scene representation where each anchor point derives multiple 3D Gaussians in its local spatiotemporal region and serves as the geometric backbone of the 3D scene. Second, to enhance modeling capability for complex motions, we present a deformation-aware densification strategy that adaptively grows anchors in under-reconstructed high-dynamic regions while reducing redundancy in static areas, achieving superior visual quality with fewer anchors. Experimental results demonstrate that, compared to state-of-the-art methods, SD-GS achieves an average of 60\\% reduction in model size and an average of 100\\% improvement in FPS, significantly enhancing computational efficiency while maintaining or even surpassing visual quality.",
+    "arxiv_url": "http://arxiv.org/abs/2507.07465v1",
+    "pdf_url": "http://arxiv.org/pdf/2507.07465v1",
+    "published_date": "2025-07-10",
+    "updated_date": "2025-07-10",
+    "categories": [
+      "cs.GR",
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "FlexGaussian: Flexible and Cost-Effective Training-Free Compression for\n  3D Gaussian Splatting",
+    "authors": [
+      "Boyuan Tian",
+      "Qizhe Gao",
+      "Siran Xianyu",
+      "Xiaotong Cui",
+      "Minjia Zhang"
+    ],
+    "abstract": "3D Gaussian splatting has become a prominent technique for representing and rendering complex 3D scenes, due to its high fidelity and speed advantages. However, the growing demand for large-scale models calls for effective compression to reduce memory and computation costs, especially on mobile and edge devices with limited resources. Existing compression methods effectively reduce 3D Gaussian parameters but often require extensive retraining or fine-tuning, lacking flexibility under varying compression constraints.   In this paper, we introduce FlexGaussian, a flexible and cost-effective method that combines mixed-precision quantization with attribute-discriminative pruning for training-free 3D Gaussian compression. FlexGaussian eliminates the need for retraining and adapts easily to diverse compression targets. Evaluation results show that FlexGaussian achieves up to 96.4% compression while maintaining high rendering quality (<1 dB drop in PSNR), and is deployable on mobile devices. FlexGaussian delivers high compression ratios within seconds, being 1.7-2.1x faster than state-of-the-art training-free methods and 10-100x faster than training-involved approaches. The code is being prepared and will be released soon at: https://github.com/Supercomputing-System-AI-Lab/FlexGaussian",
+    "arxiv_url": "http://arxiv.org/abs/2507.06671v1",
+    "pdf_url": "http://arxiv.org/pdf/2507.06671v1",
+    "published_date": "2025-07-09",
+    "updated_date": "2025-07-09",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "D-FCGS: Feedforward Compression of Dynamic Gaussian Splatting for\n  Free-Viewpoint Videos",
+    "authors": [
+      "Wenkang Zhang",
+      "Yan Zhao",
+      "Qiang Wang",
+      "Li Song",
+      "Zhengxue Cheng"
+    ],
+    "abstract": "Free-viewpoint video (FVV) enables immersive 3D experiences, but efficient compression of dynamic 3D representations remains a major challenge. Recent advances in 3D Gaussian Splatting (3DGS) and its dynamic extensions have enabled high-fidelity scene modeling. However, existing methods often couple scene reconstruction with optimization-dependent coding, which limits generalizability. This paper presents Feedforward Compression of Dynamic Gaussian Splatting (D-FCGS), a novel feedforward framework for compressing temporally correlated Gaussian point cloud sequences. Our approach introduces a Group-of-Frames (GoF) structure with I-P frame coding, where inter-frame motions are extracted via sparse control points. The resulting motion tensors are compressed in a feedforward manner using a dual prior-aware entropy model that combines hyperprior and spatial-temporal priors for accurate rate estimation. For reconstruction, we perform control-point-guided motion compensation and employ a refinement network to enhance view-consistent fidelity. Trained on multi-view video-derived Gaussian frames, D-FCGS generalizes across scenes without per-scene optimization. Experiments show that it matches the rate-distortion performance of optimization-based methods, achieving over 40 times compression in under 2 seconds while preserving visual quality across viewpoints. This work advances feedforward compression for dynamic 3DGS, paving the way for scalable FVV transmission and storage in immersive applications.",
+    "arxiv_url": "http://arxiv.org/abs/2507.05859v1",
+    "pdf_url": "http://arxiv.org/pdf/2507.05859v1",
+    "published_date": "2025-07-08",
+    "updated_date": "2025-07-08",
+    "categories": [
+      "cs.CV",
+      "cs.MM"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "MILo: Mesh-In-the-Loop Gaussian Splatting for Detailed and Efficient\n  Surface Reconstruction",
+    "authors": [
+      "Antoine Guédon",
+      "Diego Gomez",
+      "Nissim Maruani",
+      "Bingchen Gong",
+      "George Drettakis",
+      "Maks Ovsjanikov"
+    ],
+    "abstract": "While recent advances in Gaussian Splatting have enabled fast reconstruction of high-quality 3D scenes from images, extracting accurate surface meshes remains a challenge. Current approaches extract the surface through costly post-processing steps, resulting in the loss of fine geometric details or requiring significant time and leading to very dense meshes with millions of vertices. More fundamentally, the a posteriori conversion from a volumetric to a surface representation limits the ability of the final mesh to preserve all geometric structures captured during training. We present MILo, a novel Gaussian Splatting framework that bridges the gap between volumetric and surface representations by differentiably extracting a mesh from the 3D Gaussians. We design a fully differentiable procedure that constructs the mesh-including both vertex locations and connectivity-at every iteration directly from the parameters of the Gaussians, which are the only quantities optimized during training. Our method introduces three key technical contributions: a bidirectional consistency framework ensuring both representations-Gaussians and the extracted mesh-capture the same underlying geometry during training; an adaptive mesh extraction process performed at each training iteration, which uses Gaussians as differentiable pivots for Delaunay triangulation; a novel method for computing signed distance values from the 3D Gaussians that enables precise surface extraction while avoiding geometric erosion. Our approach can reconstruct complete scenes, including backgrounds, with state-of-the-art quality while requiring an order of magnitude fewer mesh vertices than previous methods. Due to their light weight and empty interior, our meshes are well suited for downstream applications such as physics simulations or animation.",
+    "arxiv_url": "http://arxiv.org/abs/2506.24096v1",
+    "pdf_url": "http://arxiv.org/pdf/2506.24096v1",
+    "published_date": "2025-06-30",
+    "updated_date": "2025-06-30",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "From Coarse to Fine: Learnable Discrete Wavelet Transforms for Efficient\n  3D Gaussian Splatting",
+    "authors": [
+      "Hung Nguyen",
+      "An Le",
+      "Runfa Li",
+      "Truong Nguyen"
+    ],
+    "abstract": "3D Gaussian Splatting has emerged as a powerful approach in novel view synthesis, delivering rapid training and rendering but at the cost of an ever-growing set of Gaussian primitives that strains memory and bandwidth. We introduce AutoOpti3DGS, a training-time framework that automatically restrains Gaussian proliferation without sacrificing visual fidelity. The key idea is to feed the input images to a sequence of learnable Forward and Inverse Discrete Wavelet Transforms, where low-pass filters are kept fixed, high-pass filters are learnable and initialized to zero, and an auxiliary orthogonality loss gradually activates fine frequencies. This wavelet-driven, coarse-to-fine process delays the formation of redundant fine Gaussians, allowing 3DGS to capture global structure first and refine detail only when necessary. Through extensive experiments, AutoOpti3DGS requires just a single filter learning-rate hyper-parameter, integrates seamlessly with existing efficient 3DGS frameworks, and consistently produces sparser scene representations more compatible with memory or storage-constrained hardware.",
+    "arxiv_url": "http://arxiv.org/abs/2506.23042v1",
+    "pdf_url": "http://arxiv.org/pdf/2506.23042v1",
+    "published_date": "2025-06-29",
+    "updated_date": "2025-06-29",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Confident Splatting: Confidence-Based Compression of 3D Gaussian\n  Splatting via Learnable Beta Distributions",
+    "authors": [
+      "AmirHossein Naghi Razlighi",
+      "Elaheh Badali Golezani",
+      "Shohreh Kasaei"
+    ],
+    "abstract": "3D Gaussian Splatting enables high-quality real-time rendering but often produces millions of splats, resulting in excessive storage and computational overhead. We propose a novel lossy compression method based on learnable confidence scores modeled as Beta distributions. Each splat's confidence is optimized through reconstruction-aware losses, enabling pruning of low-confidence splats while preserving visual fidelity. The proposed approach is architecture-agnostic and can be applied to any Gaussian Splatting variant. In addition, the average confidence values serve as a new metric to assess the quality of the scene. Extensive experiments demonstrate favorable trade-offs between compression and fidelity compared to prior work. Our code and data are publicly available at https://github.com/amirhossein-razlighi/Confident-Splatting",
+    "arxiv_url": "http://arxiv.org/abs/2506.22973v1",
+    "pdf_url": "http://arxiv.org/pdf/2506.22973v1",
+    "published_date": "2025-06-28",
+    "updated_date": "2025-06-28",
+    "categories": [
+      "cs.GR",
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "real-time rendering"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "SyncTalk++: High-Fidelity and Efficient Synchronized Talking Heads\n  Synthesis Using Gaussian Splatting",
+    "authors": [
+      "Ziqiao Peng",
+      "Wentao Hu",
+      "Junyuan Ma",
+      "Xiangyu Zhu",
+      "Xiaomei Zhang",
+      "Hao Zhao",
+      "Hui Tian",
+      "Jun He",
+      "Hongyan Liu",
+      "Zhaoxin Fan"
+    ],
+    "abstract": "Achieving high synchronization in the synthesis of realistic, speech-driven talking head videos presents a significant challenge. A lifelike talking head requires synchronized coordination of subject identity, lip movements, facial expressions, and head poses. The absence of these synchronizations is a fundamental flaw, leading to unrealistic results. To address the critical issue of synchronization, identified as the ''devil'' in creating realistic talking heads, we introduce SyncTalk++, which features a Dynamic Portrait Renderer with Gaussian Splatting to ensure consistent subject identity preservation and a Face-Sync Controller that aligns lip movements with speech while innovatively using a 3D facial blendshape model to reconstruct accurate facial expressions. To ensure natural head movements, we propose a Head-Sync Stabilizer, which optimizes head poses for greater stability. Additionally, SyncTalk++ enhances robustness to out-of-distribution (OOD) audio by incorporating an Expression Generator and a Torso Restorer, which generate speech-matched facial expressions and seamless torso regions. Our approach maintains consistency and continuity in visual details across frames and significantly improves rendering speed and quality, achieving up to 101 frames per second. Extensive experiments and user studies demonstrate that SyncTalk++ outperforms state-of-the-art methods in synchronization and realism. We recommend watching the supplementary video: https://ziqiaopeng.github.io/synctalk++.",
+    "arxiv_url": "http://arxiv.org/abs/2506.14742v1",
+    "pdf_url": "http://arxiv.org/pdf/2506.14742v1",
+    "published_date": "2025-06-17",
+    "updated_date": "2025-06-17",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "HRGS: Hierarchical Gaussian Splatting for Memory-Efficient\n  High-Resolution 3D Reconstruction",
+    "authors": [
+      "Changbai Li",
+      "Haodong Zhu",
+      "Hanlin Chen",
+      "Juan Zhang",
+      "Tongfei Chen",
+      "Shuo Yang",
+      "Shuwei Shao",
+      "Wenhao Dong",
+      "Baochang Zhang"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) has made significant strides in real-time 3D scene reconstruction, but faces memory scalability issues in high-resolution scenarios. To address this, we propose Hierarchical Gaussian Splatting (HRGS), a memory-efficient framework with hierarchical block-level optimization. First, we generate a global, coarse Gaussian representation from low-resolution data. Then, we partition the scene into multiple blocks, refining each block with high-resolution data. The partitioning involves two steps: Gaussian partitioning, where irregular scenes are normalized into a bounded cubic space with a uniform grid for task distribution, and training data partitioning, where only relevant observations are retained for each block. By guiding block refinement with the coarse Gaussian prior, we ensure seamless Gaussian fusion across adjacent blocks. To reduce computational demands, we introduce Importance-Driven Gaussian Pruning (IDGP), which computes importance scores for each Gaussian and removes those with minimal contribution, speeding up convergence and reducing memory usage. Additionally, we incorporate normal priors from a pretrained model to enhance surface reconstruction quality. Our method enables high-quality, high-resolution 3D scene reconstruction even under memory constraints. Extensive experiments on three benchmarks show that HRGS achieves state-of-the-art performance in high-resolution novel view synthesis (NVS) and surface reconstruction tasks.",
+    "arxiv_url": "http://arxiv.org/abs/2506.14229v1",
+    "pdf_url": "http://arxiv.org/pdf/2506.14229v1",
+    "published_date": "2025-06-17",
+    "updated_date": "2025-06-17",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "3d reconstruction"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Efficient multi-view training for 3D Gaussian Splatting",
+    "authors": [
+      "Minhyuk Choi",
+      "Injae Kim",
+      "Hyunwoo J. Kim"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) has emerged as a preferred choice alongside Neural Radiance Fields (NeRF) in inverse rendering due to its superior rendering speed. Currently, the common approach in 3DGS is to utilize \"single-view\" mini-batch training, where only one image is processed per iteration, in contrast to NeRF's \"multi-view\" mini-batch training, which leverages multiple images. We observe that such single-view training can lead to suboptimal optimization due to increased variance in mini-batch stochastic gradients, highlighting the necessity for multi-view training. However, implementing multi-view training in 3DGS poses challenges. Simply rendering multiple images per iteration incurs considerable overhead and may result in suboptimal Gaussian densification due to its reliance on single-view assumptions. To address these issues, we modify the rasterization process to minimize the overhead associated with multi-view training and propose a 3D distance-aware D-SSIM loss and multi-view adaptive density control that better suits multi-view scenarios. Our experiments demonstrate that the proposed methods significantly enhance the performance of 3DGS and its variants, freeing 3DGS from the constraints of single-view training.",
+    "arxiv_url": "http://arxiv.org/abs/2506.12727v2",
+    "pdf_url": "http://arxiv.org/pdf/2506.12727v2",
+    "published_date": "2025-06-15",
+    "updated_date": "2025-06-17",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "nerf"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Speedy Deformable 3D Gaussian Splatting: Fast Rendering and Compression\n  of Dynamic Scenes",
+    "authors": [
+      "Allen Tu",
+      "Haiyang Ying",
+      "Alex Hanson",
+      "Yonghan Lee",
+      "Tom Goldstein",
+      "Matthias Zwicker"
+    ],
+    "abstract": "Recent extensions of 3D Gaussian Splatting (3DGS) to dynamic scenes achieve high-quality novel view synthesis by using neural networks to predict the time-varying deformation of each Gaussian. However, performing per-Gaussian neural inference at every frame poses a significant bottleneck, limiting rendering speed and increasing memory and compute requirements. In this paper, we present Speedy Deformable 3D Gaussian Splatting (SpeeDe3DGS), a general pipeline for accelerating the rendering speed of dynamic 3DGS and 4DGS representations by reducing neural inference through two complementary techniques. First, we propose a temporal sensitivity pruning score that identifies and removes Gaussians with low contribution to the dynamic scene reconstruction. We also introduce an annealing smooth pruning mechanism that improves pruning robustness in real-world scenes with imprecise camera poses. Second, we propose GroupFlow, a motion analysis technique that clusters Gaussians by trajectory similarity and predicts a single rigid transformation per group instead of separate deformations for each Gaussian. Together, our techniques accelerate rendering by $10.37\\times$, reduce model size by $7.71\\times$, and shorten training time by $2.71\\times$ on the NeRF-DS dataset. SpeeDe3DGS also improves rendering speed by $4.20\\times$ and $58.23\\times$ on the D-NeRF and HyperNeRF vrig datasets. Our methods are modular and can be integrated into any deformable 3DGS or 4DGS framework.",
+    "arxiv_url": "http://arxiv.org/abs/2506.07917v1",
+    "pdf_url": "http://arxiv.org/pdf/2506.07917v1",
+    "published_date": "2025-06-09",
+    "updated_date": "2025-06-09",
+    "categories": [
+      "cs.GR",
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "nerf"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "GSCodec Studio: A Modular Framework for Gaussian Splat Compression",
+    "authors": [
+      "Sicheng Li",
+      "Chengzhen Wu",
+      "Hao Li",
+      "Xiang Gao",
+      "Yiyi Liao",
+      "Lu Yu"
+    ],
+    "abstract": "3D Gaussian Splatting and its extension to 4D dynamic scenes enable photorealistic, real-time rendering from real-world captures, positioning Gaussian Splats (GS) as a promising format for next-generation immersive media. However, their high storage requirements pose significant challenges for practical use in sharing, transmission, and storage. Despite various studies exploring GS compression from different perspectives, these efforts remain scattered across separate repositories, complicating benchmarking and the integration of best practices. To address this gap, we present GSCodec Studio, a unified and modular framework for GS reconstruction, compression, and rendering. The framework incorporates a diverse set of 3D/4D GS reconstruction methods and GS compression techniques as modular components, facilitating flexible combinations and comprehensive comparisons. By integrating best practices from community research and our own explorations, GSCodec Studio supports the development of compact representation and compression solutions for static and dynamic Gaussian Splats, namely our Static and Dynamic GSCodec, achieving competitive rate-distortion performance in static and dynamic GS compression. The code for our framework is publicly available at https://github.com/JasonLSC/GSCodec_Studio , to advance the research on Gaussian Splats compression.",
+    "arxiv_url": "http://arxiv.org/abs/2506.01822v1",
+    "pdf_url": "http://arxiv.org/pdf/2506.01822v1",
+    "published_date": "2025-06-02",
+    "updated_date": "2025-06-02",
+    "categories": [
+      "cs.CV",
+      "cs.MM"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "real-time rendering"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "3DGEER: Exact and Efficient Volumetric Rendering with 3D Gaussians",
+    "authors": [
+      "Zixun Huang",
+      "Cho-Ying Wu",
+      "Yuliang Guo",
+      "Xinyu Huang",
+      "Liu Ren"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) marks a significant milestone in balancing the quality and efficiency of differentiable rendering. However, its high efficiency stems from an approximation of projecting 3D Gaussians onto the image plane as 2D Gaussians, which inherently limits rendering quality--particularly under large Field-of-View (FoV) camera inputs. While several recent works have extended 3DGS to mitigate these approximation errors, none have successfully achieved both exactness and high efficiency simultaneously. In this work, we introduce 3DGEER, an Exact and Efficient Volumetric Gaussian Rendering method. Starting from first principles, we derive a closed-form expression for the density integral along a ray traversing a 3D Gaussian distribution. This formulation enables precise forward rendering with arbitrary camera models and supports gradient-based optimization of 3D Gaussian parameters. To ensure both exactness and real-time performance, we propose an efficient method for computing a tight Particle Bounding Frustum (PBF) for each 3D Gaussian, enabling accurate and efficient ray-Gaussian association. We also introduce a novel Bipolar Equiangular Projection (BEAP) representation to accelerate ray association under generic camera models. BEAP further provides a more uniform ray sampling strategy to apply supervision, which empirically improves reconstruction quality. Experiments on multiple pinhole and fisheye datasets show that our method consistently outperforms prior methods, establishing a new state-of-the-art in real-time neural rendering.",
+    "arxiv_url": "http://arxiv.org/abs/2505.24053v1",
+    "pdf_url": "http://arxiv.org/pdf/2505.24053v1",
+    "published_date": "2025-05-29",
+    "updated_date": "2025-05-29",
+    "categories": [
+      "cs.GR",
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "neural rendering",
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "ZPressor: Bottleneck-Aware Compression for Scalable Feed-Forward 3DGS",
+    "authors": [
+      "Weijie Wang",
+      "Donny Y. Chen",
+      "Zeyu Zhang",
+      "Duochao Shi",
+      "Akide Liu",
+      "Bohan Zhuang"
+    ],
+    "abstract": "Feed-forward 3D Gaussian Splatting (3DGS) models have recently emerged as a promising solution for novel view synthesis, enabling one-pass inference without the need for per-scene 3DGS optimization. However, their scalability is fundamentally constrained by the limited capacity of their encoders, leading to degraded performance or excessive memory consumption as the number of input views increases. In this work, we analyze feed-forward 3DGS frameworks through the lens of the Information Bottleneck principle and introduce ZPressor, a lightweight architecture-agnostic module that enables efficient compression of multi-view inputs into a compact latent state $Z$ that retains essential scene information while discarding redundancy. Concretely, ZPressor enables existing feed-forward 3DGS models to scale to over 100 input views at 480P resolution on an 80GB GPU, by partitioning the views into anchor and support sets and using cross attention to compress the information from the support views into anchor views, forming the compressed latent state $Z$. We show that integrating ZPressor into several state-of-the-art feed-forward 3DGS models consistently improves performance under moderate input views and enhances robustness under dense view settings on two large-scale benchmarks DL3DV-10K and RealEstate10K. The video results, code and trained models are available on our project page: https://lhmd.top/zpressor.",
+    "arxiv_url": "http://arxiv.org/abs/2505.23734v2",
+    "pdf_url": "http://arxiv.org/pdf/2505.23734v2",
+    "published_date": "2025-05-29",
+    "updated_date": "2025-05-30",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "LODGE: Level-of-Detail Large-Scale Gaussian Splatting with Efficient\n  Rendering",
+    "authors": [
+      "Jonas Kulhanek",
+      "Marie-Julie Rakotosaona",
+      "Fabian Manhardt",
+      "Christina Tsalicoglou",
+      "Michael Niemeyer",
+      "Torsten Sattler",
+      "Songyou Peng",
+      "Federico Tombari"
+    ],
+    "abstract": "In this work, we present a novel level-of-detail (LOD) method for 3D Gaussian Splatting that enables real-time rendering of large-scale scenes on memory-constrained devices. Our approach introduces a hierarchical LOD representation that iteratively selects optimal subsets of Gaussians based on camera distance, thus largely reducing both rendering time and GPU memory usage. We construct each LOD level by applying a depth-aware 3D smoothing filter, followed by importance-based pruning and fine-tuning to maintain visual fidelity. To further reduce memory overhead, we partition the scene into spatial chunks and dynamically load only relevant Gaussians during rendering, employing an opacity-blending mechanism to avoid visual artifacts at chunk boundaries. Our method achieves state-of-the-art performance on both outdoor (Hierarchical 3DGS) and indoor (Zip-NeRF) datasets, delivering high-quality renderings with reduced latency and memory requirements.",
+    "arxiv_url": "http://arxiv.org/abs/2505.23158v1",
+    "pdf_url": "http://arxiv.org/pdf/2505.23158v1",
+    "published_date": "2025-05-29",
+    "updated_date": "2025-05-29",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "nerf",
+      "real-time rendering"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "3DGS Compression with Sparsity-guided Hierarchical Transform Coding",
+    "authors": [
+      "Hao Xu",
+      "Xiaolin Wu",
+      "Xi Zhang"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) has gained popularity for its fast and high-quality rendering, but it has a very large memory footprint incurring high transmission and storage overhead. Recently, some neural compression methods, such as Scaffold-GS, were proposed for 3DGS but they did not adopt the approach of end-to-end optimized analysis-synthesis transforms which has been proven highly effective in neural signal compression. Without an appropriate analysis transform, signal correlations cannot be removed by sparse representation. Without such transforms the only way to remove signal redundancies is through entropy coding driven by a complex and expensive context modeling, which results in slower speed and suboptimal rate-distortion (R-D) performance. To overcome this weakness, we propose Sparsity-guided Hierarchical Transform Coding (SHTC), the first end-to-end optimized transform coding framework for 3DGS compression. SHTC jointly optimizes the 3DGS, transforms and a lightweight context model. This joint optimization enables the transform to produce representations that approach the best R-D performance possible. The SHTC framework consists of a base layer using KLT for data decorrelation, and a sparsity-coded enhancement layer that compresses the KLT residuals to refine the representation. The enhancement encoder learns a linear transform to project high-dimensional inputs into a low-dimensional space, while the decoder unfolds the Iterative Shrinkage-Thresholding Algorithm (ISTA) to reconstruct the residuals. All components are designed to be interpretable, allowing the incorporation of signal priors and fewer parameters than black-box transforms. This novel design significantly improves R-D performance with minimal additional parameters and computational overhead.",
+    "arxiv_url": "http://arxiv.org/abs/2505.22908v1",
+    "pdf_url": "http://arxiv.org/pdf/2505.22908v1",
+    "published_date": "2025-05-28",
+    "updated_date": "2025-05-28",
+    "categories": [
+      "cs.CV",
+      "eess.IV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "HaloGS: Loose Coupling of Compact Geometry and Gaussian Splats for 3D\n  Scenes",
+    "authors": [
+      "Changjian Jiang",
+      "Kerui Ren",
+      "Linning Xu",
+      "Jiong Chen",
+      "Jiangmiao Pang",
+      "Yu Zhang",
+      "Bo Dai",
+      "Mulin Yu"
+    ],
+    "abstract": "High fidelity 3D reconstruction and rendering hinge on capturing precise geometry while preserving photo realistic detail. Most existing methods either fuse these goals into a single cumbersome model or adopt hybrid schemes whose uniform primitives lead to a trade off between efficiency and fidelity. In this paper, we introduce HaloGS, a dual representation that loosely couples coarse triangles for geometry with Gaussian primitives for appearance, motivated by the lightweight classic geometry representations and their proven efficiency in real world applications. Our design yields a compact yet expressive model capable of photo realistic rendering across both indoor and outdoor environments, seamlessly adapting to varying levels of scene complexity. Experiments on multiple benchmark datasets demonstrate that our method yields both compact, accurate geometry and high fidelity renderings, especially in challenging scenarios where robust geometric structure make a clear difference.",
+    "arxiv_url": "http://arxiv.org/abs/2505.20267v1",
+    "pdf_url": "http://arxiv.org/pdf/2505.20267v1",
+    "published_date": "2025-05-26",
+    "updated_date": "2025-05-26",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d reconstruction"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Efficient Differentiable Hardware Rasterization for 3D Gaussian\n  Splatting",
+    "authors": [
+      "Yitian Yuan",
+      "Qianyue He"
+    ],
+    "abstract": "Recent works demonstrate the advantages of hardware rasterization for 3D Gaussian Splatting (3DGS) in forward-pass rendering through fast GPU-optimized graphics and fixed memory footprint. However, extending these benefits to backward-pass gradient computation remains challenging due to graphics pipeline constraints. We present a differentiable hardware rasterizer for 3DGS that overcomes the memory and performance limitations of tile-based software rasterization. Our solution employs programmable blending for per-pixel gradient computation combined with a hybrid gradient reduction strategy (quad-level + subgroup) in fragment shaders, achieving over 10x faster backward rasterization versus naive atomic operations and 3x speedup over the canonical tile-based rasterizer. Systematic evaluation reveals 16-bit render targets (float16 and unorm16) as the optimal accuracy-efficiency trade-off, achieving higher gradient accuracy among mixed-precision rendering formats with execution speeds second only to unorm8, while float32 texture incurs severe forward pass performance degradation due to suboptimal hardware optimizations. Our method with float16 formats demonstrates 3.07x acceleration in full pipeline execution (forward + backward passes) on RTX4080 GPUs with the MipNeRF 360 dataset, outperforming the baseline tile-based renderer while preserving hardware rasterization's memory efficiency advantages -- incurring merely 2.67% of the memory overhead required for splat sorting operations. This work presents a unified differentiable hardware rasterization method that simultaneously optimizes runtime and memory usage for 3DGS, making it particularly suitable for resource-constrained devices with limited memory capacity.",
+    "arxiv_url": "http://arxiv.org/abs/2505.18764v2",
+    "pdf_url": "http://arxiv.org/pdf/2505.18764v2",
+    "published_date": "2025-05-24",
+    "updated_date": "2025-08-13",
+    "categories": [
+      "cs.GR",
+      "I.3.7; I.3.1"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "nerf"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "A Novel Benchmark and Dataset for Efficient 3D Gaussian Splatting with\n  Gaussian Point Cloud Compression",
+    "authors": [
+      "Kangli Wang",
+      "Shihao Li",
+      "Qianxi Yi",
+      "Wei Gao"
+    ],
+    "abstract": "Recently, immersive media and autonomous driving applications have significantly advanced through 3D Gaussian Splatting (3DGS), which offers high-fidelity rendering and computational efficiency. Despite these advantages, 3DGS as a display-oriented representation requires substantial storage due to its numerous Gaussian attributes. Current compression methods have shown promising results but typically neglect the compression of Gaussian spatial positions, creating unnecessary bitstream overhead. We conceptualize Gaussian primitives as point clouds and propose leveraging point cloud compression techniques for more effective storage. AI-based point cloud compression demonstrates superior performance and faster inference compared to MPEG Geometry-based Point Cloud Compression (G-PCC). However, direct application of existing models to Gaussian compression may yield suboptimal results, as Gaussian point clouds tend to exhibit globally sparse yet locally dense geometric distributions that differ from conventional point cloud characteristics. To address these challenges, we introduce GausPcgc for Gaussian point cloud geometry compression along with a specialized training dataset GausPcc-1K. Our work pioneers the integration of AI-based point cloud compression into Gaussian compression pipelines, achieving superior compression ratios. The framework complements existing Gaussian compression methods while delivering significant performance improvements. All code, data, and pre-trained models will be publicly released to facilitate further research advances in this field.",
+    "arxiv_url": "http://arxiv.org/abs/2505.18197v1",
+    "pdf_url": "http://arxiv.org/pdf/2505.18197v1",
+    "published_date": "2025-05-21",
+    "updated_date": "2025-05-21",
+    "categories": [
+      "cs.GR"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "EA-3DGS: Efficient and Adaptive 3D Gaussians with Highly Enhanced\n  Quality for outdoor scenes",
+    "authors": [
+      "Jianlin Guo",
+      "Haihong Xiao",
+      "Wenxiong Kang"
+    ],
+    "abstract": "Efficient scene representations are essential for many real-world applications, especially those involving spatial measurement. Although current NeRF-based methods have achieved impressive results in reconstructing building-scale scenes, they still suffer from slow training and inference speeds due to time-consuming stochastic sampling. Recently, 3D Gaussian Splatting (3DGS) has demonstrated excellent performance with its high-quality rendering and real-time speed, especially for objects and small-scale scenes. However, in outdoor scenes, its point-based explicit representation lacks an effective adjustment mechanism, and the millions of Gaussian points required often lead to memory constraints during training. To address these challenges, we propose EA-3DGS, a high-quality real-time rendering method designed for outdoor scenes. First, we introduce a mesh structure to regulate the initialization of Gaussian components by leveraging an adaptive tetrahedral mesh that partitions the grid and initializes Gaussian components on each face, effectively capturing geometric structures in low-texture regions. Second, we propose an efficient Gaussian pruning strategy that evaluates each 3D Gaussian's contribution to the view and prunes accordingly. To retain geometry-critical Gaussian points, we also present a structure-aware densification strategy that densifies Gaussian points in low-curvature regions. Additionally, we employ vector quantization for parameter quantization of Gaussian components, significantly reducing disk space requirements with only a minimal impact on rendering quality. Extensive experiments on 13 scenes, including eight from four public datasets (MatrixCity-Aerial, Mill-19, Tanks \\& Temples, WHU) and five self-collected scenes acquired through UAV photogrammetry measurement from SCUT-CA and plateau regions, further demonstrate the superiority of our method.",
+    "arxiv_url": "http://arxiv.org/abs/2505.10787v1",
+    "pdf_url": "http://arxiv.org/pdf/2505.10787v1",
+    "published_date": "2025-05-16",
+    "updated_date": "2025-05-16",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "nerf",
+      "real-time rendering"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Neural Video Compression using 2D Gaussian Splatting",
+    "authors": [
+      "Lakshya Gupta",
+      "Imran N. Junejo"
+    ],
+    "abstract": "The computer vision and image processing research community has been involved in standardizing video data communications for the past many decades, leading to standards such as AVC, HEVC, VVC, AV1, AV2, etc. However, recent groundbreaking works have focused on employing deep learning-based techniques to replace the traditional video codec pipeline to a greater affect. Neural video codecs (NVC) create an end-to-end ML-based solution that does not rely on any handcrafted features (motion or edge-based) and have the ability to learn content-aware compression strategies, offering better adaptability and higher compression efficiency than traditional methods. This holds a great potential not only for hardware design, but also for various video streaming platforms and applications, especially video conferencing applications such as MS-Teams or Zoom that have found extensive usage in classrooms and workplaces. However, their high computational demands currently limit their use in real-time applications like video conferencing. To address this, we propose a region-of-interest (ROI) based neural video compression model that leverages 2D Gaussian Splatting. Unlike traditional codecs, 2D Gaussian Splatting is capable of real-time decoding and can be optimized using fewer data points, requiring only thousands of Gaussians for decent quality outputs as opposed to millions in 3D scenes. In this work, we designed a video pipeline that speeds up the encoding time of the previous Gaussian splatting-based image codec by 88% by using a content-aware initialization strategy paired with a novel Gaussian inter-frame redundancy-reduction mechanism, enabling Gaussian splatting to be used for a video-codec solution, the first of its kind solution in this neural video codec space.",
+    "arxiv_url": "http://arxiv.org/abs/2505.09324v1",
+    "pdf_url": "http://arxiv.org/pdf/2505.09324v1",
+    "published_date": "2025-05-14",
+    "updated_date": "2025-05-14",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG",
+      "eess.IV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "ADC-GS: Anchor-Driven Deformable and Compressed Gaussian Splatting for\n  Dynamic Scene Reconstruction",
+    "authors": [
+      "He Huang",
+      "Qi Yang",
+      "Mufan Liu",
+      "Yiling Xu",
+      "Zhu Li"
+    ],
+    "abstract": "Existing 4D Gaussian Splatting methods rely on per-Gaussian deformation from a canonical space to target frames, which overlooks redundancy among adjacent Gaussian primitives and results in suboptimal performance. To address this limitation, we propose Anchor-Driven Deformable and Compressed Gaussian Splatting (ADC-GS), a compact and efficient representation for dynamic scene reconstruction. Specifically, ADC-GS organizes Gaussian primitives into an anchor-based structure within the canonical space, enhanced by a temporal significance-based anchor refinement strategy. To reduce deformation redundancy, ADC-GS introduces a hierarchical coarse-to-fine pipeline that captures motions at varying granularities. Moreover, a rate-distortion optimization is adopted to achieve an optimal balance between bitrate consumption and representation fidelity. Experimental results demonstrate that ADC-GS outperforms the per-Gaussian deformation approaches in rendering speed by 300%-800% while achieving state-of-the-art storage efficiency without compromising rendering quality. The code is released at https://github.com/H-Huang774/ADC-GS.git.",
+    "arxiv_url": "http://arxiv.org/abs/2505.08196v1",
+    "pdf_url": "http://arxiv.org/pdf/2505.08196v1",
+    "published_date": "2025-05-13",
+    "updated_date": "2025-05-13",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Steepest Descent Density Control for Compact 3D Gaussian Splatting",
+    "authors": [
+      "Peihao Wang",
+      "Yuehao Wang",
+      "Dilin Wang",
+      "Sreyas Mohan",
+      "Zhiwen Fan",
+      "Lemeng Wu",
+      "Ruisi Cai",
+      "Yu-Ying Yeh",
+      "Zhangyang Wang",
+      "Qiang Liu",
+      "Rakesh Ranjan"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) has emerged as a powerful technique for real-time, high-resolution novel view synthesis. By representing scenes as a mixture of Gaussian primitives, 3DGS leverages GPU rasterization pipelines for efficient rendering and reconstruction. To optimize scene coverage and capture fine details, 3DGS employs a densification algorithm to generate additional points. However, this process often leads to redundant point clouds, resulting in excessive memory usage, slower performance, and substantial storage demands - posing significant challenges for deployment on resource-constrained devices. To address this limitation, we propose a theoretical framework that demystifies and improves density control in 3DGS. Our analysis reveals that splitting is crucial for escaping saddle points. Through an optimization-theoretic approach, we establish the necessary conditions for densification, determine the minimal number of offspring Gaussians, identify the optimal parameter update direction, and provide an analytical solution for normalizing off-spring opacity. Building on these insights, we introduce SteepGS, incorporating steepest density control, a principled strategy that minimizes loss while maintaining a compact point cloud. SteepGS achieves a ~50% reduction in Gaussian points without compromising rendering quality, significantly enhancing both efficiency and scalability.",
+    "arxiv_url": "http://arxiv.org/abs/2505.05587v1",
+    "pdf_url": "http://arxiv.org/pdf/2505.05587v1",
+    "published_date": "2025-05-08",
+    "updated_date": "2025-05-08",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "3D Gaussian Splatting Data Compression with Mixture of Priors",
+    "authors": [
+      "Lei Liu",
+      "Zhenghao Chen",
+      "Dong Xu"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) data compression is crucial for enabling efficient storage and transmission in 3D scene modeling. However, its development remains limited due to inadequate entropy models and suboptimal quantization strategies for both lossless and lossy compression scenarios, where existing methods have yet to 1) fully leverage hyperprior information to construct robust conditional entropy models, and 2) apply fine-grained, element-wise quantization strategies for improved compression granularity. In this work, we propose a novel Mixture of Priors (MoP) strategy to simultaneously address these two challenges. Specifically, inspired by the Mixture-of-Experts (MoE) paradigm, our MoP approach processes hyperprior information through multiple lightweight MLPs to generate diverse prior features, which are subsequently integrated into the MoP feature via a gating mechanism. To enhance lossless compression, the resulting MoP feature is utilized as a hyperprior to improve conditional entropy modeling. Meanwhile, for lossy compression, we employ the MoP feature as guidance information in an element-wise quantization procedure, leveraging a prior-guided Coarse-to-Fine Quantization (C2FQ) strategy with a predefined quantization step value. Specifically, we expand the quantization step value into a matrix and adaptively refine it from coarse to fine granularity, guided by the MoP feature, thereby obtaining a quantization step matrix that facilitates element-wise quantization. Extensive experiments demonstrate that our proposed 3DGS data compression framework achieves state-of-the-art performance across multiple benchmarks, including Mip-NeRF360, BungeeNeRF, DeepBlending, and Tank&Temples.",
+    "arxiv_url": "http://arxiv.org/abs/2505.03310v2",
+    "pdf_url": "http://arxiv.org/pdf/2505.03310v2",
+    "published_date": "2025-05-06",
+    "updated_date": "2025-08-11",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "nerf"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "HybridGS: High-Efficiency Gaussian Splatting Data Compression using\n  Dual-Channel Sparse Representation and Point Cloud Encoder",
+    "authors": [
+      "Qi Yang",
+      "Le Yang",
+      "Geert Van Der Auwera",
+      "Zhu Li"
+    ],
+    "abstract": "Most existing 3D Gaussian Splatting (3DGS) compression schemes focus on producing compact 3DGS representation via implicit data embedding. They have long coding times and highly customized data format, making it difficult for widespread deployment. This paper presents a new 3DGS compression framework called HybridGS, which takes advantage of both compact generation and standardized point cloud data encoding. HybridGS first generates compact and explicit 3DGS data. A dual-channel sparse representation is introduced to supervise the primitive position and feature bit depth. It then utilizes a canonical point cloud encoder to perform further data compression and form standard output bitstreams. A simple and effective rate control scheme is proposed to pivot the interpretable data compression scheme. At the current stage, HybridGS does not include any modules aimed at improving 3DGS quality during generation. But experiment results show that it still provides comparable reconstruction performance against state-of-the-art methods, with evidently higher encoding and decoding speed. The code is publicly available at https://github.com/Qi-Yangsjtu/HybridGS.",
+    "arxiv_url": "http://arxiv.org/abs/2505.01938v1",
+    "pdf_url": "http://arxiv.org/pdf/2505.01938v1",
+    "published_date": "2025-05-03",
+    "updated_date": "2025-05-03",
+    "categories": [
+      "cs.CV",
+      "eess.IV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "4DGS-CC: A Contextual Coding Framework for 4D Gaussian Splatting Data\n  Compression",
+    "authors": [
+      "Zicong Chen",
+      "Zhenghao Chen",
+      "Wei Jiang",
+      "Wei Wang",
+      "Lei Liu",
+      "Dong Xu"
+    ],
+    "abstract": "Storage is a significant challenge in reconstructing dynamic scenes with 4D Gaussian Splatting (4DGS) data. In this work, we introduce 4DGS-CC, a contextual coding framework that compresses 4DGS data to meet specific storage constraints. Building upon the established deformable 3D Gaussian Splatting (3DGS) method, our approach decomposes 4DGS data into 4D neural voxels and a canonical 3DGS component, which are then compressed using Neural Voxel Contextual Coding (NVCC) and Vector Quantization Contextual Coding (VQCC), respectively. Specifically, we first decompose the 4D neural voxels into distinct quantized features by separating the temporal and spatial dimensions. To losslessly compress each quantized feature, we leverage the previously compressed features from the temporal and spatial dimensions as priors and apply NVCC to generate the spatiotemporal context for contextual coding. Next, we employ a codebook to store spherical harmonics information from canonical 3DGS as quantized vectors, which are then losslessly compressed by using VQCC with the auxiliary learned hyperpriors for contextual coding, thereby reducing redundancy within the codebook. By integrating NVCC and VQCC, our contextual coding framework, 4DGS-CC, enables multi-rate 4DGS data compression tailored to specific storage requirements. Extensive experiments on three 4DGS data compression benchmarks demonstrate that our method achieves an average storage reduction of approximately 12 times while maintaining rendering fidelity compared to our baseline 4DGS approach.",
+    "arxiv_url": "http://arxiv.org/abs/2504.18925v2",
+    "pdf_url": "http://arxiv.org/pdf/2504.18925v2",
+    "published_date": "2025-04-26",
+    "updated_date": "2025-04-30",
+    "categories": [
+      "cs.CE"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "3D Gaussian Head Avatars with Expressive Dynamic Appearances by Compact\n  Tensorial Representations",
+    "authors": [
+      "Yating Wang",
+      "Xuan Wang",
+      "Ran Yi",
+      "Yanbo Fan",
+      "Jichen Hu",
+      "Jingcheng Zhu",
+      "Lizhuang Ma"
+    ],
+    "abstract": "Recent studies have combined 3D Gaussian and 3D Morphable Models (3DMM) to construct high-quality 3D head avatars. In this line of research, existing methods either fail to capture the dynamic textures or incur significant overhead in terms of runtime speed or storage space. To this end, we propose a novel method that addresses all the aforementioned demands. In specific, we introduce an expressive and compact representation that encodes texture-related attributes of the 3D Gaussians in the tensorial format. We store appearance of neutral expression in static tri-planes, and represents dynamic texture details for different expressions using lightweight 1D feature lines, which are then decoded into opacity offset relative to the neutral face. We further propose adaptive truncated opacity penalty and class-balanced sampling to improve generalization across different expressions. Experiments show this design enables accurate face dynamic details capturing while maintains real-time rendering and significantly reduces storage costs, thus broadening the applicability to more scenarios.",
+    "arxiv_url": "http://arxiv.org/abs/2504.14967v1",
+    "pdf_url": "http://arxiv.org/pdf/2504.14967v1",
+    "published_date": "2025-04-21",
+    "updated_date": "2025-04-21",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "real-time rendering"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "CompGS++: Compressed Gaussian Splatting for Static and Dynamic Scene\n  Representation",
+    "authors": [
+      "Xiangrui Liu",
+      "Xinju Wu",
+      "Shiqi Wang",
+      "Zhu Li",
+      "Sam Kwong"
+    ],
+    "abstract": "Gaussian splatting demonstrates proficiency for 3D scene modeling but suffers from substantial data volume due to inherent primitive redundancy. To enable future photorealistic 3D immersive visual communication applications, significant compression is essential for transmission over the existing Internet infrastructure. Hence, we propose Compressed Gaussian Splatting (CompGS++), a novel framework that leverages compact Gaussian primitives to achieve accurate 3D modeling with substantial size reduction for both static and dynamic scenes. Our design is based on the principle of eliminating redundancy both between and within primitives. Specifically, we develop a comprehensive prediction paradigm to address inter-primitive redundancy through spatial and temporal primitive prediction modules. The spatial primitive prediction module establishes predictive relationships for scene primitives and enables most primitives to be encoded as compact residuals, substantially reducing the spatial redundancy. We further devise a temporal primitive prediction module to handle dynamic scenes, which exploits primitive correlations across timestamps to effectively reduce temporal redundancy. Moreover, we devise a rate-constrained optimization module that jointly minimizes reconstruction error and rate consumption. This module effectively eliminates parameter redundancy within primitives and enhances the overall compactness of scene representations. Comprehensive evaluations across multiple benchmark datasets demonstrate that CompGS++ significantly outperforms existing methods, achieving superior compression performance while preserving accurate scene modeling. Our implementation will be made publicly available on GitHub to facilitate further research.",
+    "arxiv_url": "http://arxiv.org/abs/2504.13022v1",
+    "pdf_url": "http://arxiv.org/pdf/2504.13022v1",
+    "published_date": "2025-04-17",
+    "updated_date": "2025-04-17",
+    "categories": [
+      "cs.GR",
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "EDGS: Eliminating Densification for Efficient Convergence of 3DGS",
+    "authors": [
+      "Dmytro Kotovenko",
+      "Olga Grebenkova",
+      "Björn Ommer"
+    ],
+    "abstract": "3D Gaussian Splatting reconstructs scenes by starting from a sparse Structure-from-Motion initialization and iteratively refining under-reconstructed regions. This process is inherently slow, as it requires multiple densification steps where Gaussians are repeatedly split and adjusted, following a lengthy optimization path. Moreover, this incremental approach often leads to suboptimal renderings, particularly in high-frequency regions where detail is critical.   We propose a fundamentally different approach: we eliminate densification process with a one-step approximation of scene geometry using triangulated pixels from dense image correspondences. This dense initialization allows us to estimate rough geometry of the scene while preserving rich details from input RGB images, providing each Gaussian with well-informed colors, scales, and positions. As a result, we dramatically shorten the optimization path and remove the need for densification. Unlike traditional methods that rely on sparse keypoints, our dense initialization ensures uniform detail across the scene, even in high-frequency regions where 3DGS and other methods struggle. Moreover, since all splats are initialized in parallel at the start of optimization, we eliminate the need to wait for densification to adjust new Gaussians.   Our method not only outperforms speed-optimized models in training efficiency but also achieves higher rendering quality than state-of-the-art approaches, all while using only half the splats of standard 3DGS. It is fully compatible with other 3DGS acceleration techniques, making it a versatile and efficient solution that can be integrated with existing approaches.",
+    "arxiv_url": "http://arxiv.org/abs/2504.13204v1",
+    "pdf_url": "http://arxiv.org/pdf/2504.13204v1",
+    "published_date": "2025-04-15",
+    "updated_date": "2025-04-15",
+    "categories": [
+      "cs.GR"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "3DAffordSplat: Efficient Affordance Reasoning with 3D Gaussians",
+    "authors": [
+      "Zeming Wei",
+      "Junyi Lin",
+      "Yang Liu",
+      "Weixing Chen",
+      "Jingzhou Luo",
+      "Guanbin Li",
+      "Liang Lin"
+    ],
+    "abstract": "3D affordance reasoning is essential in associating human instructions with the functional regions of 3D objects, facilitating precise, task-oriented manipulations in embodied AI. However, current methods, which predominantly depend on sparse 3D point clouds, exhibit limited generalizability and robustness due to their sensitivity to coordinate variations and the inherent sparsity of the data. By contrast, 3D Gaussian Splatting (3DGS) delivers high-fidelity, real-time rendering with minimal computational overhead by representing scenes as dense, continuous distributions. This positions 3DGS as a highly effective approach for capturing fine-grained affordance details and improving recognition accuracy. Nevertheless, its full potential remains largely untapped due to the absence of large-scale, 3DGS-specific affordance datasets. To overcome these limitations, we present 3DAffordSplat, the first large-scale, multi-modal dataset tailored for 3DGS-based affordance reasoning. This dataset includes 23,677 Gaussian instances, 8,354 point cloud instances, and 6,631 manually annotated affordance labels, encompassing 21 object categories and 18 affordance types. Building upon this dataset, we introduce AffordSplatNet, a novel model specifically designed for affordance reasoning using 3DGS representations. AffordSplatNet features an innovative cross-modal structure alignment module that exploits structural consistency priors to align 3D point cloud and 3DGS representations, resulting in enhanced affordance recognition accuracy. Extensive experiments demonstrate that the 3DAffordSplat dataset significantly advances affordance learning within the 3DGS domain, while AffordSplatNet consistently outperforms existing methods across both seen and unseen settings, highlighting its robust generalization capabilities.",
+    "arxiv_url": "http://arxiv.org/abs/2504.11218v2",
+    "pdf_url": "http://arxiv.org/pdf/2504.11218v2",
+    "published_date": "2025-04-15",
+    "updated_date": "2025-04-16",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "real-time rendering"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "BlockGaussian: Efficient Large-Scale Scene Novel View Synthesis via\n  Adaptive Block-Based Gaussian Splatting",
+    "authors": [
+      "Yongchang Wu",
+      "Zipeng Qi",
+      "Zhenwei Shi",
+      "Zhengxia Zou"
+    ],
+    "abstract": "The recent advancements in 3D Gaussian Splatting (3DGS) have demonstrated remarkable potential in novel view synthesis tasks. The divide-and-conquer paradigm has enabled large-scale scene reconstruction, but significant challenges remain in scene partitioning, optimization, and merging processes. This paper introduces BlockGaussian, a novel framework incorporating a content-aware scene partition strategy and visibility-aware block optimization to achieve efficient and high-quality large-scale scene reconstruction. Specifically, our approach considers the content-complexity variation across different regions and balances computational load during scene partitioning, enabling efficient scene reconstruction. To tackle the supervision mismatch issue during independent block optimization, we introduce auxiliary points during individual block optimization to align the ground-truth supervision, which enhances the reconstruction quality. Furthermore, we propose a pseudo-view geometry constraint that effectively mitigates rendering degradation caused by airspace floaters during block merging. Extensive experiments on large-scale scenes demonstrate that our approach achieves state-of-the-art performance in both reconstruction efficiency and rendering quality, with a 5x speedup in optimization and an average PSNR improvement of 1.21 dB on multiple benchmarks. Notably, BlockGaussian significantly reduces computational requirements, enabling large-scale scene reconstruction on a single 24GB VRAM device. The project page is available at https://github.com/SunshineWYC/BlockGaussian",
+    "arxiv_url": "http://arxiv.org/abs/2504.09048v2",
+    "pdf_url": "http://arxiv.org/pdf/2504.09048v2",
+    "published_date": "2025-04-12",
+    "updated_date": "2025-04-15",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "L3GS: Layered 3D Gaussian Splats for Efficient 3D Scene Delivery",
+    "authors": [
+      "Yi-Zhen Tsai",
+      "Xuechen Zhang",
+      "Zheng Li",
+      "Jiasi Chen"
+    ],
+    "abstract": "Traditional 3D content representations include dense point clouds that consume large amounts of data and hence network bandwidth, while newer representations such as neural radiance fields suffer from poor frame rates due to their non-standard volumetric rendering pipeline. 3D Gaussian splats (3DGS) can be seen as a generalization of point clouds that meet the best of both worlds, with high visual quality and efficient rendering for real-time frame rates. However, delivering 3DGS scenes from a hosting server to client devices is still challenging due to high network data consumption (e.g., 1.5 GB for a single scene). The goal of this work is to create an efficient 3D content delivery framework that allows users to view high quality 3D scenes with 3DGS as the underlying data representation. The main contributions of the paper are: (1) Creating new layered 3DGS scenes for efficient delivery, (2) Scheduling algorithms to choose what splats to download at what time, and (3) Trace-driven experiments from users wearing virtual reality headsets to evaluate the visual quality and latency. Our system for Layered 3D Gaussian Splats delivery L3GS demonstrates high visual quality, achieving 16.9% higher average SSIM compared to baselines, and also works with other compressed 3DGS representations.",
+    "arxiv_url": "http://arxiv.org/abs/2504.05517v1",
+    "pdf_url": "http://arxiv.org/pdf/2504.05517v1",
+    "published_date": "2025-04-07",
+    "updated_date": "2025-04-07",
+    "categories": [
+      "cs.GR",
+      "cs.LG",
+      "cs.MM"
+    ],
+    "github_url": "",
+    "keywords": [
       "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
   },
-  
+  {
+    "title": "Compressing 3D Gaussian Splatting by Noise-Substituted Vector\n  Quantization",
+    "authors": [
+      "Haishan Wang",
+      "Mohammad Hassan Vali",
+      "Arno Solin"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) has demonstrated remarkable effectiveness in 3D reconstruction, achieving high-quality results with real-time radiance field rendering. However, a key challenge is the substantial storage cost: reconstructing a single scene typically requires millions of Gaussian splats, each represented by 59 floating-point parameters, resulting in approximately 1 GB of memory. To address this challenge, we propose a compression method by building separate attribute codebooks and storing only discrete code indices. Specifically, we employ noise-substituted vector quantization technique to jointly train the codebooks and model features, ensuring consistency between gradient descent optimization and parameter discretization. Our method reduces the memory consumption efficiently (around $45\\times$) while maintaining competitive reconstruction quality on standard 3D benchmark scenes. Experiments on different codebook sizes show the trade-off between compression ratio and image quality. Furthermore, the trained compressed model remains fully compatible with popular 3DGS viewers and enables faster rendering speed, making it well-suited for practical applications.",
+    "arxiv_url": "http://arxiv.org/abs/2504.03059v2",
+    "pdf_url": "http://arxiv.org/pdf/2504.03059v2",
+    "published_date": "2025-04-03",
+    "updated_date": "2025-04-08",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "3d reconstruction"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Enhancing 3D Gaussian Splatting Compression via Spatial Condition-based\n  Prediction",
+    "authors": [
+      "Jingui Ma",
+      "Yang Hu",
+      "Luyang Tang",
+      "Jiayu Yang",
+      "Yongqi Zhai",
+      "Ronggang Wang"
+    ],
+    "abstract": "Recently, 3D Gaussian Spatting (3DGS) has gained widespread attention in Novel View Synthesis (NVS) due to the remarkable real-time rendering performance. However, the substantial cost of storage and transmission of vanilla 3DGS hinders its further application (hundreds of megabytes or even gigabytes for a single scene). Motivated by the achievements of prediction in video compression, we introduce the prediction technique into the anchor-based Gaussian representation to effectively reduce the bit rate. Specifically, we propose a spatial condition-based prediction module to utilize the grid-captured scene information for prediction, with a residual compensation strategy designed to learn the missing fine-grained information. Besides, to further compress the residual, we propose an instance-aware hyper prior, developing a structure-aware and instance-aware entropy model. Extensive experiments demonstrate the effectiveness of our prediction-based compression framework and each technical component. Even compared with SOTA compression method, our framework still achieves a bit rate savings of 24.42 percent. Code is to be released!",
+    "arxiv_url": "http://arxiv.org/abs/2503.23337v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.23337v1",
+    "published_date": "2025-03-30",
+    "updated_date": "2025-03-30",
+    "categories": [
+      "cs.CV",
+      "cs.MM"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "real-time rendering"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "NeuralGS: Bridging Neural Fields and 3D Gaussian Splatting for Compact\n  3D Representations",
+    "authors": [
+      "Zhenyu Tang",
+      "Chaoran Feng",
+      "Xinhua Cheng",
+      "Wangbo Yu",
+      "Junwu Zhang",
+      "Yuan Liu",
+      "Xiaoxiao Long",
+      "Wenping Wang",
+      "Li Yuan"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) achieves impressive quality and rendering speed, but with millions of 3D Gaussians and significant storage and transmission costs. In this paper, we aim to develop a simple yet effective method called NeuralGS that compresses the original 3DGS into a compact representation. Our observation is that neural fields like NeRF can represent complex 3D scenes with Multi-Layer Perceptron (MLP) neural networks using only a few megabytes. Thus, NeuralGS effectively adopts the neural field representation to encode the attributes of 3D Gaussians with MLPs, only requiring a small storage size even for a large-scale scene. To achieve this, we adopt a clustering strategy and fit the Gaussians within each cluster using different tiny MLPs, based on importance scores of Gaussians as fitting weights. We experiment on multiple datasets, achieving a 91-times average model size reduction without harming the visual quality.",
+    "arxiv_url": "http://arxiv.org/abs/2503.23162v2",
+    "pdf_url": "http://arxiv.org/pdf/2503.23162v2",
+    "published_date": "2025-03-29",
+    "updated_date": "2025-08-13",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "nerf"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "FreeSplat++: Generalizable 3D Gaussian Splatting for Efficient Indoor\n  Scene Reconstruction",
+    "authors": [
+      "Yunsong Wang",
+      "Tianxin Huang",
+      "Hanlin Chen",
+      "Gim Hee Lee"
+    ],
+    "abstract": "Recently, the integration of the efficient feed-forward scheme into 3D Gaussian Splatting (3DGS) has been actively explored. However, most existing methods focus on sparse view reconstruction of small regions and cannot produce eligible whole-scene reconstruction results in terms of either quality or efficiency. In this paper, we propose FreeSplat++, which focuses on extending the generalizable 3DGS to become an alternative approach to large-scale indoor whole-scene reconstruction, which has the potential of significantly accelerating the reconstruction speed and improving the geometric accuracy. To facilitate whole-scene reconstruction, we initially propose the Low-cost Cross-View Aggregation framework to efficiently process extremely long input sequences. Subsequently, we introduce a carefully designed pixel-wise triplet fusion method to incrementally aggregate the overlapping 3D Gaussian primitives from multiple views, adaptively reducing their redundancy. Furthermore, we propose a weighted floater removal strategy that can effectively reduce floaters, which serves as an explicit depth fusion approach that is crucial in whole-scene reconstruction. After the feed-forward reconstruction of 3DGS primitives, we investigate a depth-regularized per-scene fine-tuning process. Leveraging the dense, multi-view consistent depth maps obtained during the feed-forward prediction phase for an extra constraint, we refine the entire scene's 3DGS primitive to enhance rendering quality while preserving geometric accuracy. Extensive experiments confirm that our FreeSplat++ significantly outperforms existing generalizable 3DGS methods, especially in whole-scene reconstructions. Compared to conventional per-scene optimized 3DGS approaches, our method with depth-regularized per-scene fine-tuning demonstrates substantial improvements in reconstruction accuracy and a notable reduction in training time.",
+    "arxiv_url": "http://arxiv.org/abs/2503.22986v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.22986v1",
+    "published_date": "2025-03-29",
+    "updated_date": "2025-03-29",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Disentangled 4D Gaussian Splatting: Towards Faster and More Efficient\n  Dynamic Scene Rendering",
+    "authors": [
+      "Hao Feng",
+      "Hao Sun",
+      "Wei Xie"
+    ],
+    "abstract": "Novel-view synthesis (NVS) for dynamic scenes from 2D images presents significant challenges due to the spatial complexity and temporal variability of such scenes. Recently, inspired by the remarkable success of NVS using 3D Gaussian Splatting (3DGS), researchers have sought to extend 3D Gaussian models to four dimensions (4D) for dynamic novel-view synthesis. However, methods based on 4D rotation and scaling introduce spatiotemporal deformation into the 4D covariance matrix, necessitating the slicing of 4D Gaussians into 3D Gaussians. This process increases redundant computations as timestamps change-an inherent characteristic of dynamic scene rendering. Additionally, performing calculations on a four-dimensional matrix is computationally intensive. In this paper, we introduce Disentangled 4D Gaussian Splatting (Disentangled4DGS), a novel representation and rendering approach that disentangles temporal and spatial deformations, thereby eliminating the reliance on 4D matrix computations. We extend the 3DGS rendering process to 4D, enabling the projection of temporal and spatial deformations into dynamic 2D Gaussians in ray space. Consequently, our method facilitates faster dynamic scene synthesis. Moreover, it reduces storage requirements by at least 4.5\\% due to our efficient presentation method. Our approach achieves an unprecedented average rendering speed of 343 FPS at a resolution of $1352\\times1014$ on an RTX 3090 GPU, with experiments across multiple benchmarks demonstrating its competitive performance in both monocular and multi-view scenarios.",
+    "arxiv_url": "http://arxiv.org/abs/2503.22159v2",
+    "pdf_url": "http://arxiv.org/pdf/2503.22159v2",
+    "published_date": "2025-03-28",
+    "updated_date": "2025-03-31",
+    "categories": [
+      "cs.GR",
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "TC-GS: Tri-plane based compression for 3D Gaussian Splatting",
+    "authors": [
+      "Taorui Wang",
+      "Zitong Yu",
+      "Yong Xu"
+    ],
+    "abstract": "Recently, 3D Gaussian Splatting (3DGS) has emerged as a prominent framework for novel view synthesis, providing high fidelity and rapid rendering speed. However, the substantial data volume of 3DGS and its attributes impede its practical utility, requiring compression techniques for reducing memory cost. Nevertheless, the unorganized shape of 3DGS leads to difficulties in compression. To formulate unstructured attributes into normative distribution, we propose a well-structured tri-plane to encode Gaussian attributes, leveraging the distribution of attributes for compression. To exploit the correlations among adjacent Gaussians, K-Nearest Neighbors (KNN) is used when decoding Gaussian distribution from the Tri-plane. We also introduce Gaussian position information as a prior of the position-sensitive decoder. Additionally, we incorporate an adaptive wavelet loss, aiming to focus on the high-frequency details as iterations increase. Our approach has achieved results that are comparable to or surpass that of SOTA 3D Gaussians Splatting compression work in extensive experiments across multiple datasets. The codes are released at https://github.com/timwang2001/TC-GS.",
+    "arxiv_url": "http://arxiv.org/abs/2503.20221v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.20221v1",
+    "published_date": "2025-03-26",
+    "updated_date": "2025-03-26",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "EVolSplat: Efficient Volume-based Gaussian Splatting for Urban View\n  Synthesis",
+    "authors": [
+      "Sheng Miao",
+      "Jiaxin Huang",
+      "Dongfeng Bai",
+      "Xu Yan",
+      "Hongyu Zhou",
+      "Yue Wang",
+      "Bingbing Liu",
+      "Andreas Geiger",
+      "Yiyi Liao"
+    ],
+    "abstract": "Novel view synthesis of urban scenes is essential for autonomous driving-related applications.Existing NeRF and 3DGS-based methods show promising results in achieving photorealistic renderings but require slow, per-scene optimization. We introduce EVolSplat, an efficient 3D Gaussian Splatting model for urban scenes that works in a feed-forward manner. Unlike existing feed-forward, pixel-aligned 3DGS methods, which often suffer from issues like multi-view inconsistencies and duplicated content, our approach predicts 3D Gaussians across multiple frames within a unified volume using a 3D convolutional network. This is achieved by initializing 3D Gaussians with noisy depth predictions, and then refining their geometric properties in 3D space and predicting color based on 2D textures. Our model also handles distant views and the sky with a flexible hemisphere background model. This enables us to perform fast, feed-forward reconstruction while achieving real-time rendering. Experimental evaluations on the KITTI-360 and Waymo datasets show that our method achieves state-of-the-art quality compared to existing feed-forward 3DGS- and NeRF-based methods.",
+    "arxiv_url": "http://arxiv.org/abs/2503.20168v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.20168v1",
+    "published_date": "2025-03-26",
+    "updated_date": "2025-03-26",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "nerf",
+      "real-time rendering"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "High-Quality Spatial Reconstruction and Orthoimage Generation Using\n  Efficient 2D Gaussian Splatting",
+    "authors": [
+      "Qian Wang",
+      "Zhihao Zhan",
+      "Jialei He",
+      "Zhituo Tu",
+      "Xiang Zhu",
+      "Jie Yuan"
+    ],
+    "abstract": "Highly accurate geometric precision and dense image features characterize True Digital Orthophoto Maps (TDOMs), which are in great demand for applications such as urban planning, infrastructure management, and environmental monitoring.Traditional TDOM generation methods need sophisticated processes, such as Digital Surface Models (DSM) and occlusion detection, which are computationally expensive and prone to errors.This work presents an alternative technique rooted in 2D Gaussian Splatting (2DGS), free of explicit DSM and occlusion detection. With depth map generation, spatial information for every pixel within the TDOM is retrieved and can reconstruct the scene with high precision. Divide-and-conquer strategy achieves excellent GS training and rendering with high-resolution TDOMs at a lower resource cost, which preserves higher quality of rendering on complex terrain and thin structure without a decrease in efficiency. Experimental results demonstrate the efficiency of large-scale scene reconstruction and high-precision terrain modeling. This approach provides accurate spatial data, which assists users in better planning and decision-making based on maps.",
+    "arxiv_url": "http://arxiv.org/abs/2503.19703v2",
+    "pdf_url": "http://arxiv.org/pdf/2503.19703v2",
+    "published_date": "2025-03-25",
+    "updated_date": "2025-05-13",
+    "categories": [
+      "cs.CV",
+      "eess.IV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "4DGC: Rate-Aware 4D Gaussian Compression for Efficient Streamable\n  Free-Viewpoint Video",
+    "authors": [
+      "Qiang Hu",
+      "Zihan Zheng",
+      "Houqiang Zhong",
+      "Sihua Fu",
+      "Li Song",
+      "XiaoyunZhang",
+      "Guangtao Zhai",
+      "Yanfeng Wang"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) has substantial potential for enabling photorealistic Free-Viewpoint Video (FVV) experiences. However, the vast number of Gaussians and their associated attributes poses significant challenges for storage and transmission. Existing methods typically handle dynamic 3DGS representation and compression separately, neglecting motion information and the rate-distortion (RD) trade-off during training, leading to performance degradation and increased model redundancy. To address this gap, we propose 4DGC, a novel rate-aware 4D Gaussian compression framework that significantly reduces storage size while maintaining superior RD performance for FVV. Specifically, 4DGC introduces a motion-aware dynamic Gaussian representation that utilizes a compact motion grid combined with sparse compensated Gaussians to exploit inter-frame similarities. This representation effectively handles large motions, preserving quality and reducing temporal redundancy. Furthermore, we present an end-to-end compression scheme that employs differentiable quantization and a tiny implicit entropy model to compress the motion grid and compensated Gaussians efficiently. The entire framework is jointly optimized using a rate-distortion trade-off. Extensive experiments demonstrate that 4DGC supports variable bitrates and consistently outperforms existing methods in RD performance across multiple datasets.",
+    "arxiv_url": "http://arxiv.org/abs/2503.18421v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.18421v1",
+    "published_date": "2025-03-24",
+    "updated_date": "2025-03-24",
+    "categories": [
+      "cs.CV",
+      "eess.IV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "ProtoGS: Efficient and High-Quality Rendering with 3D Gaussian\n  Prototypes",
+    "authors": [
+      "Zhengqing Gao",
+      "Dongting Hu",
+      "Jia-Wang Bian",
+      "Huan Fu",
+      "Yan Li",
+      "Tongliang Liu",
+      "Mingming Gong",
+      "Kun Zhang"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) has made significant strides in novel view synthesis but is limited by the substantial number of Gaussian primitives required, posing challenges for deployment on lightweight devices. Recent methods address this issue by compressing the storage size of densified Gaussians, yet fail to preserve rendering quality and efficiency. To overcome these limitations, we propose ProtoGS to learn Gaussian prototypes to represent Gaussian primitives, significantly reducing the total Gaussian amount without sacrificing visual quality. Our method directly uses Gaussian prototypes to enable efficient rendering and leverage the resulting reconstruction loss to guide prototype learning. To further optimize memory efficiency during training, we incorporate structure-from-motion (SfM) points as anchor points to group Gaussian primitives. Gaussian prototypes are derived within each group by clustering of K-means, and both the anchor points and the prototypes are optimized jointly. Our experiments on real-world and synthetic datasets prove that we outperform existing methods, achieving a substantial reduction in the number of Gaussians, and enabling high rendering speed while maintaining or even enhancing rendering fidelity.",
+    "arxiv_url": "http://arxiv.org/abs/2503.17486v3",
+    "pdf_url": "http://arxiv.org/pdf/2503.17486v3",
+    "published_date": "2025-03-21",
+    "updated_date": "2025-04-08",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Light4GS: Lightweight Compact 4D Gaussian Splatting Generation via\n  Context Model",
+    "authors": [
+      "Mufan Liu",
+      "Qi Yang",
+      "He Huang",
+      "Wenjie Huang",
+      "Zhenlong Yuan",
+      "Zhu Li",
+      "Yiling Xu"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) has emerged as an efficient and high-fidelity paradigm for novel view synthesis. To adapt 3DGS for dynamic content, deformable 3DGS incorporates temporally deformable primitives with learnable latent embeddings to capture complex motions. Despite its impressive performance, the high-dimensional embeddings and vast number of primitives lead to substantial storage requirements. In this paper, we introduce a \\textbf{Light}weight \\textbf{4}D\\textbf{GS} framework, called Light4GS, that employs significance pruning with a deep context model to provide a lightweight storage-efficient dynamic 3DGS representation. The proposed Light4GS is based on 4DGS that is a typical representation of deformable 3DGS. Specifically, our framework is built upon two core components: (1) a spatio-temporal significance pruning strategy that eliminates over 64\\% of the deformable primitives, followed by an entropy-constrained spherical harmonics compression applied to the remainder; and (2) a deep context model that integrates intra- and inter-prediction with hyperprior into a coarse-to-fine context structure to enable efficient multiscale latent embedding compression. Our approach achieves over 120x compression and increases rendering FPS up to 20\\% compared to the baseline 4DGS, and also superior to frame-wise state-of-the-art 3DGS compression methods, revealing the effectiveness of our Light4GS in terms of both intra- and inter-prediction methods without sacrificing rendering quality.",
+    "arxiv_url": "http://arxiv.org/abs/2503.13948v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.13948v1",
+    "published_date": "2025-03-18",
+    "updated_date": "2025-03-18",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "CAT-3DGS Pro: A New Benchmark for Efficient 3DGS Compression",
+    "authors": [
+      "Yu-Ting Zhan",
+      "He-bi Yang",
+      "Cheng-Yuan Ho",
+      "Jui-Chiu Chiang",
+      "Wen-Hsiao Peng"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) has shown immense potential for novel view synthesis. However, achieving rate-distortion-optimized compression of 3DGS representations for transmission and/or storage applications remains a challenge. CAT-3DGS introduces a context-adaptive triplane hyperprior for end-to-end optimized compression, delivering state-of-the-art coding performance. Despite this, it requires prolonged training and decoding time. To address these limitations, we propose CAT-3DGS Pro, an enhanced version of CAT-3DGS that improves both compression performance and computational efficiency. First, we introduce a PCA-guided vector-matrix hyperprior, which replaces the triplane-based hyperprior to reduce redundant parameters. To achieve a more balanced rate-distortion trade-off and faster encoding, we propose an alternate optimization strategy (A-RDO). Additionally, we refine the sampling rate optimization method in CAT-3DGS, leading to significant improvements in rate-distortion performance. These enhancements result in a 46.6% BD-rate reduction and 3x speedup in training time on BungeeNeRF, while achieving 5x acceleration in decoding speed for the Amsterdam scene compared to CAT-3DGS.",
+    "arxiv_url": "http://arxiv.org/abs/2503.12862v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.12862v1",
+    "published_date": "2025-03-17",
+    "updated_date": "2025-03-17",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting",
+      "nerf"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "CompMarkGS: Robust Watermarking for Compressed 3D Gaussian Splatting",
+    "authors": [
+      "Sumin In",
+      "Youngdong Jang",
+      "Utae Jeong",
+      "MinHyuk Jang",
+      "Hyeongcheol Park",
+      "Eunbyung Park",
+      "Sangpil Kim"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) is increasingly adopted in various academic and commercial applications due to its real-time and high-quality rendering capabilities, emphasizing the growing need for copyright protection technologies for 3DGS. However, the large model size of 3DGS requires developing efficient compression techniques. This highlights the necessity of an integrated framework that addresses copyright protection and data compression for 3D content. Nevertheless, existing 3DGS watermarking methods significantly degrade watermark performance under 3DGS compression methods, particularly quantization-based approaches that achieve superior compression performance. To ensure reliable watermark detection under compression, we propose a compression-tolerant anchor-based 3DGS watermarking, which preserves watermark integrity and rendering quality. This is achieved by introducing anchor-based 3DGS watermarking. We embed the watermark into the anchor attributes, particularly the anchor feature, to enhance security and rendering quality. We also propose a quantization distortion layer that injects quantization noise during training, preserving the watermark after quantization-based compression. Moreover, we employ a frequency-aware anchor growing strategy that improves rendering quality and watermark performance by effectively identifying Gaussians in high-frequency regions. Extensive experiments demonstrate that our proposed method preserves the watermark even under compression and maintains high rendering quality.",
+    "arxiv_url": "http://arxiv.org/abs/2503.12836v5",
+    "pdf_url": "http://arxiv.org/pdf/2503.12836v5",
+    "published_date": "2025-03-17",
+    "updated_date": "2025-06-12",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Swift4D:Adaptive divide-and-conquer Gaussian Splatting for compact and\n  efficient reconstruction of dynamic scene",
+    "authors": [
+      "Jiahao Wu",
+      "Rui Peng",
+      "Zhiyan Wang",
+      "Lu Xiao",
+      "Luyang Tang",
+      "Jinbo Yan",
+      "Kaiqiang Xiong",
+      "Ronggang Wang"
+    ],
+    "abstract": "Novel view synthesis has long been a practical but challenging task, although the introduction of numerous methods to solve this problem, even combining advanced representations like 3D Gaussian Splatting, they still struggle to recover high-quality results and often consume too much storage memory and training time. In this paper we propose Swift4D, a divide-and-conquer 3D Gaussian Splatting method that can handle static and dynamic primitives separately, achieving a good trade-off between rendering quality and efficiency, motivated by the fact that most of the scene is the static primitive and does not require additional dynamic properties. Concretely, we focus on modeling dynamic transformations only for the dynamic primitives which benefits both efficiency and quality. We first employ a learnable decomposition strategy to separate the primitives, which relies on an additional parameter to classify primitives as static or dynamic. For the dynamic primitives, we employ a compact multi-resolution 4D Hash mapper to transform these primitives from canonical space into deformation space at each timestamp, and then mix the static and dynamic primitives to produce the final output. This divide-and-conquer method facilitates efficient training and reduces storage redundancy. Our method not only achieves state-of-the-art rendering quality while being 20X faster in training than previous SOTA methods with a minimum storage requirement of only 30MB on real-world datasets. Code is available at https://github.com/WuJH2001/swift4d.",
+    "arxiv_url": "http://arxiv.org/abs/2503.12307v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.12307v1",
+    "published_date": "2025-03-16",
+    "updated_date": "2025-03-16",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "PCGS: Progressive Compression of 3D Gaussian Splatting",
+    "authors": [
+      "Yihang Chen",
+      "Mengyao Li",
+      "Qianyi Wu",
+      "Weiyao Lin",
+      "Mehrtash Harandi",
+      "Jianfei Cai"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) achieves impressive rendering fidelity and speed for novel view synthesis. However, its substantial data size poses a significant challenge for practical applications. While many compression techniques have been proposed, they fail to efficiently utilize existing bitstreams in on-demand applications due to their lack of progressivity, leading to a waste of resource. To address this issue, we propose PCGS (Progressive Compression of 3D Gaussian Splatting), which adaptively controls both the quantity and quality of Gaussians (or anchors) to enable effective progressivity for on-demand applications. Specifically, for quantity, we introduce a progressive masking strategy that incrementally incorporates new anchors while refining existing ones to enhance fidelity. For quality, we propose a progressive quantization approach that gradually reduces quantization step sizes to achieve finer modeling of Gaussian attributes. Furthermore, to compact the incremental bitstreams, we leverage existing quantization results to refine probability prediction, improving entropy coding efficiency across progressive levels. Overall, PCGS achieves progressivity while maintaining compression performance comparable to SoTA non-progressive methods. Code available at: github.com/YihangChen-ee/PCGS.",
+    "arxiv_url": "http://arxiv.org/abs/2503.08511v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.08511v1",
+    "published_date": "2025-03-11",
+    "updated_date": "2025-03-11",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "GaussianVideo: Efficient Video Representation and Compression by\n  Gaussian Splatting",
+    "authors": [
+      "Inseo Lee",
+      "Youngyoon Choi",
+      "Joonseok Lee"
+    ],
+    "abstract": "Implicit Neural Representation for Videos (NeRV) has introduced a novel paradigm for video representation and compression, outperforming traditional codecs. As model size grows, however, slow encoding and decoding speed and high memory consumption hinder its application in practice. To address these limitations, we propose a new video representation and compression method based on 2D Gaussian Splatting to efficiently handle video data. Our proposed deformable 2D Gaussian Splatting dynamically adapts the transformation of 2D Gaussians at each frame, significantly reducing memory cost. Equipped with a multi-plane-based spatiotemporal encoder and a lightweight decoder, it predicts changes in color, coordinates, and shape of initialized Gaussians, given the time step. By leveraging temporal gradients, our model effectively captures temporal redundancy at negligible cost, significantly enhancing video representation efficiency. Our method reduces GPU memory usage by up to 78.4%, and significantly expedites video processing, achieving 5.5x faster training and 12.5x faster decoding compared to the state-of-the-art NeRV methods.",
+    "arxiv_url": "http://arxiv.org/abs/2503.04333v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04333v1",
+    "published_date": "2025-03-06",
+    "updated_date": "2025-03-06",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "CAT-3DGS: A Context-Adaptive Triplane Approach to\n  Rate-Distortion-Optimized 3DGS Compression",
+    "authors": [
+      "Yu-Ting Zhan",
+      "Cheng-Yuan Ho",
+      "Hebi Yang",
+      "Yi-Hsin Chen",
+      "Jui Chiu Chiang",
+      "Yu-Lun Liu",
+      "Wen-Hsiao Peng"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) has recently emerged as a promising 3D representation. Much research has been focused on reducing its storage requirements and memory footprint. However, the needs to compress and transmit the 3DGS representation to the remote side are overlooked. This new application calls for rate-distortion-optimized 3DGS compression. How to quantize and entropy encode sparse Gaussian primitives in the 3D space remains largely unexplored. Few early attempts resort to the hyperprior framework from learned image compression. But, they fail to utilize fully the inter and intra correlation inherent in Gaussian primitives. Built on ScaffoldGS, this work, termed CAT-3DGS, introduces a context-adaptive triplane approach to their rate-distortion-optimized coding. It features multi-scale triplanes, oriented according to the principal axes of Gaussian primitives in the 3D space, to capture their inter correlation (i.e. spatial correlation) for spatial autoregressive coding in the projected 2D planes. With these triplanes serving as the hyperprior, we further perform channel-wise autoregressive coding to leverage the intra correlation within each individual Gaussian primitive. Our CAT-3DGS incorporates a view frequency-aware masking mechanism. It actively skips from coding those Gaussian primitives that potentially have little impact on the rendering quality. When trained end-to-end to strike a good rate-distortion trade-off, our CAT-3DGS achieves the state-of-the-art compression performance on the commonly used real-world datasets.",
+    "arxiv_url": "http://arxiv.org/abs/2503.00357v2",
+    "pdf_url": "http://arxiv.org/pdf/2503.00357v2",
+    "published_date": "2025-03-01",
+    "updated_date": "2025-03-07",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian",
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Efficient Gaussian Splatting for Monocular Dynamic Scene Rendering via\n  Sparse Time-Variant Attribute Modeling",
+    "authors": [
+      "Hanyang Kong",
+      "Xingyi Yang",
+      "Xinchao Wang"
+    ],
+    "abstract": "Rendering dynamic scenes from monocular videos is a crucial yet challenging task. The recent deformable Gaussian Splatting has emerged as a robust solution to represent real-world dynamic scenes. However, it often leads to heavily redundant Gaussians, attempting to fit every training view at various time steps, leading to slower rendering speeds. Additionally, the attributes of Gaussians in static areas are time-invariant, making it unnecessary to model every Gaussian, which can cause jittering in static regions. In practice, the primary bottleneck in rendering speed for dynamic scenes is the number of Gaussians. In response, we introduce Efficient Dynamic Gaussian Splatting (EDGS), which represents dynamic scenes via sparse time-variant attribute modeling. Our approach formulates dynamic scenes using a sparse anchor-grid representation, with the motion flow of dense Gaussians calculated via a classical kernel representation. Furthermore, we propose an unsupervised strategy to efficiently filter out anchors corresponding to static areas. Only anchors associated with deformable objects are input into MLPs to query time-variant attributes. Experiments on two real-world datasets demonstrate that our EDGS significantly improves the rendering speed with superior rendering quality compared to previous state-of-the-art methods.",
+    "arxiv_url": "http://arxiv.org/abs/2502.20378v1",
+    "pdf_url": "http://arxiv.org/pdf/2502.20378v1",
+    "published_date": "2025-02-27",
+    "updated_date": "2025-02-27",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "gaussian splatting"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Compression in 3D Gaussian Splatting: A Survey of Methods, Trends, and\n  Future Directions",
+    "authors": [
+      "Muhammad Salman Ali",
+      "Chaoning Zhang",
+      "Marco Cagnazzo",
+      "Giuseppe Valenzise",
+      "Enzo Tartaglione",
+      "Sung-Ho Bae"
+    ],
+    "abstract": "3D Gaussian Splatting (3DGS) has recently emerged as a pioneering approach in explicit scene rendering and computer graphics. Unlike traditional neural radiance field (NeRF) methods, which typically rely on implicit, coordinate-based models to map spatial coordinates to pixel values, 3DGS utilizes millions of learnable 3D Gaussians. Its differentiable rendering technique and inherent capability for explicit scene representation and manipulation positions 3DGS as a potential game-changer for the next generation of 3D reconstruction and representation technologies. This enables 3DGS to deliver real-time rendering speeds while offering unparalleled editability levels. However, despite its advantages, 3DGS suffers from substantial memory and storage requirements, posing challenges for deployment on resource-constrained devices. In this survey, we provide a comprehensive overview focusing on the scalability and compression of 3DGS. We begin with a detailed background overview of 3DGS, followed by a structured taxonomy of existing compression methods. Additionally, we analyze and compare current methods from the topological perspective, evaluating their strengths and limitations in terms of fidelity, compression ratios, and computational efficiency. Furthermore, we explore how advancements in efficient NeRF representations can inspire future developments in 3DGS optimization. Finally, we conclude with current research challenges and highlight key directions for future exploration.",
+    "arxiv_url": "http://arxiv.org/abs/2502.19457v1",
+    "pdf_url": "http://arxiv.org/pdf/2502.19457v1",
+    "published_date": "2025-02-26",
+    "updated_date": "2025-02-26",
+    "categories": [
+      "cs.GR"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d reconstruction",
+      "3d gaussian",
+      "gaussian splatting",
+      "real-time rendering",
+      "nerf"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Efficient 4D Gaussian Stream with Low Rank Adaptation",
+    "authors": [
+      "Zhenhuan Liu",
+      "Shuai Liu",
+      "Yidong Lu",
+      "Yirui Chen",
+      "Jie Yang",
+      "Wei Liu"
+    ],
+    "abstract": "Recent methods have made significant progress in synthesizing novel views with long video sequences. This paper proposes a highly scalable method for dynamic novel view synthesis with continual learning. We leverage the 3D Gaussians to represent the scene and a low-rank adaptation-based deformation model to capture the dynamic scene changes. Our method continuously reconstructs the dynamics with chunks of video frames, reduces the streaming bandwidth by $90\\%$ while maintaining high rendering quality comparable to the off-line SOTA methods.",
+    "arxiv_url": "http://arxiv.org/abs/2502.16575v1",
+    "pdf_url": "http://arxiv.org/pdf/2502.16575v1",
+    "published_date": "2025-02-23",
+    "updated_date": "2025-02-23",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
+  {
+    "title": "Pointmap Association and Piecewise-Plane Constraint for Consistent and\n  Compact 3D Gaussian Segmentation Field",
+    "authors": [
+      "Wenhao Hu",
+      "Wenhao Chai",
+      "Shengyu Hao",
+      "Xiaotong Cui",
+      "Xuexiang Wen",
+      "Jenq-Neng Hwang",
+      "Gaoang Wang"
+    ],
+    "abstract": "Achieving a consistent and compact 3D segmentation field is crucial for maintaining semantic coherence across views and accurately representing scene structures. Previous 3D scene segmentation methods rely on video segmentation models to address inconsistencies across views, but the absence of spatial information often leads to object misassociation when object temporarily disappear and reappear. Furthermore, in the process of 3D scene reconstruction, segmentation and optimization are often treated as separate tasks. As a result, optimization typically lacks awareness of semantic category information, which can result in floaters with ambiguous segmentation. To address these challenges, we introduce CCGS, a method designed to achieve both view consistent 2D segmentation and a compact 3D Gaussian segmentation field. CCGS incorporates pointmap association and a piecewise-plane constraint. First, we establish pixel correspondence between adjacent images by minimizing the Euclidean distance between their pointmaps. We then redefine object mask overlap accordingly. The Hungarian algorithm is employed to optimize mask association by minimizing the total matching cost, while allowing for partial matches. To further enhance compactness, the piecewise-plane constraint restricts point displacement within local planes during optimization, thereby preserving structural integrity. Experimental results on ScanNet and Replica datasets demonstrate that CCGS outperforms existing methods in both 2D panoptic segmentation and 3D Gaussian segmentation.",
+    "arxiv_url": "http://arxiv.org/abs/2502.16303v1",
+    "pdf_url": "http://arxiv.org/pdf/2502.16303v1",
+    "published_date": "2025-02-22",
+    "updated_date": "2025-02-22",
+    "categories": [
+      "cs.CV"
+    ],
+    "github_url": "",
+    "keywords": [
+      "3d gaussian"
+    ],
+    "citations": 0,
+    "semantic_url": ""
+  },
   {
     "title": "Instruct-4DGS: Efficient Dynamic Scene Editing via 4D Gaussian-based\n  Static-Dynamic Separation",
     "authors": [
@@ -259,9 +1729,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "neural rendering",
       "3d gaussian",
-      "gaussian splatting",
-      "neural rendering"
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -385,8 +1855,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -596,7 +2066,6 @@
     "semantic_url": ""
   },
   {
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
     "title": "NexusSplats: Efficient 3D Gaussian Splatting in the Wild",
     "authors": [
       "Yuzhou Tang",
@@ -615,15 +2084,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian",
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf",
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
       "3d reconstruction"
     ],
     "citations": 0,
@@ -647,8 +2110,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "3d gaussian"
+      "3d gaussian",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -672,8 +2135,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -698,8 +2161,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -723,8 +2186,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -746,8 +2209,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -833,8 +2296,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -859,8 +2322,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -888,13 +2351,8 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "gaussian splatting",
-      "3d gaussian",
-=======
       "3d gaussian",
       "gaussian splatting",
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
       "3d reconstruction"
     ],
     "citations": 0,
@@ -919,12 +2377,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
       "3d gaussian",
-<<<<<<< HEAD
-=======
       "gaussian splatting",
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
       "real-time rendering"
     ],
     "citations": 0,
@@ -951,8 +2405,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1003,15 +2457,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian"
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf"
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1061,8 +2509,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1111,8 +2559,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1136,12 +2584,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
       "3d gaussian",
-<<<<<<< HEAD
-=======
       "gaussian splatting",
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
       "real-time rendering"
     ],
     "citations": 0,
@@ -1165,8 +2609,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1189,8 +2633,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1214,12 +2658,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
       "3d gaussian",
-<<<<<<< HEAD
-=======
       "gaussian splatting",
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
       "real-time rendering"
     ],
     "citations": 0,
@@ -1246,8 +2686,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1273,15 +2713,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian",
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf",
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
       "real-time rendering"
     ],
     "citations": 0,
@@ -1307,8 +2741,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1337,15 +2771,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian"
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf"
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1367,8 +2795,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1394,8 +2822,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1421,8 +2849,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1444,8 +2872,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1472,15 +2900,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian"
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf"
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1504,15 +2926,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian"
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf"
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1591,15 +3007,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian"
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf"
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1626,8 +3036,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1651,8 +3061,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1676,8 +3086,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1706,12 +3116,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
       "3d gaussian",
-<<<<<<< HEAD
-=======
       "gaussian splatting",
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
       "real-time rendering"
     ],
     "citations": 0,
@@ -1792,8 +3198,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "gaussian splatting"
+      "gaussian splatting",
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1821,15 +3227,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian"
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf"
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1854,9 +3254,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "real-time rendering",
+      "neural rendering",
       "3d gaussian",
-      "neural rendering"
+      "real-time rendering"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1881,8 +3281,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1931,12 +3331,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
       "3d gaussian",
-<<<<<<< HEAD
-=======
       "gaussian splatting",
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
       "real-time rendering"
     ],
     "citations": 0,
@@ -1960,15 +3356,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian",
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf",
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
       "real-time rendering"
     ],
     "citations": 0,
@@ -2019,15 +3409,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian"
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf"
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2052,16 +3436,10 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian",
-=======
+      "neural rendering",
       "3d gaussian",
       "gaussian splatting",
-      "nerf",
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
-      "neural rendering"
+      "nerf"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2086,15 +3464,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian",
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf",
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
       "real-time rendering"
     ],
     "citations": 0,
@@ -2117,15 +3489,9 @@
     ],
     "github_url": "",
     "keywords": [
-<<<<<<< HEAD
-      "nerf",
-      "gaussian splatting",
-      "3d gaussian"
-=======
       "3d gaussian",
       "gaussian splatting",
       "nerf"
->>>>>>> b58da18246899baf219204cf29988ba9c5e5aef1
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2147,8 +3513,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2171,8 +3537,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2196,8 +3562,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splatting",
-      "3d gaussian"
+      "3d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
