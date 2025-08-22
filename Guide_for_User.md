@@ -43,6 +43,7 @@
 ### 设置检索关键词
 
 ✅ **检索使用指南** (`docs/search_config_guide.md`)
+
 ✅ **检索功能说明** (`README_config_feature.md`)
 
 - JSON 配置文件支持 (`data/search_config.json`)
