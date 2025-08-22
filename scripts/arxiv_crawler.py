@@ -104,15 +104,24 @@ class ArxivCrawler:
             title_keywords = search_config.get("title_only", [])
             for keyword in title_keywords:
                 query_parts_title.append(f'ti:"{keyword}"')
-            
-            if not query_parts_both and not query_parts_abs and not query_parts_title:
+
+            query_blocks = []
+
+            # 仅当查询部分非空时，添加对应的括号表达式
+            if query_parts_both:
+                query_blocks.append("(" + " OR ".join(query_parts_both) + ")")
+            if query_parts_abs:
+                query_blocks.append("(" + " OR ".join(query_parts_abs) + ")")
+            if query_parts_title:
+                query_blocks.append("(" + " OR ".join(query_parts_title) + ")")
+
+
+            if not query_blocks:
                 self.logger.warning("No search keywords found in config, using default query")
                 return '(abs:"gaussian splatting" OR ti:"gaussian splatting")'
             
-            # Join all parts with OR
-            search_query = ("(" + " OR ".join(query_parts_both) + ")"
-                            +"AND"+"(" + " OR ".join(query_parts_abs) + ")"
-                            +"AND"+"(" + " OR ".join(query_parts_title) + ")")
+            # 当存在有效查询块时，用AND连接
+            search_query =  " AND ".join(query_blocks)
             
             self.logger.info(f"Generated search query from config: {search_query}")
             return search_query
@@ -537,7 +546,7 @@ def main():
     parser.add_argument('--citations', action='store_true', 
                       help='是否获取引用数和Semantic Scholar链接')
     parser.add_argument('--max-results', type=int, default=1000,
-                      help='最大获取论文数量（默认500，推荐不超过1000以避免API限制）')
+                      help='最大获取论文数量（默认1000，推荐不超过1000以避免API限制）')
     args = parser.parse_args()
 
     crawler = ArxivCrawler(fetch_citations=args.citations)

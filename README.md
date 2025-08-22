@@ -1,111 +1,118 @@
 # 3D Gaussian Splatting 论文列表
 
-> **最后更新**： 2025-08-21 20:17:02
+> **最后更新**： 2025-08-22 10:56:30
 
 > **翻译说明**： 中文摘要由Edge浏览器翻译API自动生成，可能存在不准确之处。如需查看精确表达请参考原文摘要。
 
 
 ## August 2025
 
-### [1] GeMS: Efficient Gaussian Splatting for Extreme Motion Blur  
+### [1] Image-Conditioned 3D Gaussian Splat Quantization  
+- **⏳发布**：2025-08-21  
+- **🧑‍🔬作者**：Xinshuang Liu, Runfa Blark Li, Keito Suzuki, Truong Nguyen  
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.15372v1)    
+- **📝摘要**：3D Gaussian Splatting (3DGS) has attracted considerable attention for enabling high-quality real-time rendering. Although 3DGS compression methods have been proposed for deployment on storage-constrained devices, two limitations hinder archival use: (1) they compress medium-scale scenes only to the megabyte range, which remains impractical for large-scale scenes or extensive scene collections; and (2) they lack mechanisms to accommodate scene changes after long-term archival. To address these limitations, we propose an Image-Conditioned Gaussian Splat Quantizer (ICGS-Quantizer) that substantially enhances compression efficiency and provides adaptability to scene changes after archiving. ICGS-Quantizer improves quantization efficiency by jointly exploiting inter-Gaussian and inter-attribute correlations and by using shared codebooks across all training scenes, which are then fixed and applied to previously unseen test scenes, eliminating the overhead of per-scene codebooks. This approach effectively reduces the storage requirements for 3DGS to the kilobyte range while preserving visual fidelity. To enable adaptability to post-archival scene changes, ICGS-Quantizer conditions scene decoding on images captured at decoding time. The encoding, quantization, and decoding processes are trained jointly, ensuring that the codes, which are quantized representations of the scene, are effective for conditional decoding. We evaluate ICGS-Quantizer on 3D scene compression and 3D scene updating. Experimental results show that ICGS-Quantizer consistently ...  
+- **📝翻译未启用或未翻译**  
+
+### [2] GeMS: Efficient Gaussian Splatting for Extreme Motion Blur  
 - **⏳发布**：2025-08-20  
 - **🧑‍🔬作者**：Gopi Raju Matta, Trisha Reddypalli, Vemunuri Divya Madhuri, Kaushik Mitra  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.14682v1)    
 - **📝摘要**：We introduce GeMS, a framework for 3D Gaussian Splatting (3DGS) designed to handle severely motion-blurred images. State-of-the-art deblurring methods for extreme blur, such as ExBluRF, as well as Gaussian Splatting-based approaches like Deblur-GS, typically assume access to sharp images for camera pose estimation and point cloud generation, an unrealistic assumption. Methods relying on COLMAP initialization, such as BAD-Gaussians, also fail due to unreliable feature correspondences under severe blur. To address these challenges, we propose GeMS, a 3DGS framework that reconstructs scenes directly from extremely blurred images. GeMS integrates: (1) VGGSfM, a deep learning-based Structure-from-Motion pipeline that estimates poses and generates point clouds directly from blurred inputs; (2) 3DGS-MCMC, which enables robust scene initialization by treating Gaussians as samples from a probability distribution, eliminating heuristic densification and pruning; and (3) joint optimization of camera trajectories and Gaussian parameters for stable reconstruction. While this pipeline produces strong results, inaccuracies may remain when all inputs are severely blurred. To mitigate this, we propose GeMS-E, which integrates a progressive refinement step using events: (4) Event-based Double Integral (EDI) deblurring restores sharper images that are then fed into GeMS, improving pose estimation, point cloud generation, and overall reconstruction. Both GeMS and GeMS-E achieve state-of-the-art performance ...  
 - **📝翻译未启用或未翻译**  
 
-### [2] IGFuse: Interactive 3D Gaussian Scene Reconstruction via Multi-Scans  Fusion  
+### [3] IGFuse: Interactive 3D Gaussian Scene Reconstruction via Multi-Scans  Fusion  
 - **⏳发布**：2025-08-18  
 - **🧑‍🔬作者**：Wenhao Hu, Zesheng Li, Haonan Zhou et al.  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.13153v1)    
 - **📝摘要**：Reconstructing complete and interactive 3D scenes remains a fundamental challenge in computer vision and robotics, particularly due to persistent object occlusions and limited sensor coverage. Multiview observations from a single scene scan often fail to capture the full structural details. Existing approaches typically rely on multi stage pipelines, such as segmentation, background completion, and inpainting or require per-object dense scanning, both of which are error-prone, and not easily scalable. We propose IGFuse, a novel framework that reconstructs interactive Gaussian scene by fusing observations from multiple scans, where natural object rearrangement between captures reveal previously occluded regions. Our method constructs segmentation aware Gaussian fields and enforces bi-directional photometric and semantic consistency across scans. To handle spatial misalignments, we introduce a pseudo-intermediate scene state for unified alignment, alongside collaborative co-pruning strategies to refine geometry. IGFuse enables high fidelity rendering and object level scene manipulation without dense observations or complex pipelines. Extensive experiments validate the framework's strong generalization to novel scene configurations, demonstrating its effectiveness for real world 3D reconstruction and real-to-simulation transfer. Our project page is available online.  
 - **📝翻译未启用或未翻译**  
 
-### [3] Improving Densification in 3D Gaussian Splatting for High-Fidelity  Rendering  
+### [4] Improving Densification in 3D Gaussian Splatting for High-Fidelity  Rendering  
 - **⏳发布**：2025-08-17  
 - **🧑‍🔬作者**：Xiaobin Deng, Changyu Diao, Min Li, Ruohan Yu, Duanqing Xu  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.12313v1)    
 - **📝摘要**：Although 3D Gaussian Splatting (3DGS) has achieved impressive performance in real-time rendering, its densification strategy often results in suboptimal reconstruction quality. In this work, we present a comprehensive improvement to the densification pipeline of 3DGS from three perspectives: when to densify, how to densify, and how to mitigate overfitting. Specifically, we propose an Edge-Aware Score to effectively select candidate Gaussians for splitting. We further introduce a Long-Axis Split strategy that reduces geometric distortions introduced by clone and split operations. To address overfitting, we design a set of techniques, including Recovery-Aware Pruning, Multi-step Update, and Growth Control. Our method enhances rendering fidelity without introducing additional training or inference overhead, achieving state-of-the-art performance with fewer Gaussians.  
 - **📝翻译未启用或未翻译**  
 
-### [4] Versatile Video Tokenization with Generative 2D Gaussian Splatting  
+### [5] Versatile Video Tokenization with Generative 2D Gaussian Splatting  
 - **⏳发布**：2025-08-15  
 - **🧑‍🔬作者**：Zhenghao Chen, Zicong Chen, Lei Liu, Yiming Wu, Dong Xu  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.11183v1)    
 - **📝摘要**：Video tokenization procedure is critical for a wide range of video processing tasks. Most existing approaches directly transform video into fixed-grid and patch-wise tokens, which exhibit limited versatility. Spatially, uniformly allocating a fixed number of tokens often leads to over-encoding in low-information regions. Temporally, reducing redundancy remains challenging without explicitly distinguishing between static and dynamic content. In this work, we propose the Gaussian Video Transformer (GVT), a versatile video tokenizer built upon a generative 2D Gaussian Splatting (2DGS) strategy. We first extract latent rigid features from a video clip and represent them with a set of 2D Gaussians generated by our proposed Spatio-Temporal Gaussian Embedding (STGE) mechanism in a feed-forward manner. Such generative 2D Gaussians not only enhance spatial adaptability by assigning higher (resp., lower) rendering weights to regions with higher (resp., lower) information content during rasterization, but also improve generalization by avoiding per-video optimization.To enhance the temporal versatility, we introduce a Gaussian Set Partitioning (GSP) strategy that separates the 2D Gaussians into static and dynamic sets, which explicitly model static content shared across different time-steps and dynamic content specific to each time-step, enabling a compact representation.We primarily evaluate GVT on the video reconstruction, while also assessing its performance on ...  
 - **📝翻译未启用或未翻译**  
 
-### [5] EntropyGS: An Efficient Entropy Coding on 3D Gaussian Splatting  
+### [6] EntropyGS: An Efficient Entropy Coding on 3D Gaussian Splatting  
 - **⏳发布**：2025-08-13  
 - **🧑‍🔬作者**：Yuning Huang, Jiahao Pang, Fengqing Zhu, Dong Tian  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.10227v1)    
 - **📝摘要**：As an emerging novel view synthesis approach, 3D Gaussian Splatting (3DGS) demonstrates fast training/rendering with superior visual quality. The two tasks of 3DGS, Gaussian creation and view rendering, are typically separated over time or devices, and thus storage/transmission and finally compression of 3DGS Gaussians become necessary. We begin with a correlation and statistical analysis of 3DGS Gaussian attributes. An inspiring finding in this work reveals that spherical harmonic AC attributes precisely follow Laplace distributions, while mixtures of Gaussian distributions can approximate rotation, scaling, and opacity. Additionally, harmonic AC attributes manifest weak correlations with other attributes except for inherited correlations from a color space. A factorized and parameterized entropy coding method, EntropyGS, is hereinafter proposed. During encoding, distribution parameters of each Gaussian attribute are estimated to assist their entropy coding. The quantization for entropy coding is adaptively performed according to Gaussian attribute types. EntropyGS demonstrates about 30x rate reduction on benchmark datasets while maintaining similar rendering quality compared to input 3DGS data, with a fast encoding and decoding time.  
 - **📝翻译未启用或未翻译**  
 
-### [6] A Survey on 3D Gaussian Splatting Applications: Segmentation, Editing,  and Generation  
+### [7] A Survey on 3D Gaussian Splatting Applications: Segmentation, Editing,  and Generation  
 - **⏳发布**：2025-08-13  
 - **🧑‍🔬作者**：Shuting He, Peilin Ji, Yitong Yang et al.  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.09977v1)    
 - **📝摘要**：3D Gaussian Splatting (3DGS) has recently emerged as a powerful alternative to Neural Radiance Fields (NeRF) for 3D scene representation, offering high-fidelity photorealistic rendering with real-time performance. Beyond novel view synthesis, the explicit and compact nature of 3DGS enables a wide range of downstream applications that require geometric and semantic understanding. This survey provides a comprehensive overview of recent progress in 3DGS applications. It first introduces 2D foundation models that support semantic understanding and control in 3DGS applications, followed by a review of NeRF-based methods that inform their 3DGS counterparts. We then categorize 3DGS applications into segmentation, editing, generation, and other functional tasks. For each, we summarize representative methods, supervision strategies, and learning paradigms, highlighting shared design principles and emerging trends. Commonly used datasets and evaluation protocols are also summarized, along with comparative analyses of recent methods across public benchmarks. To support ongoing research and development, a continually updated repository of papers, code, and resources is maintained at https://github.com/heshuting555/Awesome-3DGS-Applications.  
 - **📝翻译未启用或未翻译**  
 
-### [7] Gradient-Direction-Aware Density Control for 3D Gaussian Splatting  
+### [8] Gradient-Direction-Aware Density Control for 3D Gaussian Splatting  
 - **⏳发布**：2025-08-12  
 - **🧑‍🔬作者**：Zheng Zhou, Yu-Jie Xiong, Chun-Ming Xia, Jia-Chen Zhang, Hong-Jian Zhan  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.09239v1)    
 - **📝摘要**：The emergence of 3D Gaussian Splatting (3DGS) has significantly advanced novel view synthesis through explicit scene representation, enabling real-time photorealistic rendering. However, existing approaches manifest two critical limitations in complex scenarios: (1) Over-reconstruction occurs when persistent large Gaussians cannot meet adaptive splitting thresholds during density control. This is exacerbated by conflicting gradient directions that prevent effective splitting of these Gaussians; (2) Over-densification of Gaussians occurs in regions with aligned gradient aggregation, leading to redundant component proliferation. This redundancy significantly increases memory overhead due to unnecessary data retention. We present Gradient-Direction-Aware Gaussian Splatting (GDAGS), a gradient-direction-aware adaptive density control framework to address these challenges. Our key innovations: the gradient coherence ratio (GCR), computed through normalized gradient vector norms, which explicitly discriminates Gaussians with concordant versus conflicting gradient directions; and a nonlinear dynamic weighting mechanism leverages the GCR to enable gradient-direction-aware density control. Specifically, GDAGS prioritizes conflicting-gradient Gaussians during splitting operations to enhance geometric details while suppressing redundant concordant-direction Gaussians. Conversely, in cloning processes, GDAGS promotes concordant-direction Gaussian densification for structural completion while preventing conflicting-direction Gaussian overpopulation. Comprehensive evaluations across diverse real-world benchmarks demonstrate that GDAGS achieves superior rendering quality while effectively mitigating over-reconstruction, suppressing over-densification, and constructing compact scene representations with ...  
 - **📝翻译未启用或未翻译**  
 
-### [8] GS4Buildings: Prior-Guided Gaussian Splatting for 3D Building  Reconstruction  
+### [9] GS4Buildings: Prior-Guided Gaussian Splatting for 3D Building  Reconstruction  
 - **⏳发布**：2025-08-10  
 - **🧑‍🔬作者**：Qilin Zhang, Olaf Wysocki, Boris Jutzi  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.07355v1)    
 - **📝摘要**：Recent advances in Gaussian Splatting (GS) have demonstrated its effectiveness in photo-realistic rendering and 3D reconstruction. Among these, 2D Gaussian Splatting (2DGS) is particularly suitable for surface reconstruction due to its flattened Gaussian representation and integrated normal regularization. However, its performance often degrades in large-scale and complex urban scenes with frequent occlusions, leading to incomplete building reconstructions. We propose GS4Buildings, a novel prior-guided Gaussian Splatting method leveraging the ubiquity of semantic 3D building models for robust and scalable building surface reconstruction. Instead of relying on traditional Structure-from-Motion (SfM) pipelines, GS4Buildings initializes Gaussians directly from low-level Level of Detail (LoD)2 semantic 3D building models. Moreover, we generate prior depth and normal maps from the planar building geometry and incorporate them into the optimization process, providing strong geometric guidance for surface consistency and structural accuracy. We also introduce an optional building-focused mode that limits reconstruction to building regions, achieving a 71.8% reduction in Gaussian primitives and enabling a more efficient and compact representation. Experiments on urban datasets demonstrate that GS4Buildings improves reconstruction completeness by 20.5% and geometric accuracy by 32.8%. These results highlight the potential of semantic building model integration to advance GS-based reconstruction toward real-world urban applications such as smart cities ...  
 - **📝翻译未启用或未翻译**  
 
-### [9] 3DGS-VBench: A Comprehensive Video Quality Evaluation Benchmark for 3DGS  Compression  
+### [10] 3DGS-VBench: A Comprehensive Video Quality Evaluation Benchmark for 3DGS  Compression  
 - **⏳发布**：2025-08-09  
 - **🧑‍🔬作者**：Yuke Xing, William Gordon, Qi Yang et al.  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.07038v1)    
 - **📝摘要**：3D Gaussian Splatting (3DGS) enables real-time novel view synthesis with high visual fidelity, but its substantial storage requirements hinder practical deployment, prompting state-of-the-art (SOTA) 3DGS methods to incorporate compression modules. However, these 3DGS generative compression techniques introduce unique distortions lacking systematic quality assessment research. To this end, we establish 3DGS-VBench, a large-scale Video Quality Assessment (VQA) Dataset and Benchmark with 660 compressed 3DGS models and video sequences generated from 11 scenes across 6 SOTA 3DGS compression algorithms with systematically designed parameter levels. With annotations from 50 participants, we obtained MOS scores with outlier removal and validated dataset reliability. We benchmark 6 3DGS compression algorithms on storage efficiency and visual quality, and evaluate 15 quality assessment metrics across multiple paradigms. Our work enables specialized VQA model training for 3DGS, serving as a catalyst for compression and quality assessment research. The dataset is available at https://github.com/YukeXing/3DGS-VBench.  
 - **📝翻译未启用或未翻译**  
 
-### [10] UW-3DGS: Underwater 3D Reconstruction with Physics-Aware Gaussian  Splatting  
+### [11] UW-3DGS: Underwater 3D Reconstruction with Physics-Aware Gaussian  Splatting  
 - **⏳发布**：2025-08-08  
 - **🧑‍🔬作者**：Wenpeng Xing, Jie Chen, Zaifeng Yang et al.  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.06169v1)    
 - **📝摘要**：Underwater 3D scene reconstruction faces severe challenges from light absorption, scattering, and turbidity, which degrade geometry and color fidelity in traditional methods like Neural Radiance Fields (NeRF). While NeRF extensions such as SeaThru-NeRF incorporate physics-based models, their MLP reliance limits efficiency and spatial resolution in hazy environments. We introduce UW-3DGS, a novel framework adapting 3D Gaussian Splatting (3DGS) for robust underwater reconstruction. Key innovations include: (1) a plug-and-play learnable underwater image formation module using voxel-based regression for spatially varying attenuation and backscatter; and (2) a Physics-Aware Uncertainty Pruning (PAUP) branch that adaptively removes noisy floating Gaussians via uncertainty scoring, ensuring artifact-free geometry. The pipeline operates in training and rendering stages. During training, noisy Gaussians are optimized end-to-end with underwater parameters, guided by PAUP pruning and scattering modeling. In rendering, refined Gaussians produce clean Unattenuated Radiance Images (URIs) free from media effects, while learned physics enable realistic Underwater Images (UWIs) with accurate light transport. Experiments on SeaThru-NeRF and UWBundle datasets show superior performance, achieving PSNR of 27.604, SSIM of 0.868, and LPIPS of 0.104 on SeaThru-NeRF, with ~65% reduction in floating artifacts.  
 - **📝翻译未启用或未翻译**  
 
-### [11] Refining Gaussian Splatting: A Volumetric Densification Approach  
+### [12] Refining Gaussian Splatting: A Volumetric Densification Approach  
 - **⏳发布**：2025-08-07  
 - **🧑‍🔬作者**：Mohamed Abdul Gafoor, Marius Preda, Titus Zaharia  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.05187v1)    
 - **📝摘要**：Achieving high-quality novel view synthesis in 3D Gaussian Splatting (3DGS) often depends on effective point primitive management. The underlying Adaptive Density Control (ADC) process addresses this issue by automating densification and pruning. Yet, the vanilla 3DGS densification strategy shows key shortcomings. To address this issue, in this paper we introduce a novel density control method, which exploits the volumes of inertia associated to each Gaussian function to guide the refinement process. Furthermore, we study the effect of both traditional Structure from Motion (SfM) and Deep Image Matching (DIM) methods for point cloud initialization. Extensive experimental evaluations on the Mip-NeRF 360 dataset demonstrate that our approach surpasses 3DGS in reconstruction quality, delivering encouraging performance across diverse scenes.  
 - **📝翻译未启用或未翻译**  
 
-### [12] Perceive-Sample-Compress: Towards Real-Time 3D Gaussian Splatting  
+### [13] Perceive-Sample-Compress: Towards Real-Time 3D Gaussian Splatting  
 - **⏳发布**：2025-08-07  
 - **🧑‍🔬作者**：Zijian Wang, Beizhen Zhao, Hao Wang  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.04965v1)    
 - **📝摘要**：Recent advances in 3D Gaussian Splatting (3DGS) have demonstrated remarkable capabilities in real-time and photorealistic novel view synthesis. However, traditional 3DGS representations often struggle with large-scale scene management and efficient storage, particularly when dealing with complex environments or limited computational resources. To address these limitations, we introduce a novel perceive-sample-compress framework for 3D Gaussian Splatting. Specifically, we propose a scene perception compensation algorithm that intelligently refines Gaussian parameters at each level. This algorithm intelligently prioritizes visual importance for higher fidelity rendering in critical areas, while optimizing resource usage and improving overall visible quality. Furthermore, we propose a pyramid sampling representation to manage Gaussian primitives across hierarchical levels. Finally, to facilitate efficient storage of proposed hierarchical pyramid representations, we develop a Generalized Gaussian Mixed model compression algorithm to achieve significant compression ratios without sacrificing visual fidelity. The extensive experiments demonstrate that our method significantly improves memory efficiency and high visual quality while maintaining real-time rendering speed.  
 - **📝翻译未启用或未翻译**  
 
-### [13] CryoGS: Gaussian Splatting for Cryo-EM Homogeneous Reconstruction  
+### [14] CryoGS: Gaussian Splatting for Cryo-EM Homogeneous Reconstruction  
 - **⏳发布**：2025-08-06  
 - **🧑‍🔬作者**：Suyi Chen, Haibin Ling  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.04929v1)    
 - **📝摘要**：As a critical modality for structural biology, cryogenic electron microscopy (cryo-EM) facilitates the determination of macromolecular structures at near-atomic resolution. The core computational task in single-particle cryo-EM is to reconstruct the 3D electrostatic potential of a molecule from a large collection of noisy 2D projections acquired at unknown orientations. Gaussian mixture models (GMMs) provide a continuous, compact, and physically interpretable representation for molecular density and have recently gained interest in cryo-EM reconstruction. However, existing methods rely on external consensus maps or atomic models for initialization, limiting their use in self-contained pipelines. Addressing this issue, we introduce cryoGS, a GMM-based method that integrates Gaussian splatting with the physics of cryo-EM image formation. In particular, we develop an orthogonal projection-aware Gaussian splatting, with adaptations such as a normalization term and FFT-aligned coordinate system tailored for cryo-EM imaging. All these innovations enable stable and efficient homogeneous reconstruction directly from raw cryo-EM particle images using random initialization. Experimental results on real datasets validate the effectiveness and robustness of cryoGS over representative baselines. The code will be released upon publication.  
 - **📝翻译未启用或未翻译**  
 
-### [14] SA-3DGS: A Self-Adaptive Compression Method for 3D Gaussian Splatting  
+### [15] SA-3DGS: A Self-Adaptive Compression Method for 3D Gaussian Splatting  
 - **⏳发布**：2025-08-05  
 - **🧑‍🔬作者**：Liheng Zhang, Weihao Yu, Zubo Lu, Haozhi Gu, Jin Huang  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.03017v1)    
 - **📝摘要**：Recent advancements in 3D Gaussian Splatting have enhanced efficient and high-quality novel view synthesis. However, representing scenes requires a large number of Gaussian points, leading to high storage demands and limiting practical deployment. The latest methods facilitate the compression of Gaussian models but struggle to identify truly insignificant Gaussian points in the scene, leading to a decline in subsequent Gaussian pruning, compression quality, and rendering performance. To address this issue, we propose SA-3DGS, a method that significantly reduces storage costs while maintaining rendering quality. SA-3DGS learns an importance score to automatically identify the least significant Gaussians in scene reconstruction, thereby enabling effective pruning and redundancy reduction. Next, the importance-aware clustering module compresses Gaussians attributes more accurately into the codebook, improving the codebook's expressive capability while reducing model size. Finally, the codebook repair module leverages contextual scene information to repair the codebook, thereby recovering the original Gaussian point attributes and mitigating the degradation in rendering quality caused by information loss. Experimental results on several benchmark datasets show that our method achieves up to 66x compression while maintaining or even improving rendering quality. The proposed Gaussian pruning approach is not only adaptable to but also improves other pruning-based methods (e.g., LightGaussian), showcasing ...  
 - **📝翻译未启用或未翻译**  
 
-### [15] AG$^2$aussian: Anchor-Graph Structured Gaussian Splatting for  Instance-Level 3D Scene Understanding and Editing  
+### [16] AG$^2$aussian: Anchor-Graph Structured Gaussian Splatting for  Instance-Level 3D Scene Understanding and Editing  
 - **⏳发布**：2025-08-03  
 - **🧑‍🔬作者**：Zhaonan Wang, Manyi Li, Changhe Tu  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.01740v1)    

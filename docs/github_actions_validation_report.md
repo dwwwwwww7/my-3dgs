@@ -8,33 +8,24 @@
 
 ### ✅ 基础配置检查
 - [x] 工作流文件存在且格式正确
-- [x] 触发条件配置正确（每日自动运行 + 手动触发）
-- [x] Python 环境配置正确（Python 3.9, ubuntu-latest）
-- [x] 依赖文件存在（requirements.txt）
+- [x] 触发条件配置正确（定期自动运行 + 手动触发）
+- [x] Python 环境配置正确（Python 3.11, ubuntu-latest）
 
-### ✅ 新功能集成检查
-- [x] 搜索配置文件存在（`data/search_config.json`）
-- [x] 配置验证脚本工作正常
-- [x] 爬虫脚本支持新的配置系统
+### ✅ 运行检查
+- [x] 检验搜索配置
+- [x] 搜索配置文件存在（`data/search_config.json``data/keywords.json`）
+- [x] 爬虫运行正常（已生成论文数据）
+- [x] 是否有更改
+- [x] 找到最新更新日志
 - [x] 所有必要文件都已提交到仓库
 
-### ✅ 核心功能测试
-- [x] 搜索配置验证通过
-- [x] 爬虫运行正常（已生成论文数据）
-- [x] README 生成器存在
-- [x] 工作流程模拟测试通过
+### ✅ 控制指令
+- [x] `--max-results xx`控制最大论文检索数量
+- [x] `--translate` 开启摘要中文翻译
 
-## 🔧 已实施的改进
+## 🔧 代码说明
 
-### 1. 配置验证步骤
-```yaml
-- name: 验证搜索配置
-  run: |
-    echo "🔍 验证搜索配置文件..."
-    python3 scripts/validate_search_config.py
-```
-
-### 2. 文件检查步骤
+### 1. 文件检查步骤
 ```yaml
 - name: 验证必要文件
   run: |
@@ -42,21 +33,70 @@
     test -f data/search_config.json || { echo "❌ search_config.json 文件不存在"; exit 1; }
 ```
 
-### 3. 更好的错误处理
-- 添加了输出验证步骤
-- 改进了提交逻辑（只在有更改时提交）
-- 增加了详细的日志输出
+### 2. 指明工作目录
+```yaml
+   working-directory: ./scripts  
+```
+### 3.检索内容生成检验
+检查是否成功生成搜索查询
+```yaml
+- name: 验证搜索配置
+  run: |
+    echo "🔍 验证搜索配置文件..."
+    python validate_search_config.py
+  working-directory: ./scripts
+```
 
-### 4. 版本更新
-- GitHub Actions 版本更新到 v4
-- 添加了更多emoji让日志更清晰
+### 4.文献检索（数量限制）
+```yaml
+   python arxiv_crawler.py --max-results 600
+```
+
+### 5.README和update_log更新
+```yaml
+  - name: 更新README
+    run: |
+      echo "📝 更新 README..."
+      python readme_generator.py \
+        --data-dir ../data \
+        --output ../README.md \
+        --update-dir ../update \
+        --translate   #控制摘要翻译，--translate为开启                           
+      echo "✅ README 更新完成"
+    working-directory: ./scripts
+```
+- `--data-dir`配置单日更新日志输出目录
+- `--output`配置README.md路径
+- `--update-dir`配置累积更新日志
+- `--translate`启用摘要翻译，删去则不启用
+
+
+### 6. 获取更新日志内容用于生成邮件正文
+- 将最新一日的更新日志转为html
+
+
+### 7. 发送更新日志到邮箱 只有自动触发时才会发送邮件
+- `github.event_name == 'schedule'`只有自动触发时才会发送邮件
+- 使用开源的项目`dawidd6/action-send-mail@v3`实现邮件发送
+- 需要在项目Settings->Secrets and variables->Actions 中设置以下secret
+- `SMTP_SERVER` SMTP服务器地址,
+- `SMTP_PORT` SMTP端口
+- `SMTP_USER` SMTP用户名，即发件人邮箱地址
+- `SMTP_PASSWORD` SMTP的16位授权码，在邮箱中开通SMTP服务后可以获取
+- `EMAIL_RECEIVER` 接收邮件的地址
+
+
+### 8.推送更改（仅在有更改时，但事实是只要运行一次日志就会有更改，待改进）
+- 通过个人访问令牌获取权限：设置secret`REPO_PUSH_TOKEN`,value为自己设置的Personal access token（主页Settings->Developer Settings->Personal access token->Fine-grained tokens中设置）
+- 注意token的权限与时效性！
+
 
 ## 📊 当前配置概览
 
 ```yaml
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天 UTC 0:00 运行
+    - cron: '0 0 * * 0'  # 每周日 UTC 0:00 运行
   workflow_dispatch:   # 允许手动触发
 
 jobs:
@@ -66,15 +106,17 @@ jobs:
       - 检出代码
       - 设置Python环境
       - 安装依赖
-      - 验证搜索配置 ⭐ 新增
-      - 验证必要文件 ⭐ 新增
+      - 验证搜索配置
+      - 验证必要文件 
       - 运行爬虫
-      - 验证爬虫输出 ⭐ 新增
+      - 验证爬虫输出 
       - 更新README
-      - 检查更改 ⭐ 改进
+      - 检查是否有更改
+      - 获取更新日志内容
+      - 发送更新日志到邮箱 只有自动触发时才会发送邮件
       - 提交更改（仅在有更改时）
       - 推送更改（仅在有更改时）
-      - 完成通知 ⭐ 新增
+      - 工作流程完成通知
 ```
 
 ## 🚀 如何手动触发工作流
@@ -92,10 +134,10 @@ jobs:
 
 ## 📈 预期行为
 
-### 每日自动运行：
-- 每天 UTC 0:00 自动触发
+### 自动运行：
+- 每周日 UTC 0:00 自动触发
 - 使用当前搜索配置抓取最新论文
-- 更新 README 文件
+- 更新 README 和 update_log 文件，生成新的单次 update 文件
 - 自动提交并推送更改
 
 ### 手动触发：
@@ -104,9 +146,10 @@ jobs:
 
 ## ⚠️ 注意事项
 
-1. **GitHub Token**: 工作流使用 `GITHUB_TOKEN` 进行推送，这是自动提供的
+1. **Token**: 工作流没有选择使用github自动提供的 `GITHUB_TOKEN` ,`REPO_PUSH_TOKEN`需要自己配置
+2. **Secret**: 需要在项目的settings中设置邮箱
 2. **权限**: 确保仓库设置允许 Actions 推送到主分支
-3. **API限制**: arXiv API 有速率限制，当前设置为每次最多500篇论文
+3. **API限制**: arXiv API 有速率限制，当前设置为每次最多1000篇论文
 4. **时区**: cron 时间是 UTC，根据需要调整
 
 ## 🔍 日志监控
@@ -115,12 +158,14 @@ jobs:
 - 🔍 配置验证结果
 - 🕷️ 爬虫运行状态
 - 📊 抓取的论文数量
-- 📝 README 更新状态
+- 📝 文档更新状态
 - 🎉 最终执行结果
 
 ## 📝 故障排除
 
 如果工作流失败，检查以下项目：
+1. token权限是否足够，是否过期
+2. secret是否设置正确
 1. 搜索配置文件格式是否正确
 2. 必要的数据文件是否存在
 3. 网络连接是否正常
@@ -131,5 +176,4 @@ jobs:
 您的 GitHub Actions 工作流配置完全正常，已经集成了最新的搜索配置功能，并且添加了全面的错误处理和验证步骤。工作流现在更加稳定和可靠！
 
 ---
-*验证时间: 2025-06-26*
-*验证状态: ✅ 通过* 
+*更新时间: 2025-08-22*
