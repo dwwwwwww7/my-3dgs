@@ -51,46 +51,38 @@ ArXiv 爬虫现在支持通过配置文件来自定义搜索查询。用户只�
 
 ## 使用示例
 
-### 示例1：基础配置
-如果你只关心 Gaussian Splatting 相关论文：
-
+### 搜索3DGS压缩相关论文
 ```json
 {
   "search_config": {
+    "description": "arXiv搜索配置 - 定义在摘要和/或题目中搜索的关键词",
     "both_abstract_and_title": [
-      "gaussian splatting",
-      "3dgs"
+      "compression",
+      "compressing",
+      "compact",
+      "compacted",
+      "compressed "
     ],
-    "abstract_only": [],
-    "title_only": []
-  }
-}
-```
-
-生成的查询：`(abs:"gaussian splatting" OR ti:"gaussian splatting" OR abs:"3dgs" OR ti:"3dgs")`
-
-### 示例2：扩展配置
-如果你想搜索更广泛的神经渲染论文：
-
-```json
-{
-  "search_config": {
-    "both_abstract_and_title": [
-      "gaussian splatting",
-      "neural radiance field",
-      "nerf"
-    ],
-    "abstract_only": [
-      "volumetric rendering",
-      "differentiable rendering"
+    "abstract_only": [ 
+      "gaussian"
     ],
     "title_only": [
-      "3D reconstruction",
-      "novel view synthesis"
-    ]
+      "gaussian splatting",
+      "3d gaussian",
+      "3d gaussians",
+      "gaussian splat",
+      "3dgs"
+    ],
+    "notes": {
+      "both_abstract_and_title": "这些关键词将在摘要(abs)和题目(ti)中搜索",
+      "abstract_only": "这些关键词只在摘要(abs)中搜索",
+      "title_only": "这些关键词只在题目(ti)中搜索"
+    }
   }
-}
+} 
 ```
+**生成的搜索查询**: (abs:"compression" OR ti:"compression" OR abs:"compressing" OR ti:"compressing" OR abs:"compact" OR ti:"compact" OR abs:"compacted" OR ti:"compacted" OR abs:"compressed " OR ti:"compressed ") AND (abs:"gaussian") AND (ti:"gaussian splatting" OR ti:"3d gaussian" OR ti:"3d gaussians" OR ti:"gaussian splat" OR ti:"3dgs")
+
 
 ## 注意事项
 
