@@ -26,7 +26,7 @@
 - `readme_generator.py`- 更新README、update_log文档，生成更新日志
 - `test_workflow.py`- 运行完整工作流测试（未修改）
 
-#### **update** 更新日志
+#### **`update`** 更新日志
 
 
 ### 📄 根目录文档
