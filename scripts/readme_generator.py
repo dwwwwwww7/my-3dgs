@@ -379,7 +379,7 @@ def get_last_update_time(update_dir: Path) -> str:
     try:
         with open(latest_update_file, "r", encoding="utf-8") as f:
             for line in f:
-                if line.startswith("本次更新时间:"):
+                if line.startswith("**本次更新时间**:"):
                     # 提取完整的时间字符串（精确到秒）
                     return line.split(":", 1)[1].strip()
     except Exception:

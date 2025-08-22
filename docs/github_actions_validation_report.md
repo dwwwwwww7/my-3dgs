@@ -20,10 +20,19 @@
 - [x] 所有必要文件都已提交到仓库
 
 ### ✅ 控制指令
+- [x] `cron: '0 0 * * 0' ` 设置每周日 UTC 0:00 运行
 - [x] `--max-results xx`控制最大论文检索数量
 - [x] `--translate` 开启摘要中文翻译
 
 ## 🔧 代码说明
+
+### 0.设置触发条件
+```yaml
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # UTC 时间
+  workflow_dispatch:   # 允许手动触发
+```
 
 ### 1. 文件检查步骤
 ```yaml
