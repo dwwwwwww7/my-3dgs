@@ -1,4 +1,8 @@
-# 参考项目原作者的说明
+# 说明
+**本项目基于https://github.com/longxiang-ai/awesome-gaussians 修改，丰富了论文信息，增加摘要翻译和邮件发送功能，删去了分类功能（后续可以考虑对压缩方法分类）。**
+
+**以下为原项目中的说明文档**
+
 # Awesome Gaussian Splatting [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A curated list of latest research papers, projects and resources related to Gaussian Splatting. Content is automatically updated daily.
