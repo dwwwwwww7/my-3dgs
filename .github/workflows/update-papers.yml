@@ -62,8 +62,8 @@ jobs:
         python readme_generator.py \
           --data-dir ../data \
           --output ../README.md \
-          --update-dir ../update    #\
-          #--translate   #控制摘要翻译，--translate为开启                           
+          --update-dir ../update    \
+          --translate   #控制摘要翻译，--translate为开启                           
         echo "✅ README 更新完成"
       working-directory: ./scripts         
         
