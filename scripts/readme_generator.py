@@ -473,7 +473,7 @@ def generate_update_log(last_update_time: str, new_papers: list, updated_papers:
     log += f"**上次更新时间**: {last_update_time}  \n"
     log += f"**本次更新时间**: {current_time}  \n"
     log += f"**新增论文数量**: {len(new_papers)}  \n"
-    log += f"**变动论文数量**: {len(updated_papers)}  \n\n"
+    log += f"**变更论文数量**: {len(updated_papers)}  \n\n"
 
     if new_papers or updated_papers:
         log += "## 更新详情  \n"
@@ -484,18 +484,18 @@ def generate_update_log(last_update_time: str, new_papers: list, updated_papers:
                 # 清理标题中的多余空格和换行符
                 title = clean_title(paper['title'])
                 paper_id = paper["arxiv_url"].split('/')[-1]
-                log += f"{i}. [{title}]({paper['arxiv_url']})"
+                log += f"#### **{i}. [{title}]({paper['arxiv_url']})**"
                 log += f" (ID: {paper_id})\n\n"
 
         if updated_papers:
-            log += "\n### 更新论文  \n"
+            log += "\n### 变更论文  \n"
             for i, update_info in enumerate(updated_papers, start=1):
                 paper = update_info["paper"]
                 # 清理标题中的多余空格和换行符
                 title = clean_title(paper['title'])
                 paper_id = paper["arxiv_url"].split('/')[-1]
 
-                log += f"{i}. [{title}]({paper['arxiv_url']}) (ID: {paper_id})  \n"
+                log += f"#### **{i}. [{title}]({paper['arxiv_url']})** (ID: {paper_id})  \n"
                 log += f"   **变更类型**: {', '.join(update_info['changes'])}  \n"
 
                 # 清理原标题中的多余空格和换行符
@@ -503,16 +503,16 @@ def generate_update_log(last_update_time: str, new_papers: list, updated_papers:
 
                 # 显示具体变更
                 if "标题变更" in update_info["changes"]:
-                    log += f"   🏷️原标题: {previous_title}  \n"
-                    log += f"   🏷️新标题: {title}  \n"
+                    log += f" 🏷️原标题: {previous_title}  \n"
+                    log += f" 🏷️新标题: {title}  \n"
 
                 if "arXiv版本更新" in update_info["changes"]:
-                    log += f"   📘原版本: v{update_info['previous_version'].split('v')[-1]}  \n"
-                    log += f"   📘新版本: v{paper_id.split('v')[-1]}  \n"
+                    log += f" 📘原版本: v{update_info['previous_version'].split('v')[-1]}  \n"
+                    log += f" 📘新版本: v{paper_id.split('v')[-1]}  \n"
 
                 if "更新日期变化" in update_info["changes"]:
-                    log += f"   ⏳原更新: {update_info['previous_updated']}  \n"
-                    log += f"   ⏳新更新: {paper['updated_date']}  \n"
+                    log += f" ⏳原更新: {update_info['previous_updated']}  \n"
+                    log += f" ⏳新更新: {paper['updated_date']}  \n"
 
                 log += "\n"
 
