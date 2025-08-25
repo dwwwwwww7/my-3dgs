@@ -82,10 +82,12 @@ on:
 
 ### 6. 获取更新日志内容用于生成邮件正文
 - 将最新一日的更新日志转为html
+- 使用grep和sed提取"新增论文数量："和"更新论文数量："后的数字
+- 标记是否需要发送邮件（用于手动触发时判断是否需要发送邮件）
 
 
-### 7. 发送更新日志到邮箱 只有自动触发时才会发送邮件
-- `github.event_name == 'schedule'`只有自动触发时才会发送邮件
+### 7. 发送更新日志到邮箱 只有自动触发和有更新时才会发送邮件
+- ` github.event_name == 'schedule' || steps.get-update-content.outputs.SHOULD_SEND == '1'` 只有自动触发或有论文更新时才会运行
 - 使用开源的项目`dawidd6/action-send-mail@v3`实现邮件发送
 - 需要在项目Settings->Secrets and variables->Actions 中设置以下secret
 - `SMTP_SERVER` SMTP服务器地址,
@@ -122,7 +124,7 @@ jobs:
       - 更新README
       - 检查是否有更改
       - 获取更新日志内容
-      - 发送更新日志到邮箱 只有自动触发时才会发送邮件
+      - 发送更新日志到邮箱
       - 提交更改（仅在有更改时）
       - 推送更改（仅在有更改时）
       - 工作流程完成通知
