@@ -102,8 +102,8 @@ jobs:
 
          # 🌟 新增：提取数量并判断是否需要发送邮件
          # 使用grep和sed提取"新增论文数量："和"更新论文数量："后的数字
-         ADD_COUNT=$(echo "$MD_CONTENT" | grep -oP '新增论文数量：\K\d+')
-         UPDATE_COUNT=$(echo "$MD_CONTENT" | grep -oP '更新论文数量：\K\d+')
+         ADD_COUNT=$(echo "$MD_CONTENT" | grep -oP '**新增论文数量**:\s*\K\d+')
+         UPDATE_COUNT=$(echo "$MD_CONTENT" | grep -oP '**变动论文数量**:\s*\K\d+')
     
          # 默认为不发送（0），若任一数量>0则设为1
          NEED_SEND=0
