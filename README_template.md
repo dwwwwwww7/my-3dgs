@@ -1,3 +1,4 @@
+# 参考项目原作者的说明
 # Awesome Gaussian Splatting [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A curated list of latest research papers, projects and resources related to Gaussian Splatting. Content is automatically updated daily.
