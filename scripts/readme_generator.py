@@ -496,7 +496,7 @@ def generate_update_log(last_update_time: str, new_papers: list, updated_papers:
                 paper_id = paper["arxiv_url"].split('/')[-1]
 
                 log += f"{i}. [{title}]({paper['arxiv_url']}) (ID: {paper_id})  \n\n"
-                log += f"   - **变更类型**: {', '.join(update_info['changes'])}  \n"
+                log += f"   **🔧变更类型**: {', '.join(update_info['changes'])}  \n"
 
                 # 清理原标题中的多余空格和换行符
                 previous_title = clean_title(update_info['previous_title'])
