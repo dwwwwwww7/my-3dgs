@@ -1,6 +1,7 @@
 # 📰 使用说明
 
 本文件说明项目使用方法和文档指路。
+注意：工作流运行需要配置token和secrets
 
 ---
 
@@ -55,9 +56,11 @@
 ✅ **工作流验证报告** (`docs/github_actions_validation_report.md`)
 - 可以设置定时（UTC时间）自动触发，也可以手动触发
 - 增加了**邮件发送**功能
+- **secrets**设置保护隐私
+- 自己设置**REPO_PUSH_TOKEN**确保足够的权限（注意时效性）
 
 
 ---
 
-*最后更新：2025-08-22*  
+*最后更新：2025-08-25*  
 *参考项目地址：[awesome-gaussians](https://github.com/user/awesome-gaussians)* 
