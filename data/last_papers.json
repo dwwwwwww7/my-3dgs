@@ -1,64 +1,7 @@
 [
+  
   {
-    "title": "Image-Conditioned 3D Gaussian Splat Quantization",
-    "authors": [
-      "Xinshuang Liu",
-      "Runfa Blark Li",
-      "Keito Suzuki",
-      "Truong Nguyen"
-    ],
-    "abstract": "3D Gaussian Splatting (3DGS) has attracted considerable attention for enabling high-quality real-time rendering. Although 3DGS compression methods have been proposed for deployment on storage-constrained devices, two limitations hinder archival use: (1) they compress medium-scale scenes only to the megabyte range, which remains impractical for large-scale scenes or extensive scene collections; and (2) they lack mechanisms to accommodate scene changes after long-term archival. To address these limitations, we propose an Image-Conditioned Gaussian Splat Quantizer (ICGS-Quantizer) that substantially enhances compression efficiency and provides adaptability to scene changes after archiving. ICGS-Quantizer improves quantization efficiency by jointly exploiting inter-Gaussian and inter-attribute correlations and by using shared codebooks across all training scenes, which are then fixed and applied to previously unseen test scenes, eliminating the overhead of per-scene codebooks. This approach effectively reduces the storage requirements for 3DGS to the kilobyte range while preserving visual fidelity. To enable adaptability to post-archival scene changes, ICGS-Quantizer conditions scene decoding on images captured at decoding time. The encoding, quantization, and decoding processes are trained jointly, ensuring that the codes, which are quantized representations of the scene, are effective for conditional decoding. We evaluate ICGS-Quantizer on 3D scene compression and 3D scene updating. Experimental results show that ICGS-Quantizer consistently outperforms state-of-the-art methods in compression efficiency and adaptability to scene changes. Our code, model, and data will be publicly available on GitHub.",
-    "arxiv_url": "http://arxiv.org/abs/2508.15372v1",
-    "pdf_url": "http://arxiv.org/pdf/2508.15372v1",
-    "published_date": "2025-08-21",
-    "updated_date": "2025-08-21",
-    "categories": [
-      "cs.CV",
-      "cs.AI",
-      "cs.GR"
-    ],
-    "github_url": "",
-    "keywords": [
-      "3d gaussian",
-      "compression",
-      "gaussian splat",
-      "gaussian splatting",
-      "3dgs",
-      "real-time rendering"
-    ],
-    "citations": 0,
-    "semantic_url": ""
-  },
-  {
-    "title": "GeMS: Efficient Gaussian Splatting for Extreme Motion Blur",
-    "authors": [
-      "Gopi Raju Matta",
-      "Trisha Reddypalli",
-      "Vemunuri Divya Madhuri",
-      "Kaushik Mitra"
-    ],
-    "abstract": "We introduce GeMS, a framework for 3D Gaussian Splatting (3DGS) designed to handle severely motion-blurred images. State-of-the-art deblurring methods for extreme blur, such as ExBluRF, as well as Gaussian Splatting-based approaches like Deblur-GS, typically assume access to sharp images for camera pose estimation and point cloud generation, an unrealistic assumption. Methods relying on COLMAP initialization, such as BAD-Gaussians, also fail due to unreliable feature correspondences under severe blur. To address these challenges, we propose GeMS, a 3DGS framework that reconstructs scenes directly from extremely blurred images. GeMS integrates: (1) VGGSfM, a deep learning-based Structure-from-Motion pipeline that estimates poses and generates point clouds directly from blurred inputs; (2) 3DGS-MCMC, which enables robust scene initialization by treating Gaussians as samples from a probability distribution, eliminating heuristic densification and pruning; and (3) joint optimization of camera trajectories and Gaussian parameters for stable reconstruction. While this pipeline produces strong results, inaccuracies may remain when all inputs are severely blurred. To mitigate this, we propose GeMS-E, which integrates a progressive refinement step using events: (4) Event-based Double Integral (EDI) deblurring restores sharper images that are then fed into GeMS, improving pose estimation, point cloud generation, and overall reconstruction. Both GeMS and GeMS-E achieve state-of-the-art performance on synthetic and real-world datasets. To our knowledge, this is the first framework to address extreme motion blur within 3DGS directly from severely blurred inputs.",
-    "arxiv_url": "http://arxiv.org/abs/2508.14682v1",
-    "pdf_url": "http://arxiv.org/pdf/2508.14682v1",
-    "published_date": "2025-08-20",
-    "updated_date": "2025-08-20",
-    "categories": [
-      "cs.CV"
-    ],
-    "github_url": "",
-    "keywords": [
-      "pruning",
-      "efficient",
-      "3d gaussian",
-      "gaussian splat",
-      "gaussian splatting",
-      "3dgs"
-    ],
-    "citations": 0,
-    "semantic_url": ""
-  },
-  {
-    "title": "IGFuse: Interactive 3D Gaussian Scene Reconstruction via Multi-Scans\n  Fusion",
+    "title": "IGFuse: Interactive 3D GaussiaScene Reconstruction via Multi-Scans\n  Fusion",
     "authors": [
       "Wenhao Hu",
       "Zesheng Li",
@@ -73,7 +16,7 @@
     "arxiv_url": "http://arxiv.org/abs/2508.13153v1",
     "pdf_url": "http://arxiv.org/pdf/2508.13153v1",
     "published_date": "2025-08-18",
-    "updated_date": "2025-08-18",
+    "updated_date": "2025-08-20",
     "categories": [
       "cs.CV"
     ],
@@ -87,7 +30,7 @@
     "semantic_url": ""
   },
   {
-    "title": "Improving Densification in 3D Gaussian Splatting for High-Fidelity\n  Rendering",
+    "title": "Improving Densification in 3D Gaussian Satting for High-Fidelity\n  Rendering",
     "authors": [
       "Xiaobin Deng",
       "Changyu Diao",
@@ -96,7 +39,7 @@
       "Duanqing Xu"
     ],
     "abstract": "Although 3D Gaussian Splatting (3DGS) has achieved impressive performance in real-time rendering, its densification strategy often results in suboptimal reconstruction quality. In this work, we present a comprehensive improvement to the densification pipeline of 3DGS from three perspectives: when to densify, how to densify, and how to mitigate overfitting. Specifically, we propose an Edge-Aware Score to effectively select candidate Gaussians for splitting. We further introduce a Long-Axis Split strategy that reduces geometric distortions introduced by clone and split operations. To address overfitting, we design a set of techniques, including Recovery-Aware Pruning, Multi-step Update, and Growth Control. Our method enhances rendering fidelity without introducing additional training or inference overhead, achieving state-of-the-art performance with fewer Gaussians.",
-    "arxiv_url": "http://arxiv.org/abs/2508.12313v1",
+    "arxiv_url": "http://arxiv.org/abs/2508.12313v2",
     "pdf_url": "http://arxiv.org/pdf/2508.12313v1",
     "published_date": "2025-08-17",
     "updated_date": "2025-08-17",
@@ -116,7 +59,7 @@
     "semantic_url": ""
   },
   {
-    "title": "Versatile Video Tokenization with Generative 2D Gaussian Splatting",
+    "title": "Versatile Video Tokenization with Generative 2D aussian Splatting",
     "authors": [
       "Zhenghao Chen",
       "Zicong Chen",
