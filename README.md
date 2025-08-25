@@ -1,6 +1,6 @@
 # 3D Gaussian Splatting 论文列表
 
-> **最后更新**： 2025-08-25 11:18:26
+> **最后更新**： 2025-08-25 11:58:31
 
 > **翻译说明**： 中文摘要由Edge浏览器翻译API自动生成，可能存在不准确之处。如需查看精确表达请参考原文摘要。
 
@@ -983,56 +983,49 @@
 - **📝摘要**：3D Gaussian Splatting has emerged as a promising technique for high-quality 3D rendering, leading to increasing interest in integrating 3DGS into realism SLAM systems. However, existing methods face challenges such as Gaussian primitives redundancy, forgetting problem during continuous optimization, and difficulty in initializing primitives in monocular case due to lack of depth information. In order to achieve efficient and photorealistic mapping, we propose RP-SLAM, a 3D Gaussian splatting-based vision SLAM method for monocular and RGB-D cameras. RP-SLAM decouples camera poses estimation from Gaussian primitives optimization and consists of three key components. Firstly, we propose an efficient incremental mapping approach to achieve a compact and accurate representation of the scene through adaptive sampling and Gaussian primitives filtering. Secondly, a dynamic window optimization method is proposed to mitigate the forgetting problem and improve map consistency. Finally, for the monocular case, a monocular keyframe initialization method based on sparse point cloud is proposed to improve the initialization accuracy of Gaussian primitives, which provides a geometric basis for subsequent optimization. The results of numerous experiments demonstrate that RP-SLAM achieves state-of-the-art map rendering accuracy while ensuring real-time performance and model compactness.  
 - **📝翻译未启用或未翻译**  
 
-### [11] SizeGS: Size-aware Compression of 3D Gaussians with Hierarchical Mixed  Precision Quantization  
-- **⏳发布**：2024-12-08  
-- **🧑‍🔬作者**：Shuzhao Xie, Jiahang Liu, Weixiang Zhang et al.  
-- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2412.05808v1)    
-- **📝摘要**：Effective compression technology is crucial for 3DGS to adapt to varying storage and transmission conditions. However, existing methods fail to address size constraints while maintaining optimal quality. In this paper, we introduce SizeGS, a framework that compresses 3DGS within a specified size budget while optimizing visual quality. We start with a size estimator to establish a clear relationship between file size and hyperparameters. Leveraging this estimator, we incorporate mixed precision quantization (MPQ) into 3DGS attributes, structuring MPQ in two hierarchical level -- inter-attribute and intra-attribute -- to optimize visual quality under the size constraint. At the inter-attribute level, we assign bit-widths to each attribute channel by formulating the combinatorial optimization as a 0-1 integer linear program, which can be efficiently solved. At the intra-attribute level, we divide each attribute channel into blocks of vectors, quantizing each vector based on the optimal bit-width derived at the inter-attribute level. Dynamic programming determines block lengths. Using the size estimator and MPQ, we develop a calibrated algorithm to identify optimal hyperparameters in just 10 minutes, achieving a 1.69$\times$ efficiency increase with quality comparable to state-of-the-art methods.  
-- **📝翻译未启用或未翻译**  
-
-### [12] Temporally Compressed 3D Gaussian Splatting for Dynamic Scenes  
+### [11] Temporally Compressed 3D Gaussian Splatting for Dynamic Scenes  
 - **⏳发布**：2024-12-07  
 - **🧑‍🔬作者**：Saqib Javed, Ahmad Jarrar Khan, Corentin Dumery, Chen Zhao, Mathieu Salzmann  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2412.05700v1)    
 - **📝摘要**：Recent advancements in high-fidelity dynamic scene reconstruction have leveraged dynamic 3D Gaussians and 4D Gaussian Splatting for realistic scene representation. However, to make these methods viable for real-time applications such as AR/VR, gaming, and rendering on low-power devices, substantial reductions in memory usage and improvements in rendering efficiency are required. While many state-of-the-art methods prioritize lightweight implementations, they struggle in handling scenes with complex motions or long sequences. In this work, we introduce Temporally Compressed 3D Gaussian Splatting (TC3DGS), a novel technique designed specifically to effectively compress dynamic 3D Gaussian representations. TC3DGS selectively prunes Gaussians based on their temporal relevance and employs gradient-aware mixed-precision quantization to dynamically compress Gaussian parameters. It additionally relies on a variation of the Ramer-Douglas-Peucker algorithm in a post-processing step to further reduce storage by interpolating Gaussian trajectories across frames. Our experiments across multiple datasets demonstrate that TC3DGS achieves up to 67$\times$ compression with minimal or no degradation in visual quality.  
 - **📝翻译未启用或未翻译**  
 
-### [13] WATER-GS: Toward Copyright Protection for 3D Gaussian Splatting via  Universal Watermarking  
+### [12] WATER-GS: Toward Copyright Protection for 3D Gaussian Splatting via  Universal Watermarking  
 - **⏳发布**：2024-12-07  
 - **🧑‍🔬作者**：Yuqi Tan, Xiang Liu, Shuzhao Xie et al.  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2412.05695v1)    
 - **📝摘要**：3D Gaussian Splatting (3DGS) has emerged as a pivotal technique for 3D scene representation, providing rapid rendering speeds and high fidelity. As 3DGS gains prominence, safeguarding its intellectual property becomes increasingly crucial since 3DGS could be used to imitate unauthorized scene creations and raise copyright issues. Existing watermarking methods for implicit NeRFs cannot be directly applied to 3DGS due to its explicit representation and real-time rendering process, leaving watermarking for 3DGS largely unexplored. In response, we propose WATER-GS, a novel method designed to protect 3DGS copyrights through a universal watermarking strategy. First, we introduce a pre-trained watermark decoder, treating raw 3DGS generative modules as potential watermark encoders to ensure imperceptibility. Additionally, we implement novel 3D distortion layers to enhance the robustness of the embedded watermark against common real-world distortions of point cloud data. Comprehensive experiments and ablation studies demonstrate that WATER-GS effectively embeds imperceptible and robust watermarks into 3DGS without compromising rendering efficiency and quality. Our experiments indicate that the 3D distortion layers can yield up to a 20% improvement in accuracy rate. Notably, our method is adaptable to different 3DGS variants, including 3DGS compression frameworks and 2D Gaussian splatting.  
 - **📝翻译未启用或未翻译**  
 
-### [14] 2DGS-Room: Seed-Guided 2D Gaussian Splatting with Geometric Constrains  for High-Fidelity Indoor Scene Reconstruction  
+### [13] 2DGS-Room: Seed-Guided 2D Gaussian Splatting with Geometric Constrains  for High-Fidelity Indoor Scene Reconstruction  
 - **⏳发布**：2024-12-04  
 - **🧑‍🔬作者**：Wanting Zhang, Haodong Xiang, Zhichao Liao et al.  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2412.03428v1)    
 - **📝摘要**：The reconstruction of indoor scenes remains challenging due to the inherent complexity of spatial structures and the prevalence of textureless regions. Recent advancements in 3D Gaussian Splatting have improved novel view synthesis with accelerated processing but have yet to deliver comparable performance in surface reconstruction. In this paper, we introduce 2DGS-Room, a novel method leveraging 2D Gaussian Splatting for high-fidelity indoor scene reconstruction. Specifically, we employ a seed-guided mechanism to control the distribution of 2D Gaussians, with the density of seed points dynamically optimized through adaptive growth and pruning mechanisms. To further improve geometric accuracy, we incorporate monocular depth and normal priors to provide constraints for details and textureless regions respectively. Additionally, multi-view consistency constraints are employed to mitigate artifacts and further enhance reconstruction quality. Extensive experiments on ScanNet and ScanNet++ datasets demonstrate that our method achieves state-of-the-art performance in indoor scene reconstruction.  
 - **📝翻译未启用或未翻译**  
 
-### [15] SparseGrasp: Robotic Grasping via 3D Semantic Gaussian Splatting from  Sparse Multi-View RGB Images  
+### [14] SparseGrasp: Robotic Grasping via 3D Semantic Gaussian Splatting from  Sparse Multi-View RGB Images  
 - **⏳发布**：2024-12-03  
 - **🧑‍🔬作者**：Junqiu Yu, Xinlin Ren, Yongchong Gu et al.  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2412.02140v1)    
 - **📝摘要**：Language-guided robotic grasping is a rapidly advancing field where robots are instructed using human language to grasp specific objects. However, existing methods often depend on dense camera views and struggle to quickly update scenes, limiting their effectiveness in changeable environments.   In contrast, we propose SparseGrasp, a novel open-vocabulary robotic grasping system that operates efficiently with sparse-view RGB images and handles scene updates fastly. Our system builds upon and significantly enhances existing computer vision modules in robotic learning. Specifically, SparseGrasp utilizes DUSt3R to generate a dense point cloud as the initialization for 3D Gaussian Splatting (3DGS), maintaining high fidelity even under sparse supervision. Importantly, SparseGrasp incorporates semantic awareness from recent vision foundation models. To further improve processing efficiency, we repurpose Principal Component Analysis (PCA) to compress features from 2D models. Additionally, we introduce a novel render-and-compare strategy that ensures rapid scene updates, enabling multi-turn grasping in changeable environments.   Experimental results show that SparseGrasp significantly outperforms state-of-the-art methods in terms of both speed and adaptability, providing a robust solution for multi-turn grasping in changeable environment.  
 - **📝翻译未启用或未翻译**  
 
-### [16] HDGS: Textured 2D Gaussian Splatting for Enhanced Scene Rendering  
+### [15] HDGS: Textured 2D Gaussian Splatting for Enhanced Scene Rendering  
 - **⏳发布**：2024-12-02  
 - **🧑‍🔬作者**：Yunzhou Song, Heguang Lin, Jiahui Lei, Lingjie Liu, Kostas Daniilidis  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2412.01823v1)    
 - **📝摘要**：Recent advancements in neural rendering, particularly 2D Gaussian Splatting (2DGS), have shown promising results for jointly reconstructing fine appearance and geometry by leveraging 2D Gaussian surfels. However, current methods face significant challenges when rendering at arbitrary viewpoints, such as anti-aliasing for down-sampled rendering, and texture detail preservation for high-resolution rendering. We proposed a novel method to align the 2D surfels with texture maps and augment it with per-ray depth sorting and fisher-based pruning for rendering consistency and efficiency. With correct order, per-surfel texture maps significantly improve the capabilities to capture fine details. Additionally, to render high-fidelity details in varying viewpoints, we designed a frustum-based sampling method to mitigate the aliasing artifacts. Experimental results on benchmarks and our custom texture-rich dataset demonstrate that our method surpasses existing techniques, particularly in detail preservation and anti-aliasing.  
 - **📝翻译未启用或未翻译**  
 
-### [17] Occam's LGS: An Efficient Approach for Language Gaussian Splatting  
+### [16] Occam's LGS: An Efficient Approach for Language Gaussian Splatting  
 - **⏳发布**：2024-12-02（更新：2025-03-08）  
 - **🧑‍🔬作者**：Jiahuan Cheng, Jan-Nico Zaech, Luc Van Gool, Danda Pani Paudel  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2412.01807v2)   · [Project](https://insait-institute.github.io/OccamLGS/)  
 - **📝摘要**：TL;DR: Gaussian Splatting is a widely adopted approach for 3D scene representation, offering efficient, high-quality reconstruction and rendering. A key reason for its success is the simplicity of representing scenes with sets of Gaussians, making it interpretable and adaptable. To enhance understanding beyond visual representation, recent approaches extend Gaussian Splatting with semantic vision-language features, enabling open-set tasks. Typically, these language features are aggregated from multiple 2D views, however, existing methods rely on cumbersome techniques, resulting in high computational costs and longer training times.   In this work, we show that the complicated pipelines for language 3D Gaussian Splatting are simply unnecessary. Instead, we follow a probabilistic formulation of Language Gaussian Splatting and apply Occam's razor to the task at hand, leading to a highly efficient weighted multi-view feature aggregation technique. Doing so offers us state-of-the-art results with a speed-up of two orders of magnitude without any compression, allowing for easy scene manipulation. Project Page: https://insait-institute.github.io/OccamLGS/  
 - **📝翻译未启用或未翻译**  
 
-### [18] 6DOPE-GS: Online 6D Object Pose Estimation using Gaussian Splatting  
+### [17] 6DOPE-GS: Online 6D Object Pose Estimation using Gaussian Splatting  
 - **⏳发布**：2024-12-02（更新：2025-04-03）  
 - **🧑‍🔬作者**：Yufeng Jin, Vignesh Prasad, Snehal Jauhri, Mathias Franzius, Georgia Chalvatzaki  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2412.01543v2)    
@@ -1313,14 +1306,7 @@
 
 ## July 2024
 
-### [1] A Benchmark for Gaussian Splatting Compression and Quality Assessment  Study  
-- **⏳发布**：2024-07-19  
-- **🧑‍🔬作者**：Qi Yang, Kaifa Yang, Yuke Xing, Yiling Xu, Zhu Li  
-- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2407.14197v1)    
-- **📝摘要**：To fill the gap of traditional GS compression method, in this paper, we first propose a simple and effective GS data compression anchor called Graph-based GS Compression (GGSC). GGSC is inspired by graph signal processing theory and uses two branches to compress the primitive center and attributes. We split the whole GS sample via KDTree and clip the high-frequency components after the graph Fourier transform. Followed by quantization, G-PCC and adaptive arithmetic coding are used to compress the primitive center and attribute residual matrix to generate the bitrate file. GGSS is the first work to explore traditional GS compression, with advantages that can reveal the GS distortion characteristics corresponding to typical compression operation, such as high-frequency clipping and quantization. Second, based on GGSC, we create a GS Quality Assessment dataset (GSQA) with 120 samples. A subjective experiment is conducted in a laboratory environment to collect subjective scores after rendering GS into Processed Video Sequences (PVS). We analyze the characteristics of different GS distortions based on Mean Opinion Scores (MOS), demonstrating the sensitivity of different attributes distortion to visual quality. The GGSC code and the dataset, including GS samples, MOS, and PVS, are made publicly available at https://github.com/Qi-Yangsjtu/GGSC.  
-- **📝翻译未启用或未翻译**  
-
-### [2] MVG-Splatting: Multi-View Guided Gaussian Splatting with Adaptive  Quantile-Based Geometric Consistency Densification  
+### [1] MVG-Splatting: Multi-View Guided Gaussian Splatting with Adaptive  Quantile-Based Geometric Consistency Densification  
 - **⏳发布**：2024-07-16  
 - **🧑‍🔬作者**：Zhuoxiao Li, Shanliang Yao, Yijie Chu et al.  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2407.11840v1)    

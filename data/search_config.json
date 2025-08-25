@@ -24,8 +24,7 @@
       "compact 3d scene representation",
       "mini-splatting",
       "scaffold-gs",
-      "spacetime gaussian",
-      "4dgs"
+      "spacetime gaussian"
     ],
     "notes": {
       "both_abstract_and_title": "这些关键词将在摘要(abs)和题目(ti)中搜索",
