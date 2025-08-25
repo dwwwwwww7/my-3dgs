@@ -503,16 +503,16 @@ def generate_update_log(last_update_time: str, new_papers: list, updated_papers:
 
                 # 显示具体变更
                 if "标题变更" in update_info["changes"]:
-                    log += f"   原标题: {previous_title}  \n"
-                    log += f"   新标题: {title}  \n"
+                    log += f"   - 原标题: {previous_title}  \n"
+                    log += f"   - 新标题: {title}  \n"
 
                 if "arXiv版本更新" in update_info["changes"]:
-                    log += f"   原版本: v{update_info['previous_version'].split('v')[-1]}  \n"
-                    log += f"   新版本: v{paper_id.split('v')[-1]}  \n"
+                    log += f"   - 原版本: v{update_info['previous_version'].split('v')[-1]}  \n"
+                    log += f"   - 新版本: v{paper_id.split('v')[-1]}  \n"
 
                 if "更新日期变化" in update_info["changes"]:
-                    log += f"   原更新: {update_info['previous_updated']}  \n"
-                    log += f"   新更新: {paper['updated_date']}  \n"
+                    log += f"   - 原更新: {update_info['previous_updated']}  \n"
+                    log += f"   - 新更新: {paper['updated_date']}  \n"
 
                 log += "\n"
 
