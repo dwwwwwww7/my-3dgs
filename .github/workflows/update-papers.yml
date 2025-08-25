@@ -62,8 +62,8 @@ jobs:
         python readme_generator.py \
           --data-dir ../data \
           --output ../README.md \
-          --update-dir ../update    #\
-          #--translate   #控制摘要翻译，--translate为开启                           
+          --update-dir ../update    \
+          --translate   #控制摘要翻译，--translate为开启                           
         echo "✅ README 更新完成"
       working-directory: ./scripts         
         
@@ -117,7 +117,7 @@ jobs:
          echo "EOF" >> $GITHUB_OUTPUT
          echo "SHOULD_SEND=$SHOULD_SEND" >> $GITHUB_OUTPUT
 
-         echo "✅ Markdown已转换为HTML，发送条件判断完成（NEED_SEND=$NEED_SEND）"       
+         echo "✅ Markdown已转换为HTML，发送标志: $SHOULD_SEND (新增:$ADD_COUNT, 变动:$CHANGE_COUNT)"       
       env:
          TZ: Asia/Shanghai
 
