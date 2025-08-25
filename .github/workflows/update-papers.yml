@@ -102,13 +102,12 @@ jobs:
 
          # 🌟 新增：提取数量并判断是否需要发送邮件
          # 使用grep和sed提取"新增论文数量："和"更新论文数量："后的数字
-         ADD_COUNT=$(echo "$MD_CONTENT" | grep -oP '**新增论文数量**:\s*\K\d+')
-         UPDATE_COUNT=$(echo "$MD_CONTENT" | grep -oP '**变动论文数量**:\s*\K\d+')
+         ADD_COUNT=$(echo "$MD_CONTENT" | grep -oP '新增论文数量\*\*:\s*\K\d+' || echo 0)
+         CHANGE_COUNT=$(echo "$MD_CONTENT" | grep -oP '变动论文数量\*\*:\s*\K\d+' || echo 0)
     
-         # 默认为不发送（0），若任一数量>0则设为1
-         NEED_SEND=0
-         if [ "$ADD_COUNT" -gt 0 ] || [ "$UPDATE_COUNT" -gt 0 ]; then
-            NEED_SEND=1
+         # 如果有新增或变动论文则标记为需要发送
+         if [ "$ADD_COUNT" -gt 0 ] || [ "$CHANGE_COUNT" -gt 0 ]; then
+             SHOULD_SEND=1
          fi
 
          # 设置输出变量
@@ -116,7 +115,7 @@ jobs:
          echo "HTML_CONTENT<<EOF" >> $GITHUB_OUTPUT
          echo "$HTML_CONTENT" >> $GITHUB_OUTPUT
          echo "EOF" >> $GITHUB_OUTPUT
-         echo "NEED_SEND=$NEED_SEND" >> $GITHUB_OUTPUT
+         echo "SHOULD_SEND=$SHOULD_SEND" >> $GITHUB_OUTPUT
 
          echo "✅ Markdown已转换为HTML，发送条件判断完成（NEED_SEND=$NEED_SEND）"       
       env:
@@ -125,7 +124,7 @@ jobs:
 
     - name: 发送更新日志到邮箱 只有自动触发或手动触发有更新时才会发送邮件
       if: 
-        ( github.event_name == 'schedule' || steps.get-update-content.outputs.NEED_SEND == '1') &&     
+        ( github.event_name == 'schedule' || steps.get-update-content.outputs.SHOULD_SEND == '1') &&     
         steps.verify-changed-files.outputs.has_changes == 'true' && 
         steps.get-update-content.outputs.HTML_CONTENT != '' 
       uses: dawidd6/action-send-mail@v3
