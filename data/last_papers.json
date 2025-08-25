@@ -8,10 +8,10 @@
       "Truong Nguyen"
     ],
     "abstract": "3D Gaussian Splatting (3DGS) has attracted considerable attention for enabling high-quality real-time rendering. Although 3DGS compression methods have been proposed for deployment on storage-constrained devices, two limitations hinder archival use: (1) they compress medium-scale scenes only to the megabyte range, which remains impractical for large-scale scenes or extensive scene collections; and (2) they lack mechanisms to accommodate scene changes after long-term archival. To address these limitations, we propose an Image-Conditioned Gaussian Splat Quantizer (ICGS-Quantizer) that substantially enhances compression efficiency and provides adaptability to scene changes after archiving. ICGS-Quantizer improves quantization efficiency by jointly exploiting inter-Gaussian and inter-attribute correlations and by using shared codebooks across all training scenes, which are then fixed and applied to previously unseen test scenes, eliminating the overhead of per-scene codebooks. This approach effectively reduces the storage requirements for 3DGS to the kilobyte range while preserving visual fidelity. To enable adaptability to post-archival scene changes, ICGS-Quantizer conditions scene decoding on images captured at decoding time. The encoding, quantization, and decoding processes are trained jointly, ensuring that the codes, which are quantized representations of the scene, are effective for conditional decoding. We evaluate ICGS-Quantizer on 3D scene compression and 3D scene updating. Experimental results show that ICGS-Quantizer consistently outperforms state-of-the-art methods in compression efficiency and adaptability to scene changes. Our code, model, and data will be publicly available on GitHub.",
-    "arxiv_url": "http://arxiv.org/abs/2508.15372v3",
+    "arxiv_url": "http://arxiv.org/abs/2508.15372v1",
     "pdf_url": "http://arxiv.org/pdf/2508.15372v1",
     "published_date": "2025-08-21",
-    "updated_date": "2025-08-22",
+    "updated_date": "2025-08-21",
     "categories": [
       "cs.CV",
       "cs.AI",
@@ -20,11 +20,11 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "compression",
       "gaussian splat",
-      "3dgs",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -47,12 +47,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -80,8 +80,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "3d reconstruction",
-      "pruning"
+      "pruning",
+      "3d reconstruction"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -107,10 +107,10 @@
     "keywords": [
       "real-time rendering",
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -134,10 +134,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
       "compact",
-      "compression"
+      "compression",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -160,12 +160,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
+      "gaussian splat",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -191,12 +191,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
+      "nerf",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -222,10 +222,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -247,11 +247,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d reconstruction",
-      "gaussian splat",
       "efficient",
-      "gaussian splatting",
-      "compact"
+      "gaussian splat",
+      "compact",
+      "3d reconstruction",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -277,12 +277,12 @@
     ],
     "github_url": "",
     "keywords": [
+      "gaussian splat",
       "compression",
       "compressed ",
-      "gaussian splat",
-      "3dgs",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -310,13 +310,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "gaussian splat",
       "3d reconstruction",
       "nerf",
-      "gaussian splat",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -340,12 +340,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -370,12 +370,12 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
+      "gaussian splat",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -397,10 +397,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
-      "efficient",
       "gaussian splatting",
-      "compact"
+      "efficient",
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -424,13 +424,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -453,10 +453,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -481,10 +481,10 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "gaussian splat",
       "efficient",
-      "3d gaussian",
-      "gaussian splatting"
+      "gaussian splat",
+      "gaussian splatting",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -513,9 +513,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splat",
-      "gaussian splatting"
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -537,11 +537,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "gaussian splat",
       "efficient",
-      "3d gaussian",
-      "gaussian splatting"
+      "gaussian splat",
+      "nerf",
+      "gaussian splatting",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -563,11 +563,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d reconstruction",
       "gaussian splat",
-      "3dgs",
+      "3d reconstruction",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -588,13 +588,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compression",
+      "4d gaussian",
       "gaussian splatting",
-      "4d gaussian"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -620,14 +620,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "compressing",
-      "3d gaussian",
+      "gaussian splat",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3d gaussians",
+      "compressing"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -657,9 +657,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splat",
-      "gaussian splatting"
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -687,13 +687,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
+      "neural rendering",
       "efficient",
-      "3dgs",
-      "3d gaussian",
-      "gaussian splatting",
+      "gaussian splat",
       "compact",
-      "neural rendering"
+      "gaussian splatting",
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -720,12 +720,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
+      "gaussian splat",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -750,9 +750,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
-      "pruning"
+      "pruning",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -780,13 +780,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3d gaussian",
-      "gaussian splatting",
+      "gaussian splat",
+      "4d gaussian",
       "compact",
-      "4d gaussian"
+      "gaussian splatting",
+      "3d gaussian",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -810,11 +810,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "pruning",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -843,10 +843,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -871,14 +871,14 @@
     ],
     "github_url": "",
     "keywords": [
+      "efficient",
+      "gaussian splat",
       "compression",
       "compressed ",
-      "gaussian splat",
-      "efficient",
-      "3dgs",
-      "compressing",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "compressing"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -903,10 +903,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -928,10 +928,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "3dgs"
+      "3d gaussian",
+      "3dgs",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -955,11 +955,11 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "compression",
       "gaussian splat",
-      "pruning",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -981,9 +981,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "3d gaussians",
       "3d gaussian",
-      "compact",
-      "3d gaussians"
+      "compact"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1009,9 +1009,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
-      "pruning"
+      "pruning",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1037,12 +1037,12 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
+      "gaussian splat",
       "compression",
       "compressed ",
-      "gaussian splat",
-      "3dgs",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1071,13 +1071,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d reconstruction",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "3d reconstruction",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1099,12 +1099,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1132,10 +1132,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
       "compact",
-      "nerf"
+      "nerf",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1160,10 +1160,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1187,10 +1187,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
-      "efficient",
       "gaussian splatting",
-      "compact"
+      "efficient",
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1218,10 +1218,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1246,14 +1246,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
+      "neural rendering",
       "efficient",
-      "3dgs",
-      "pruning",
-      "3d gaussian",
-      "gaussian splatting",
+      "gaussian splat",
       "compact",
-      "neural rendering"
+      "gaussian splatting",
+      "3d gaussian",
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1279,13 +1279,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1311,13 +1311,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "compression",
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "compression",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1340,10 +1340,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "3d reconstruction",
       "efficient",
-      "pruning"
+      "3d gaussian",
+      "pruning",
+      "3d reconstruction"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1371,14 +1371,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
-      "compressing",
+      "gaussian splat",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "compressing",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1407,10 +1407,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1437,11 +1437,11 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "compression",
       "gaussian splat",
-      "3d gaussian",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1469,10 +1469,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
+      "pruning",
       "compressed ",
-      "pruning"
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1496,13 +1496,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "efficient",
+      "gaussian splat",
       "compression",
       "compressed ",
-      "gaussian splat",
-      "efficient",
-      "3dgs",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1535,11 +1535,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3dgs",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1564,14 +1564,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "compressed ",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compression",
+      "compact",
+      "compressed ",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1599,13 +1599,13 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1628,12 +1628,12 @@
     ],
     "github_url": "",
     "keywords": [
+      "gaussian splat",
       "compression",
       "scaffold-gs",
-      "gaussian splat",
-      "3dgs",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1663,8 +1663,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "3d reconstruction",
-      "compact"
+      "compact",
+      "3d reconstruction"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1691,9 +1691,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
+      "compact",
       "3d reconstruction",
-      "compact"
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1722,10 +1722,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1749,9 +1749,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
-      "pruning"
+      "pruning",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1774,12 +1774,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
+      "gaussian splat",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1802,15 +1802,15 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
+      "efficient",
       "vector quantization",
       "gaussian splat",
-      "efficient",
-      "3d gaussians",
-      "3dgs",
-      "pruning",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1833,10 +1833,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1860,9 +1860,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
-      "compression"
+      "compression",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1886,12 +1886,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compressed ",
-      "gaussian splat",
       "efficient",
-      "gaussian splatting",
+      "gaussian splat",
       "compact",
-      "4d gaussian"
+      "compressed ",
+      "4d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1916,12 +1916,12 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3dgs",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1951,12 +1951,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -1979,10 +1979,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
-      "efficient",
       "gaussian splatting",
-      "pruning"
+      "efficient",
+      "pruning",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2004,13 +2004,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
+      "gaussian splat",
+      "compression",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2032,8 +2032,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
-      "gaussian splatting"
+      "gaussian splatting",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2057,12 +2057,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2087,14 +2087,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "compressed ",
       "vector quantization",
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compression",
+      "4d gaussian",
+      "compressed ",
       "gaussian splatting",
-      "4d gaussian"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2120,10 +2120,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
+      "3d gaussians",
       "real-time rendering",
-      "compact",
-      "3d gaussians"
+      "3d gaussian",
+      "compact"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2147,12 +2147,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3dgs",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2177,12 +2177,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2207,11 +2207,11 @@
     ],
     "github_url": "",
     "keywords": [
+      "gaussian splat",
       "compression",
       "compressed ",
-      "gaussian splat",
-      "gaussian splatting",
-      "compact"
+      "compact",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2235,12 +2235,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d reconstruction",
       "real-time rendering",
       "gaussian splat",
-      "3d gaussian",
+      "compact",
+      "3d reconstruction",
       "gaussian splatting",
-      "compact"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2265,11 +2265,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compressed ",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian"
+      "gaussian splat",
+      "compressed ",
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2290,12 +2290,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2318,16 +2318,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d reconstruction",
-      "compression",
-      "compressed ",
+      "efficient",
       "vector quantization",
       "gaussian splat",
-      "efficient",
-      "3dgs",
-      "compressing",
+      "compression",
+      "compressed ",
+      "3d reconstruction",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "compressing"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2354,11 +2354,11 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "compression",
       "gaussian splat",
-      "3dgs",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2386,13 +2386,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
       "gaussian splat",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
+      "compact",
+      "nerf",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2419,10 +2419,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
-      "efficient",
       "gaussian splatting",
-      "compact"
+      "efficient",
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2444,12 +2444,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3d gaussians",
-      "3dgs",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2475,12 +2475,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2505,12 +2505,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2538,12 +2538,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "compressing",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "compressing"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2565,14 +2565,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
+      "efficient",
       "vector quantization",
       "gaussian splat",
-      "efficient",
-      "3dgs",
-      "3d gaussian",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2597,10 +2597,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "3dgs"
+      "3d gaussian",
+      "3dgs",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2623,10 +2623,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
+      "pruning",
       "4d gaussian",
-      "pruning"
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2649,12 +2649,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2680,15 +2680,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
-      "3d gaussian",
-      "gaussian splatting",
+      "gaussian splat",
+      "compression",
+      "4d gaussian",
       "compact",
-      "4d gaussian"
+      "gaussian splatting",
+      "3d gaussian",
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2712,13 +2712,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
+      "gaussian splat",
+      "compression",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2745,13 +2745,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "efficient",
+      "gaussian splat",
       "compression",
       "compressed ",
-      "gaussian splat",
-      "efficient",
-      "3dgs",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2779,11 +2779,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2808,13 +2808,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2840,10 +2840,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2864,11 +2864,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compressed ",
       "gaussian splat",
-      "3d gaussians",
+      "compressed ",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2895,14 +2895,14 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
-      "scaffold-gs",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "scaffold-gs",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2928,12 +2928,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "pruning",
+      "gaussian splat",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2961,9 +2961,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "compact"
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -2989,12 +2989,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
+      "gaussian splat",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3016,10 +3016,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
-      "efficient",
       "gaussian splatting",
-      "compression"
+      "efficient",
+      "compression",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3044,13 +3044,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "gaussian splat",
       "compression",
       "compressed ",
-      "gaussian splat",
-      "3d gaussians",
-      "3dgs",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3076,10 +3076,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "pruning"
+      "3d gaussian",
+      "pruning",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3104,10 +3104,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3133,11 +3133,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3dgs",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3162,16 +3162,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d reconstruction",
       "real-time rendering",
-      "nerf",
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3dgs",
+      "gaussian splat",
+      "compression",
+      "3d reconstruction",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3222,10 +3222,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3251,11 +3251,11 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3d gaussians",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3279,11 +3279,11 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
       "gaussian splat",
+      "nerf",
+      "gaussian splatting",
       "3dgs",
-      "pruning",
-      "gaussian splatting"
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3311,9 +3311,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
-      "compact"
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3340,10 +3340,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3374,13 +3374,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d reconstruction",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "pruning",
+      "gaussian splat",
+      "3d reconstruction",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3406,11 +3406,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compressed ",
       "gaussian splat",
-      "3dgs",
+      "compressed ",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3433,9 +3433,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splat",
-      "gaussian splatting"
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3461,10 +3461,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
-      "efficient",
       "gaussian splatting",
-      "vector quantization"
+      "efficient",
+      "vector quantization",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3488,10 +3488,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
-      "3d reconstruction",
       "gaussian splatting",
-      "efficient"
+      "efficient",
+      "3d reconstruction",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3516,13 +3516,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "efficient",
       "vector quantization",
       "gaussian splat",
-      "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3546,13 +3546,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "gaussian splat",
       "compression",
       "scaffold-gs",
-      "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3575,10 +3575,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
+      "compression",
       "efficient",
-      "compression"
+      "3d gaussian",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3610,10 +3610,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "compression"
+      "3d gaussian",
+      "compression",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3634,10 +3634,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
+      "pruning",
       "compact",
-      "pruning"
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3661,11 +3661,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3d gaussian",
-      "gaussian splatting"
+      "gaussian splat",
+      "compression",
+      "gaussian splatting",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3690,14 +3690,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
+      "neural rendering",
       "efficient",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
-      "gaussian splatting",
+      "gaussian splat",
       "compact",
-      "neural rendering"
+      "gaussian splatting",
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3722,12 +3722,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3d gaussian",
+      "gaussian splat",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3755,9 +3755,9 @@
     "keywords": [
       "real-time rendering",
       "gaussian splat",
-      "gaussian splatting",
       "compact",
-      "4d gaussian"
+      "4d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3783,10 +3783,10 @@
     "keywords": [
       "real-time rendering",
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3815,12 +3815,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "compression",
       "gaussian splat",
-      "3dgs",
+      "compression",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3844,13 +3844,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
       "gaussian splat",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
+      "compact",
+      "nerf",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3875,11 +3875,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "pruning",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3904,10 +3904,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3936,12 +3936,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3dgs",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3968,11 +3968,11 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3d gaussians",
-      "pruning",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -3998,10 +3998,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4028,12 +4028,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4061,11 +4061,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "efficient",
-      "3d gaussians",
+      "compression",
+      "3d gaussian",
       "3dgs",
-      "3d gaussian"
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4090,14 +4090,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "compressed ",
       "gaussian splat",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
+      "compression",
+      "4d gaussian",
+      "compressed ",
       "gaussian splatting",
-      "4d gaussian"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4123,12 +4123,12 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
-      "compression",
       "gaussian splat",
-      "3dgs",
+      "compression",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4153,10 +4153,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "pruning"
+      "3d gaussian",
+      "pruning",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4187,11 +4187,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4216,10 +4216,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
-      "pruning",
       "gaussian splatting",
-      "neural rendering"
+      "pruning",
+      "neural rendering",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4242,11 +4242,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3d gaussian",
-      "gaussian splatting"
+      "gaussian splat",
+      "compression",
+      "gaussian splatting",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4271,10 +4271,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
-      "efficient",
       "gaussian splatting",
-      "pruning"
+      "efficient",
+      "pruning",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4301,12 +4301,12 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
       "gaussian splat",
-      "3d gaussians",
-      "pruning",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4327,11 +4327,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d reconstruction",
       "gaussian splat",
-      "3d gaussian",
+      "compact",
+      "3d reconstruction",
       "gaussian splatting",
-      "compact"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4362,9 +4362,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
-      "compact"
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4388,11 +4388,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3dgs",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4416,10 +4416,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4445,12 +4445,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "compressing",
-      "gaussian splatting",
+      "gaussian splat",
       "compact",
-      "4d gaussian"
+      "4d gaussian",
+      "gaussian splatting",
+      "compressing"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4473,12 +4473,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compressed ",
       "efficient",
-      "3d gaussians",
-      "3dgs",
+      "compressed ",
+      "nerf",
       "3d gaussian",
-      "nerf"
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4503,12 +4503,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3d gaussians",
-      "3dgs",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4532,12 +4532,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4562,13 +4562,13 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4593,11 +4593,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3d gaussian",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4621,12 +4621,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4648,11 +4648,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "pruning",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4680,9 +4680,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "efficient",
       "3d gaussians",
+      "efficient",
+      "3d gaussian",
       "pruning"
     ],
     "citations": 0,
@@ -4708,9 +4708,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
+      "gaussian splatting",
       "efficient",
-      "gaussian splatting"
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4740,11 +4740,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "gaussian splatting",
-      "4d gaussian"
+      "gaussian splat",
+      "compression",
+      "4d gaussian",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4771,10 +4771,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
+      "3d gaussians",
       "efficient",
-      "compressed ",
-      "3d gaussians"
+      "3d gaussian",
+      "compressed "
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4802,8 +4802,8 @@
     "github_url": "",
     "keywords": [
       "3d gaussian",
-      "gaussian splat",
-      "pruning"
+      "pruning",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4828,13 +4828,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "pruning",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4860,10 +4860,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4889,10 +4889,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "3d reconstruction"
+      "3d gaussian",
+      "3d reconstruction",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4917,11 +4917,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3dgs",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4946,9 +4946,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
-      "compression"
+      "compression",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -4975,13 +4975,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
+      "neural rendering",
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
-      "gaussian splatting",
       "compact",
-      "neural rendering"
+      "nerf",
+      "gaussian splatting",
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5006,10 +5006,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5032,11 +5032,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3dgs",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5062,13 +5062,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3d gaussian",
+      "gaussian splat",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5093,9 +5093,9 @@
     "keywords": [
       "real-time rendering",
       "gaussian splat",
-      "3dgs",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5123,10 +5123,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
-      "efficient",
       "gaussian splatting",
-      "compression"
+      "efficient",
+      "compression",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5153,10 +5153,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "compression"
+      "3d gaussian",
+      "compression",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5183,11 +5183,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3dgs",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5211,13 +5211,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5241,12 +5241,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5272,11 +5272,11 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "gaussian splat",
       "efficient",
-      "3dgs",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5297,10 +5297,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
-      "gaussian splat",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5321,12 +5321,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
+      "gaussian splat",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5351,14 +5351,14 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "compression",
       "vector quantization",
       "gaussian splat",
-      "3dgs",
-      "compressing",
-      "3d gaussian",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "compressing"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5382,9 +5382,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
-      "compression"
+      "compression",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5410,12 +5410,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d reconstruction",
-      "compression",
       "gaussian splat",
-      "3dgs",
+      "compression",
+      "3d reconstruction",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5444,11 +5444,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
+      "gaussian splat",
+      "compact",
       "3d gaussian",
-      "compact"
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5471,13 +5471,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5502,11 +5502,11 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "gaussian splat",
       "efficient",
-      "pruning",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5533,10 +5533,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3d gaussians",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5561,13 +5561,13 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "compression",
-      "gaussian splat",
       "efficient",
-      "pruning",
-      "3d gaussian",
+      "gaussian splat",
+      "compression",
+      "4d gaussian",
       "gaussian splatting",
-      "4d gaussian"
+      "3d gaussian",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5591,11 +5591,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compressed ",
-      "gaussian splat",
       "efficient",
-      "3d gaussian",
-      "nerf"
+      "gaussian splat",
+      "compressed ",
+      "nerf",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5622,11 +5622,11 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5652,13 +5652,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5685,14 +5685,14 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
-      "compression",
       "gaussian splat",
-      "3d gaussians",
-      "pruning",
-      "compressing",
+      "compression",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3d gaussians",
+      "compressing",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5717,13 +5717,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "pruning",
+      "gaussian splat",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5746,12 +5746,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "gaussian splat",
       "efficient",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
+      "nerf",
       "gaussian splatting",
-      "compact"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5778,11 +5778,11 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "pruning",
-      "3d gaussian",
+      "4d gaussian",
       "gaussian splatting",
-      "4d gaussian"
+      "3d gaussian",
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5807,10 +5807,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
+      "3d gaussians",
       "efficient",
-      "compact",
-      "3d gaussians"
+      "3d gaussian",
+      "compact"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5836,13 +5836,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "gaussian splat",
       "compression",
       "scaffold-gs",
-      "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5871,10 +5871,10 @@
     "keywords": [
       "real-time rendering",
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5900,12 +5900,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5927,11 +5927,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
       "gaussian splat",
-      "compressing",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "compressing"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5953,12 +5953,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "compression",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -5984,14 +5984,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compression",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6016,14 +6016,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "gaussian splat",
+      "neural rendering",
       "efficient",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "nerf",
       "gaussian splatting",
-      "neural rendering"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6044,11 +6044,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
       "gaussian splat",
-      "3d gaussian",
+      "compact",
+      "nerf",
       "gaussian splatting",
-      "compact"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6074,13 +6074,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d reconstruction",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
+      "3d reconstruction",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6103,12 +6103,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6134,14 +6134,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
       "gaussian splat",
-      "3d gaussians",
-      "3dgs",
-      "pruning",
-      "3d gaussian",
+      "compact",
+      "nerf",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6165,13 +6165,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
       "gaussian splat",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
+      "compact",
+      "nerf",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6194,10 +6194,10 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
       "gaussian splat",
-      "gaussian splatting",
-      "compact"
+      "compact",
+      "nerf",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6217,12 +6217,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
+      "neural rendering",
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compression",
       "gaussian splatting",
-      "neural rendering"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6246,11 +6246,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "pruning",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6276,12 +6276,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d reconstruction",
-      "nerf",
-      "gaussian splat",
       "efficient",
-      "gaussian splatting",
-      "compact"
+      "gaussian splat",
+      "compact",
+      "nerf",
+      "3d reconstruction",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6305,13 +6305,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "compression",
+      "neural rendering",
       "gaussian splat",
-      "3d gaussian",
-      "gaussian splatting",
+      "compression",
       "compact",
-      "neural rendering"
+      "nerf",
+      "gaussian splatting",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6337,13 +6337,13 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6370,12 +6370,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6399,12 +6399,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "compressed ",
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
+      "compressed ",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6432,13 +6432,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
+      "neural rendering",
       "efficient",
-      "3d gaussians",
-      "pruning",
-      "3d gaussian",
+      "gaussian splat",
       "gaussian splatting",
-      "neural rendering"
+      "3d gaussian",
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6464,11 +6464,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compressed ",
-      "gaussian splat",
       "efficient",
-      "gaussian splatting",
-      "compact"
+      "gaussian splat",
+      "compressed ",
+      "compact",
+      "gaussian splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6497,11 +6497,11 @@
     "keywords": [
       "vector quantization",
       "gaussian splat",
-      "3dgs",
-      "pruning",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6524,10 +6524,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "pruning",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6554,9 +6554,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
+      "gaussian splatting",
       "real-time rendering",
-      "gaussian splatting"
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6583,10 +6583,10 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
       "gaussian splat",
-      "3d gaussian",
-      "gaussian splatting"
+      "nerf",
+      "gaussian splatting",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6610,13 +6610,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "gaussian splat",
       "compression",
       "scaffold-gs",
-      "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6637,9 +6637,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "compression",
       "efficient",
-      "mini-splatting",
-      "compression"
+      "mini-splatting"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6671,9 +6671,9 @@
     "keywords": [
       "real-time rendering",
       "gaussian splat",
-      "pruning",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6698,12 +6698,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "pruning",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6734,9 +6734,9 @@
     "keywords": [
       "real-time rendering",
       "gaussian splat",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6759,9 +6759,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
+      "gaussian splatting",
       "3d reconstruction",
-      "gaussian splatting"
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6792,10 +6792,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
       "vector quantization",
-      "compression"
+      "compression",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6820,13 +6820,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "neural rendering",
       "real-time rendering",
       "efficient",
-      "3d gaussians",
-      "3dgs",
-      "3d gaussian",
       "compact",
-      "neural rendering"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6854,11 +6854,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "compressed ",
       "gaussian splat",
-      "3d gaussian",
-      "gaussian splatting"
+      "compressed ",
+      "nerf",
+      "gaussian splatting",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6883,10 +6883,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
+      "3d gaussians",
       "efficient",
-      "compact",
-      "3d gaussians"
+      "3d gaussian",
+      "compact"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6910,10 +6910,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "3d gaussian",
+      "3d gaussians",
       "real-time rendering",
-      "compact",
-      "3d gaussians"
+      "3d gaussian",
+      "compact"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6936,13 +6936,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "compressed ",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
+      "compressed ",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6966,13 +6966,13 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "pruning",
+      "gaussian splat",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -6999,11 +6999,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "compression",
       "efficient",
-      "3d gaussian",
+      "compression",
       "compact",
-      "4d gaussian"
+      "4d gaussian",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7025,11 +7025,11 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
       "gaussian splat",
-      "3d gaussians",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7056,10 +7056,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3d gaussians",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7086,13 +7086,13 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
-      "gaussian splat",
       "efficient",
-      "3dgs",
-      "pruning",
+      "gaussian splat",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7115,11 +7115,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7145,13 +7145,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "scaffold-gs",
+      "neural rendering",
       "gaussian splat",
-      "3d gaussians",
-      "pruning",
-      "3d gaussian",
+      "scaffold-gs",
       "gaussian splatting",
-      "neural rendering"
+      "3d gaussian",
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7174,13 +7174,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
       "vector quantization",
       "gaussian splat",
-      "3d gaussians",
-      "3dgs",
+      "nerf",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3dgs",
+      "3d gaussians"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7205,18 +7205,18 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "compression",
-      "scaffold-gs",
+      "neural rendering",
+      "efficient",
       "vector quantization",
       "gaussian splat",
-      "efficient",
-      "3d gaussians",
-      "pruning",
-      "3d gaussian",
-      "gaussian splatting",
+      "compression",
+      "scaffold-gs",
       "compact",
-      "neural rendering"
+      "nerf",
+      "gaussian splatting",
+      "3d gaussian",
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7243,11 +7243,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "pruning",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7271,12 +7271,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "nerf",
-      "gaussian splat",
       "efficient",
-      "3d gaussian",
+      "gaussian splat",
+      "compact",
+      "nerf",
       "gaussian splatting",
-      "compact"
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7302,16 +7302,16 @@
     "github_url": "",
     "keywords": [
       "real-time rendering",
-      "nerf",
-      "compression",
       "vector quantization",
       "gaussian splat",
-      "3d gaussians",
-      "3dgs",
-      "compressing",
-      "3d gaussian",
+      "compression",
+      "compact",
+      "nerf",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs",
+      "3d gaussians",
+      "compressing"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7334,10 +7334,10 @@
     "github_url": "",
     "keywords": [
       "gaussian splat",
-      "3dgs",
-      "3d gaussian",
+      "compact",
       "gaussian splatting",
-      "compact"
+      "3d gaussian",
+      "3dgs"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7360,12 +7360,12 @@
     ],
     "github_url": "",
     "keywords": [
+      "efficient",
+      "gaussian splat",
       "compression",
       "compressed ",
-      "gaussian splat",
-      "efficient",
-      "3d gaussian",
-      "gaussian splatting"
+      "gaussian splatting",
+      "3d gaussian"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7390,9 +7390,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "3d gaussians",
       "3d gaussian",
-      "compact",
-      "3d gaussians"
+      "compact"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7416,12 +7416,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "efficient",
-      "3d gaussians",
-      "pruning",
+      "gaussian splat",
+      "gaussian splatting",
       "3d gaussian",
-      "gaussian splatting"
+      "3d gaussians",
+      "pruning"
     ],
     "citations": 0,
     "semantic_url": ""
@@ -7444,9 +7444,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "gaussian splat",
       "gaussian splatting",
-      "compact"
+      "compact",
+      "gaussian splat"
     ],
     "citations": 0,
     "semantic_url": ""
