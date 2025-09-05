@@ -303,10 +303,10 @@ def format_paper_entry(paper: dict, index: int) -> str:
 
         # 摘要
         abstract = paper["abstract"]
-        # 简略摘要（最多150词）
+        # 简略摘要（最多300词）
         words = abstract.split()
-        if len(words) > 200:
-            abstract = ' '.join(words[:200]) + " ..."
+        if len(words) > 300:
+            abstract = ' '.join(words[:300]) + " ..."
         entry += f"- **📝摘要**：{abstract}  \n"
 
         # 中文摘要（如果存在）
@@ -337,7 +337,7 @@ def generate_markdown_content(papers_by_month: dict) -> str:
     markdown += "> **最后更新**： " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
 
     # 翻译说明
-    markdown += "> **翻译说明**： 中文摘要由Edge浏览器翻译API自动生成，可能存在不准确之处。"
+    markdown += "> **翻译说明**： 摘要有300字数限制（可修改），中文摘要由Edge浏览器翻译API自动生成，可能存在不准确之处。"
     markdown += "如需查看精确表达请参考原文摘要。\n\n"
 
     # 按月分组并按时间倒序排列
