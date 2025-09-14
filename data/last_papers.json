@@ -1,39 +1,5 @@
 [
   {
-    "title": "MEGS$^{2}$: Memory-Efficient Gaussian Splatting via Spherical Gaussians\n  and Unified Pruning",
-    "authors": [
-      "Jiarui Chen",
-      "Yikeng Chen",
-      "Yingshuang Zou",
-      "Ye Huang",
-      "Peng Wang",
-      "Yuan Liu",
-      "Yujing Sun",
-      "Wenping Wang"
-    ],
-    "abstract": "3D Gaussian Splatting (3DGS) has emerged as a dominant novel-view synthesis technique, but its high memory consumption severely limits its applicability on edge devices. A growing number of 3DGS compression methods have been proposed to make 3DGS more efficient, yet most only focus on storage compression and fail to address the critical bottleneck of rendering memory. To address this problem, we introduce MEGS$^{2}$, a novel memory-efficient framework that tackles this challenge by jointly optimizing two key factors: the total primitive number and the parameters per primitive, achieving unprecedented memory compression. Specifically, we replace the memory-intensive spherical harmonics with lightweight arbitrarily-oriented spherical Gaussian lobes as our color representations. More importantly, we propose a unified soft pruning framework that models primitive-number and lobe-number pruning as a single constrained optimization problem. Experiments show that MEGS$^{2}$ achieves a 50% static VRAM reduction and a 40% rendering VRAM reduction compared to existing methods, while maintaining comparable rendering quality.",
-    "arxiv_url": "http://arxiv.org/abs/2509.07021v1",
-    "pdf_url": "http://arxiv.org/pdf/2509.07021v1",
-    "published_date": "2025-09-07",
-    "updated_date": "2025-09-07",
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "github_url": "",
-    "keywords": [
-      "gaussian splat",
-      "compression",
-      "3dgs",
-      "gaussian splatting",
-      "pruning",
-      "3d gaussian",
-      "efficient"
-    ],
-    "citations": 0,
-    "semantic_url": ""
-  },
-  {
     "title": "ContraGS: Codebook-Condensed and Trainable Gaussian Splatting for Fast,\n  Memory-Efficient Reconstruction",
     "authors": [
       "Sankeerth Durvasula",
