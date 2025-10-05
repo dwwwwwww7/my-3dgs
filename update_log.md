@@ -1,3 +1,54 @@
+# 2025-10-05 01:03:45
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-09-28 01:04:38  
+**本次更新时间**: 2025-10-05 01:03:45  
+**新增论文数量**: 6  
+**变更论文数量**: 3  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Instant4D: 4D Gaussian Splatting in Minutes](http://arxiv.org/abs/2510.01119v1)** (ID: 2510.01119v1)
+
+#### **2. [GEM: 3D Gaussian Splatting for Efficient and Accurate Cryo-EM  Reconstruction](http://arxiv.org/abs/2509.25075v2)** (ID: 2509.25075v2)
+
+#### **3. [ExGS: Extreme 3D Gaussian Compression with Diffusion Priors](http://arxiv.org/abs/2509.24758v1)** (ID: 2509.24758v1)
+
+#### **4. [Proxy-GS: Efficient 3D Gaussian Splatting via Proxy Mesh](http://arxiv.org/abs/2509.24421v2)** (ID: 2509.24421v2)
+
+#### **5. [OMeGa: Joint Optimization of Explicit Meshes and Gaussian Splats for  Robust Scene-Level Surface Reconstruction](http://arxiv.org/abs/2509.24308v1)** (ID: 2509.24308v1)
+
+#### **6. [Vision-Language Alignment from Compressed Image Representations using 2D  Gaussian Splatting](http://arxiv.org/abs/2509.22615v1)** (ID: 2509.22615v1)
+
+
+### 变更论文  
+#### **1. [Image-Conditioned 3D Gaussian Splat Quantization](http://arxiv.org/abs/2508.15372v2)** (ID: 2508.15372v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-08-21  
+ ⏳新更新: 2025-09-30  
+
+#### **2. [CompMarkGS: Robust Watermarking for Compressed 3D Gaussian Splatting](http://arxiv.org/abs/2503.12836v6)** (ID: 2503.12836v6)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v5  
+ 📘新版本: v6  
+ ⏳原更新: 2025-06-12  
+ ⏳新更新: 2025-09-29  
+
+#### **3. [LiteGS: A High-performance Framework to Train 3DGS in Subminutes via  System and Algorithm Codesign](http://arxiv.org/abs/2503.01199v3)** (ID: 2503.01199v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2025-07-31  
+ ⏳新更新: 2025-09-26  
+
+
+
+---
+
 # 2025-09-28 01:04:38
 
 # 论文更新日志  
