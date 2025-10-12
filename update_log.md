@@ -1,3 +1,42 @@
+# 2025-10-12 01:01:38
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-09-28 01:04:38  
+**本次更新时间**: 2025-10-12 01:01:38  
+**新增论文数量**: 7  
+**变更论文数量**: 1  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [ReSplat: Learning Recurrent Gaussian Splats](http://arxiv.org/abs/2510.08575v1)** (ID: 2510.08575v1)
+
+#### **2. [PrismGS: Physically-Grounded Anti-Aliasing for High-Fidelity Large-Scale  3D Gaussian Splatting](http://arxiv.org/abs/2510.07830v1)** (ID: 2510.07830v1)
+
+#### **3. [RTGS: Real-Time 3D Gaussian Splatting SLAM via Multi-Level Redundancy  Reduction](http://arxiv.org/abs/2510.06644v2)** (ID: 2510.06644v2)
+
+#### **4. [ArchitectHead: Continuous Level of Detail Control for 3D Gaussian Head  Avatars](http://arxiv.org/abs/2510.05488v1)** (ID: 2510.05488v1)
+
+#### **5. [Optimized Minimal 4D Gaussian Splatting](http://arxiv.org/abs/2510.03857v1)** (ID: 2510.03857v1)
+
+#### **6. [GS-Share: Enabling High-fidelity Map Sharing with Incremental Gaussian  Splatting](http://arxiv.org/abs/2510.02884v1)** (ID: 2510.02884v1)
+
+#### **7. [From Tokens to Nodes: Semantic-Guided Motion Control for Dynamic 3D  Gaussian Splatting](http://arxiv.org/abs/2510.02732v1)** (ID: 2510.02732v1)
+
+
+### 变更论文  
+#### **1. [ExGS: Extreme 3D Gaussian Compression with Diffusion Priors](http://arxiv.org/abs/2509.24758v4)** (ID: 2509.24758v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v4  
+ ⏳原更新: 2025-09-29  
+ ⏳新更新: 2025-10-07  
+
+
+
+---
+
 # 2025-10-05 01:03:45
 
 # 论文更新日志  
