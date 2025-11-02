@@ -1,3 +1,39 @@
+# 2025-11-02 01:05:48
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-10-12 14:59:03  
+**本次更新时间**: 2025-11-02 01:05:48  
+**新增论文数量**: 2  
+**变更论文数量**: 2  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Gen-LangSplat: Generalized Language Gaussian Splatting with Pre-Trained  Feature Compression](http://arxiv.org/abs/2510.22930v1)** (ID: 2510.22930v1)
+
+#### **2. [Region-Adaptive Learned Hierarchical Encoding for 3D Gaussian Splatting  Data](http://arxiv.org/abs/2510.22812v1)** (ID: 2510.22812v1)
+
+
+### 变更论文  
+#### **1. [Metropolis-Hastings Sampling for 3D Gaussian Reconstruction](http://arxiv.org/abs/2506.12945v2)** (ID: 2506.12945v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-06-15  
+ ⏳新更新: 2025-10-24  
+
+#### **2. [LODGE: Level-of-Detail Large-Scale Gaussian Splatting with Efficient  Rendering](http://arxiv.org/abs/2505.23158v2)** (ID: 2505.23158v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-05-29  
+ ⏳新更新: 2025-10-29  
+
+
+
+---
+
 # 2025-10-26 01:04:47
 
 # 论文更新日志  
