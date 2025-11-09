@@ -153,7 +153,7 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add data/ README.md update_log.md update/
+        git add data/ README.md update_log.md update/ sorted_papers/
         git commit -m "🤖 自动更新: $(date +'%Y-%m-%d %H:%M UTC')" 
         
     - name: 推送更改
