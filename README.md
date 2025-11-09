@@ -1,10 +1,6 @@
 # 3D Gaussian Splatting 论文列表
 
-<<<<<<< HEAD
 > **最后更新**： 2025-11-10 01:22:16
-=======
-> **最后更新**： 2025-11-09 01:06:18
->>>>>>> 5abad3016507e7aca624aefab523645f6286fa81
 
 > **翻译说明**： 摘要有300字数限制（可修改），中文摘要由Edge浏览器翻译API自动生成，可能存在不准确之处。如需查看精确表达请参考原文摘要。
 
@@ -18,16 +14,10 @@
 - **📝说明**：Project page: https://fastgs.github.io/  
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2511.04283v1)   · [Project](https://fastgs.github.io/)  
 - **📝摘要**：The dominant 3D Gaussian splatting (3DGS) acceleration methods fail to properly regulate the number of Gaussians during training, causing redundant computational time overhead. In this paper, we propose FastGS, a novel, simple, and general acceleration framework that fully considers the importance of each Gaussian based on multi-view consistency, efficiently solving the trade-off between training time and rendering quality. We innovatively design a densification and pruning strategy based on multi-view consistency, dispensing with the budgeting mechanism. Extensive experiments on Mip-NeRF 360, Tanks & Temples, and Deep Blending datasets demonstrate that our method significantly outperforms the state-of-the-art methods in training speed, achieving a 3.32$\times$ training acceleration and comparable rendering quality compared with DashGaussian on the Mip-NeRF 360 dataset and a 15.45$\times$ acceleration compared with vanilla 3DGS on the Deep Blending dataset. We demonstrate that FastGS exhibits strong generality, delivering 2-7$\times$ training acceleration across various tasks, including dynamic scene reconstruction, surface reconstruction, sparse-view reconstruction, large-scale reconstruction, and simultaneous localization and mapping. The project page is available at https://fastgs.github.io/  
-- **📝翻译未启用或未翻译**  
 =======
 - **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2511.04283v1)   · [Project](https://fastgs.github.io/)  
 - **📝摘要**：The dominant 3D Gaussian splatting (3DGS) acceleration methods fail to properly regulate the number of Gaussians during training, causing redundant computational time overhead. In this paper, we propose FastGS, a novel, simple, and general acceleration framework that fully considers the importance of each Gaussian based on multi-view consistency, efficiently solving the trade-off between training time and rendering quality. We innovatively design a densification and pruning strategy based on multi-view consistency, dispensing with the budgeting mechanism. Extensive experiments on Mip-NeRF 360, Tanks & Temples, and Deep Blending datasets demonstrate that our method significantly outperforms the state-of-the-art methods in training speed, achieving a 3.32$\times$ training acceleration and comparable rendering quality compared with DashGaussian on the Mip-NeRF 360 dataset and a 15.45$\times$ acceleration compared with vanilla 3DGS on the Deep Blending dataset. We demonstrate that FastGS exhibits strong generality, delivering 2-7$\times$ training acceleration across various tasks, including dynamic scene reconstruction, surface reconstruction, sparse-view reconstruction, large-scale reconstruction, and simultaneous localization and mapping. The project page is available at https://fastgs.github.io/  
 - **📝翻译**: 占主导地位的3D高斯散布（3DGS）加速方法在训练过程中未能正确调节高斯数量，导致冗余计算时间开销。在本文中，我们提出了FastGS，这是一种新颖、简单、通用的加速框架，它基于多视图一致性充分考虑了每个高斯的重要性，有效地解决了训练时间和渲染质量之间的权衡。我们创新地设计了基于多视图一致性的致密化和修剪策略，省去了预算机制。在Mip-NeRF 360、Tanks & Temples和Deep Blending数据集上的大量实验表明，我们的方法在训练速度方面明显优于最先进的方法，在Mip-NeRF 360数据集上与DashGaussian相比，实现了3.32$\times$的训练加速和相当的渲染质量，在Deep Blending数据集上与普通3DGS相比，实现了15.45$\times$的加速。我们证明了 FastGS 表现出很强的通用性，在各种任务中提供 2-7$\times$ 的训练加速，包括动态场景重建、表面重建、稀疏视图重建、大规模重建以及同步定位和映射。项目页面可在以下网址获得 https://fastgs.github.io/  
->>>>>>> 5abad3016507e7aca624aefab523645f6286fa81
-
-
-## October 2025
-
 ### [1] Gen-LangSplat: Generalized Language Gaussian Splatting with Pre-Trained  Feature Compression  
 - **⏳发布**：2025-10-27  
 - **🧑‍🔬作者**：Pranav Saxena  
