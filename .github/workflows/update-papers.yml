@@ -65,7 +65,14 @@ jobs:
           --update-dir ../update    \
           --translate   #控制摘要翻译，--translate为开启                           
         echo "✅ README 更新完成"
-      working-directory: ./scripts         
+      working-directory: ./scripts   
+      
+    - name: 分类
+      run: |
+        echo "📝 文献分类..."
+        python paper_sort.py                  
+        echo "✅ 分类完成"
+      working-directory: ./scripts  
         
     - name: 检查是否有更改
       id: verify-changed-files

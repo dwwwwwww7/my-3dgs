@@ -274,6 +274,10 @@ def format_paper_entry(paper: dict, index: int) -> str:
         #citations =paper["citations"]
         #entry += f"- **📚被引**：{citations}  \n"
 
+        #comment
+        comment=paper["comment"]
+        entry += f"- **📝说明**：{comment}  \n"
+
         # 链接
         links = []
         # arXiv Abstract链接
@@ -404,7 +408,8 @@ def get_paper_state(paper: dict) -> tuple:
     return (
         paper["title"],
         paper["arxiv_url"].split('/')[-1],  # arXiv ID
-        paper["updated_date"]
+        paper["updated_date"],
+        paper["comment"]
     )
 
 
@@ -450,13 +455,16 @@ def get_paper_changes(current_papers: list, last_papers: list) -> tuple:
                     changes.append("arXiv版本更新")
                 if current_state[2] != last_state[2]:
                     changes.append("更新日期变化")
+                if current_state[3] != last_state[3]:
+                    changes.append("说明变更")
 
                 updated_papers.append({
                     "paper": paper,
                     "changes": changes,
                     "previous_title": last_state[0],
                     "previous_version": last_state[1],
-                    "previous_updated": last_state[2]
+                    "previous_updated": last_state[2],
+                    "previous_comment": last_state[3]
                 })
 
     return new_papers, updated_papers
@@ -513,6 +521,10 @@ def generate_update_log(last_update_time: str, new_papers: list, updated_papers:
                 if "更新日期变化" in update_info["changes"]:
                     log += f" ⏳原更新: {update_info['previous_updated']}  \n"
                     log += f" ⏳新更新: {paper['updated_date']}  \n"
+
+                if "说明变更" in update_info["changes"]:
+                    log += f" 📝原说明: {update_info['previous_comment']}  \n"
+                    log += f" 📝新说明: {paper['comment']}  \n"
 
                 log += "\n"
 

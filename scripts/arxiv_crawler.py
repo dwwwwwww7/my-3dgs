@@ -30,6 +30,7 @@ class Paper:
     keywords: List[str] = None
     citations: int = 0
     semantic_url: str = ""
+    comment: str = ""
 
     def to_dict(self):
         return asdict(self)
@@ -37,10 +38,10 @@ class Paper:
 class ArxivCrawler:
     def __init__(self, fetch_citations: bool = False):
         self.logger = setup_logger("arxiv_crawler")
-        
+
         # Load search configuration and generate search query
         self.search_query = self._load_search_config()
-        
+
         self.output_dir = Path(__file__).parent.parent/"data"
         self.output_dir.mkdir(exist_ok=True)
         self.github_token = os.getenv("GITHUB_TOKEN")
@@ -57,12 +58,12 @@ class ArxivCrawler:
             if not keywords_path.exists():
                 self.logger.error(f"Keywords file not found: {keywords_path}")
                 raise FileNotFoundError(f"Keywords file not found: {keywords_path}")
-            
+
             with open(keywords_path, "r", encoding="utf-8") as f:
                 keywords_data = json.load(f)
                 self.common_keywords = keywords_data["common_keywords"]["keywords"]
                 self.category_keywords = {
-                    category: info["keywords"] 
+                    category: info["keywords"]
                     for category, info in keywords_data["categories"].items()
                 }
                 self.logger.info(f"Successfully loaded keywords configuration")
@@ -77,29 +78,29 @@ class ArxivCrawler:
             if not config_path.exists():
                 self.logger.warning(f"Search config file not found: {config_path}, using default query")
                 return '(abs:"gaussian splatting" OR ti:"gaussian splatting" OR abs:"3d gaussian" OR ti:"3d gaussian" OR abs:"gaussian splat" OR ti:"gaussian splat" OR abs:"3dgs" OR ti:"3dgs" OR abs:"4d gaussian" OR ti:"4d gaussian")'
-            
+
             with open(config_path, "r", encoding="utf-8") as f:
                 config_data = json.load(f)
-                
+
             search_config = config_data.get("search_config", {})
-            
+
             # Build query parts
             query_parts_both = []
             query_parts_abs = []
             query_parts_title = []
 
-            
+
             # Keywords for both abstract and title
             both_keywords = search_config.get("both_abstract_and_title", [])
             for keyword in both_keywords:
                 query_parts_both.append(f'abs:"{keyword}"')
                 query_parts_both.append(f'ti:"{keyword}"')
-            
+
             # Keywords for abstract only
             abs_keywords = search_config.get("abstract_only", [])
             for keyword in abs_keywords:
                 query_parts_abs.append(f'abs:"{keyword}"')
-            
+
             # Keywords for title only
             title_keywords = search_config.get("title_only", [])
             for keyword in title_keywords:
@@ -119,13 +120,13 @@ class ArxivCrawler:
             if not query_blocks:
                 self.logger.warning("No search keywords found in config, using default query")
                 return '(abs:"gaussian splatting" OR ti:"gaussian splatting")'
-            
+
             # 当存在有效查询块时，用AND连接
             search_query =  " AND ".join(query_blocks)
-            
+
             self.logger.info(f"Generated search query from config: {search_query}")
             return search_query
-            
+
         except Exception as e:
             self.logger.error(f"Error loading search config: {e}, using default query")
             return '(abs:"gaussian splatting" OR ti:"gaussian splatting")'
@@ -134,20 +135,20 @@ class ArxivCrawler:
         """从文本中查找GitHub链接"""
         # 合并所有可能包含GitHub链接的文本
         search_text = f"{text} {title}"
-        
+
         # 添加更多常见的代码链接引导语
         code_indicators = [
             "code", "implementation", "source", "github", "repository",
             "official", "project", "available at", "released at"
         ]
-        
+
         # 直接查找GitHub链接的正则表达式
         patterns = [
             r'(?:https?://)?github\.com/[\w-]+/[\w.-]+(?:/[^\s\)\]]*)?',  # 基本的GitHub URL
             r'(?:https?://)?raw\.githubusercontent\.com/[\w-]+/[\w.-]+',   # raw.githubusercontent.com链接
             r'(?:https?://)?gist\.github\.com/[\w-]+/[\w.-]+',            # GitHub Gist链接
         ]
-        
+
         # 首先在代码指示词附近查找
         for indicator in code_indicators:
             idx = search_text.lower().find(indicator)
@@ -160,7 +161,7 @@ class ArxivCrawler:
                         url = self._clean_github_url(match.group(0))
                         if url:
                             return url
-        
+
         # 如果没找到，在整个文本中查找
         for pattern in patterns:
             matches = re.finditer(pattern, search_text, re.IGNORECASE)
@@ -168,7 +169,7 @@ class ArxivCrawler:
                 url = self._clean_github_url(match.group(0))
                 if url:
                     return url
-        
+
         return None
 
     def _clean_github_url(self, url: str) -> Optional[str]:
@@ -177,17 +178,17 @@ class ArxivCrawler:
             # 确保URL以https://开头
             if not url.startswith('http'):
                 url = 'https://' + url
-                
+
             # 清理URL
             url = url.rstrip('/')  # 移除末尾的斜杠
             url = re.sub(r'[.,;:\)]$', '', url)  # 移除末尾的标点符号
             url = url.split('#')[0]  # 移除hash部分
             url = url.split('?')[0]  # 移除query参数
-            
+
             # 确保URL是一个有效的仓库URL
             if '/blob/' in url or '/tree/' in url:
                 url = url.split('/blob/')[0] if '/blob/' in url else url.split('/tree/')[0]
-            
+
             return url
         except Exception as e:
             self.logger.error(f"清理GitHub URL时出错: {e}")
@@ -200,18 +201,18 @@ class ArxivCrawler:
             parts = url.split('github.com/')[-1].split('/')
             if len(parts) < 2:
                 return False
-            
+
             owner, repo = parts[0], parts[1]
             # 清理repo名称
             repo = repo.split('#')[0].split('?')[0]
-            
+
             # 如果没有GitHub token，直接返回True（假设链接有效）
             if not self.github_token:
                 self.logger.warning("未设置GitHub token，跳过仓库验证")
                 return True
-            
+
             api_url = f"https://api.github.com/repos/{owner}/{repo}"
-            
+
             response = requests.get(api_url, headers=self.github_headers)
             if response.status_code == 200:
                 self.logger.info(f"验证GitHub仓库成功: {owner}/{repo}")
@@ -222,7 +223,7 @@ class ArxivCrawler:
             else:
                 self.logger.warning(f"GitHub仓库不存在或无法访问: {owner}/{repo} (状态码: {response.status_code})")
                 return False
-            
+
         except Exception as e:
             self.logger.error(f"验证GitHub仓库时出错: {e}")
             return True  # 出错时也返回True，避免漏掉可能有效的链接
@@ -231,7 +232,7 @@ class ArxivCrawler:
         """获取论文引用数"""
         if not self.fetch_citations:
             return 0, ''
-            
+
         try:
             response = requests.get(f"{self.semantic_api_url}{arxiv_id}")
             if response.status_code == 200:
@@ -246,18 +247,18 @@ class ArxivCrawler:
         """Extract keywords from abstract and title"""
         keywords = set()  # Use set to avoid duplicates
         text = (abstract + " " + title).lower()
-        
+
         # Check common keywords
         for keyword in self.common_keywords:
             if keyword.lower() in text:
                 keywords.add(keyword)
-        
+
         # Check category keywords
        # for category_keywords in self.category_keywords.values():
         #    for keyword in category_keywords:
          #       if keyword.lower() in text:
           #          keywords.add(keyword)
-        
+
         return list(keywords)
 
     def _direct_arxiv_search(self, max_results: int = 50) -> List[Paper]:
@@ -265,10 +266,10 @@ class ArxivCrawler:
         try:
             import xml.etree.ElementTree as ET
             import urllib.parse
-            
+
             # 使用 HTTP 端点避免重定向问题
             base_url = "http://export.arxiv.org/api/query"
-            
+
             # 构建查询参数
             params = {
                 'search_query': self.search_query,
@@ -277,45 +278,45 @@ class ArxivCrawler:
                 'sortBy': 'submittedDate',
                 'sortOrder': 'descending'
             }
-            
+
             # 构建完整URL
             query_string = urllib.parse.urlencode(params)
             full_url = f"{base_url}?{query_string}"
-            
+
             self.logger.info(f"直接访问 arXiv API: {full_url}")
-            
+
             # 发送请求
             response = requests.get(full_url, timeout=30)
             response.raise_for_status()
-            
+
             # 解析XML响应
             root = ET.fromstring(response.content)
-            
+
             # 定义命名空间
             namespaces = {
                 'atom': 'http://www.w3.org/2005/Atom',
                 'arxiv': 'http://arxiv.org/schemas/atom'
             }
-            
+
             papers = []
             entries = root.findall('atom:entry', namespaces)
-            
+
             for entry in entries:
                 try:
                     # 提取基本信息
                     title = entry.find('atom:title', namespaces)
                     title = title.text.strip() if title is not None else "No title"
-                    
+
                     summary = entry.find('atom:summary', namespaces)
                     abstract = summary.text.strip().replace('\n', ' ') if summary is not None else ""
-                    
+
                     # 提取作者
                     authors = []
                     for author in entry.findall('atom:author', namespaces):
                         name = author.find('atom:name', namespaces)
                         if name is not None:
                             authors.append(name.text.strip())
-                    
+
                     # 提取链接
                     arxiv_url = ""
                     pdf_url = ""
@@ -326,7 +327,7 @@ class ArxivCrawler:
                             arxiv_url = href
                         elif link.get('title') == 'pdf':
                             pdf_url = href
-                    
+
                     # 提取日期
                     published = entry.find('atom:published', namespaces)
                     published_date = published.text[:10] if published is not None else ""
@@ -340,10 +341,14 @@ class ArxivCrawler:
                         term = category.get('term', '')
                         if term:
                             categories.append(term)
-                    
+
                     # 提取关键词
                     keywords = self._extract_keywords(abstract, title)
-                    
+
+                    # 提取 comment 信息
+                    comment_elem = entry.find('arxiv:comment', namespaces)
+                    comment = comment_elem.text.strip() if comment_elem is not None else ""
+
                     paper = Paper(
                         title=title,
                         authors=authors,
@@ -356,17 +361,18 @@ class ArxivCrawler:
                         github_url="",
                         keywords=keywords,
                         citations=0,
-                        semantic_url=""
+                        semantic_url="",
+                        comment = comment
                     )
                     papers.append(paper)
                     self.logger.info(f"[Direct API] Successfully processed paper: {title}")
-                    
+
                 except Exception as e:
                     self.logger.error(f"Error processing paper from direct API: {e}")
                     continue
-            
+
             return papers
-            
+
         except Exception as e:
             self.logger.error(f"Direct arXiv API search failed: {e}")
             return []
@@ -377,21 +383,21 @@ class ArxivCrawler:
             # 首先尝试直接API方法
             self.logger.info("尝试直接 API 方法来绕过重定向问题...")
             papers = self._direct_arxiv_search(max_results)
-            
+
             if papers:
                 self.logger.info(f"直接 API 方法成功获取 {len(papers)} 篇论文")
                 return papers
-            
+
             # 如果直接API失败，使用原始方法
             self.logger.info("直接 API 方法失败，尝试使用 arxiv 库...")
-            
+
             # 简化客户端配置，避免版本兼容性问题
             client = arxiv.Client(
                 page_size=100,
                 delay_seconds=3,
                 num_retries=3
             )
-            
+
             # 尝试强制使用 HTTP 端点来解决重定向问题
             try:
                 # 检查是否可以访问 arxiv 模块的内部配置
@@ -402,7 +408,7 @@ class ArxivCrawler:
                     self.logger.info("成功切换到 HTTP 端点")
             except Exception as e:
                 self.logger.warning(f"无法修改 arXiv 端点，使用默认设置: {e}")
-            
+
             search = arxiv.Search(
                 query=self.search_query,
                 max_results=max_results,
@@ -414,23 +420,25 @@ class ArxivCrawler:
             processed_count = 0
             retry_count = 0
             max_retries = 3
-            
+
             while retry_count < max_retries:
                 try:
                     self.logger.info(f"尝试获取论文，第 {retry_count + 1} 次尝试...")
-                    
+
                     for result in client.results(search):
                         try:
                             arxiv_id = result.entry_id.split('/')[-1]
                             citations, semantic_url = self._get_citations(arxiv_id) if self.fetch_citations else (0, '')
-                            
+
                             # Clean abstract text
                             abstract = result.summary.replace('\n', ' ').strip()
                             # Find GitHub link in title and abstract
                             github_url = self._find_github_url(abstract, result.title.strip())
                             # Extract keywords from title and abstract
                             keywords = self._extract_keywords(abstract, result.title.strip())
-                            
+
+                            comment = getattr(result, 'comment', '') or ''
+
                             paper = Paper(
                                 title=result.title.strip(),
                                 authors=[author.name.strip() for author in result.authors],
@@ -443,7 +451,8 @@ class ArxivCrawler:
                                 github_url=github_url or "",
                                 keywords=keywords,
                                 citations=citations,
-                                semantic_url=semantic_url
+                                semantic_url=semantic_url,
+                                comment=comment
                             )
                             papers.append(paper)
                             processed_count += 1
@@ -451,15 +460,15 @@ class ArxivCrawler:
                         except Exception as e:
                             self.logger.error(f"Error processing single paper: {e}")
                             continue
-                    
+
                     # 如果成功处理了一些论文，跳出重试循环
                     if papers:
                         break
-                        
+
                 except Exception as e:
                     retry_count += 1
                     error_msg = str(e)
-                    
+
                     # 处理不同类型的错误
                     if "HTTP 301" in error_msg or "301" in error_msg:
                         self.logger.warning(f"遇到重定向错误，第 {retry_count} 次重试: {e}")
@@ -478,7 +487,7 @@ class ArxivCrawler:
                     else:
                         self.logger.warning(f"Search interrupted: {e}. Continuing with {processed_count} papers collected so far.")
                         break
-            
+
             # 如果重试后仍然没有论文，尝试降级策略
             if not papers and retry_count >= max_retries:
                 self.logger.warning("所有重试都失败了，尝试使用更简单的搜索查询...")
@@ -490,9 +499,11 @@ class ArxivCrawler:
                         sort_by=arxiv.SortCriterion.SubmittedDate,
                         sort_order=arxiv.SortOrder.Descending
                     )
-                    
+
                     for result in client.results(simple_search):
                         try:
+                            comment = getattr(result, 'comment', '') or ''
+
                             paper = Paper(
                                 title=result.title.strip(),
                                 authors=[author.name.strip() for author in result.authors],
@@ -505,7 +516,8 @@ class ArxivCrawler:
                                 github_url="",
                                 keywords=[],
                                 citations=0,
-                                semantic_url=""
+                                semantic_url="",
+                                comment = comment
                             )
                             papers.append(paper)
                             processed_count += 1
@@ -513,13 +525,13 @@ class ArxivCrawler:
                         except Exception as e:
                             self.logger.error(f"Error processing fallback paper: {e}")
                             continue
-                            
+
                 except Exception as e:
                     self.logger.error(f"Fallback search also failed: {e}")
-            
+
             self.logger.info(f"Total papers collected: {len(papers)}")
             return papers
-            
+
         except Exception as e:
             self.logger.error(f"Error searching papers: {e}")
             # 不要直接抛出异常，而是返回空列表
@@ -531,11 +543,11 @@ class ArxivCrawler:
         try:
             today = datetime.datetime.now().strftime("%Y-%m-%d")
             output_file = self.output_dir / f"papers_{today}.json"
-            
+
             papers_dict = [paper.to_dict() for paper in papers]
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(papers_dict, f, ensure_ascii=False, indent=2)
-            
+
             self.logger.info(f"成功保存{len(papers)}篇论文到{output_file}")
         except Exception as e:
             self.logger.error(f"保存论文数据时出错: {e}")
@@ -543,7 +555,7 @@ class ArxivCrawler:
 
 def main():
     parser = argparse.ArgumentParser(description='arXiv论文爬虫')
-    parser.add_argument('--citations', action='store_true', 
+    parser.add_argument('--citations', action='store_true',
                       help='是否获取引用数和Semantic Scholar链接')
     parser.add_argument('--max-results', type=int, default=1000,
                       help='最大获取论文数量（默认1000，推荐不超过1000以避免API限制）')
@@ -558,4 +570,4 @@ def main():
         sys.exit(1)
 
 if __name__ == "__main__":
-    main() 
+    main()
