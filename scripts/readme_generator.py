@@ -406,10 +406,10 @@ def get_paper_id(paper: dict) -> str:
 def get_paper_state(paper: dict) -> tuple:
     """获取论文的关键状态信息用于比较"""
     return (
-        paper["title"],
-        paper["arxiv_url"].split('/')[-1],  # arXiv ID
+        clean_text(paper["title"]),  # 使用清洗后的标题
+        paper["arxiv_url"].split('/')[-1],
         paper["updated_date"],
-        paper["comment"]
+        clean_text(paper["comment"])
     )
 
 
@@ -469,9 +469,10 @@ def get_paper_changes(current_papers: list, last_papers: list) -> tuple:
 
     return new_papers, updated_papers
 
-def clean_title(title: str) -> str:
-    """清理标题中的多余空格和换行符"""
-    return title.replace('\n', ' ').replace('  ', ' ').strip()
+def clean_text(title: str) -> str:
+    """清理多余空格和换行符"""
+    # 去除首尾空白（包括换行符）后，替换中间换行符为空格
+    return re.sub(r'\s+', ' ', title.strip().replace('\n', ' '))
 
 
 def generate_update_log(last_update_time: str, new_papers: list, updated_papers: list) -> str:
@@ -490,7 +491,7 @@ def generate_update_log(last_update_time: str, new_papers: list, updated_papers:
             log += "\n### 新增论文  \n"
             for i, paper in enumerate(new_papers, start=1):
                 # 清理标题中的多余空格和换行符
-                title = clean_title(paper['title'])
+                title = clean_text(paper['title'])
                 paper_id = paper["arxiv_url"].split('/')[-1]
                 log += f"#### **{i}. [{title}]({paper['arxiv_url']})**"
                 log += f" (ID: {paper_id})\n\n"
@@ -500,14 +501,14 @@ def generate_update_log(last_update_time: str, new_papers: list, updated_papers:
             for i, update_info in enumerate(updated_papers, start=1):
                 paper = update_info["paper"]
                 # 清理标题中的多余空格和换行符
-                title = clean_title(paper['title'])
+                title = clean_text(paper['title'])
                 paper_id = paper["arxiv_url"].split('/')[-1]
 
                 log += f"#### **{i}. [{title}]({paper['arxiv_url']})** (ID: {paper_id})  \n"
                 log += f"   **变更类型**: {', '.join(update_info['changes'])}  \n"
 
                 # 清理原标题中的多余空格和换行符
-                previous_title = clean_title(update_info['previous_title'])
+                previous_title = clean_text(update_info['previous_title'])
 
                 # 显示具体变更
                 if "标题变更" in update_info["changes"]:
