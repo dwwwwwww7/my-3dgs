@@ -1,3 +1,97 @@
+# 2025-11-16 09:18:48
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-11-09 19:30:36  
+**本次更新时间**: 2025-11-16 09:18:48  
+**新增论文数量**: 29  
+**变更论文数量**: 2  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [GFix: Perceptually Enhanced Gaussian Splatting Video Compression](https://arxiv.org/abs/2511.06953v1)** (ID: 2511.06953v1)
+
+#### **2. [HGC-Avatar: Hierarchical Gaussian Compression for Streamable Dynamic 3D Avatars](https://arxiv.org/abs/2510.16463v1)** (ID: 2510.16463v1)
+
+#### **3. [ARTDECO: Towards Efficient and High-Fidelity On-the-Fly 3D Reconstruction with Structured Scene Representation](https://arxiv.org/abs/2510.08551v1)** (ID: 2510.08551v1)
+
+#### **4. [Random-phase Gaussian Wave Splatting for Computer-generated Holography](https://arxiv.org/abs/2508.17480v1)** (ID: 2508.17480v1)
+
+#### **5. [Towards Understanding 3D Vision: the Role of Gaussian Curvature](https://arxiv.org/abs/2508.11825v1)** (ID: 2508.11825v1)
+
+#### **6. [Semantic-aware DropSplat: Adaptive Pruning of Redundant Gaussians for 3D Aerial-View Segmentation](https://arxiv.org/abs/2508.09626v2)** (ID: 2508.09626v2)
+
+#### **7. [Laplacian Analysis Meets Dynamics Modelling: Gaussian Splatting for 4D Reconstruction](https://arxiv.org/abs/2508.04966v1)** (ID: 2508.04966v1)
+
+#### **8. [Voyager: Real-Time Splatting City-Scale Gaussians on Resource-Constrained Devices](https://arxiv.org/abs/2506.02774v3)** (ID: 2506.02774v3)
+
+#### **9. [R3GS: Gaussian Splatting for Robust Reconstruction and Relocalization in Unconstrained Image Collections](https://arxiv.org/abs/2505.15294v1)** (ID: 2505.15294v1)
+
+#### **10. [Building LOD Representation for 3D Urban Scenes](https://arxiv.org/abs/2505.15190v1)** (ID: 2505.15190v1)
+
+#### **11. [GaussianFormer3D: Multi-Modal Gaussian-based Semantic Occupancy Prediction with 3D Deformable Attention](https://arxiv.org/abs/2505.10685v1)** (ID: 2505.10685v1)
+
+#### **12. [SIGMAN:Scaling 3D Human Gaussian Generation with Millions of Assets](https://arxiv.org/abs/2504.06982v1)** (ID: 2504.06982v1)
+
+#### **13. [GSta: Efficient Training Scheme with Siestaed Gaussians for Monocular 3D Scene Reconstruction](https://arxiv.org/abs/2504.06716v1)** (ID: 2504.06716v1)
+
+#### **14. [Deep Polycuboid Fitting for Compact 3D Representation of Indoor Scenes](https://arxiv.org/abs/2503.14912v2)** (ID: 2503.14912v2)
+
+#### **15. [BG-Triangle: Bézier Gaussian Triangle for 3D Vectorization and Rendering](https://arxiv.org/abs/2503.13961v1)** (ID: 2503.13961v1)
+
+#### **16. [Feature-EndoGaussian: Feature Distilled Gaussian Splatting in Surgical Deformable Scene Reconstruction](https://arxiv.org/abs/2503.06161v2)** (ID: 2503.06161v2)
+
+#### **17. [CDGS: Confidence-Aware Depth Regularization for 3D Gaussian Splatting](https://arxiv.org/abs/2502.14684v1)** (ID: 2502.14684v1)
+
+#### **18. [Fused-Planes: Improving Planar Representations for Learning Large Sets of 3D Scenes](https://arxiv.org/abs/2410.23742v2)** (ID: 2410.23742v2)
+
+#### **19. [GaussianBlock: Building Part-Aware Compositional and Editable 3D Scene by Primitives and Gaussians](https://arxiv.org/abs/2410.01535v3)** (ID: 2410.01535v3)
+
+#### **20. [3D hard sphere Boltzmann equation: explicit structure and the transition process from polynomial tail to Gaussian tail](https://arxiv.org/abs/2408.02183v1)** (ID: 2408.02183v1)
+
+#### **21. [A Novel Gaussian filter-based Pressure Correction Technique with Super Compact Scheme for Unsteady 3D Incompressible, Viscous Flows](https://arxiv.org/abs/2407.19116v1)** (ID: 2407.19116v1)
+
+#### **22. [Don't Splat your Gaussians: Volumetric Ray-Traced Primitives for Modeling and Rendering Scattering and Emissive Media](https://arxiv.org/abs/2405.15425v3)** (ID: 2405.15425v3)
+
+#### **23. [GSTalker: Real-time Audio-Driven Talking Face Generation via Deformable Gaussian Splatting](https://arxiv.org/abs/2404.19040v1)** (ID: 2404.19040v1)
+
+#### **24. [Holographic Gaussian Boson Sampling with Matrix Product States on 3D cQED Processors](https://arxiv.org/abs/2403.16810v2)** (ID: 2403.16810v2)
+
+#### **25. [Gaussian Splatting in Style](https://arxiv.org/abs/2403.08498v2)** (ID: 2403.08498v2)
+
+#### **26. [Gaussian Grouping: Segment and Edit Anything in 3D Scenes](https://arxiv.org/abs/2312.00732v2)** (ID: 2312.00732v2)
+
+#### **27. [3DG-STFM: 3D Geometric Guided Student-Teacher Feature Matching](https://arxiv.org/abs/2207.02375v2)** (ID: 2207.02375v2)
+
+#### **28. [3D Scene Compression through Entropy Penalized Neural Representation Functions](https://arxiv.org/abs/2104.12456v1)** (ID: 2104.12456v1)
+
+#### **29. [3D-GMNet: Single-View 3D Shape Recovery as A Gaussian Mixture](https://arxiv.org/abs/1912.04663v2)** (ID: 1912.04663v2)
+
+
+### 变更论文  
+#### **1. [UniGS: Unified Geometry-Aware Gaussian Splatting for Multimodal Rendering](https://arxiv.org/abs/2510.12174v2)** (ID: 2510.12174v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-10-14  
+ ⏳新更新: 2025-11-13  
+
+#### **2. [ControlGS: Consistent Structural Compression Control for Deployment-Aware Gaussian Splatting](https://arxiv.org/abs/2505.10473v3)** (ID: 2505.10473v3)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化, 说明变更  
+ 🏷️原标题: Consistent Quantity-Quality Control across Scenes for Deployment-Aware Gaussian Splatting  
+ 🏷️新标题: ControlGS: Consistent Structural Compression Control for Deployment-Aware Gaussian Splatting  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2025-05-22  
+ ⏳新更新: 2025-11-07  
+ 📝原说明: 16 pages, 7 figures, 7 tables. Project page available at https://zhang-fengdi.github.io/ControlGS/  
+ 📝新说明:   
+
+
+
+---
+
 # 2025-11-09 19:30:36
 
 # 论文更新日志  
