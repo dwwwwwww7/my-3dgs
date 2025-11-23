@@ -1,10 +1,20 @@
 # NeurIPS 2025
 
-> **最后更新**： 2025-11-16 09:25:49
+> **最后更新**： 2025-11-23 01:26:52
 
 本页面包含 2025 年 NeurIPS 会议的论文列表。
 
-## 1. Instant4D: 4D Gaussian Splatting in Minutes
+## 1. TRIM: Scalable 3D Gaussian Diffusion Inference with Temporal and Spatial Trimming
+
+- **作者**: Zeyuan Yin, Xiaoming Liu
+- **发布时间**: 2025-11-20
+- **arXiv链接**: [arXiv:2511.16642v1](https://arxiv.org/abs/2511.16642v1)
+- **说明**: NeurIPS 2025
+- **英文摘要**: Recent advances in 3D Gaussian diffusion models suffer from time-intensive denoising and post-denoising processing due to the massive number of Gaussian primitives, resulting in slow generation and limited scalability along sampling trajectories. To improve the efficiency of 3D diffusion models, we propose $\textbf{TRIM}$ ($\textbf{T}$rajectory $\textbf{R}$eduction and $\textbf{I}$nstance $\textbf{M}$ask denoising), a post-training approach that incorporates both temporal and spatial trimming strategies, to accelerate inference without compromising output quality while supporting the inference-time scaling for Gaussian diffusion models. Instead of scaling denoising trajectories in a costly end-to-end manner, we develop a lightweight selector model to evaluate latent Gaussian primitives derived from multiple sampled noises, enabling early trajectory reduction by selecting candidates with high-quality potential. Furthermore, we introduce instance mask denoising to prune learnable Gaussian primitives by filtering out redundant background regions, reducing inference computation at each denoising step. Extensive experiments and analysis demonstrate that TRIM significantly improves both the efficiency and quality of 3D generation. Source code is available at $\href{https://github.com/zeyuanyin/TRIM}{link}$.
+
+---
+
+## 2. Instant4D: 4D Gaussian Splatting in Minutes
 
 - **作者**: Zhanpeng Luo, Haoxi Ran, Li Lu
 - **发布时间**: 2025-10-01
@@ -14,7 +24,7 @@
 
 ---
 
-## 2. Temporal Smoothness-Aware Rate-Distortion Optimized 4D Gaussian Splatting
+## 3. Temporal Smoothness-Aware Rate-Distortion Optimized 4D Gaussian Splatting
 
 - **作者**: Hyeongmin Lee, Kyungjune Baek
 - **发布时间**: 2025-07-23
@@ -24,7 +34,7 @@
 
 ---
 
-## 3. Metropolis-Hastings Sampling for 3D Gaussian Reconstruction
+## 4. Metropolis-Hastings Sampling for 3D Gaussian Reconstruction
 
 - **作者**: Hyunjin Kim, Haebeom Jung, Jaesik Park
 - **发布时间**: 2025-06-15
@@ -34,17 +44,17 @@
 
 ---
 
-## 4. ZPressor: Bottleneck-Aware Compression for Scalable Feed-Forward 3DGS
+## 5. ZPressor: Bottleneck-Aware Compression for Scalable Feed-Forward 3DGS
 
 - **作者**: Weijie Wang, Donny Y. Chen, Zeyu Zhang et al.
 - **发布时间**: 2025-05-29
-- **arXiv链接**: [arXiv:2505.23734v3](https://arxiv.org/abs/2505.23734v3)
+- **arXiv链接**: [arXiv:2505.23734v4](https://arxiv.org/abs/2505.23734v4)
 - **说明**: NeurIPS 2025, Project Page: https://lhmd.top/zpressor, Code: https://github.com/ziplab/ZPressor
 - **英文摘要**: Feed-forward 3D Gaussian Splatting (3DGS) models have recently emerged as a promising solution for novel view synthesis, enabling one-pass inference without the need for per-scene 3DGS optimization. However, their scalability is fundamentally constrained by the limited capacity of their models, leading to degraded performance or excessive memory consumption as the number of input views increases. In this work, we analyze feed-forward 3DGS frameworks through the lens of the Information Bottleneck principle and introduce ZPressor, a lightweight architecture-agnostic module that enables efficient compression of multi-view inputs into a compact latent state $Z$ that retains essential scene information while discarding redundancy. Concretely, ZPressor enables existing feed-forward 3DGS models to scale to over 100 input views at 480P resolution on an 80GB GPU, by partitioning the views into anchor and support sets and using cross attention to compress the information from the support views into anchor views, forming the compressed latent state $Z$. We show that integrating ZPressor into several state-of-the-art feed-forward 3DGS models consistently improves performance under moderate input views and enhances robustness under dense view settings on two large-scale benchmarks DL3DV-10K and RealEstate10K. The video results, code and trained models are available on our project page: https://lhmd.top/zpressor.
 
 ---
 
-## 5. LODGE: Level-of-Detail Large-Scale Gaussian Splatting with Efficient Rendering
+## 6. LODGE: Level-of-Detail Large-Scale Gaussian Splatting with Efficient Rendering
 
 - **作者**: Jonas Kulhanek, Marie-Julie Rakotosaona, Fabian Manhardt et al.
 - **发布时间**: 2025-05-29

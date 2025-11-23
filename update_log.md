@@ -1,3 +1,50 @@
+# 2025-11-23 01:19:06
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-11-16 09:18:48  
+**本次更新时间**: 2025-11-23 01:19:06  
+**新增论文数量**: 3  
+**变更论文数量**: 3  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [TRIM: Scalable 3D Gaussian Diffusion Inference with Temporal and Spatial Trimming](https://arxiv.org/abs/2511.16642v1)** (ID: 2511.16642v1)
+
+#### **2. [SF-Recon: Simplification-Free Lightweight Building Reconstruction via 3D Gaussian Splatting](https://arxiv.org/abs/2511.13278v1)** (ID: 2511.13278v1)
+
+#### **3. [SymGS : Leveraging Local Symmetries for 3D Gaussian Splatting Compression](https://arxiv.org/abs/2511.13264v2)** (ID: 2511.13264v2)
+
+
+### 变更论文  
+#### **1. [Towards Understanding 3D Vision: the Role of Gaussian Curvature](https://arxiv.org/abs/2508.11825v2)** (ID: 2508.11825v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-08-15  
+ ⏳新更新: 2025-11-18  
+
+#### **2. [SpeeDe3DGS: Speedy Deformable 3D Gaussian Splatting with Temporal Pruning and Motion Grouping](https://arxiv.org/abs/2506.07917v3)** (ID: 2506.07917v3)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化  
+ 🏷️原标题: Speedy Deformable 3D Gaussian Splatting: Fast Rendering and Compression of Dynamic Scenes  
+ 🏷️新标题: SpeeDe3DGS: Speedy Deformable 3D Gaussian Splatting with Temporal Pruning and Motion Grouping  
+ 📘原版本: v1  
+ 📘新版本: v3  
+ ⏳原更新: 2025-06-09  
+ ⏳新更新: 2025-11-20  
+
+#### **3. [ZPressor: Bottleneck-Aware Compression for Scalable Feed-Forward 3DGS](https://arxiv.org/abs/2505.23734v4)** (ID: 2505.23734v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2025-11-05  
+ ⏳新更新: 2025-11-17  
+
+
+
+---
+
 # 2025-11-16 09:18:48
 
 # 论文更新日志  
