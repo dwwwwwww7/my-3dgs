@@ -1,10 +1,20 @@
 # AAAI 2025
 
-> **最后更新**： 2025-11-23 01:26:52
+> **最后更新**： 2025-11-30 01:25:58
 
 本页面包含 2025 年 AAAI 会议的论文列表。
 
-## 1. BloomScene: Lightweight Structured 3D Gaussian Splatting for Crossmodal Scene Generation
+## 1. D-FCGS: Feedforward Compression of Dynamic Gaussian Splatting for Free-Viewpoint Videos
+
+- **作者**: Wenkang Zhang, Yan Zhao, Qiang Wang et al.
+- **发布时间**: 2025-07-08
+- **arXiv链接**: [arXiv:2507.05859v2](https://arxiv.org/abs/2507.05859v2)
+- **说明**: AAAI-26 accepted, code: https://github.com/Mr-Zwkid/D-FCGS
+- **英文摘要**: Free-Viewpoint Video (FVV) enables immersive 3D experiences, but efficient compression of dynamic 3D representation remains a major challenge. Existing dynamic 3D Gaussian Splatting methods couple reconstruction with optimization-dependent compression and customized motion formats, limiting generalization and standardization. To address this, we propose D-FCGS, a novel Feedforward Compression framework for Dynamic Gaussian Splatting. Key innovations include: (1) a standardized Group-of-Frames (GoF) structure with I-P coding, leveraging sparse control points to extract inter-frame motion tensors; (2) a dual prior-aware entropy model that fuses hyperprior and spatial-temporal priors for accurate rate estimation; (3) a control-point-guided motion compensation mechanism and refinement network to enhance view-consistent fidelity. Trained on Gaussian frames derived from multi-view videos, D-FCGS generalizes across diverse scenes in a zero-shot fashion. Experiments show that it matches the rate-distortion performance of optimization-based methods, achieving over 40 times compression compared to the baseline while preserving visual quality across viewpoints. This work advances feedforward compression of dynamic 3DGS, facilitating scalable FVV transmission and storage for immersive applications.
+
+---
+
+## 2. BloomScene: Lightweight Structured 3D Gaussian Splatting for Crossmodal Scene Generation
 
 - **作者**: Xiaolu Hou, Mingcheng Li, Dingkang Yang et al.
 - **发布时间**: 2025-01-15
@@ -14,7 +24,7 @@
 
 ---
 
-## 2. GraphAvatar: Compact Head Avatars with GNN-Generated 3D Gaussians
+## 3. GraphAvatar: Compact Head Avatars with GNN-Generated 3D Gaussians
 
 - **作者**: Xiaobao Wei, Peng Chen, Ming Lu, Hui Chen, Feng Tian
 - **发布时间**: 2024-12-18

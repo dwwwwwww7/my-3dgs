@@ -1,3 +1,85 @@
+# 2025-11-30 01:18:37
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-11-09 19:30:36  
+**本次更新时间**: 2025-11-30 01:18:37  
+**新增论文数量**: 6  
+**变更论文数量**: 6  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [NVGS: Neural Visibility for Occlusion Culling in 3D Gaussian Splatting](https://arxiv.org/abs/2511.19202v1)** (ID: 2511.19202v1)
+
+#### **2. [SegSplat: Feed-forward Gaussian Splatting and Open-Set Semantic Segmentation](https://arxiv.org/abs/2511.18386v1)** (ID: 2511.18386v1)
+
+#### **3. [CUS-GS: A Compact Unified Structured Gaussian Splatting Framework for Multimodal Scene Representation](https://arxiv.org/abs/2511.17904v1)** (ID: 2511.17904v1)
+
+#### **4. [SING3R-SLAM: Submap-based Indoor Monocular Gaussian SLAM with 3D Reconstruction Priors](https://arxiv.org/abs/2511.17207v1)** (ID: 2511.17207v1)
+
+#### **5. [SPAGS: Sparse-View Articulated Object Reconstruction from Single State via Planar Gaussian Splatting](https://arxiv.org/abs/2511.17092v2)** (ID: 2511.17092v2)
+
+#### **6. [Gradient-Driven Natural Selection for Compact 3D Gaussian Splatting](https://arxiv.org/abs/2511.16980v1)** (ID: 2511.16980v1)
+
+
+### 变更论文  
+#### **1. [SF-Recon: Simplification-Free Lightweight Building Reconstruction via 3D Gaussian Splatting](https://arxiv.org/abs/2511.13278v2)** (ID: 2511.13278v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-11-17  
+ ⏳新更新: 2025-11-21  
+ 📝原说明:   
+ 📝新说明: This paper has been submitted to the 2026 ISPRS Congress  
+
+#### **2. [FastGS: Training 3D Gaussian Splatting in 100 Seconds](https://arxiv.org/abs/2511.04283v2)** (ID: 2511.04283v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-11-06  
+ ⏳新更新: 2025-11-25  
+
+#### **3. [D-FCGS: Feedforward Compression of Dynamic Gaussian Splatting for Free-Viewpoint Videos](https://arxiv.org/abs/2507.05859v2)** (ID: 2507.05859v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-07-08  
+ ⏳新更新: 2025-11-22  
+ 📝原说明: 12 pages, 9 figures, 8 tables  
+ 📝新说明: AAAI-26 accepted, code: https://github.com/Mr-Zwkid/D-FCGS  
+
+#### **4. [Learning Hierarchical Sparse Transform Coding of 3DGS](https://arxiv.org/abs/2505.22908v2)** (ID: 2505.22908v2)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化, 说明变更  
+ 🏷️原标题: 3DGS Compression with Sparsity-guided Hierarchical Transform Coding  
+ 🏷️新标题: Learning Hierarchical Sparse Transform Coding of 3DGS  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-05-28  
+ ⏳新更新: 2025-11-25  
+ 📝原说明:   
+ 📝新说明: Our code will be released at \href{https://github.com/hxu160/SHTC_for_3DGS_compression}{here}  
+
+#### **5. [SplatCo: Structure-View Collaborative Gaussian Splatting for Detail-Preserving Rendering of Large-Scale Unbounded Scenes](https://arxiv.org/abs/2505.17951v3)** (ID: 2505.17951v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v3  
+ ⏳原更新: 2025-05-23  
+ ⏳新更新: 2025-11-25  
+
+#### **6. [Temporally Compressed 3D Gaussian Splatting for Dynamic Scenes](https://arxiv.org/abs/2412.05700v2)** (ID: 2412.05700v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2024-12-07  
+ ⏳新更新: 2025-11-25  
+ 📝原说明: Code will be released soon  
+ 📝新说明: Accepted at British Machine Vision Conference (BMVC) 2025  
+
+
+
+---
+
 # 2025-11-23 01:19:06
 
 # 论文更新日志  
