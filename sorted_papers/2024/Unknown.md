@@ -1,6 +1,6 @@
 # 未知会议 2024
 
-> **最后更新**： 2025-11-30 01:25:58
+> **最后更新**： 2025-12-07 01:27:31
 
 本页面包含 2024 年 未知会议 会议的论文列表。
 
@@ -60,13 +60,13 @@
 
 ---
 
-## 7. SizeGS: Size-aware Compression of 3D Gaussians with Hierarchical Mixed Precision Quantization
+## 7. SizeGS: Size-aware Compression of 3D Gaussian Splatting via Mixed Integer Programming
 
 - **作者**: Shuzhao Xie, Jiahang Liu, Weixiang Zhang et al.
 - **发布时间**: 2024-12-08
-- **arXiv链接**: [arXiv:2412.05808v1](https://arxiv.org/abs/2412.05808v1)
+- **arXiv链接**: [arXiv:2412.05808v2](https://arxiv.org/abs/2412.05808v2)
 - **说明**: Automatically compressing 3DGS into the desired file size while maximizing the visual quality
-- **英文摘要**: Effective compression technology is crucial for 3DGS to adapt to varying storage and transmission conditions. However, existing methods fail to address size constraints while maintaining optimal quality. In this paper, we introduce SizeGS, a framework that compresses 3DGS within a specified size budget while optimizing visual quality. We start with a size estimator to establish a clear relationship between file size and hyperparameters. Leveraging this estimator, we incorporate mixed precision quantization (MPQ) into 3DGS attributes, structuring MPQ in two hierarchical level -- inter-attribute and intra-attribute -- to optimize visual quality under the size constraint. At the inter-attribute level, we assign bit-widths to each attribute channel by formulating the combinatorial optimization as a 0-1 integer linear program, which can be efficiently solved. At the intra-attribute level, we divide each attribute channel into blocks of vectors, quantizing each vector based on the optimal bit-width derived at the inter-attribute level. Dynamic programming determines block lengths. Using the size estimator and MPQ, we develop a calibrated algorithm to identify optimal hyperparameters in just 10 minutes, achieving a 1.69$\times$ efficiency increase with quality comparable to state-of-the-art methods.
+- **英文摘要**: Recent advances in 3D Gaussian Splatting (3DGS) have greatly improved 3D reconstruction. However, its substantial data size poses a significant challenge for transmission and storage. While many compression techniques have been proposed, they fail to efficiently adapt to fluctuating network bandwidth, leading to resource wastage. We address this issue from the perspective of size-aware compression, where we aim to compress 3DGS to a desired size by quickly searching for suitable hyperparameters. Through a measurement study, we identify key hyperparameters that affect the size -- namely, the reserve ratio of Gaussians and bit-width settings for Gaussian attributes. Then, we formulate this hyperparameter optimization problem as a mixed-integer nonlinear programming (MINLP) problem, with the goal of maximizing visual quality while respecting the size budget constraint. To solve the MINLP, we decouple this problem into two parts: discretely sampling the reserve ratio and determining the bit-width settings using integer linear programming (ILP). To solve the ILP more quickly and accurately, we design a quality loss estimator and a calibrated size estimator, as well as implement a CUDA kernel. Extensive experiments on multiple 3DGS variants demonstrate that our method achieves state-of-the-art performance in post-training compression. Furthermore, our method can achieve comparable quality to leading training-required methods after fine-tuning.
 
 ---
 
