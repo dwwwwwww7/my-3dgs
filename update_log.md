@@ -1,3 +1,57 @@
+# 2025-12-14 01:19:05
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-11-09 19:30:36  
+**本次更新时间**: 2025-12-14 01:19:05  
+**新增论文数量**: 4  
+**变更论文数量**: 4  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos](https://arxiv.org/abs/2512.09903v1)** (ID: 2512.09903v1)
+
+#### **2. [SUCCESS-GS: Survey of Compactness and Compression for Efficient Static and Dynamic Gaussian Splatting](https://arxiv.org/abs/2512.07197v1)** (ID: 2512.07197v1)
+
+#### **3. [RAVE: Rate-Adaptive Visual Encoding for 3D Gaussian Splatting](https://arxiv.org/abs/2512.07052v1)** (ID: 2512.07052v1)
+
+#### **4. [SplatPainter: Interactive Authoring of 3D Gaussians from 2D Edits via Test-Time Training](https://arxiv.org/abs/2512.05354v1)** (ID: 2512.05354v1)
+
+
+### 变更论文  
+#### **1. [FastGS: Training 3D Gaussian Splatting in 100 Seconds](https://arxiv.org/abs/2511.04283v3)** (ID: 2511.04283v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2025-11-25  
+ ⏳新更新: 2025-12-06  
+
+#### **2. [ReSplat: Learning Recurrent Gaussian Splats](https://arxiv.org/abs/2510.08575v2)** (ID: 2510.08575v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-10-09  
+ ⏳新更新: 2025-12-06  
+
+#### **3. [SplatCo: Structure-View Collaborative Gaussian Splatting for Detail-Preserving Rendering of Large-Scale Unbounded Scenes](https://arxiv.org/abs/2505.17951v4)** (ID: 2505.17951v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2025-11-25  
+ ⏳新更新: 2025-12-11  
+
+#### **4. [CrowdSplat: Exploring Gaussian Splatting For Crowd Rendering](https://arxiv.org/abs/2501.17792v3)** (ID: 2501.17792v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2025-03-04  
+ ⏳新更新: 2025-12-06  
+
+
+
+---
+
 # 2025-12-07 01:18:50
 
 # 论文更新日志  
