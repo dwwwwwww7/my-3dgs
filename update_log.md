@@ -1,3 +1,36 @@
+# 2025-12-21 01:19:04
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-11-09 19:30:36  
+**本次更新时间**: 2025-12-21 01:19:04  
+**新增论文数量**: 3  
+**变更论文数量**: 1  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [HGS: Hybrid Gaussian Splatting with Static-Dynamic Decomposition for Compact Dynamic View Synthesis](https://arxiv.org/abs/2512.14352v1)** (ID: 2512.14352v1)
+
+#### **2. [Moment-Based 3D Gaussian Splatting: Resolving Volumetric Occlusion with Order-Independent Transmittance](https://arxiv.org/abs/2512.11800v1)** (ID: 2512.11800v1)
+
+#### **3. [Lightweight 3D Gaussian Splatting Compression via Video Codec](https://arxiv.org/abs/2512.11186v1)** (ID: 2512.11186v1)
+
+
+### 变更论文  
+#### **1. [D-FCGS: Feedforward Compression of Dynamic Gaussian Splatting for Free-Viewpoint Videos](https://arxiv.org/abs/2507.05859v3)** (ID: 2507.05859v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2025-11-22  
+ ⏳新更新: 2025-12-18  
+ 📝原说明: AAAI-26 accepted, code: https://github.com/Mr-Zwkid/D-FCGS  
+ 📝新说明: changes of some major results  
+
+
+
+---
+
 # 2025-12-14 01:19:05
 
 # 论文更新日志  
