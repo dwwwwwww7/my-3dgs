@@ -1,3 +1,38 @@
+# 2025-12-28 01:22:28
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-12-14 01:19:05  
+**本次更新时间**: 2025-12-28 01:22:28  
+**新增论文数量**: 4  
+**变更论文数量**: 1  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Quantile Rendering: Efficiently Embedding High-dimensional Feature on 3D Gaussian Splatting](https://arxiv.org/abs/2512.20927v1)** (ID: 2512.20927v1)
+
+#### **2. [Nebula: Enable City-Scale 3D Gaussian Splatting in Virtual Reality via Collaborative Rendering and Accelerated Stereo Rasterization](https://arxiv.org/abs/2512.20495v1)** (ID: 2512.20495v1)
+
+#### **3. [GaussianImage++: Boosted Image Representation and Compression with 2D Gaussian Splatting](https://arxiv.org/abs/2512.19108v1)** (ID: 2512.19108v1)
+
+#### **4. [Voxel-GS: Quantized Scaffold Gaussian Splatting Compression with Run-Length Coding](https://arxiv.org/abs/2512.17528v1)** (ID: 2512.17528v1)
+
+
+### 变更论文  
+#### **1. [GaussianVision: Vision-Language Alignment from Compressed Image Representations using 2D Gaussian Splatting](https://arxiv.org/abs/2509.22615v2)** (ID: 2509.22615v2)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化  
+ 🏷️原标题: Vision-Language Alignment from Compressed Image Representations using 2D Gaussian Splatting  
+ 🏷️新标题: GaussianVision: Vision-Language Alignment from Compressed Image Representations using 2D Gaussian Splatting  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-09-26  
+ ⏳新更新: 2025-12-23  
+
+
+
+---
+
 # 2025-12-21 01:19:04
 
 # 论文更新日志  

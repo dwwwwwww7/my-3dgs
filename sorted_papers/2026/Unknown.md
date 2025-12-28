@@ -1,10 +1,20 @@
 # 未知会议 2026
 
-> **最后更新**： 2025-12-21 01:26:09
+> **最后更新**： 2025-12-28 01:29:40
 
 本页面包含 2026 年 未知会议 会议的论文列表。
 
-## 1. Lightweight 3D Gaussian Splatting Compression via Video Codec
+## 1. Voxel-GS: Quantized Scaffold Gaussian Splatting Compression with Run-Length Coding
+
+- **作者**: Chunyang Fu, Xiangrui Liu, Shiqi Wang, Zhu Li
+- **发布时间**: 2025-12-19
+- **arXiv链接**: [arXiv:2512.17528v1](https://arxiv.org/abs/2512.17528v1)
+- **说明**: Accepted by DCC 2026
+- **英文摘要**: Substantial Gaussian splatting format point clouds require effective compression. In this paper, we propose Voxel-GS, a simple yet highly effective framework that departs from the complex neural entropy models of prior work, instead achieving competitive performance using only a lightweight rate proxy and run-length coding. Specifically, we employ a differentiable quantization to discretize the Gaussian attributes of Scaffold-GS. Subsequently, a Laplacian-based rate proxy is devised to impose an entropy constraint, guiding the generation of high-fidelity and compact reconstructions. Finally, this integer-type Gaussian point cloud is compressed losslessly using Octree and run-length coding. Experiments validate that the proposed rate proxy accurately estimates the bitrate of run-length coding, enabling Voxel-GS to eliminate redundancy and optimize for a more compact representation. Consequently, our method achieves a remarkable compression ratio with significantly faster coding speeds than prior art. The code is available at https://github.com/zb12138/VoxelGS.
+
+---
+
+## 2. Lightweight 3D Gaussian Splatting Compression via Video Codec
 
 - **作者**: Qi Yang, Geert Van Der Auwera, Zhu Li
 - **发布时间**: 2025-12-12
@@ -14,7 +24,7 @@
 
 ---
 
-## 2. SF-Recon: Simplification-Free Lightweight Building Reconstruction via 3D Gaussian Splatting
+## 3. SF-Recon: Simplification-Free Lightweight Building Reconstruction via 3D Gaussian Splatting
 
 - **作者**: Zihan Li, Tengfei Wang, Wentian Gan et al.
 - **发布时间**: 2025-11-17
