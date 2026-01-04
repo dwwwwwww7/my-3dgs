@@ -1,3 +1,45 @@
+# 2026-01-04 01:23:29
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-11-09 19:30:36  
+**本次更新时间**: 2026-01-04 01:23:29  
+**新增论文数量**: 3  
+**变更论文数量**: 2  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Splatwizard: A Benchmark Toolkit for 3D Gaussian Splatting Compression](https://arxiv.org/abs/2512.24742v1)** (ID: 2512.24742v1)
+
+#### **2. [Contour Information Aware 2D Gaussian Splatting for Image Representation](https://arxiv.org/abs/2512.23255v1)** (ID: 2512.23255v1)
+
+#### **3. [GaussianDWM: 3D Gaussian Driving World Model for Unified Scene Understanding and Multi-Modal Generation](https://arxiv.org/abs/2512.23180v1)** (ID: 2512.23180v1)
+
+
+### 变更论文  
+#### **1. [GaussianImage++: Boosted Image Representation and Compression with 2D Gaussian Splatting](https://arxiv.org/abs/2512.19108v2)** (ID: 2512.19108v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-12-22  
+ ⏳新更新: 2025-12-30  
+ 📝原说明: Accepted to AAAI 2026.Code URL:https://github.com/Sweethyh/GaussianImage_plus.git  
+ 📝新说明: Accepted to AAAI 2026. Code URL:https://github.com/Sweethyh/GaussianImage_plus.git  
+
+#### **2. [D-FCGS: Feedforward Compression of Dynamic Gaussian Splatting for Free-Viewpoint Videos](https://arxiv.org/abs/2507.05859v4)** (ID: 2507.05859v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2025-12-18  
+ ⏳新更新: 2025-12-29  
+ 📝原说明: changes of some major results  
+ 📝新说明: code:https://github.com/Mr-Zwkid/D-FCGS  
+
+
+
+---
+
 # 2025-12-28 01:22:28
 
 # 论文更新日志  
