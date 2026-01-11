@@ -1,8 +1,27 @@
 # 3D Gaussian Splatting 论文列表
 
-> **最后更新**： 2026-01-04 01:31:16
+> **最后更新**： 2026-01-11 01:31:04
 
 > **翻译说明**： 摘要有300字数限制（可修改），中文摘要由Edge浏览器翻译API自动生成，可能存在不准确之处。如需查看精确表达请参考原文摘要。
+
+
+## January 2026
+
+### [1] SCAR-GS: Spatial Context Attention for Residuals in Progressive Gaussian Splatting  
+- **⏳发布**：2026-01-07  
+- **🧑‍🔬作者**：Diego Revilla, Pooja Suresh, Anand Bhojan, Ooi Wei Tsang  
+- **📝说明**：  
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2601.04348v1)    
+- **📝摘要**：Recent advances in 3D Gaussian Splatting have allowed for real-time, high-fidelity novel view synthesis. Nonetheless, these models have significant storage requirements for large and medium-sized scenes, hindering their deployment over cloud and streaming services. Some of the most recent progressive compression techniques for these models rely on progressive masking and scalar quantization techniques to reduce the bitrate of Gaussian attributes using spatial context models. While effective, scalar quantization may not optimally capture the correlations of high-dimensional feature vectors, which can potentially limit the rate-distortion performance.   In this work, we introduce a novel progressive codec for 3D Gaussian Splatting that replaces traditional methods with a more powerful Residual Vector Quantization approach to compress the primitive features. Our key contribution is an auto-regressive entropy model, guided by a multi-resolution hash grid, that accurately predicts the conditional probability of each successive transmitted index, allowing for coarse and refinement layers to be compressed with high efficiency.  
+- **📝翻译**: 3D高斯散画的最新进展使得实时、高保真的新颖视图合成成为可能。然而，这些模型对大型和中型场景有较高的存储需求，阻碍了它们在云端和流媒体服务上的部署。这些模型的一些最新渐进压缩技术依赖于渐进遮蔽和标量量化技术，利用空间上下文模型降低高斯属性的比特率。虽然标量量子化有效，但可能无法最佳捕捉高维特征矢量的相关性，这可能限制速率失真性能。  本研究介绍了一种新的三维高斯喷溅渐进编解码器，用更强大的残差矢量化方法取代传统方法以压缩原始特征。我们的关键贡献是一套由多分辨率哈希网格引导的自回归熵模型，能够准确预测每个连续传输指标的条件概率，从而高效压缩粗糙和细化层。  
+
+### [2] Clean-GS: Semantic Mask-Guided Pruning for 3D Gaussian Splatting  
+- **⏳发布**：2026-01-01  
+- **🧑‍🔬作者**：Subhankar Mishra  
+- **📝说明**：  
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2601.00913v1)    
+- **📝摘要**：3D Gaussian Splatting produces high-quality scene reconstructions but generates hundreds of thousands of spurious Gaussians (floaters) scattered throughout the environment. These artifacts obscure objects of interest and inflate model sizes, hindering deployment in bandwidth-constrained applications. We present Clean-GS, a method for removing background clutter and floaters from 3DGS reconstructions using sparse semantic masks. Our approach combines whitelist-based spatial filtering with color-guided validation and outlier removal to achieve 60-80\% model compression while preserving object quality. Unlike existing 3DGS pruning methods that rely on global importance metrics, Clean-GS uses semantic information from as few as 3 segmentation masks (1\% of views) to identify and remove Gaussians not belonging to the target object. Our multi-stage approach consisting of (1) whitelist filtering via projection to masked regions, (2) depth-buffered color validation, and (3) neighbor-based outlier removal isolates monuments and objects from complex outdoor scenes. Experiments on Tanks and Temples show that Clean-GS reduces file sizes from 125MB to 47MB while maintaining rendering quality, making 3DGS models practical for web deployment and AR/VR applications. Our code is available at https://github.com/smlab-niser/clean-gs  
+- **📝翻译**: 3D高斯喷溅能生成高质量的场景重建，但会在环境中生成数十万个虚假高斯（漂浮物）。这些伪影会遮蔽感兴趣的对象并膨胀模型大小，阻碍在带宽受限的应用中部署。我们介绍Clean-GS，这是一种利用稀疏语义掩码去除3DGS重建中的背景杂乱和飞蚊的方法。我们的方法结合了基于白名单的空间过滤、颜色引导验证和异常值去除，实现了60-80%的模型压缩，同时保持对象质量。与依赖全局重要性指标的现有3DGS剪枝方法不同，Clean-GS利用仅3个分割遮罩（视野的1/%）的语义信息来识别和移除不属于目标对象的高斯分布。我们的多阶段方法包括（1）通过投影对蒙蔽区域进行白名单过滤，（2）深度缓冲颜色验证，以及（3）基于邻居的异常值去除，将纪念碑和物体从复杂的户外场景中隔离开来。在坦克和神庙上的实验表明，Clean-GS能将文件大小从125MB减少到47MB，同时保持渲染质量，使3DGS模型在网页部署和AR/VR应用中变得实用。我们的代码可在 https://github.com/smlab-niser/clean-gs 获取  
 
 
 ## December 2025
@@ -572,12 +591,12 @@
 - **📝翻译**: 作为一种新兴的新颖视图合成方法，3D高斯喷涂（3DGS）展示了快速的训练/渲染和更优异的视觉质量。3DGS的两个任务——高斯创建和视图渲染——通常在时间或设备中分离，因此需要存储/传输，最后是3DGS高斯的压缩。我们首先对3DGS高斯属性进行相关性和统计分析。这项工作中的一个鼓舞人心的发现表明，球面谐波AC属性精确遵循拉普拉斯分布，而高斯分布的混合则可以近似旋转、缩放和不透明度。此外，谐波AC属性与其他属性的相关性较弱，除了从色彩空间继承的相关性外。以下提出一种分解化和参数化熵编码方法EntropyGS。编码过程中，每个高斯属性的分布参数被估计，以辅助熵编码。熵编码的量子化根据高斯属性类型进行自适应执行。EntropyGS在基准数据集上展示了约30倍的速率降低，同时保持与输入3DGS数据相似的渲染质量，编码和解码速度也很快。  
 
 ### [7] A Survey on 3D Gaussian Splatting Applications: Segmentation, Editing, and Generation  
-- **⏳发布**：2025-08-13（更新：2025-08-22）  
+- **⏳发布**：2025-08-13（更新：2026-01-01）  
 - **🧑‍🔬作者**：Shuting He, Peilin Ji, Yitong Yang et al.  
 - **📝说明**：GitHub Repo: https://github.com/heshuting555/Awesome-3DGS-Applications  
-- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.09977v2)    
-- **📝摘要**：3D Gaussian Splatting (3DGS) has recently emerged as a powerful alternative to Neural Radiance Fields (NeRF) for 3D scene representation, offering high-fidelity photorealistic rendering with real-time performance. Beyond novel view synthesis, the explicit and compact nature of 3DGS enables a wide range of downstream applications that require geometric and semantic understanding. This survey provides a comprehensive overview of recent progress in 3DGS applications. It first introduces 2D foundation models that support semantic understanding and control in 3DGS applications, followed by a review of NeRF-based methods that inform their 3DGS counterparts. We then categorize 3DGS applications into segmentation, editing, generation, and other functional tasks. For each, we summarize representative methods, supervision strategies, and learning paradigms, highlighting shared design principles and emerging trends. Commonly used datasets and evaluation protocols are also summarized, along with comparative analyses of recent methods across public benchmarks. To support ongoing research and development, a continually updated repository of papers, code, and resources is maintained at https://github.com/heshuting555/Awesome-3DGS-Applications.  
-- **📝翻译**: 3D高斯散画（3DGS）最近成为神经辐射场（NeRF）的强大替代方案，用于3D场景表现，提供高保真度的真实渲染和实时性能。除了新颖的视图综合，3DGS的显式且紧凑的特性还支持了需要几何和语义理解的广泛后续应用。本调查全面概述了3DGS应用的最新进展。首先介绍了支持3DGS应用语义理解与控制的二维基础模型，随后回顾了基于NeRF的方法，这些方法为其3DGS对应产品提供了指导。随后我们将3DGS应用分为分段、编辑、生成及其他功能任务。针对每个项目，我们总结了代表性的方法、监督策略和学习范式，突出共同的设计原则和新兴趋势。书中还总结了常用数据集和评估方案，并附有跨公共基准测试的最新方法的比较分析。为支持持续的研究与开发，https://github.com/heshuting555/Awesome-3DGS-Applications 维护了一个持续更新的论文、代码和资源库。  
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2508.09977v3)    
+- **📝摘要**：In the context of novel view synthesis, 3D Gaussian Splatting (3DGS) has recently emerged as an efficient and competitive counterpart to Neural Radiance Field (NeRF), enabling high-fidelity photorealistic rendering in real time. Beyond novel view synthesis, the explicit and compact nature of 3DGS enables a wide range of downstream applications that require geometric and semantic understanding. This survey provides a comprehensive overview of recent progress in 3DGS applications. It first introduces 2D foundation models that support semantic understanding and control in 3DGS applications, followed by a review of NeRF-based methods that inform their 3DGS counterparts. We then categorize 3DGS applications into three foundational tasks: segmentation, editing, and generation, alongside additional functional applications built upon or tightly coupled with these foundational capabilities. For each, we summarize representative methods, supervision strategies, and learning paradigms, highlighting shared design principles and emerging trends. Commonly used datasets and evaluation protocols are also summarized, along with comparative analyses of recent methods across public benchmarks. To support ongoing research and development, a continually updated repository of papers, code, and resources is maintained at https://github.com/heshuting555/Awesome-3DGS-Applications.  
+- **📝翻译**: 在新型视图合成的背景下，3D高斯喷溅（3DGS）最近成为神经辐射场（NeRF）的高效且具有竞争力的对应方法，实现了实时高精度的写真真实渲染。除了新颖的视图综合，3DGS的显式且紧凑的特性还支持了需要几何和语义理解的广泛后续应用。本调查全面概述了3DGS应用的最新进展。首先介绍了支持3DGS应用语义理解与控制的二维基础模型，随后回顾了基于NeRF的方法，这些方法为其3DGS对应产品提供了指导。随后，我们将3DGS应用分为三个基础任务：分段、编辑和生成，以及基于这些基础能力构建或紧密结合的额外功能应用。针对每个项目，我们总结了代表性的方法、监督策略和学习范式，突出共同的设计原则和新兴趋势。书中还总结了常用数据集和评估方案，并附有跨公共基准测试的最新方法的比较分析。为支持持续的研究与开发，https://github.com/heshuting555/Awesome-3DGS-Applications 维护了一个持续更新的论文、代码和资源库。  
 
 ### [8] Gradient-Direction-Aware Density Control for 3D Gaussian Splatting  
 - **⏳发布**：2025-08-12  
@@ -1438,10 +1457,10 @@
 - **📝翻译**: 近年来，三维高斯喷溅（3DGS）的出现在三维地图重建和视觉SLAM领域引起了广泛关注。虽然已有大量研究探索3DGS用于室内轨迹跟踪，仅使用视觉传感器，或结合光探测与测距（LiDAR）和惯性测量单元（IMU），但其与GNSS集成用于大规模户外导航的应用仍然不足。为解决这些问题，我们提出了GS-GVINS：一套紧密集成的GNSS-视觉-惯性导航系统，辅以3DGS。该系统利用三维高斯作为大型户外环境中连续可微场景表示，通过构建的三维高斯地图提升导航性能。值得注意的是，GS-GVINS 是首个直接利用 SE3 相机姿态相对于三维高斯分布的解析雅可比矩阵的 GNSS-视觉-惯性导航应用。为了保持极端动态状态下3DGS渲染的质量，我们引入了一种运动感知的3D高斯剪枝机制，基于相对姿态平移和沿摄像机射线的不透明度更新地图。为了验证，我们在不同的驾驶环境下测试系统：开放天空、郊区和城市。评估时使用自收集和公开数据集。结果显示GS-GVIN在提升不同驾驶环境下导航准确度方面的有效性。  
 
 ### [5] DenseSplat: Densifying Gaussian Splatting SLAM with Neural Radiance Prior  
-- **⏳发布**：2025-02-13  
+- **⏳发布**：2025-02-13（更新：2026-01-06）  
 - **🧑‍🔬作者**：Mingrui Li, Shuhong Liu, Tianchen Deng, Hongyu Wang  
-- **📝说明**：  
-- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2502.09111v1)    
+- **📝说明**：IEEE Transactions on Visualization and Computer Graphics  
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2502.09111v2)    
 - **📝摘要**：Gaussian SLAM systems excel in real-time rendering and fine-grained reconstruction compared to NeRF-based systems. However, their reliance on extensive keyframes is impractical for deployment in real-world robotic systems, which typically operate under sparse-view conditions that can result in substantial holes in the map. To address these challenges, we introduce DenseSplat, the first SLAM system that effectively combines the advantages of NeRF and 3DGS. DenseSplat utilizes sparse keyframes and NeRF priors for initializing primitives that densely populate maps and seamlessly fill gaps. It also implements geometry-aware primitive sampling and pruning strategies to manage granularity and enhance rendering efficiency. Moreover, DenseSplat integrates loop closure and bundle adjustment, significantly enhancing frame-to-frame tracking accuracy. Extensive experiments on multiple large-scale datasets demonstrate that DenseSplat achieves superior performance in tracking and mapping compared to current state-of-the-art methods.  
 - **📝翻译**: 高斯SLAM系统在实时渲染和细粒度重建方面优于基于NeRF的系统。然而，它们依赖大量关键帧，在现实机器人系统中应用不切实际，因为机器人系统通常在稀疏视野条件下运行，可能导致地图出现大量漏洞。为应对这些挑战，我们推出了DenseSplat，这是首个有效结合NeRF和3DGS优势的SLAM系统。DenseSplat 利用稀疏关键帧和 NeRF 先验来初始化密集填充地图并无缝填补空白的原语。它还实现了几何感知的原始采样和剪枝策略，以管理粒度并提升渲染效率。此外，DenseSplat集成了环闭和束调整功能，显著提升了帧间跟踪的精度。在多个大规模数据集上的大量实验表明，DenseSplat在跟踪和制图方面优于现有最先进方法。  
 
