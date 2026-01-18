@@ -1,6 +1,6 @@
 # NeurIPS 2025
 
-> **最后更新**： 2026-01-11 01:31:04
+> **最后更新**： 2026-01-18 01:30:06
 
 本页面包含 2025 年 NeurIPS 会议的论文列表。
 
@@ -28,7 +28,7 @@
 
 - **作者**: Hyeongmin Lee, Kyungjune Baek
 - **发布时间**: 2025-07-23
-- **arXiv链接**: [arXiv:2507.17336v2](https://arxiv.org/abs/2507.17336v2)
+- **arXiv链接**: [arXiv:2507.17336v3](https://arxiv.org/abs/2507.17336v3)
 - **说明**: 24 pages, 10 figures, NeurIPS 2025
 - **英文摘要**: Dynamic 4D Gaussian Splatting (4DGS) effectively extends the high-speed rendering capabilities of 3D Gaussian Splatting (3DGS) to represent volumetric videos. However, the large number of Gaussians, substantial temporal redundancies, and especially the absence of an entropy-aware compression framework result in large storage requirements. Consequently, this poses significant challenges for practical deployment, efficient edge-device processing, and data transmission. In this paper, we introduce a novel end-to-end RD-optimized compression framework tailored for 4DGS, aiming to enable flexible, high-fidelity rendering across varied computational platforms. Leveraging Fully Explicit Dynamic Gaussian Splatting (Ex4DGS), one of the state-of-the-art 4DGS methods, as our baseline, we start from the existing 3DGS compression methods for compatibility while effectively addressing additional challenges introduced by the temporal axis. In particular, instead of storing motion trajectories independently per point, we employ a wavelet transform to reflect the real-world smoothness prior, significantly enhancing storage efficiency. This approach yields significantly improved compression ratios and provides a user-controlled balance between compression efficiency and rendering quality. Extensive experiments demonstrate the effectiveness of our method, achieving up to 91$\times$ compression compared to the original Ex4DGS model while maintaining high visual fidelity. These results highlight ...
 

@@ -1,10 +1,28 @@
 # 未知会议 2026
 
-> **最后更新**： 2026-01-11 01:31:04
+> **最后更新**： 2026-01-18 01:30:06
 
 本页面包含 2026 年 未知会议 会议的论文列表。
 
-## 1. SCAR-GS: Spatial Context Attention for Residuals in Progressive Gaussian Splatting
+## 1. TIDI-GS: Floater Suppression in 3D Gaussian Splatting for Enhanced Indoor Scene Fidelity
+
+- **作者**: Sooyeun Yang, Cheyul Im, Jee Won Lee, Jongseong Brad Choi
+- **发布时间**: 2026-01-14
+- **arXiv链接**: [arXiv:2601.09291v1](https://arxiv.org/abs/2601.09291v1)
+- **英文摘要**: 3D Gaussian Splatting (3DGS) is a technique to create high-quality, real-time 3D scenes from images. This method often produces visual artifacts known as floaters--nearly transparent, disconnected elements that drift in space away from the actual surface. This geometric inaccuracy undermines the reliability of these models for practical applications, which is critical. To address this issue, we introduce TIDI-GS, a new training framework designed to eliminate these floaters. A key benefit of our approach is that it functions as a lightweight plugin for the standard 3DGS pipeline, requiring no major architectural changes and adding minimal overhead to the training process. The core of our method is a floater pruning algorithm--TIDI--that identifies and removes floaters based on several criteria: their consistency across multiple viewpoints, their spatial relationship to other elements, and an importance score learned during training. The framework includes a mechanism to preserve fine details, ensuring that important high-frequency elements are not mistakenly removed. This targeted cleanup is supported by a monocular depth-based loss function that helps improve the overall geometric structure of the scene. Our experiments demonstrate that TIDI-GS improves both the perceptual quality and geometric integrity of reconstructions, transforming them into robust digital assets, suitable for high-fidelity applications.
+
+---
+
+## 2. Sketch&Patch++: Efficient Structure-Aware 3D Gaussian Representation
+
+- **作者**: Yuang Shi, Géraldine Morin, Simone Gasparini, Wei Tsang Ooi
+- **发布时间**: 2026-01-08
+- **arXiv链接**: [arXiv:2601.05394v2](https://arxiv.org/abs/2601.05394v2)
+- **英文摘要**: We observe that Gaussians exhibit distinct roles and characteristics analogous to traditional artistic techniques -- like how artists first sketch outlines before filling in broader areas with color, some Gaussians capture high-frequency features such as edges and contours, while others represent broader, smoother regions analogous to brush strokes that add volume and depth. Based on this observation, we propose a hybrid representation that categorizes Gaussians into (i) Sketch Gaussians, which represent high-frequency, boundary-defining features, and (ii) Patch Gaussians, which cover low-frequency, smooth regions. This semantic separation naturally enables layered progressive streaming, where the compact Sketch Gaussians establish the structural skeleton before Patch Gaussians incrementally refine volumetric detail.   In this work, we extend our previous method to arbitrary 3D scenes by proposing a novel hierarchical adaptive categorization framework that operates directly on the 3DGS representation. Our approach employs multi-criteria density-based clustering, combined with adaptive quality-driven refinement. This method eliminates dependency on external 3D line primitives while ensuring optimal parametric encoding effectiveness. Our comprehensive evaluation across diverse scenes, including both man-made and natural environments, demonstrates that our method achieves up to 1.74 dB improvement in PSNR, 6.7% in SSIM, and 41.4% in LPIPS at equivalent model sizes compared to un...
+
+---
+
+## 3. SCAR-GS: Spatial Context Attention for Residuals in Progressive Gaussian Splatting
 
 - **作者**: Diego Revilla, Pooja Suresh, Anand Bhojan, Ooi Wei Tsang
 - **发布时间**: 2026-01-07
@@ -13,7 +31,7 @@
 
 ---
 
-## 2. Clean-GS: Semantic Mask-Guided Pruning for 3D Gaussian Splatting
+## 4. Clean-GS: Semantic Mask-Guided Pruning for 3D Gaussian Splatting
 
 - **作者**: Subhankar Mishra
 - **发布时间**: 2026-01-01
@@ -22,7 +40,7 @@
 
 ---
 
-## 3. Voxel-GS: Quantized Scaffold Gaussian Splatting Compression with Run-Length Coding
+## 5. Voxel-GS: Quantized Scaffold Gaussian Splatting Compression with Run-Length Coding
 
 - **作者**: Chunyang Fu, Xiangrui Liu, Shiqi Wang, Zhu Li
 - **发布时间**: 2025-12-19
@@ -32,7 +50,7 @@
 
 ---
 
-## 4. Lightweight 3D Gaussian Splatting Compression via Video Codec
+## 6. Lightweight 3D Gaussian Splatting Compression via Video Codec
 
 - **作者**: Qi Yang, Geert Van Der Auwera, Zhu Li
 - **发布时间**: 2025-12-12
@@ -42,7 +60,7 @@
 
 ---
 
-## 5. SF-Recon: Simplification-Free Lightweight Building Reconstruction via 3D Gaussian Splatting
+## 7. SF-Recon: Simplification-Free Lightweight Building Reconstruction via 3D Gaussian Splatting
 
 - **作者**: Zihan Li, Tengfei Wang, Wentian Gan et al.
 - **发布时间**: 2025-11-17
