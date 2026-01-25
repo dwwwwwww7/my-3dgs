@@ -1,3 +1,50 @@
+# 2026-01-25 01:24:20
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-12-14 01:19:05  
+**本次更新时间**: 2026-01-25 01:24:20  
+**新增论文数量**: 4  
+**变更论文数量**: 3  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [LL-GaussianImage: Efficient Image Representation for Zero-shot Low-Light Enhancement with 2D Gaussian Splatting](https://arxiv.org/abs/2601.15772v1)** (ID: 2601.15772v1)
+
+#### **2. [POTR: Post-Training 3DGS Compression](https://arxiv.org/abs/2601.14821v1)** (ID: 2601.14821v1)
+
+#### **3. [Structured Image-based Coding for Efficient Gaussian Splatting Compression](https://arxiv.org/abs/2601.14510v2)** (ID: 2601.14510v2)
+
+#### **4. [CSGaussian: Progressive Rate-Distortion Compression and Segmentation for 3D Gaussian Splatting](https://arxiv.org/abs/2601.12814v1)** (ID: 2601.12814v1)
+
+
+### 变更论文  
+#### **1. [TIDI-GS: Floater Suppression in 3D Gaussian Splatting for Enhanced Indoor Scene Fidelity](https://arxiv.org/abs/2601.09291v2)** (ID: 2601.09291v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-01-14  
+ ⏳新更新: 2026-01-19  
+
+#### **2. [Rasterizing Wireless Radiance Field via Deformable 2D Gaussian Splatting](https://arxiv.org/abs/2506.12787v3)** (ID: 2506.12787v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2025-06-18  
+ ⏳新更新: 2026-01-22  
+
+#### **3. [Light4GS: Lightweight Compact 4D Gaussian Splatting Generation via Context Model](https://arxiv.org/abs/2503.13948v2)** (ID: 2503.13948v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-03-18  
+ ⏳新更新: 2026-01-20  
+
+
+
+---
+
 # 2026-01-18 01:22:16
 
 # 论文更新日志  
