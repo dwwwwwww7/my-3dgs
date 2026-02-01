@@ -1,10 +1,10 @@
 # 2025 年论文索引
 
-> **最后更新**： 2026-01-25 01:32:49
+> **最后更新**： 2026-02-01 01:59:14
 
 本页面包含 2025 年所有会议的论文索引。
 
-**总论文数**: 200
+**总论文数**: 201
 
 ## 会议列表
 
@@ -13,10 +13,10 @@
 - [ICCV (5篇)](ICCV.md)
 - [ICRA (4篇)](ICRA.md)
 - [ICLR (3篇)](ICLR.md)
+- [SIGGRAPH (2篇)](SIGGRAPH.md)
 - [ICME (2篇)](ICME.md)
 - [AAAI (2篇)](AAAI.md)
 - [3DV (2篇)](3DV.md)
-- [SIGGRAPH (1篇)](SIGGRAPH.md)
 - [TOG (1篇)](TOG.md)
 - [ACM MM (1篇)](ACM_MM.md)
 - [ICML (1篇)](ICML.md)
