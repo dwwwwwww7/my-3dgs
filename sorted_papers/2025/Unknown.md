@@ -1,6 +1,6 @@
 # 未知会议 2025
 
-> **最后更新**： 2026-02-01 01:59:14
+> **最后更新**： 2026-02-08 02:11:48
 
 本页面包含 2025 年 未知会议 会议的论文列表。
 
@@ -936,13 +936,13 @@
 
 ---
 
-## 101. Learning Hierarchical Sparse Transform Coding of 3DGS
+## 101. Learning Hierarchical Sparse Transform Coding for 3DGS Compression
 
 - **作者**: Hao Xu, Xiaolin Wu, Xi Zhang
 - **发布时间**: 2025-05-28
-- **arXiv链接**: [arXiv:2505.22908v2](https://arxiv.org/abs/2505.22908v2)
+- **arXiv链接**: [arXiv:2505.22908v3](https://arxiv.org/abs/2505.22908v3)
 - **说明**: Our code will be released at \href{https://github.com/hxu160/SHTC_for_3DGS_compression}{here}
-- **英文摘要**: 3D Gaussian Splatting (3DGS) supports fast, high quality, novel view synthesis but has a heavy memory footprint, making the compression of its model crucial. Current state-of-the-art (SOTA) 3DGS compression methods adopt an anchor-based architecture that pairs the Scaffold-GS representation with conditional entropy coding. However, these methods forego the analysis-synthesis transform, a vital mechanism in visual data compression. As a result, redundancy remains intact in the signal and its removal is left to the entropy coder, which computationally overburdens the entropy coding module, increasing coding latency. Even with added complexity thorough redundancy removal is a task unsuited to an entropy coder. To fix this critical omission, we introduce a Sparsity-guided Hierarchical Transform Coding (SHTC) method, the first study on the end-to-end learned neural transform coding of 3DGS. SHTC applies KLT to decorrelate intra-anchor attributes, followed by quantization and entropy coding, and then compresses KLT residuals with a low-complexity, scene-adaptive neural transform. Aided by the sparsity prior and deep unfolding technique, the learned transform uses only a few trainable parameters, reducing the memory usage. Overall, SHTC achieves an appreciably improved R-D performance and at the same time higher decoding speed over SOTA. Its prior-guided, parameter-efficient design may also inspire low-complexity neural image and video codecs. Our code will be released at https://gi...
+- **英文摘要**: Current 3DGS compression methods largely forego the neural analysis-synthesis transform, which is a crucial component in learned signal compression systems. As a result, redundancy removal is left solely to the entropy coder, overburdening the entropy coding module and reducing rate-distortion (R-D) performance. To fix this critical omission, we propose a training-time transform coding (TTC) method that adds the analysis-synthesis transform and optimizes it jointly with the 3DGS representation and entropy model. Concretely, we adopt a hierarchical design: a channel-wise KLT for decorrelation and energy compaction, followed by a sparsity-aware neural transform that reconstructs the KLT residuals with minimal parameter and computational overhead. Experiments show that our method delivers strong R-D performance with fast decoding, offering a favorable BD-rate-decoding-time trade-off over SOTA 3DGS compressors.
 
 ---
 
