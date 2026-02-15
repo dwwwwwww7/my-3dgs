@@ -1,3 +1,36 @@
+# 2026-02-15 01:48:43
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-08-25 05:12:29  
+**本次更新时间**: 2026-02-15 01:48:43  
+**新增论文数量**: 3  
+**变更论文数量**: 1  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [CompSplat: Compression-aware 3D Gaussian Splatting for Real-world Video](https://arxiv.org/abs/2602.09816v1)** (ID: 2602.09816v1)
+
+#### **2. [GaussianPOP: Principled Simplification Framework for Compact 3D Gaussian Splatting via Error Quantification](https://arxiv.org/abs/2602.06830v1)** (ID: 2602.06830v1)
+
+#### **3. [LangGS-SLAM: Real-Time Language-Feature Gaussian Splatting SLAM](https://arxiv.org/abs/2602.06991v1)** (ID: 2602.06991v1)
+
+
+### 变更论文  
+#### **1. [LighthouseGS: Indoor Structure-aware 3D Gaussian Splatting for Panorama-Style Mobile Captures](https://arxiv.org/abs/2507.06109v2)** (ID: 2507.06109v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-07-08  
+ ⏳新更新: 2026-02-11  
+ 📝原说明: Preprint  
+ 📝新说明: WACV 2026  
+
+
+
+---
+
 # 2026-02-08 02:03:42
 
 # 论文更新日志  

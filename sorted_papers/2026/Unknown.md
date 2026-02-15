@@ -1,10 +1,29 @@
 # 未知会议 2026
 
-> **最后更新**： 2026-02-08 02:11:48
+> **最后更新**： 2026-02-15 01:58:35
 
 本页面包含 2026 年 未知会议 会议的论文列表。
 
-## 1. Nix and Fix: Targeting 1000x Compression of 3D Gaussian Splatting with Diffusion Models
+## 1. CompSplat: Compression-aware 3D Gaussian Splatting for Real-world Video
+
+- **作者**: Hojun Song, Heejung Choi, Aro Kim et al.
+- **发布时间**: 2026-02-10
+- **arXiv链接**: [arXiv:2602.09816v1](https://arxiv.org/abs/2602.09816v1)
+- **说明**: Preprint. Under review
+- **英文摘要**: High-quality novel view synthesis (NVS) from real-world videos is crucial for applications such as cultural heritage preservation, digital twins, and immersive media. However, real-world videos typically contain long sequences with irregular camera trajectories and unknown poses, leading to pose drift, feature misalignment, and geometric distortion during reconstruction. Moreover, lossy compression amplifies these issues by introducing inconsistencies that gradually degrade geometry and rendering quality. While recent studies have addressed either long-sequence NVS or unposed reconstruction, compression-aware approaches still focus on specific artifacts or limited scenarios, leaving diverse compression patterns in long videos insufficiently explored. In this paper, we propose CompSplat, a compression-aware training framework that explicitly models frame-wise compression characteristics to mitigate inter-frame inconsistency and accumulated geometric errors. CompSplat incorporates compression-aware frame weighting and an adaptive pruning strategy to enhance robustness and geometric consistency, particularly under heavy compression. Extensive experiments on challenging benchmarks, including Tanks and Temples, Free, and Hike, demonstrate that CompSplat achieves state-of-the-art rendering quality and pose accuracy, significantly surpassing most recent state-of-the-art NVS approaches under severe compression conditions.
+
+---
+
+## 2. GaussianPOP: Principled Simplification Framework for Compact 3D Gaussian Splatting via Error Quantification
+
+- **作者**: Soonbin Lee, Yeong-Gyu Kim, Simon Sasse et al.
+- **发布时间**: 2026-02-06
+- **arXiv链接**: [arXiv:2602.06830v1](https://arxiv.org/abs/2602.06830v1)
+- **英文摘要**: Existing 3D Gaussian Splatting simplification methods commonly use importance scores, such as blending weights or sensitivity, to identify redundant Gaussians. However, these scores are not driven by visual error metrics, often leading to suboptimal trade-offs between compactness and rendering fidelity. We present GaussianPOP, a principled simplification framework based on analytical Gaussian error quantification. Our key contribution is a novel error criterion, derived directly from the 3DGS rendering equation, that precisely measures each Gaussian's contribution to the rendered image. By introducing a highly efficient algorithm, our framework enables practical error calculation in a single forward pass. The framework is both accurate and flexible, supporting on-training pruning as well as post-training simplification via iterative error re-quantification for improved stability. Experimental results show that our method consistently outperforms existing state-of-the-art pruning methods across both application scenarios, achieving a superior trade-off between model compactness and high rendering quality.
+
+---
+
+## 3. Nix and Fix: Targeting 1000x Compression of 3D Gaussian Splatting with Diffusion Models
 
 - **作者**: Cem Eteke, Enzo Tartaglione
 - **发布时间**: 2026-02-04
@@ -13,7 +32,7 @@
 
 ---
 
-## 2. Constrained Dynamic Gaussian Splatting
+## 4. Constrained Dynamic Gaussian Splatting
 
 - **作者**: Zihan Zheng, Zhenglong Wu, Xuanxuan Wang et al.
 - **发布时间**: 2026-02-03
@@ -22,7 +41,7 @@
 
 ---
 
-## 3. WebSplatter: Enabling Cross-Device Efficient Gaussian Splatting in Web Browsers via WebGPU
+## 5. WebSplatter: Enabling Cross-Device Efficient Gaussian Splatting in Web Browsers via WebGPU
 
 - **作者**: Yudong Han, Chao Xu, Xiaodan Ye et al.
 - **发布时间**: 2026-02-03
@@ -31,7 +50,7 @@
 
 ---
 
-## 4. SharpTimeGS: Sharp and Stable Dynamic Gaussian Splatting via Lifespan Modulation
+## 6. SharpTimeGS: Sharp and Stable Dynamic Gaussian Splatting via Lifespan Modulation
 
 - **作者**: Zhanfeng Liao, Jiajun Zhang, Hanzhang Tu et al.
 - **发布时间**: 2026-02-03
@@ -40,7 +59,7 @@
 
 ---
 
-## 5. HPC: Hierarchical Point-based Latent Representation for Streaming Dynamic Gaussian Splatting Compression
+## 7. HPC: Hierarchical Point-based Latent Representation for Streaming Dynamic Gaussian Splatting Compression
 
 - **作者**: Yangzhi Ma, Bojun Liu, Wenting Liao et al.
 - **发布时间**: 2026-01-31
@@ -49,7 +68,17 @@
 
 ---
 
-## 6. LoD-Structured 3D Gaussian Splatting for Streaming Video Reconstruction
+## 8. LangGS-SLAM: Real-Time Language-Feature Gaussian Splatting SLAM
+
+- **作者**: Seongbo Ha, Sibaek Lee, Kyungsu Kang et al.
+- **发布时间**: 2026-01-28
+- **arXiv链接**: [arXiv:2602.06991v1](https://arxiv.org/abs/2602.06991v1)
+- **说明**: 17 pages, 4 figures
+- **英文摘要**: In this paper, we propose a RGB-D SLAM system that reconstructs a language-aligned dense feature field while sustaining low-latency tracking and mapping. First, we introduce a Top-K Rendering pipeline, a high-throughput and semantic-distortion-free method for efficiently rendering high-dimensional feature maps. To address the resulting semantic-geometric discrepancy and mitigate the memory consumption, we further design a multi-criteria map management strategy that prunes redundant or inconsistent Gaussians while preserving scene integrity. Finally, a hybrid field optimization framework jointly refines the geometric and semantic fields under real-time constraints by decoupling their optimization frequencies according to field characteristics. The proposed system achieves superior geometric fidelity compared to geometric-only baselines and comparable semantic fidelity to offline approaches while operating at 15 FPS. Our results demonstrate that online SLAM with dense, uncompressed language-aligned feature fields is both feasible and effective, bridging the gap between 3D perception and language-based reasoning.
+
+---
+
+## 9. LoD-Structured 3D Gaussian Splatting for Streaming Video Reconstruction
 
 - **作者**: Xinhui Liu, Can Wang, Lei Liu et al.
 - **发布时间**: 2026-01-26
@@ -58,7 +87,7 @@
 
 ---
 
-## 7. PocketGS: On-Device Training of 3D Gaussian Splatting for High Perceptual Modeling
+## 10. PocketGS: On-Device Training of 3D Gaussian Splatting for High Perceptual Modeling
 
 - **作者**: Wenzhi Guo, Guangchi Fang, Shu Yang, Bing Wang
 - **发布时间**: 2026-01-24
@@ -67,7 +96,7 @@
 
 ---
 
-## 8. LL-GaussianImage: Efficient Image Representation for Zero-shot Low-Light Enhancement with 2D Gaussian Splatting
+## 11. LL-GaussianImage: Efficient Image Representation for Zero-shot Low-Light Enhancement with 2D Gaussian Splatting
 
 - **作者**: Yuhan Chen, Wenxuan Yu, Guofa Li et al.
 - **发布时间**: 2026-01-22
@@ -76,7 +105,7 @@
 
 ---
 
-## 9. POTR: Post-Training 3DGS Compression
+## 12. POTR: Post-Training 3DGS Compression
 
 - **作者**: Bert Ramlot, Martijn Courteaux, Peter Lambert, Glenn Van Wallendael
 - **发布时间**: 2026-01-21
@@ -86,7 +115,7 @@
 
 ---
 
-## 10. Structured Image-based Coding for Efficient Gaussian Splatting Compression
+## 13. Structured Image-based Coding for Efficient Gaussian Splatting Compression
 
 - **作者**: Pedro Martin, Antonio Rodrigues, Joao Ascenso, Maria Paula Queluz
 - **发布时间**: 2026-01-20
@@ -95,7 +124,7 @@
 
 ---
 
-## 11. TIDI-GS: Floater Suppression in 3D Gaussian Splatting for Enhanced Indoor Scene Fidelity
+## 14. TIDI-GS: Floater Suppression in 3D Gaussian Splatting for Enhanced Indoor Scene Fidelity
 
 - **作者**: Sooyeun Yang, Cheyul Im, Jee Won Lee, Jongseong Brad Choi
 - **发布时间**: 2026-01-14
@@ -104,7 +133,7 @@
 
 ---
 
-## 12. Sketch&Patch++: Efficient Structure-Aware 3D Gaussian Representation
+## 15. Sketch&Patch++: Efficient Structure-Aware 3D Gaussian Representation
 
 - **作者**: Yuang Shi, Géraldine Morin, Simone Gasparini, Wei Tsang Ooi
 - **发布时间**: 2026-01-08
@@ -113,7 +142,7 @@
 
 ---
 
-## 13. SCAR-GS: Spatial Context Attention for Residuals in Progressive Gaussian Splatting
+## 16. SCAR-GS: Spatial Context Attention for Residuals in Progressive Gaussian Splatting
 
 - **作者**: Diego Revilla, Pooja Suresh, Anand Bhojan, Ooi Wei Tsang
 - **发布时间**: 2026-01-07
@@ -122,7 +151,7 @@
 
 ---
 
-## 14. Clean-GS: Semantic Mask-Guided Pruning for 3D Gaussian Splatting
+## 17. Clean-GS: Semantic Mask-Guided Pruning for 3D Gaussian Splatting
 
 - **作者**: Subhankar Mishra
 - **发布时间**: 2026-01-01
@@ -131,7 +160,7 @@
 
 ---
 
-## 15. Voxel-GS: Quantized Scaffold Gaussian Splatting Compression with Run-Length Coding
+## 18. Voxel-GS: Quantized Scaffold Gaussian Splatting Compression with Run-Length Coding
 
 - **作者**: Chunyang Fu, Xiangrui Liu, Shiqi Wang, Zhu Li
 - **发布时间**: 2025-12-19
@@ -141,7 +170,7 @@
 
 ---
 
-## 16. Lightweight 3D Gaussian Splatting Compression via Video Codec
+## 19. Lightweight 3D Gaussian Splatting Compression via Video Codec
 
 - **作者**: Qi Yang, Geert Van Der Auwera, Zhu Li
 - **发布时间**: 2025-12-12
@@ -151,7 +180,7 @@
 
 ---
 
-## 17. SF-Recon: Simplification-Free Lightweight Building Reconstruction via 3D Gaussian Splatting
+## 20. SF-Recon: Simplification-Free Lightweight Building Reconstruction via 3D Gaussian Splatting
 
 - **作者**: Zihan Li, Tengfei Wang, Wentian Gan et al.
 - **发布时间**: 2025-11-17
