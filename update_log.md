@@ -1,3 +1,32 @@
+# 2026-02-22 01:44:14
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-11-09 19:30:36  
+**本次更新时间**: 2026-02-22 01:44:14  
+**新增论文数量**: 1  
+**变更论文数量**: 1  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Semantic-Guided 3D Gaussian Splatting for Transient Object Removal](https://arxiv.org/abs/2602.15516v1)** (ID: 2602.15516v1)
+
+
+### 变更论文  
+#### **1. [Multi-Spectral Gaussian Splatting with Neural Color Representation](https://arxiv.org/abs/2506.03407v2)** (ID: 2506.03407v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-06-03  
+ ⏳新更新: 2026-02-16  
+ 📝原说明:   
+ 📝新说明: for project page, see https://meyerls.github.io/ms_splatting  
+
+
+
+---
+
 # 2026-02-15 01:48:43
 
 # 论文更新日志  

@@ -1,6 +1,6 @@
 # 未知会议 2025
 
-> **最后更新**： 2026-02-15 01:58:35
+> **最后更新**： 2026-02-22 01:52:30
 
 本页面包含 2025 年 未知会议 会议的论文列表。
 
@@ -883,7 +883,8 @@
 
 - **作者**: Lukas Meyer, Josef Grün, Maximilian Weiherer et al.
 - **发布时间**: 2025-06-03
-- **arXiv链接**: [arXiv:2506.03407v1](https://arxiv.org/abs/2506.03407v1)
+- **arXiv链接**: [arXiv:2506.03407v2](https://arxiv.org/abs/2506.03407v2)
+- **说明**: for project page, see https://meyerls.github.io/ms_splatting
 - **英文摘要**: We present MS-Splatting -- a multi-spectral 3D Gaussian Splatting (3DGS) framework that is able to generate multi-view consistent novel views from images of multiple, independent cameras with different spectral domains. In contrast to previous approaches, our method does not require cross-modal camera calibration and is versatile enough to model a variety of different spectra, including thermal and near-infra red, without any algorithmic changes.   Unlike existing 3DGS-based frameworks that treat each modality separately (by optimizing per-channel spherical harmonics) and therefore fail to exploit the underlying spectral and spatial correlations, our method leverages a novel neural color representation that encodes multi-spectral information into a learned, compact, per-splat feature embedding. A shallow multi-layer perceptron (MLP) then decodes this embedding to obtain spectral color values, enabling joint learning of all bands within a unified representation.   Our experiments show that this simple yet effective strategy is able to improve multi-spectral rendering quality, while also leading to improved per-spectra rendering quality over state-of-the-art methods. We demonstrate the effectiveness of this new technique in agricultural applications to render vegetation indices, such as normalized difference vegetation index (NDVI).
 
 ---
