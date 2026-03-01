@@ -1,6 +1,6 @@
 # 未知会议 2025
 
-> **最后更新**： 2026-02-22 01:52:30
+> **最后更新**： 2026-03-01 01:58:04
 
 本页面包含 2025 年 未知会议 会议的论文列表。
 
@@ -407,11 +407,12 @@
 
 ---
 
-## 44. Proxy-GS: Efficient 3D Gaussian Splatting via Proxy Mesh
+## 44. Proxy-GS: Unified Occlusion Priors for Training and Inference in Structured 3D Gaussian Splatting
 
 - **作者**: Yuanyuan Gao, Yuning Gong, Yifei Liu et al.
 - **发布时间**: 2025-09-29
-- **arXiv链接**: [arXiv:2509.24421v2](https://arxiv.org/abs/2509.24421v2)
+- **arXiv链接**: [arXiv:2509.24421v3](https://arxiv.org/abs/2509.24421v3)
+- **说明**: Project page: https://gyy456.github.io/Proxy-GS
 - **英文摘要**: 3D Gaussian Splatting (3DGS) has emerged as an efficient approach for achieving photorealistic rendering. Recent MLP-based variants further improve visual fidelity but introduce substantial decoding overhead during rendering. To alleviate computation cost, several pruning strategies and level-of-detail (LOD) techniques have been introduced, aiming to effectively reduce the number of Gaussian primitives in large-scale scenes. However, our analysis reveals that significant redundancy still remains due to the lack of occlusion awareness. In this work, we propose Proxy-GS, a novel pipeline that exploits a proxy to introduce Gaussian occlusion awareness from any view. At the core of our approach is a fast proxy system capable of producing precise occlusion depth maps at a resolution of 1000x1000 under 1ms. This proxy serves two roles: first, it guides the culling of anchors and Gaussians to accelerate rendering speed. Second, it guides the densification towards surfaces during training, avoiding inconsistencies in occluded regions, and improving the rendering quality. In heavily occluded scenarios, such as the MatrixCity Streets dataset, Proxy-GS not only equips MLP-based Gaussian splatting with stronger rendering capability but also achieves faster rendering speed. Specifically, it achieves more than 2.5x speedup over Octree-GS, and consistently delivers substantially higher rendering quality. Code will be public upon acceptance.
 
 ---
@@ -931,7 +932,7 @@
 
 - **作者**: Hao Xu, Xiaolin Wu, Xi Zhang
 - **发布时间**: 2025-05-28
-- **arXiv链接**: [arXiv:2505.22908v3](https://arxiv.org/abs/2505.22908v3)
+- **arXiv链接**: [arXiv:2505.22908v4](https://arxiv.org/abs/2505.22908v4)
 - **说明**: Our code will be released at \href{https://github.com/hxu160/SHTC_for_3DGS_compression}{here}
 - **英文摘要**: Current 3DGS compression methods largely forego the neural analysis-synthesis transform, which is a crucial component in learned signal compression systems. As a result, redundancy removal is left solely to the entropy coder, overburdening the entropy coding module and reducing rate-distortion (R-D) performance. To fix this critical omission, we propose a training-time transform coding (TTC) method that adds the analysis-synthesis transform and optimizes it jointly with the 3DGS representation and entropy model. Concretely, we adopt a hierarchical design: a channel-wise KLT for decorrelation and energy compaction, followed by a sparsity-aware neural transform that reconstructs the KLT residuals with minimal parameter and computational overhead. Experiments show that our method delivers strong R-D performance with fast decoding, offering a favorable BD-rate-decoding-time trade-off over SOTA 3DGS compressors.
 

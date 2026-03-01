@@ -1,3 +1,64 @@
+# 2026-03-01 01:50:24
+
+# 论文更新日志  
+
+**上次更新时间**: 2025-08-25 05:12:29  
+**本次更新时间**: 2026-03-01 01:50:24  
+**新增论文数量**: 2  
+**变更论文数量**: 5  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting](https://arxiv.org/abs/2602.20933v1)** (ID: 2602.20933v1)
+
+#### **2. [RAP: Fast Feedforward Rendering-Free Attribute-Guided Primitive Importance Score Prediction for Efficient 3D Gaussian Splatting Processing](https://arxiv.org/abs/2602.19753v1)** (ID: 2602.19753v1)
+
+
+### 变更论文  
+#### **1. [PocketGS: On-Device Training of 3D Gaussian Splatting for High Perceptual Modeling](https://arxiv.org/abs/2601.17354v3)** (ID: 2601.17354v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2026-01-28  
+ ⏳新更新: 2026-02-23  
+
+#### **2. [Structured Image-based Coding for Efficient Gaussian Splatting Compression](https://arxiv.org/abs/2601.14510v3)** (ID: 2601.14510v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2026-01-22  
+ ⏳新更新: 2026-02-26  
+
+#### **3. [Proxy-GS: Unified Occlusion Priors for Training and Inference in Structured 3D Gaussian Splatting](https://arxiv.org/abs/2509.24421v3)** (ID: 2509.24421v3)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化, 说明变更  
+ 🏷️原标题: Proxy-GS: Efficient 3D Gaussian Splatting via Proxy Mesh  
+ 🏷️新标题: Proxy-GS: Unified Occlusion Priors for Training and Inference in Structured 3D Gaussian Splatting  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2025-10-01  
+ ⏳新更新: 2026-02-26  
+ 📝原说明:   
+ 📝新说明: Project page: https://gyy456.github.io/Proxy-GS  
+
+#### **4. [Learning Hierarchical Sparse Transform Coding for 3DGS Compression](https://arxiv.org/abs/2505.22908v4)** (ID: 2505.22908v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2026-01-30  
+ ⏳新更新: 2026-02-24  
+
+#### **5. [Distractor-free Generalizable 3D Gaussian Splatting](https://arxiv.org/abs/2411.17605v3)** (ID: 2411.17605v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2025-06-02  
+ ⏳新更新: 2026-02-26  
+
+
+
+---
+
 # 2026-02-22 01:44:14
 
 # 论文更新日志  

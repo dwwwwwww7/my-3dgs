@@ -1,13 +1,29 @@
 # 3D Gaussian Splatting 论文列表
 
-> **最后更新**： 2026-02-22 01:52:30
+> **最后更新**： 2026-03-01 01:58:04
 
 > **翻译说明**： 摘要有300字数限制（可修改），中文摘要由Edge浏览器翻译API自动生成，可能存在不准确之处。如需查看精确表达请参考原文摘要。
 
 
 ## February 2026
 
-### [1] Semantic-Guided 3D Gaussian Splatting for Transient Object Removal  
+### [1] Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting  
+- **⏳发布**：2026-02-24  
+- **🧑‍🔬作者**：Shuangkang Fang, I-Chao Shen, Xuanyang Zhang et al.  
+- **📝说明**：Accepted by CVPR 2026  
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2602.20933v1)   · [Project](https://sk-fun.fun/DropAnSH-GS)  
+- **📝摘要**：Recent 3D Gaussian Splatting (3DGS) Dropout methods address overfitting under sparse-view conditions by randomly nullifying Gaussian opacities. However, we identify a neighbor compensation effect in these approaches: dropped Gaussians are often compensated by their neighbors, weakening the intended regularization. Moreover, these methods overlook the contribution of high-degree spherical harmonic coefficients (SH) to overfitting. To address these issues, we propose DropAnSH-GS, a novel anchor-based Dropout strategy. Rather than dropping Gaussians independently, our method randomly selects certain Gaussians as anchors and simultaneously removes their spatial neighbors. This effectively disrupts local redundancies near anchors and encourages the model to learn more robust, globally informed representations. Furthermore, we extend the Dropout to color attributes by randomly dropping higher-degree SH to concentrate appearance information in lower-degree SH. This strategy further mitigates overfitting and enables flexible post-training model compression via SH truncation. Experimental results demonstrate that DropAnSH-GS substantially outperforms existing Dropout methods with negligible computational overhead, and can be readily integrated into various 3DGS variants to enhance their performances. Project Website: https://sk-fun.fun/DropAnSH-GS  
+- **📝翻译**: 最新的三维高斯散落（3DGS）掉落方法通过随机消除高斯不透明度来解决稀疏视图条件下的过拟合问题。然而，我们在这些方法中发现了邻居补偿效应：去掉的高斯分布常被邻居补偿，从而削弱预期的正则化。此外，这些方法忽略了高次球谐系数（SH）对过拟合的贡献。为解决这些问题，我们提出了DropAnSH-GS，一种新型基于锚点的退出策略。我们的方法不是独立丢弃高斯算，而是随机选择某些高斯算作为锚点，同时移除它们的空间邻居。这有效地破坏了锚点附近的本地冗余，并鼓励模型学习更稳健、全球知情的表示。此外，我们通过随机丢弃高度SH来将外貌信息集中到低度SH中，将Dropout扩展到颜色属性。该策略进一步减少了过拟合，并通过SH截断实现了灵活的训练后模型压缩。实验结果表明，DropAnSH-GS在计算开销极小的情况下，远超现有Dropout方法，并且可以轻松集成到各种3DGS变体中以提升其性能。项目网站：https://sk-fun.fun/DropAnSH-GS  
+
+### [2] RAP: Fast Feedforward Rendering-Free Attribute-Guided Primitive Importance Score Prediction for Efficient 3D Gaussian Splatting Processing  
+- **⏳发布**：2026-02-23  
+- **🧑‍🔬作者**：Kaifa Yang, Qi Yang, Yiling Xu, Zhu Li  
+- **📝说明**：Accepted by CVPR 2026  
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2602.19753v1)    
+- **📝摘要**：3D Gaussian Splatting (3DGS) has emerged as a leading technology for high-quality 3D scene reconstruction. However, the iterative refinement and densification process leads to the generation of a large number of primitives, each contributing to the reconstruction to a substantially different extent. Estimating primitive importance is thus crucial, both for removing redundancy during reconstruction and for enabling efficient compression and transmission. Existing methods typically rely on rendering-based analyses, where each primitive is evaluated through its contribution across multiple camera viewpoints. However, such methods are sensitive to the number and selection of views, rely on specialized differentiable rasterizers, and have long calculation times that grow linearly with view count, making them difficult to integrate as plug-and-play modules and limiting scalability and generalization. To address these issues, we propose RAP, a fast feedforward rendering-free attribute-guided method for efficient importance score prediction in 3DGS. RAP infers primitive significance directly from intrinsic Gaussian attributes and local neighborhood statistics, avoiding rendering-based or visibility-dependent computations. A compact MLP predicts per-primitive importance scores using rendering loss, pruning-aware loss, and significance distribution regularization. After training on a small set of scenes, RAP generalizes effectively to unseen data and can be seamlessly integrated into reconstruction, compression, and transmission pipelines. Our code is publicly available at https://github.com/yyyykf/RAP.  
+- **📝翻译**: 3D高斯喷溅技术（3DGS）已成为高质量3D场景重建的领先技术。然而，迭代的细化和密度化过程导致大量原语的生成，每个基元对重建的贡献有显著不同。因此，估计原始重要性至关重要，这不仅有助于消除重建中的冗余，也有助于高效的压缩和传输。现有方法通常依赖基于渲染的分析，通过多个摄像机视角对每个原语的贡献进行评估。然而，这类方法对视图的数量和选择非常敏感，依赖专用的可微分光栅化器，且计算时间较长且随视野数量线性增长，这使得它们难以集成为即插即用模块，限制了扩展性和泛化性。为解决这些问题，我们提出了RAP，一种快速前馈、无渲染的属性引导方法，用于在3DGS中高效预测重要性分数。RAP直接从内在的高斯属性和局部邻域统计推断原始意义，避免基于渲染或依赖可见性的计算。紧凑MLP通过渲染损失、剪枝感知损失和显著分布正则化来预测每个原始重要性分数。在对少量场景进行训练后，RAP能够有效地推广到未见数据，并可无缝集成到重建、压缩和传输流程中。我们的代码公开发布于 https://github.com/yyyykf/RAP。  
+
+### [3] Semantic-Guided 3D Gaussian Splatting for Transient Object Removal  
 - **⏳发布**：2026-02-17  
 - **🧑‍🔬作者**：Aditi Prabakaran, Priyesh Shukla  
 - **📝说明**：  
@@ -15,7 +31,7 @@
 - **📝摘要**：Transient objects in casual multi-view captures cause ghosting artifacts in 3D Gaussian Splatting (3DGS) reconstruction. Existing solutions relied on scene decomposition at significant memory cost or on motion-based heuristics that were vulnerable to parallax ambiguity. A semantic filtering framework was proposed for category-aware transient removal using vision-language models. CLIP similarity scores between rendered views and distractor text prompts were accumulated per-Gaussian across training iterations. Gaussians exceeding a calibrated threshold underwent opacity regularization and periodic pruning. Unlike motion-based approaches, semantic classification resolved parallax ambiguity by identifying object categories independently of motion patterns. Experiments on the RobustNeRF benchmark demonstrated consistent improvement in reconstruction quality over vanilla 3DGS across four sequences, while maintaining minimal memory overhead and real-time rendering performance. Threshold calibration and comparisons with baselines validated semantic guidance as a practical strategy for transient removal in scenarios with predictable distractor categories.  
 - **📝翻译**: 在随意的多视角捕获中，瞬态物体在3D高斯溅射（3DGS）重建中会导致重影伪影。现有解决方案依赖场景分解，消耗大量内存，或依赖基于运动的启发式方法，这些方法容易受到视差模糊的影响。提出了一种语义过滤框架，用于利用视觉语言模型实现类别感知瞬态去除。渲染视图与干扰文本提示之间的CLIP相似度分数在训练迭代中按高斯分布累计。高斯高斯矩阵超过校准阈时，会经历不透明度正则化和周期性修剪。与基于运动的方法不同，语义分类通过独立于运动模式识别对象类别来解决视差歧义。在 RobustNeRF 基准测试上的实验显示，在四个序列上，重建质量相较于原版 3DGS 持续提升，同时保持了最小的内存开销和实时渲染性能。阈值校准及与基线的比较验证了语义指导作为在可预测干扰类别场景中消除瞬态的实用策略。  
 
-### [2] CompSplat: Compression-aware 3D Gaussian Splatting for Real-world Video  
+### [4] CompSplat: Compression-aware 3D Gaussian Splatting for Real-world Video  
 - **⏳发布**：2026-02-10  
 - **🧑‍🔬作者**：Hojun Song, Heejung Choi, Aro Kim et al.  
 - **📝说明**：Preprint. Under review  
@@ -23,7 +39,7 @@
 - **📝摘要**：High-quality novel view synthesis (NVS) from real-world videos is crucial for applications such as cultural heritage preservation, digital twins, and immersive media. However, real-world videos typically contain long sequences with irregular camera trajectories and unknown poses, leading to pose drift, feature misalignment, and geometric distortion during reconstruction. Moreover, lossy compression amplifies these issues by introducing inconsistencies that gradually degrade geometry and rendering quality. While recent studies have addressed either long-sequence NVS or unposed reconstruction, compression-aware approaches still focus on specific artifacts or limited scenarios, leaving diverse compression patterns in long videos insufficiently explored. In this paper, we propose CompSplat, a compression-aware training framework that explicitly models frame-wise compression characteristics to mitigate inter-frame inconsistency and accumulated geometric errors. CompSplat incorporates compression-aware frame weighting and an adaptive pruning strategy to enhance robustness and geometric consistency, particularly under heavy compression. Extensive experiments on challenging benchmarks, including Tanks and Temples, Free, and Hike, demonstrate that CompSplat achieves state-of-the-art rendering quality and pose accuracy, significantly surpassing most recent state-of-the-art NVS approaches under severe compression conditions.  
 - **📝翻译**: 从真实世界视频中进行高质量的新颖视角合成（NVS）对于文化遗产保护、数字孪生和沉浸式媒体等应用至关重要。然而，现实视频通常包含长序列，摄像机轨迹不规则且姿势未知，导致姿态漂移、特征错位和几何畸变。此外，有损压缩通过引入不一致性，逐渐降低几何体和渲染质量，进一步加剧了这些问题。尽管近期研究涉及长序列NVS或无摆拍重建，但压缩感知方法仍聚焦于特定伪影或有限场景，导致长视频中多样的压缩模式未能充分探索。本文提出了CompSplat，一种针对压缩的训练框架，明确建模帧间压缩特性，以减少帧间不一致和累积几何误差。CompSplat 采用了针对压缩感知的框架加权和自适应剪枝策略，以增强坚固性和几何一致性，尤其是在重压缩情况下。在包括坦克与神庙、自由和徒步等高难度基准测试上的广泛实验表明，CompSplat在严苛压缩条件下实现了最先进的渲染质量和姿态精度，远超大多数最新最先进的NVS方法。  
 
-### [3] GaussianPOP: Principled Simplification Framework for Compact 3D Gaussian Splatting via Error Quantification  
+### [5] GaussianPOP: Principled Simplification Framework for Compact 3D Gaussian Splatting via Error Quantification  
 - **⏳发布**：2026-02-06  
 - **🧑‍🔬作者**：Soonbin Lee, Yeong-Gyu Kim, Simon Sasse et al.  
 - **📝说明**：  
@@ -31,7 +47,7 @@
 - **📝摘要**：Existing 3D Gaussian Splatting simplification methods commonly use importance scores, such as blending weights or sensitivity, to identify redundant Gaussians. However, these scores are not driven by visual error metrics, often leading to suboptimal trade-offs between compactness and rendering fidelity. We present GaussianPOP, a principled simplification framework based on analytical Gaussian error quantification. Our key contribution is a novel error criterion, derived directly from the 3DGS rendering equation, that precisely measures each Gaussian's contribution to the rendered image. By introducing a highly efficient algorithm, our framework enables practical error calculation in a single forward pass. The framework is both accurate and flexible, supporting on-training pruning as well as post-training simplification via iterative error re-quantification for improved stability. Experimental results show that our method consistently outperforms existing state-of-the-art pruning methods across both application scenarios, achieving a superior trade-off between model compactness and high rendering quality.  
 - **📝翻译**: 现有的三维高斯散拍简化方法通常使用重要性评分，如混合权重或灵敏度，来识别冗余的高斯。然而，这些分数并非由视觉误差指标驱动，常常导致紧凑度与渲染真实度之间存在不理想的权衡。我们介绍GaussianPOP，一种基于解析高斯误差量化的原则性简化框架。我们的关键贡献是一种新颖的误差准则，直接源自3DGS渲染方程，精确测量每个高斯对渲染图像的贡献。通过引入高效算法，我们的框架实现了单次前向传递的实际误差计算。该框架既准确又灵活，支持训练中修剪以及通过迭代误差重新量化实现训练后简化，以提升稳定性。实验结果表明，我们的方法在两种应用场景下都持续优于现有的先进剪枝方法，在模型紧凑性和高渲染质量之间取得了优越的权衡。  
 
-### [4] Nix and Fix: Targeting 1000x Compression of 3D Gaussian Splatting with Diffusion Models  
+### [6] Nix and Fix: Targeting 1000x Compression of 3D Gaussian Splatting with Diffusion Models  
 - **⏳发布**：2026-02-04  
 - **🧑‍🔬作者**：Cem Eteke, Enzo Tartaglione  
 - **📝说明**：  
@@ -39,7 +55,7 @@
 - **📝摘要**：3D Gaussian Splatting (3DGS) revolutionized novel view rendering. Instead of inferring from dense spatial points, as implicit representations do, 3DGS uses sparse Gaussians. This enables real-time performance but increases space requirements, hindering applications such as immersive communication. 3DGS compression emerged as a field aimed at alleviating this issue. While impressive progress has been made, at low rates, compression introduces artifacts that degrade visual quality significantly. We introduce NiFi, a method for extreme 3DGS compression through restoration via artifact-aware, diffusion-based one-step distillation. We show that our method achieves state-of-the-art perceptual quality at extremely low rates, down to 0.1 MB, and towards 1000x rate improvement over 3DGS at comparable perceptual performance. The code will be open-sourced upon acceptance.  
 - **📝翻译**: 3D高斯喷溅（3DGS）彻底革新了新颖视图渲染。与隐式表示从密集空间点推断不同，3DGS使用稀疏高斯分布。这不仅实现了实时性能，但增加了空间需求，阻碍了沉浸式通信等应用。3DGS压缩作为缓解这一问题的领域出现。虽然取得了显著进展，但压缩率较低时会引入明显降低画质的伪影。我们介绍了NiFi，这是一种通过伪影感知、基于扩散的一步蒸馏实现极度3DGS压缩的方法。我们证明，我们的方法在极低的速率下实现了最先进的感知质量，仅仅0.1 MB，并且在相当的感知性能下，比3DGS提升了接近1000倍的速率。代码一旦被接受，将开源。  
 
-### [5] Constrained Dynamic Gaussian Splatting  
+### [7] Constrained Dynamic Gaussian Splatting  
 - **⏳发布**：2026-02-03  
 - **🧑‍🔬作者**：Zihan Zheng, Zhenglong Wu, Xuanxuan Wang et al.  
 - **📝说明**：  
@@ -47,7 +63,7 @@
 - **📝摘要**：While Dynamic Gaussian Splatting enables high-fidelity 4D reconstruction, its deployment is severely hindered by a fundamental dilemma: unconstrained densification leads to excessive memory consumption incompatible with edge devices, whereas heuristic pruning fails to achieve optimal rendering quality under preset Gaussian budgets. In this work, we propose Constrained Dynamic Gaussian Splatting (CDGS), a novel framework that formulates dynamic scene reconstruction as a budget-constrained optimization problem to enforce a strict, user-defined Gaussian budget during training. Our key insight is to introduce a differentiable budget controller as the core optimization driver. Guided by a multi-modal unified importance score, this controller fuses geometric, motion, and perceptual cues for precise capacity regulation. To maximize the utility of this fixed budget, we further decouple the optimization of static and dynamic elements, employing an adaptive allocation mechanism that dynamically distributes capacity based on motion complexity. Furthermore, we implement a three-phase training strategy to seamlessly integrate these constraints, ensuring precise adherence to the target count. Coupled with a dual-mode hybrid compression scheme, CDGS not only strictly adheres to hardware constraints (error < 2%}) but also pushes the Pareto frontier of rate-distortion performance. Extensive experiments demonstrate that CDGS delivers optimal rendering quality under varying capacity limits, achieving over 3x compression compared to state-of-the-art methods.  
 - **📝翻译**: 虽然动态高斯喷涂实现了高保真4D重建，但其部署受到一个根本性困境的严重阻碍：无限制的密度化会导致与边缘设备不兼容的过量内存消耗，而启发式剪枝则无法在预设高斯预算下实现最佳渲染质量。在本研究中，我们提出了受限动态高斯喷溅（CDGS），这是一个新颖的框架，将动态场景重建构建为一个预算受限的优化问题，以在训练过程中强制执行严格的用户定义的高斯预算。我们的核心见解是引入可微分的预算控制器作为核心优化驱动力。该控制器由多模态统一重要性评分指导，融合几何、运动和感知线索，实现精确容量调节。为了最大化固定预算的效用，我们进一步解耦静态和动态元素的优化，采用自适应分配机制，根据运动复杂度动态分配容量。此外，我们实施了三阶段训练策略，无缝整合这些约束，确保对目标计数的准确遵守。结合双模混合压缩方案，CDGS不仅严格遵守硬件约束（误差<2%），还推动了速率失真性能的帕累托极限。大量实验表明，CDGS在不同容量限制下能够实现最佳渲染质量，与最先进方法相比，压缩率超过3倍。  
 
-### [6] WebSplatter: Enabling Cross-Device Efficient Gaussian Splatting in Web Browsers via WebGPU  
+### [8] WebSplatter: Enabling Cross-Device Efficient Gaussian Splatting in Web Browsers via WebGPU  
 - **⏳发布**：2026-02-03  
 - **🧑‍🔬作者**：Yudong Han, Chao Xu, Xiaodan Ye et al.  
 - **📝说明**：  
@@ -55,7 +71,7 @@
 - **📝摘要**：We present WebSplatter, an end-to-end GPU rendering pipeline for the heterogeneous web ecosystem. Unlike naive ports, WebSplatter introduces a wait-free hierarchical radix sort that circumvents the lack of global atomics in WebGPU, ensuring deterministic execution across diverse hardware. Furthermore, we propose an opacity-aware geometry culling stage that dynamically prunes splats before rasterization, significantly reducing overdraw and peak memory footprint. Evaluation demonstrates that WebSplatter consistently achieves 1.2$\times$ to 4.5$\times$ speedups over state-of-the-art web viewers.  
 - **📝翻译**: 我们介绍WebSplatter，一个面向异构网络生态系统的端到端GPU渲染流水线。与朴素移植不同，WebSplatter 引入了无等待的层级基数，绕过了 WebGPU 缺乏全局原子的数据，确保在不同硬件上实现确定性执行。此外，我们提出了一种不透明度感知几何剔除阶段，在光栅化前动态修剪碎片，显著减少过绘和峰值内存占用。评估显示，WebSplatter在与最先进的网页浏览器相比，持续实现1.2$\times$至4.5$\times$的加速。  
 
-### [7] SharpTimeGS: Sharp and Stable Dynamic Gaussian Splatting via Lifespan Modulation  
+### [9] SharpTimeGS: Sharp and Stable Dynamic Gaussian Splatting via Lifespan Modulation  
 - **⏳发布**：2026-02-03（更新：2026-02-05）  
 - **🧑‍🔬作者**：Zhanfeng Liao, Jiajun Zhang, Hanzhang Tu et al.  
 - **📝说明**：  
@@ -99,10 +115,10 @@
 - **📝翻译**: 自由视点视频（FVV）重建实现了照片级逼真和交互式的3D场景可视化;然而，实时流常常被稀疏的视图输入、高昂的训练成本和带宽限制所限制。虽然最近的3D高斯喷涂（3DGS）因其更优的渲染速度推动了FVV，但流式自由视点视频（SFVV）则带来了对快速优化、在稀疏约束下高保真重建和最小存储占用的额外需求。为了弥合这一差距，我们提出了StreamLoD-GS，这是一个专门为SFVV设计的基于LoD的高斯Splatting框架。我们的方法整合了三项核心创新：1）基于锚点和八树结构的LoD结构3DGS，采用分层高斯脱落技术，确保高效稳定的优化同时保持高质量渲染;2）基于GMM的运动分区机制，可将动态内容与静态内容分离，精炼动态区域同时保持背景稳定性;3）量化残差精细框架，显著减少存储需求而不牺牲视觉真实性。大量实验表明，StreamLoD-GS在质量、效率和存储方面达到了竞争甚至最先进的性能。  
 
 ### [5] PocketGS: On-Device Training of 3D Gaussian Splatting for High Perceptual Modeling  
-- **⏳发布**：2026-01-24（更新：2026-01-28）  
+- **⏳发布**：2026-01-24（更新：2026-02-23）  
 - **🧑‍🔬作者**：Wenzhi Guo, Guangchi Fang, Shu Yang, Bing Wang  
 - **📝说明**：  
-- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2601.17354v2)    
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2601.17354v3)    
 - **📝摘要**：Efficient and high-fidelity 3D scene modeling is a long-standing pursuit in computer graphics. While recent 3D Gaussian Splatting (3DGS) methods achieve impressive real-time modeling performance, they rely on resource-unconstrained training assumptions that fail on mobile devices, which are limited by minute-scale training budgets and hardware-available peak-memory. We present PocketGS, a mobile scene modeling paradigm that enables on-device 3DGS training under these tightly coupled constraints while preserving high perceptual fidelity. Our method resolves the fundamental contradictions of standard 3DGS through three co-designed operators: G builds geometry-faithful point-cloud priors; I injects local surface statistics to seed anisotropic Gaussians, thereby reducing early conditioning gaps; and T unrolls alpha compositing with cached intermediates and index-mapped gradient scattering for stable mobile backpropagation. Collectively, these operators satisfy the competing requirements of training efficiency, memory compactness, and modeling fidelity. Extensive experiments demonstrate that PocketGS is able to outperform the powerful mainstream workstation 3DGS baseline to deliver high-quality reconstructions, enabling a fully on-device, practical capture-to-rendering workflow.  
 - **📝翻译**: 高效且高保真度的3D场景建模是计算机图形学中长期追求的目标。虽然最新的3D高斯喷涂（3DGS）方法实现了令人印象深刻的实时建模性能，但它们依赖于资源不受限制的训练假设，而这些假设在移动设备上失效，而移动设备受限于微尺度的训练预算和硬件可用的峰值内存。我们介绍PocketGS，一种移动场景建模范式，能够在这些紧耦合的约束下实现设备内3DGS训练，同时保持高感知保真度。我们的方法通过三个共同设计的算符解决了标准3DGS的根本矛盾：G构建几何忠实点云先验;I注入局部曲面统计数据以种子异性高斯分布，从而减少早期条件缺口;T则展开了带有缓存中间体和索引映射梯度散射的α合成，实现了稳定的移动反向传播。这些算符合起来满足训练效率、内存紧凑性和建模真实度等相互竞争的需求。大量实验表明，PocketGS能够超越强大的主流工作站3DGS基线，实现高质量的重建，实现完全设备内、实用的捕获到渲染工作流程。  
 
@@ -123,10 +139,10 @@
 - **📝翻译**: 3D高斯喷溅（3DGS）最近成为3D场景重建和实时新颖视图合成中神经辐射场（NeRF）的有力竞争者。3DGS在训练和推理速度上优于NeRF，但存储需求显著更高。为解决这一缺点，我们提出了POTR，一种基于两种新技术的训练后3DGS编解码器。首先，POTR引入了一种新颖的剪枝方法，利用改进后的3DGS光栅器高效地同时计算每个碎片的单独去除效果。该技术使得比其他训练后剪枝技术少2-4倍的splat，因此显著加快了推理速度，实验显示推理速度比其他压缩模型快1.5-2倍。其次，我们提出了一种新颖的方法，可以重新计算照明系数，显著降低其熵，而无需任何形式的训练。我们快速且高度并行的方法尤其能提高交流照明系数稀疏度，实验显示从70%提升到97%，且质量损失极小。最后，我们通过简单的微调方案扩展了POTR，以进一步提升剪枝、推断和速率失真性能。实验表明，即使不进行微调，POTR在速率失真性能和推断速度上仍持续优于所有其他训练后压缩技术。  
 
 ### [8] Structured Image-based Coding for Efficient Gaussian Splatting Compression  
-- **⏳发布**：2026-01-20（更新：2026-01-22）  
+- **⏳发布**：2026-01-20（更新：2026-02-26）  
 - **🧑‍🔬作者**：Pedro Martin, Antonio Rodrigues, Joao Ascenso, Maria Paula Queluz  
 - **📝说明**：  
-- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2601.14510v2)    
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2601.14510v3)    
 - **📝摘要**：Gaussian Splatting (GS) has recently emerged as a state-of-the-art representation for radiance fields, combining real-time rendering with high visual fidelity. However, GS models require storing millions of parameters, leading to large file sizes that impair their use in practical multimedia systems. To address this limitation, this paper introduces GS Image-based Compression (GSICO), a novel GS codec that efficiently compresses pre-trained GS models while preserving perceptual fidelity. The core contribution lies in a mapping procedure that arranges GS parameters into structured images, guided by a novel algorithm that enhances spatial coherence. These GS parameter images are then encoded using a conventional image codec. Experimental evaluations on Tanks and Temples, Deep Blending, and Mip-NeRF360 datasets show that GSICO achieves average compression factors of 20.2x with minimal loss in visual quality, as measured by PSNR, SSIM, and LPIPS. Compared with state-of-the-art GS compression methods, the proposed codec consistently yields superior rate-distortion (RD) trade-offs.  
 - **📝翻译**: 高斯溅射（GS）最近作为一种先进的辐射场表示法出现，结合了实时渲染与高视觉保真度。然而，GS模型需要存储数百万参数，导致文件体积庞大，影响其在实际多媒体系统的应用。为解决这一限制，本文介绍了基于图像的GS压缩（GSICO），这是一种新型GS编解码器，能够高效压缩预训练的GS模型，同时保持感知的真实性。其核心贡献在于一种映射过程，将GS参数排列成结构化图像，并由一种增强空间相干性的新型算法指导。这些GS参数图像随后使用传统图像编解码器进行编码。对Tanks and Temples、Deep Blending和Mip-NeRF360数据集的实验评估显示，GSICO在PSNR、SSIM和LPIPS测量下，平均压缩系数达到20.2倍，视觉质量损失极小。与最先进的GS压缩方法相比，所提出的编解码器始终能带来更优的速率失真（RD）权衡。  
 
@@ -582,11 +598,11 @@
 - **📝摘要**：Neural scene representations, such as 3D Gaussian Splatting (3DGS), have enabled high-quality neural rendering; however, their large storage and transmission costs hinder deployment in resource-constrained environments. Existing compression methods either rely on costly optimization, which is slow and scene-specific, or adopt training-free pruning and quantization, which degrade rendering quality under high compression ratios. In contrast, recent data-driven approaches provide a promising direction to overcome this trade-off, enabling efficient compression while preserving high rendering quality. We introduce ExGS, a novel feed-forward framework that unifies Universal Gaussian Compression (UGC) with GaussPainter for Extreme 3DGS compression. UGC performs re-optimization-free pruning to aggressively reduce Gaussian primitives while retaining only essential information, whereas GaussPainter leverages powerful diffusion priors with mask-guided refinement to restore high-quality renderings from heavily pruned Gaussian scenes. Unlike conventional inpainting, GaussPainter not only fills in missing regions but also enhances visible pixels, yielding substantial improvements in degraded renderings. To ensure practicality, it adopts a lightweight VAE and a one-step diffusion design, enabling real-time restoration. Our framework can even achieve over 100X compression (reducing a typical 354.77 MB model to about 3.31 MB) while preserving fidelity and significantly improving image quality under challenging conditions. These results highlight the central role of diffusion priors in bridging the gap between extreme compression and high-quality neural rendering. Our code repository will be released at: https://github.com/chenttt2001/ExGS  
 - **📝翻译**: 神经场景表示，如3D高斯溅射（3DGS），使得高质量的神经渲染成为可能;然而，其高昂的存储和传输成本阻碍了在资源有限环境中的部署。现有压缩方法要么依赖成本高昂且因场景特定而缓慢的优化，要么采用无训练的剪枝和量化，这在高压缩比下会降低渲染质量。相比之下，近期的数据驱动方法为克服这一权衡提供了有前景的方向，实现高效压缩同时保持高渲染质量。我们介绍ExGS，一种新颖的前馈框架，将通用高斯压缩（UGC）与极限3DGS压缩的高斯画器（GaussPainter）合并。UGC通过无重新优化剪枝，在保留关键信息的同时积极减少高斯原语，而GaussPainter则利用强大的扩散先验和掩膜引导的细化，从高度修剪的高斯场景中恢复高质量渲染。与传统的补绘不同，GaussPainter不仅填补缺失区域，还增强可见像素，显著改善了劣化渲染。为确保实用性，采用轻量化VAE和一级扩散设计，实现实时修复。我们的框架甚至能实现超过 100 倍压缩（将典型的 354.77 MB 模型压缩至约 3.31 MB），同时保持画质并显著提升在挑战性条件下的画质。这些结果凸显了扩散先验在弥合极端压缩与高质量神经渲染之间差距中的核心作用。我们的代码库将发布于：https://github.com/chenttt2001/ExGS  
 
-### [3] Proxy-GS: Efficient 3D Gaussian Splatting via Proxy Mesh  
-- **⏳发布**：2025-09-29（更新：2025-10-01）  
+### [3] Proxy-GS: Unified Occlusion Priors for Training and Inference in Structured 3D Gaussian Splatting  
+- **⏳发布**：2025-09-29（更新：2026-02-26）  
 - **🧑‍🔬作者**：Yuanyuan Gao, Yuning Gong, Yifei Liu et al.  
-- **📝说明**：  
-- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2509.24421v2)    
+- **📝说明**：Project page: https://gyy456.github.io/Proxy-GS  
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2509.24421v3)    
 - **📝摘要**：3D Gaussian Splatting (3DGS) has emerged as an efficient approach for achieving photorealistic rendering. Recent MLP-based variants further improve visual fidelity but introduce substantial decoding overhead during rendering. To alleviate computation cost, several pruning strategies and level-of-detail (LOD) techniques have been introduced, aiming to effectively reduce the number of Gaussian primitives in large-scale scenes. However, our analysis reveals that significant redundancy still remains due to the lack of occlusion awareness. In this work, we propose Proxy-GS, a novel pipeline that exploits a proxy to introduce Gaussian occlusion awareness from any view. At the core of our approach is a fast proxy system capable of producing precise occlusion depth maps at a resolution of 1000x1000 under 1ms. This proxy serves two roles: first, it guides the culling of anchors and Gaussians to accelerate rendering speed. Second, it guides the densification towards surfaces during training, avoiding inconsistencies in occluded regions, and improving the rendering quality. In heavily occluded scenarios, such as the MatrixCity Streets dataset, Proxy-GS not only equips MLP-based Gaussian splatting with stronger rendering capability but also achieves faster rendering speed. Specifically, it achieves more than 2.5x speedup over Octree-GS, and consistently delivers substantially higher rendering quality. Code will be public upon acceptance.  
 - **📝翻译**: 3D高斯喷溅（3DGS）已成为实现照片级真实渲染的高效方法。最新的基于MLP的变体进一步提升了视觉真实度，但在渲染过程中带来了大量的解码开销。为降低计算成本，已引入多种修剪策略和细节层级（LOD）技术，旨在有效减少大规模场景中高斯原语的数量。然而，我们的分析显示，由于缺乏遮挡意识，仍存在显著的冗余。在本研究中，我们提出了Proxy-GS这一新颖的流水线，利用代理从任何视角引入高斯遮挡感知。我们的核心是一个快速代理系统，能够在1毫秒以内生成精确的遮挡深度图，分辨率为1000x1000。该代理有两个作用：首先，它引导剔除锚点和高斯分布，以加快渲染速度。其次，它在训练过程中引导表面密度，避免遮挡区域的不一致，并提升渲染质量。在高度遮挡的场景中，如MatrixCity Streets数据集，Proxy-GS不仅为基于MLP的高斯喷涂赋予更强的渲染能力，还实现了更快的渲染速度。具体来说，它比Octree-GS快了2.5倍以上，并且持续呈现出显著更高的渲染质量。代码一旦被接受，将对外公开。  
 
@@ -1131,10 +1147,10 @@
 - **📝翻译**: 本研究提出了一种新的三维高斯喷溅细节层级（LOD）方法，使得在内存受限的设备上实时渲染大尺度场景成为可能。我们的方法引入了一种分层LOD表示，能够根据摄像机距离迭代选择高斯分布的最优子集，从而大幅减少渲染时间和GPU内存占用。我们通过应用深度感知的3D平滑滤波器构建每个LOD级别，随后基于重要性进行剪枝和微调以保持视觉真实性。为了进一步降低内存开销，我们将场景划分为空间块，并在渲染时动态加载相关的高斯分布，采用不透明度混合机制以避免块边界出现视觉伪影。我们的方法在户外（分层3DGS）和室内（Zip-NeRF）数据集上都实现了最先进的性能，提供高质量渲染，同时降低了延迟和内存需求。  
 
 ### [5] Learning Hierarchical Sparse Transform Coding for 3DGS Compression  
-- **⏳发布**：2025-05-28（更新：2026-01-30）  
+- **⏳发布**：2025-05-28（更新：2026-02-24）  
 - **🧑‍🔬作者**：Hao Xu, Xiaolin Wu, Xi Zhang  
 - **📝说明**：Our code will be released at \href{https://github.com/hxu160/SHTC_for_3DGS_compression}{here}  
-- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2505.22908v3)    
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2505.22908v4)    
 - **📝摘要**：Current 3DGS compression methods largely forego the neural analysis-synthesis transform, which is a crucial component in learned signal compression systems. As a result, redundancy removal is left solely to the entropy coder, overburdening the entropy coding module and reducing rate-distortion (R-D) performance. To fix this critical omission, we propose a training-time transform coding (TTC) method that adds the analysis-synthesis transform and optimizes it jointly with the 3DGS representation and entropy model. Concretely, we adopt a hierarchical design: a channel-wise KLT for decorrelation and energy compaction, followed by a sparsity-aware neural transform that reconstructs the KLT residuals with minimal parameter and computational overhead. Experiments show that our method delivers strong R-D performance with fast decoding, offering a favorable BD-rate-decoding-time trade-off over SOTA 3DGS compressors.  
 - **📝翻译**: 当前的3DGS压缩方法在很大程度上放弃了神经分析-合成变换，而这在学习信号压缩系统中是关键组成部分。因此，冗余消除完全由熵编码器负责，导致熵编码模块负担过重，降低速率失真（R-D）性能。为弥补这一关键缺失，我们提出了一种训练时间变换编码（TTC）方法，该方法将分析-综合变换与3DGS表示和熵模型联合优化。具体来说，我们采用了分层设计：采用按信道进行去相关和能量压缩的 KLT，随后进行稀疏感知的神经变换，以最小的参数和计算开销重建 KLT 残差。实验表明，我们的方法在快速解码下实现了强大的R-D性能，在BD速率和解码时间上相较于SOTA 3DGS压缩器具有更优的权衡。  
 
@@ -1917,10 +1933,10 @@
 - **📝翻译**: 本研究提出了一种用于3D高斯喷溅（3DGS）数据的新型压缩框架。基于基于锚点的3DGS方法，我们的方法通过引入一种新颖的三维高斯喷溅混合熵模型（HEMGS），压缩每个锚点内的所有属性，实现有损-无损混合压缩。它由三个主要组成部分组成：可变速率预测变量、超先验网络和自回归网络。首先，与以往采用多模型实现多速率有损压缩、从而增加训练开销的方法不同，我们的可变速率预测器通过生成一个学习到的量化步骤特性，实现了单一模型和超参数$λ$的可变速率压缩，实现了灵活的有损压缩。其次，为了提升无损压缩，超先验网络同时捕捉场景无关和场景特定特征以生成先验特征，而自回归网络则采用具有灵活感受场的自适应上下文选择算法来生成上下文特征。通过整合这两个特性，HEMGS能够准确估计当前编码元素在每个属性中的分布，从而提升熵编码并减少存储。我们将HEMGS整合进压缩框架，四个基准测试的实验结果显示，HEMGS在保持渲染质量的同时，平均体积减少约40%，并实现了最先进的压缩效果。  
 
 ### [5] Distractor-free Generalizable 3D Gaussian Splatting  
-- **⏳发布**：2024-11-26（更新：2025-06-02）  
+- **⏳发布**：2024-11-26（更新：2026-02-26）  
 - **🧑‍🔬作者**：Yanqi Bao, Jing Liao, Jing Huo, Yang Gao  
 - **📝说明**：  
-- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2411.17605v2)    
+- **🔗链接**：[arXiv Abstract](https://arxiv.org/abs/2411.17605v3)    
 - **📝摘要**：We present DGGS, a novel framework that addresses the previously unexplored challenge: $\textbf{Distractor-free Generalizable 3D Gaussian Splatting}$ (3DGS). It mitigates 3D inconsistency and training instability caused by distractor data in the cross-scenes generalizable train setting while enabling feedforward inference for 3DGS and distractor masks from references in the unseen scenes. To achieve these objectives, DGGS proposes a scene-agnostic reference-based mask prediction and refinement module during the training phase, effectively eliminating the impact of distractor on training stability. Moreover, we combat distractor-induced artifacts and holes at inference time through a novel two-stage inference framework for references scoring and re-selection, complemented by a distractor pruning mechanism that further removes residual distractor 3DGS-primitive influences. Extensive feedforward experiments on the real and our synthetic data show DGGS's reconstruction capability when dealing with novel distractor scenes. Moreover, our generalizable mask prediction even achieves an accuracy superior to existing scene-specific training methods. Homepage is https://github.com/bbbbby-99/DGGS.  
 - **📝翻译**: 我们介绍了DGGS，这是一个新颖的框架，解决了此前未被探索的挑战：$\textbf{无干扰的广义3D高斯喷溅}$（3DGS）。它缓解了跨场景可推广列车设置中由干扰器数据引起的三维不一致性和训练不稳定性，同时支持对3DGS和未见场景参考的干扰掩码进行前馈推断。为实现这些目标，DGGS在训练阶段提出一个场景无关的基于参考的遮罩预测与细化模块，有效消除干扰对训练稳定性的影响。此外，我们通过一种新的两阶段推断框架，针对引用评分和重选，配合干扰器修剪机制，进一步消除残留的干扰器3DGS原始影响，解决了推断时产生的伪影和漏洞。对真实数据和合成数据进行的大量前馈实验显示，DGGS在处理新型干扰场景时具备重建能力。此外，我们的可推广掩体预测甚至达到了比现有场景特定训练方法更优的准确性。主页 https://github.com/bbbbby-99/DGGS。  
 

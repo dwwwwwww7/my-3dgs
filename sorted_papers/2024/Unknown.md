@@ -1,6 +1,6 @@
 # 未知会议 2024
 
-> **最后更新**： 2026-02-22 01:52:30
+> **最后更新**： 2026-03-01 01:58:04
 
 本页面包含 2024 年 未知会议 会议的论文列表。
 
@@ -157,7 +157,7 @@
 
 - **作者**: Yanqi Bao, Jing Liao, Jing Huo, Yang Gao
 - **发布时间**: 2024-11-26
-- **arXiv链接**: [arXiv:2411.17605v2](https://arxiv.org/abs/2411.17605v2)
+- **arXiv链接**: [arXiv:2411.17605v3](https://arxiv.org/abs/2411.17605v3)
 - **英文摘要**: We present DGGS, a novel framework that addresses the previously unexplored challenge: $\textbf{Distractor-free Generalizable 3D Gaussian Splatting}$ (3DGS). It mitigates 3D inconsistency and training instability caused by distractor data in the cross-scenes generalizable train setting while enabling feedforward inference for 3DGS and distractor masks from references in the unseen scenes. To achieve these objectives, DGGS proposes a scene-agnostic reference-based mask prediction and refinement module during the training phase, effectively eliminating the impact of distractor on training stability. Moreover, we combat distractor-induced artifacts and holes at inference time through a novel two-stage inference framework for references scoring and re-selection, complemented by a distractor pruning mechanism that further removes residual distractor 3DGS-primitive influences. Extensive feedforward experiments on the real and our synthetic data show DGGS's reconstruction capability when dealing with novel distractor scenes. Moreover, our generalizable mask prediction even achieves an accuracy superior to existing scene-specific training methods. Homepage is https://github.com/bbbbby-99/DGGS.
 
 ---
