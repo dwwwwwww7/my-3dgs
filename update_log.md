@@ -1,3 +1,47 @@
+# 2026-03-08 01:42:35
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-02-08 02:03:42  
+**本次更新时间**: 2026-03-08 01:42:35  
+**新增论文数量**: 4  
+**变更论文数量**: 2  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Multimodal-Prior-Guided Importance Sampling for Hierarchical Gaussian Splatting in Sparse-View Novel View Synthesis](https://arxiv.org/abs/2603.02866v1)** (ID: 2603.02866v1)
+
+#### **2. [HeroGS: Hierarchical Guidance for Robust 3D Gaussian Splatting under Sparse Views](https://arxiv.org/abs/2603.01099v2)** (ID: 2603.01099v2)
+
+#### **3. [Prune Wisely, Reconstruct Sharply: Compact 3D Gaussian Splatting via Adaptive Pruning and Difference-of-Gaussian Primitives](https://arxiv.org/abs/2602.24136v1)** (ID: 2602.24136v1)
+
+#### **4. [Forecasting as Rendering: A 2D Gaussian Splatting Framework for Time Series Forecasting](https://arxiv.org/abs/2603.02220v1)** (ID: 2603.02220v1)
+
+
+### 变更论文  
+#### **1. [Proxy-GS: Unified Occlusion Priors for Training and Inference in Structured 3D Gaussian Splatting](https://arxiv.org/abs/2509.24421v4)** (ID: 2509.24421v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2026-02-26  
+ ⏳新更新: 2026-03-03  
+ 📝原说明: Project page: https://gyy456.github.io/Proxy-GS  
+ 📝新说明: Project page: https://visionary-laboratory.github.io/Proxy-GS  
+
+#### **2. [MEGS$^{2}$: Memory-Efficient Gaussian Splatting via Spherical Gaussians and Unified Pruning](https://arxiv.org/abs/2509.07021v3)** (ID: 2509.07021v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2025-09-23  
+ ⏳新更新: 2026-02-27  
+ 📝原说明: 20 pages, 8 figures. Project page at https://megs-2.github.io/  
+ 📝新说明: 20 pages, 8 figures. Accepted by ICLR 2026  
+
+
+
+---
+
 # 2026-03-01 01:50:24
 
 # 论文更新日志  
