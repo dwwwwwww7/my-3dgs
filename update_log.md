@@ -1,3 +1,62 @@
+# 2026-03-15 01:53:21
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-03-08 01:42:35  
+**本次更新时间**: 2026-03-15 01:53:21  
+**新增论文数量**: 7  
+**变更论文数量**: 3  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Mobile-GS: Real-time Gaussian Splatting for Mobile Devices](https://arxiv.org/abs/2603.11531v1)** (ID: 2603.11531v1)
+
+#### **2. [ReCoSplat: Autoregressive Feed-Forward Gaussian Splatting Using Render-and-Compare](https://arxiv.org/abs/2603.09968v1)** (ID: 2603.09968v1)
+
+#### **3. [GSStream: 3D Gaussian Splatting based Volumetric Scene Streaming System](https://arxiv.org/abs/2603.09718v1)** (ID: 2603.09718v1)
+
+#### **4. [ProGS: Towards Progressive Coding for 3D Gaussian Splatting](https://arxiv.org/abs/2603.09703v1)** (ID: 2603.09703v1)
+
+#### **5. [X-GS: An Extensible Open Framework for Perceiving and Thinking via 3D Gaussian Splatting](https://arxiv.org/abs/2603.09632v2)** (ID: 2603.09632v2)
+
+#### **6. [Improving Continual Learning for Gaussian Splatting based Environments Reconstruction on Commercial Off-the-Shelf Edge Devices](https://arxiv.org/abs/2603.08499v1)** (ID: 2603.08499v1)
+
+#### **7. [EntON: Eigenentropy-Optimized Neighborhood Densification in 3D Gaussian Splatting](https://arxiv.org/abs/2603.06216v1)** (ID: 2603.06216v1)
+
+
+### 变更论文  
+#### **1. [MoE-GS: Mixture of Experts for Dynamic Gaussian Splatting](https://arxiv.org/abs/2510.19210v2)** (ID: 2510.19210v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-10-22  
+ ⏳新更新: 2026-03-07  
+ 📝原说明:   
+ 📝新说明: Accepted by ICLR 2026  
+
+#### **2. [ReSplat: Learning Recurrent Gaussian Splatting](https://arxiv.org/abs/2510.08575v3)** (ID: 2510.08575v3)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化, 说明变更  
+ 🏷️原标题: ReSplat: Learning Recurrent Gaussian Splats  
+ 🏷️新标题: ReSplat: Learning Recurrent Gaussian Splatting  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2025-12-06  
+ ⏳新更新: 2026-03-12  
+ 📝原说明: Project page: https://haofeixu.github.io/resplat/  
+ 📝新说明: Project page: https://haofeixu.github.io/resplat/ Code: https://github.com/cvg/resplat  
+
+#### **3. [ExGS: Extreme 3D Gaussian Compression with Diffusion Priors](https://arxiv.org/abs/2509.24758v5)** (ID: 2509.24758v5)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v4  
+ 📘新版本: v5  
+ ⏳原更新: 2025-10-07  
+ ⏳新更新: 2026-03-09  
+
+
+
+---
+
 # 2026-03-08 01:42:35
 
 # 论文更新日志  
