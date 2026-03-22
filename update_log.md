@@ -1,3 +1,31 @@
+# 2026-03-22 01:47:43
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-03-08 01:42:35  
+**本次更新时间**: 2026-03-22 01:47:43  
+**新增论文数量**: 6  
+**变更论文数量**: 0  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Matryoshka Gaussian Splatting](https://arxiv.org/abs/2603.19234v1)** (ID: 2603.19234v1)
+
+#### **2. [ReLaGS: Relational Language Gaussian Splatting](https://arxiv.org/abs/2603.17605v1)** (ID: 2603.17605v1)
+
+#### **3. [NanoGS: Training-Free Gaussian Splat Simplification](https://arxiv.org/abs/2603.16103v1)** (ID: 2603.16103v1)
+
+#### **4. [Direct Object-Level Reconstruction via Probabilistic Gaussian Splatting](https://arxiv.org/abs/2603.14316v1)** (ID: 2603.14316v1)
+
+#### **5. [Spectral Defense Against Resource-Targeting Attack in 3D Gaussian Splatting](https://arxiv.org/abs/2603.12796v1)** (ID: 2603.12796v1)
+
+#### **6. [Parameterizing Dataset Distillation via Gaussian Splatting](https://arxiv.org/abs/2509.26219v3)** (ID: 2509.26219v3)
+
+
+
+---
+
 # 2026-03-15 01:53:21
 
 # 论文更新日志  

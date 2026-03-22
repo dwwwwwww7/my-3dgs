@@ -1,10 +1,20 @@
 # CVPR 2026
 
-> **最后更新**： 2026-03-15 02:01:55
+> **最后更新**： 2026-03-22 01:55:49
 
 本页面包含 2026 年 CVPR 会议的论文列表。
 
-## 1. Prune Wisely, Reconstruct Sharply: Compact 3D Gaussian Splatting via Adaptive Pruning and Difference-of-Gaussian Primitives
+## 1. ReLaGS: Relational Language Gaussian Splatting
+
+- **作者**: Yaxu Xie, Abdalla Arafa, Alireza Javanmardi et al.
+- **发布时间**: 2026-03-18
+- **arXiv链接**: [arXiv:2603.17605v1](https://arxiv.org/abs/2603.17605v1)
+- **说明**: Accepted at CVPR 2026
+- **英文摘要**: Achieving unified 3D perception and reasoning across tasks such as segmentation, retrieval, and relation understanding remains challenging, as existing methods are either object-centric or rely on costly training for inter-object reasoning. We present a novel framework that constructs a hierarchical language-distilled Gaussian scene and its 3D semantic scene graph without scene-specific training. A Gaussian pruning mechanism refines scene geometry, while a robust multi-view language alignment strategy aggregates noisy 2D features into accurate 3D object embeddings. On top of this hierarchy, we build an open-vocabulary 3D scene graph with Vision Language derived annotations and Graph Neural Network-based relational reasoning. Our approach enables efficient and scalable open-vocabulary 3D reasoning by jointly modeling hierarchical semantics and inter/intra-object relationships, validated across tasks including open-vocabulary segmentation, scene graph generation, and relation-guided retrieval. Project page: https://dfki-av.github.io/ReLaGS/
+
+---
+
+## 2. Prune Wisely, Reconstruct Sharply: Compact 3D Gaussian Splatting via Adaptive Pruning and Difference-of-Gaussian Primitives
 
 - **作者**: Haoran Wang, Guoxi Huang, Fan Zhang, David Bull, Nantheera Anantrasirichai
 - **发布时间**: 2026-02-27
@@ -14,7 +24,7 @@
 
 ---
 
-## 2. Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting
+## 3. Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting
 
 - **作者**: Shuangkang Fang, I-Chao Shen, Xuanyang Zhang et al.
 - **发布时间**: 2026-02-24
@@ -24,7 +34,7 @@
 
 ---
 
-## 3. RAP: Fast Feedforward Rendering-Free Attribute-Guided Primitive Importance Score Prediction for Efficient 3D Gaussian Splatting Processing
+## 4. RAP: Fast Feedforward Rendering-Free Attribute-Guided Primitive Importance Score Prediction for Efficient 3D Gaussian Splatting Processing
 
 - **作者**: Kaifa Yang, Qi Yang, Yiling Xu, Zhu Li
 - **发布时间**: 2026-02-23
