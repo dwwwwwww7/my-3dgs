@@ -1,3 +1,85 @@
+# 2026-03-29 02:03:17
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-02-15 01:48:43  
+**本次更新时间**: 2026-03-29 02:03:17  
+**新增论文数量**: 18  
+**变更论文数量**: 4  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Learning Explicit Continuous Motion Representation for Dynamic Gaussian Splatting from Monocular Videos](http://arxiv.org/abs/2603.25058v1)** (ID: 2603.25058v1)
+
+#### **2. [FilterGS: Traversal-Free Parallel Filtering and Adaptive Shrinking for Large-Scale LoD 3D Gaussian Splatting](http://arxiv.org/abs/2603.23891v1)** (ID: 2603.23891v1)
+
+#### **3. [Drop-In Perceptual Optimization for 3D Gaussian Splatting](http://arxiv.org/abs/2603.23297v1)** (ID: 2603.23297v1)
+
+#### **4. [Camera-Agnostic Pruning of 3D Gaussian Splats via Descriptor-Based Beta Evidence](http://arxiv.org/abs/2603.21933v1)** (ID: 2603.21933v1)
+
+#### **5. [F4Splat: Feed-Forward Predictive Densification for Feed-Forward 3D Gaussian Splatting](http://arxiv.org/abs/2603.21304v2)** (ID: 2603.21304v2)
+
+#### **6. [GaussianPile: A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstruction](http://arxiv.org/abs/2603.20611v1)** (ID: 2603.20611v1)
+
+#### **7. [Learning Explicit Continuous Motion Representation for Dynamic Gaussian Splatting from Monocular Videos](http://arxiv.org/abs/2603.25058v1)** (ID: 2603.25058v1)
+
+#### **8. [FilterGS: Traversal-Free Parallel Filtering and Adaptive Shrinking for Large-Scale LoD 3D Gaussian Splatting](http://arxiv.org/abs/2603.23891v1)** (ID: 2603.23891v1)
+
+#### **9. [Drop-In Perceptual Optimization for 3D Gaussian Splatting](http://arxiv.org/abs/2603.23297v1)** (ID: 2603.23297v1)
+
+#### **10. [Camera-Agnostic Pruning of 3D Gaussian Splats via Descriptor-Based Beta Evidence](http://arxiv.org/abs/2603.21933v1)** (ID: 2603.21933v1)
+
+#### **11. [F4Splat: Feed-Forward Predictive Densification for Feed-Forward 3D Gaussian Splatting](http://arxiv.org/abs/2603.21304v2)** (ID: 2603.21304v2)
+
+#### **12. [GaussianPile: A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstruction](http://arxiv.org/abs/2603.20611v1)** (ID: 2603.20611v1)
+
+#### **13. [Learning Explicit Continuous Motion Representation for Dynamic Gaussian Splatting from Monocular Videos](http://arxiv.org/abs/2603.25058v1)** (ID: 2603.25058v1)
+
+#### **14. [FilterGS: Traversal-Free Parallel Filtering and Adaptive Shrinking for Large-Scale LoD 3D Gaussian Splatting](http://arxiv.org/abs/2603.23891v1)** (ID: 2603.23891v1)
+
+#### **15. [Drop-In Perceptual Optimization for 3D Gaussian Splatting](http://arxiv.org/abs/2603.23297v1)** (ID: 2603.23297v1)
+
+#### **16. [Camera-Agnostic Pruning of 3D Gaussian Splats via Descriptor-Based Beta Evidence](http://arxiv.org/abs/2603.21933v1)** (ID: 2603.21933v1)
+
+#### **17. [F4Splat: Feed-Forward Predictive Densification for Feed-Forward 3D Gaussian Splatting](http://arxiv.org/abs/2603.21304v2)** (ID: 2603.21304v2)
+
+#### **18. [GaussianPile: A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstruction](http://arxiv.org/abs/2603.20611v1)** (ID: 2603.20611v1)
+
+
+### 变更论文  
+#### **1. [Matryoshka Gaussian Splatting](http://arxiv.org/abs/2603.19234v2)** (ID: 2603.19234v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-03-19  
+ ⏳新更新: 2026-03-20  
+
+#### **2. [Matryoshka Gaussian Splatting](http://arxiv.org/abs/2603.19234v2)** (ID: 2603.19234v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-03-19  
+ ⏳新更新: 2026-03-20  
+
+#### **3. [Matryoshka Gaussian Splatting](http://arxiv.org/abs/2603.19234v2)** (ID: 2603.19234v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-03-19  
+ ⏳新更新: 2026-03-20  
+
+#### **4. [GoDe: Gaussians on Demand for Progressive Level of Detail and Scalable Compression](http://arxiv.org/abs/2501.13558v3)** (ID: 2501.13558v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2025-03-21  
+ ⏳新更新: 2026-03-19  
+
+
+
+---
+
 # 2026-03-22 01:47:43
 
 # 论文更新日志  
