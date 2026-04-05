@@ -1,3 +1,197 @@
+# 2026-04-05 01:57:39
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-02-15 01:48:43  
+**本次更新时间**: 2026-04-05 01:57:39  
+**新增论文数量**: 73  
+**变更论文数量**: 4  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [GS^2: Graph-based Spatial Distribution Optimization for Compact 3D Gaussian Splatting](https://arxiv.org/abs/2604.01884v1)** (ID: 2604.01884v1)
+
+#### **2. [FaCT-GS: Fast and Scalable CT Reconstruction with Gaussian Splatting](https://arxiv.org/abs/2604.01844v1)** (ID: 2604.01844v1)
+
+#### **3. [Autoregressive Appearance Prediction for 3D Gaussian Avatars](https://arxiv.org/abs/2604.00928v1)** (ID: 2604.00928v1)
+
+#### **4. [Compact Keyframe-Optimized Multi-Agent Gaussian Splatting SLAM](https://arxiv.org/abs/2604.00804v1)** (ID: 2604.00804v1)
+
+#### **5. [Gleanmer: A 6 mW SoC for Real-Time 3D Gaussian Occupancy Mapping](https://arxiv.org/abs/2603.29005v1)** (ID: 2603.29005v1)
+
+#### **6. [LG-HCC: Local Geometry-Aware Hierarchical Context Compression for 3D Gaussian Splatting](https://arxiv.org/abs/2603.28431v3)** (ID: 2603.28431v3)
+
+#### **7. [GaussianGPT: Towards Autoregressive 3D Gaussian Scene Generation](https://arxiv.org/abs/2603.26661v1)** (ID: 2603.26661v1)
+
+#### **8. [VG-Mapping: Variation-aware Density Control for Online 3D Gaussian Mapping in Semi-static Scenes](https://arxiv.org/abs/2510.09962v2)** (ID: 2510.09962v2)
+
+#### **9. [A Hierarchical 3D Gaussian Representation for Real-Time Rendering of Very Large Datasets](https://arxiv.org/abs/2406.12080v1)** (ID: 2406.12080v1)
+
+#### **10. [3DGS.zip: A survey on 3D Gaussian Splatting Compression Methods](https://arxiv.org/abs/2407.09510v5)** (ID: 2407.09510v5)
+
+#### **11. [PUP 3D-GS: Principled Uncertainty Pruning for 3D Gaussian Splatting](https://arxiv.org/abs/2406.10219v3)** (ID: 2406.10219v3)
+
+#### **12. [GaussianForest: Hierarchical-Hybrid 3D Gaussian Splatting for Compressed Scene Modeling](https://arxiv.org/abs/2406.08759v2)** (ID: 2406.08759v2)
+
+#### **13. [Generative Gaussian Splatting for Unbounded 3D City Generation](https://arxiv.org/abs/2406.06526v3)** (ID: 2406.06526v3)
+
+#### **14. [Improving Gaussian Splatting with Localized Points Management](https://arxiv.org/abs/2406.04251v3)** (ID: 2406.04251v3)
+
+#### **15. [Dynamic 3D Gaussian Fields for Urban Areas](https://arxiv.org/abs/2406.03175v2)** (ID: 2406.03175v2)
+
+#### **16. [ContextGS: Compact 3D Gaussian Splatting with Anchor Level Context Model](https://arxiv.org/abs/2405.20721v1)** (ID: 2405.20721v1)
+
+#### **17. [GaussianRoom: Improving 3D Gaussian Splatting with SDF Guidance and Monocular Cues for Indoor Scene Reconstruction](https://arxiv.org/abs/2405.19671v2)** (ID: 2405.19671v2)
+
+#### **18. [LP-3DGS: Learning to Prune 3D Gaussian Splatting](https://arxiv.org/abs/2405.18784v1)** (ID: 2405.18784v1)
+
+#### **19. [A Refined 3D Gaussian Representation for High-Quality Dynamic Scene Reconstruction](https://arxiv.org/abs/2405.17891v1)** (ID: 2405.17891v1)
+
+#### **20. [SafeguardGS: 3D Gaussian Primitive Pruning While Avoiding Catastrophic Scene Destruction](https://arxiv.org/abs/2405.17793v2)** (ID: 2405.17793v2)
+
+#### **21. [GOI: Find 3D Gaussians of Interest with an Optimizable Open-vocabulary Semantic-space Hyperplane](https://arxiv.org/abs/2405.17596v2)** (ID: 2405.17596v2)
+
+#### **22. [F-3DGS: Factorized Coordinates and Representations for 3D Gaussian Splatting](https://arxiv.org/abs/2405.17083v2)** (ID: 2405.17083v2)
+
+#### **23. [PyGS: Large-scale Scene Representation with Pyramidal 3D Gaussian Splatting](https://arxiv.org/abs/2405.16829v3)** (ID: 2405.16829v3)
+
+#### **24. [Splat-SLAM: Globally Optimized RGB-only SLAM with 3D Gaussians](https://arxiv.org/abs/2405.16544v1)** (ID: 2405.16544v1)
+
+#### **25. [GS-ROR$^2$: Bidirectional-guided 3DGS and SDF for Reflective Object Relighting and Reconstruction](https://arxiv.org/abs/2406.18544v3)** (ID: 2406.18544v3)
+
+#### **26. [CoR-GS: Sparse-View 3D Gaussian Splatting via Co-Regularization](https://arxiv.org/abs/2405.12110v2)** (ID: 2405.12110v2)
+
+#### **27. [MotionGS : Compact Gaussian Splatting SLAM by Motion Filter](https://arxiv.org/abs/2405.11129v2)** (ID: 2405.11129v2)
+
+#### **28. [From NeRFs to Gaussian Splats, and Back](https://arxiv.org/abs/2405.09717v3)** (ID: 2405.09717v3)
+
+#### **29. [I3DGS: Improve 3D Gaussian Splatting from Multiple Dimensions](https://arxiv.org/abs/2405.06408v1)** (ID: 2405.06408v1)
+
+#### **30. [GDGS: Gradient Domain Gaussian Splatting for Sparse Representation of Radiance Fields](https://arxiv.org/abs/2405.05446v1)** (ID: 2405.05446v1)
+
+#### **31. [RTG-SLAM: Real-time 3D Reconstruction at Scale using Gaussian Splatting](https://arxiv.org/abs/2404.19706v3)** (ID: 2404.19706v3)
+
+#### **32. [SAGS: Structure-Aware 3D Gaussian Splatting](https://arxiv.org/abs/2404.19149v1)** (ID: 2404.19149v1)
+
+#### **33. [GSTalker: Real-time Audio-Driven Talking Face Generation via Deformable Gaussian Splatting](https://arxiv.org/abs/2404.19040v1)** (ID: 2404.19040v1)
+
+#### **34. [CLIP-GS: CLIP-Informed Gaussian Splatting for View-Consistent 3D Indoor Semantic Understanding](https://arxiv.org/abs/2404.14249v2)** (ID: 2404.14249v2)
+
+#### **35. [EfficientGS: Streamlining Gaussian Splatting for Large-Scale High-Resolution Scene Representation](https://arxiv.org/abs/2404.12777v1)** (ID: 2404.12777v1)
+
+#### **36. [Application of 3D Gaussian Splatting for Cinematic Anatomy on Consumer Class Devices](https://arxiv.org/abs/2404.11285v2)** (ID: 2404.11285v2)
+
+#### **37. [3D Gaussian Splatting as Markov Chain Monte Carlo](https://arxiv.org/abs/2404.09591v3)** (ID: 2404.09591v3)
+
+#### **38. [CompGS: Efficient 3D Scene Representation via Compressed Gaussian Splatting](https://arxiv.org/abs/2404.09458v1)** (ID: 2404.09458v1)
+
+#### **39. [End-to-End Rate-Distortion Optimized 3D Gaussian Representation](https://arxiv.org/abs/2406.01597v2)** (ID: 2406.01597v2)
+
+#### **40. [Revising Densification in Gaussian Splatting](https://arxiv.org/abs/2404.06109v1)** (ID: 2404.06109v1)
+
+#### **41. [TOGS: Gaussian Splatting with Temporal Opacity Offset for Real-Time 4D DSA Rendering](https://arxiv.org/abs/2403.19586v2)** (ID: 2403.19586v2)
+
+#### **42. [Octree-GS: Towards Consistent Real-time Rendering with LOD-Structured 3D Gaussians](https://arxiv.org/abs/2403.17898v2)** (ID: 2403.17898v2)
+
+#### **43. [HAC: Hash-grid Assisted Context for 3D Gaussian Splatting Compression](https://arxiv.org/abs/2403.14530v3)** (ID: 2403.14530v3)
+
+#### **44. [Mini-Splatting: Representing Scenes with a Constrained Number of Gaussians](https://arxiv.org/abs/2403.14166v3)** (ID: 2403.14166v3)
+
+#### **45. [RadSplat: Radiance Field-Informed Gaussian Splatting for Robust Real-Time Rendering with 900+ FPS](https://arxiv.org/abs/2403.13806v2)** (ID: 2403.13806v2)
+
+#### **46. [NEDS-SLAM: A Neural Explicit Dense Semantic SLAM Framework using 3D Gaussian Splatting](https://arxiv.org/abs/2403.11679v3)** (ID: 2403.11679v3)
+
+#### **47. [Compact 3D Gaussian Splatting For Dense Visual SLAM](https://arxiv.org/abs/2403.11247v2)** (ID: 2403.11247v2)
+
+#### **48. [GeoGS3D: Single-view 3D Reconstruction via Geometric-aware Diffusion Model and Gaussian Splatting](https://arxiv.org/abs/2403.10242v2)** (ID: 2403.10242v2)
+
+#### **49. [GaussianImage: 1000 FPS Image Representation and Compression by 2D Gaussian Splatting](https://arxiv.org/abs/2403.08551v5)** (ID: 2403.08551v5)
+
+#### **50. [Gaussian Splatting in Style](https://arxiv.org/abs/2403.08498v2)** (ID: 2403.08498v2)
+
+#### **51. [3DGStream: On-the-Fly Training of 3D Gaussians for Efficient Streaming of Photo-Realistic Free-Viewpoint Videos](https://arxiv.org/abs/2403.01444v4)** (ID: 2403.01444v4)
+
+#### **52. [GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting](https://arxiv.org/abs/2402.10259v4)** (ID: 2402.10259v4)
+
+#### **53. [Learning Segmented 3D Gaussians via Efficient Feature Unprojection for Zero-shot Neural Scene Segmentation](https://arxiv.org/abs/2401.05925v4)** (ID: 2401.05925v4)
+
+#### **54. [Spacetime Gaussian Feature Splatting for Real-Time Dynamic View Synthesis](https://arxiv.org/abs/2312.16812v2)** (ID: 2312.16812v2)
+
+#### **55. [Compact 3D Scene Representation via Self-Organizing Gaussian Grids](https://arxiv.org/abs/2312.13299v2)** (ID: 2312.13299v2)
+
+#### **56. [EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncodingS](https://arxiv.org/abs/2312.04564v3)** (ID: 2312.04564v3)
+
+#### **57. [HiFi4G: High-Fidelity Human Performance Rendering via Compact Gaussian Splatting](https://arxiv.org/abs/2312.03461v2)** (ID: 2312.03461v2)
+
+#### **58. [GauHuman: Articulated Gaussian Splatting from Monocular Human Videos](https://arxiv.org/abs/2312.02973v1)** (ID: 2312.02973v1)
+
+#### **59. [SC-GS: Sparse-Controlled Gaussian Splatting for Editable Dynamic Scenes](https://arxiv.org/abs/2312.14937v3)** (ID: 2312.14937v3)
+
+#### **60. [SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting](https://arxiv.org/abs/2312.00206v3)** (ID: 2312.00206v3)
+
+#### **61. [DynMF: Neural Motion Factorization for Real-time Dynamic View Synthesis with 3D Gaussian Splatting](https://arxiv.org/abs/2312.00112v2)** (ID: 2312.00112v2)
+
+#### **62. [Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering](https://arxiv.org/abs/2312.00109v1)** (ID: 2312.00109v1)
+
+#### **63. [CompGS: Smaller and Faster Gaussian Splatting with Vector Quantization](https://arxiv.org/abs/2311.18159v3)** (ID: 2311.18159v3)
+
+#### **64. [LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS](https://arxiv.org/abs/2311.17245v6)** (ID: 2311.17245v6)
+
+#### **65. [HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting](https://arxiv.org/abs/2311.17061v2)** (ID: 2311.17061v2)
+
+#### **66. [GS-IR: 3D Gaussian Splatting for Inverse Rendering](https://arxiv.org/abs/2311.16473v3)** (ID: 2311.16473v3)
+
+#### **67. [Compact 3D Gaussian Representation for Radiance Field](https://arxiv.org/abs/2311.13681v2)** (ID: 2311.13681v2)
+
+#### **68. [A Compact Dynamic 3D Gaussian Representation for Real-Time Dynamic View Synthesis](https://arxiv.org/abs/2311.12897v2)** (ID: 2311.12897v2)
+
+#### **69. [Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis](https://arxiv.org/abs/2401.02436v2)** (ID: 2401.02436v2)
+
+#### **70. [Drivable 3D Gaussian Avatars](https://arxiv.org/abs/2311.08581v2)** (ID: 2311.08581v2)
+
+#### **71. [DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation](https://arxiv.org/abs/2309.16653v2)** (ID: 2309.16653v2)
+
+#### **72. [Text-to-3D using Gaussian Splatting](https://arxiv.org/abs/2309.16585v4)** (ID: 2309.16585v4)
+
+#### **73. [3DG-STFM: 3D Geometric Guided Student-Teacher Feature Matching](https://arxiv.org/abs/2207.02375v2)** (ID: 2207.02375v2)
+
+
+### 变更论文  
+#### **1. [PocketGS: On-Device Training of 3D Gaussian Splatting for High Perceptual Modeling](https://arxiv.org/abs/2601.17354v4)** (ID: 2601.17354v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2026-02-23  
+ ⏳新更新: 2026-03-28  
+
+#### **2. [Smol-GS: Compact Representations for Abstract 3D Gaussian Splatting](https://arxiv.org/abs/2512.00850v2)** (ID: 2512.00850v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-11-30  
+ ⏳新更新: 2026-03-27  
+
+#### **3. [CLoD-GS: Continuous Level-of-Detail via 3D Gaussian Splatting](https://arxiv.org/abs/2510.09997v2)** (ID: 2510.09997v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-10-11  
+ ⏳新更新: 2026-04-01  
+ 📝原说明:   
+ 📝新说明: Accepted by ICLR 2026 poster  
+
+#### **4. [SpeeDe3DGS: Speedy Deformable 3D Gaussian Splatting with Temporal Pruning and Motion Grouping](https://arxiv.org/abs/2506.07917v4)** (ID: 2506.07917v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2025-11-20  
+ ⏳新更新: 2026-03-27  
+
+
+
+---
+
 # 2026-03-29 02:03:17
 
 # 论文更新日志  
