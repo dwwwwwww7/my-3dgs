@@ -1,10 +1,20 @@
 # CVPR 2026
 
-> **最后更新**： 2026-04-12 02:14:28
+> **最后更新**： 2026-04-19 02:17:31
 
 本页面包含 2026 年 CVPR 会议的论文列表。
 
-## 1. Learning Explicit Continuous Motion Representation for Dynamic Gaussian Splatting from Monocular Videos
+## 1. PointSplat: Efficient Geometry-Driven Pruning and Transformer Refinement for 3D Gaussian Splatting
+
+- **作者**: Anh Thuan Tran, Jana Kosecka
+- **发布时间**: 2026-04-10
+- **arXiv链接**: [arXiv:2604.09903v1](http://arxiv.org/abs/2604.09903v1)
+- **说明**: Accepted to CVPRW 2026 (3DMV)
+- **英文摘要**: 3D Gaussian Splatting (3DGS) has recently unlocked real-time, high-fidelity novel view synthesis by representing scenes using explicit 3D primitives. However, traditional methods often require millions of Gaussians to capture complex scenes, leading to significant memory and storage demands. Recent approaches have addressed this issue through pruning and per-scene fine-tuning of Gaussian parameters, thereby reducing the model size while maintaining visual quality. These strategies typically rely on 2D images to compute important scores followed by scene-specific optimization. In this work, we introduce PointSplat, 3D geometry-driven prune-and-refine framework that bridges previously disjoint directions of gaussian pruning and transformer refinement. Our method includes two key components: (1) an efficient geometry-driven strategy that ranks Gaussians based solely on their 3D attributes, removing reliance on 2D images during pruning stage, and (2) a dual-branch encoder that separates, re-weights geometric and appearance to avoid feature imbalance. Extensive experiments on ScanNet++ and Replica across varying sparsity levels demonstrate that PointSplat consistently achieves competitive rendering quality and superior efficiency without additional per-scene optimization.
+
+---
+
+## 2. Learning Explicit Continuous Motion Representation for Dynamic Gaussian Splatting from Monocular Videos
 
 - **作者**: Xuankai Zhang, Junjin Xiao, Shangwei Huang, Wei-shi Zheng, Qing Zhang
 - **发布时间**: 2026-03-26
@@ -15,7 +25,7 @@
 
 ---
 
-## 2. GaussianPile: A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstruction
+## 3. GaussianPile: A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstruction
 
 - **作者**: Di Kong, Yikai Wang, Wenjie Guo et al.
 - **发布时间**: 2026-03-21
@@ -25,7 +35,7 @@
 
 ---
 
-## 3. ReLaGS: Relational Language Gaussian Splatting
+## 4. ReLaGS: Relational Language Gaussian Splatting
 
 - **作者**: Yaxu Xie, Abdalla Arafa, Alireza Javanmardi et al.
 - **发布时间**: 2026-03-18
@@ -35,7 +45,7 @@
 
 ---
 
-## 4. Prune Wisely, Reconstruct Sharply: Compact 3D Gaussian Splatting via Adaptive Pruning and Difference-of-Gaussian Primitives
+## 5. Prune Wisely, Reconstruct Sharply: Compact 3D Gaussian Splatting via Adaptive Pruning and Difference-of-Gaussian Primitives
 
 - **作者**: Haoran Wang, Guoxi Huang, Fan Zhang, David Bull, Nantheera Anantrasirichai
 - **发布时间**: 2026-02-27
@@ -45,7 +55,7 @@
 
 ---
 
-## 5. Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting
+## 6. Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting
 
 - **作者**: Shuangkang Fang, I-Chao Shen, Xuanyang Zhang et al.
 - **发布时间**: 2026-02-24
@@ -55,7 +65,7 @@
 
 ---
 
-## 6. RAP: Fast Feedforward Rendering-Free Attribute-Guided Primitive Importance Score Prediction for Efficient 3D Gaussian Splatting Processing
+## 7. RAP: Fast Feedforward Rendering-Free Attribute-Guided Primitive Importance Score Prediction for Efficient 3D Gaussian Splatting Processing
 
 - **作者**: Kaifa Yang, Qi Yang, Yiling Xu, Zhu Li
 - **发布时间**: 2026-02-23

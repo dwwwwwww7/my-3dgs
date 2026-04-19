@@ -1,3 +1,42 @@
+# 2026-04-19 02:08:56
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-03-15 01:53:21  
+**本次更新时间**: 2026-04-19 02:08:56  
+**新增论文数量**: 7  
+**变更论文数量**: 1  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [GlobalSplat: Efficient Feed-Forward 3D Gaussian Splatting via Global Scene Tokens](http://arxiv.org/abs/2604.15284v1)** (ID: 2604.15284v1)
+
+#### **2. [MSGS: Multispectral 3D Gaussian Splatting](http://arxiv.org/abs/2604.13340v1)** (ID: 2604.13340v1)
+
+#### **3. [Unfolding 3D Gaussian Splatting via Iterative Gaussian Synopsis](http://arxiv.org/abs/2604.11685v1)** (ID: 2604.11685v1)
+
+#### **4. [GS4City: Hierarchical Semantic Gaussian Splatting via City-Model Priors](http://arxiv.org/abs/2604.11401v1)** (ID: 2604.11401v1)
+
+#### **5. [Naka-GS: A Bionics-inspired Dual-Branch Naka Correction and Progressive Point Pruning for Low-Light 3DGS](http://arxiv.org/abs/2604.11142v1)** (ID: 2604.11142v1)
+
+#### **6. [A 129FPS Full HD Real-Time Accelerator for 3D Gaussian Splatting](http://arxiv.org/abs/2604.10223v1)** (ID: 2604.10223v1)
+
+#### **7. [PointSplat: Efficient Geometry-Driven Pruning and Transformer Refinement for 3D Gaussian Splatting](http://arxiv.org/abs/2604.09903v1)** (ID: 2604.09903v1)
+
+
+### 变更论文  
+#### **1. [A Survey on 3D Gaussian Splatting Applications: Segmentation, Editing, and Generation](http://arxiv.org/abs/2508.09977v4)** (ID: 2508.09977v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2026-01-01  
+ ⏳新更新: 2026-04-11  
+
+
+
+---
+
 # 2026-04-12 02:05:21
 
 # 论文更新日志  
