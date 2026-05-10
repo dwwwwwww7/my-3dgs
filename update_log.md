@@ -1,3 +1,54 @@
+# 2026-05-10 02:28:30
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-03-15 01:53:21  
+**本次更新时间**: 2026-05-10 02:28:30  
+**新增论文数量**: 3  
+**变更论文数量**: 3  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Large-Scale High-Quality 3D Gaussian Head Reconstruction from Multi-View Captures](https://arxiv.org/abs/2605.04035v1)** (ID: 2605.04035v1)
+
+#### **2. [GETA-3DGS: Automatic Joint Structured Pruning and Quantization for 3D Gaussian Splatting](https://arxiv.org/abs/2605.02086v1)** (ID: 2605.02086v1)
+
+#### **3. [2D-SuGaR: Surface-Aware Gaussian Splatting for Geometrically Accurate Mesh Reconstruction](https://arxiv.org/abs/2605.00569v1)** (ID: 2605.00569v1)
+
+
+### 变更论文  
+#### **1. [MesonGS++: Post-training Compression of 3D Gaussian Splatting with Hyperparameter Searching](https://arxiv.org/abs/2604.26799v2)** (ID: 2604.26799v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-04-29  
+ ⏳新更新: 2026-05-07  
+
+#### **2. [CryoSplat: Gaussian Splatting for Cryo-EM Homogeneous Reconstruction](https://arxiv.org/abs/2508.04929v5)** (ID: 2508.04929v5)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v4  
+ 📘新版本: v5  
+ ⏳原更新: 2026-04-09  
+ ⏳新更新: 2026-05-01  
+ 📝原说明: Accepted at ICLR 2026 (Camera-ready). Code available at https://github.com/Chen-Suyi/cryosplat  
+ 📝新说明: Published at ICLR 2026 (Camera-ready). Code available at https://github.com/Chen-Suyi/cryosplat  
+
+#### **3. [SVGS: Enhancing Gaussian Splatting Using Primitives with Spatially Varying Colors](https://arxiv.org/abs/2411.18966v2)** (ID: 2411.18966v2)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化, 说明变更  
+ 🏷️原标题: SuperGaussians: Enhancing Gaussian Splatting Using Primitives with Spatially Varying Colors  
+ 🏷️新标题: SVGS: Enhancing Gaussian Splatting Using Primitives with Spatially Varying Colors  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2024-11-28  
+ ⏳新更新: 2026-05-04  
+ 📝原说明:   
+ 📝新说明: IEEE Transactions on Visualization and Computer Graphics  
+
+
+
+---
+
 # 2026-05-03 02:25:30
 
 # 论文更新日志  

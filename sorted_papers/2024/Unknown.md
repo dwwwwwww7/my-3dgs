@@ -1,6 +1,6 @@
 # 未知会议 2024
 
-> **最后更新**： 2026-05-03 02:35:11
+> **最后更新**： 2026-05-10 02:37:29
 
 本页面包含 2024 年 未知会议 会议的论文列表。
 
@@ -135,12 +135,13 @@
 
 ---
 
-## 15. SuperGaussians: Enhancing Gaussian Splatting Using Primitives with Spatially Varying Colors
+## 15. SVGS: Enhancing Gaussian Splatting Using Primitives with Spatially Varying Colors
 
 - **作者**: Rui Xu, Wenyue Chen, Jiepeng Wang et al.
 - **发布时间**: 2024-11-28
-- **arXiv链接**: [arXiv:2411.18966v1](https://arxiv.org/abs/2411.18966v1)
-- **英文摘要**: Gaussian Splattings demonstrate impressive results in multi-view reconstruction based on Gaussian explicit representations. However, the current Gaussian primitives only have a single view-dependent color and an opacity to represent the appearance and geometry of the scene, resulting in a non-compact representation. In this paper, we introduce a new method called SuperGaussians that utilizes spatially varying colors and opacity in a single Gaussian primitive to improve its representation ability. We have implemented bilinear interpolation, movable kernels, and even tiny neural networks as spatially varying functions. Quantitative and qualitative experimental results demonstrate that all three functions outperform the baseline, with the best movable kernels achieving superior novel view synthesis performance on multiple datasets, highlighting the strong potential of spatially varying functions.
+- **arXiv链接**: [arXiv:2411.18966v2](https://arxiv.org/abs/2411.18966v2)
+- **说明**: IEEE Transactions on Visualization and Computer Graphics
+- **英文摘要**: Gaussian Splatting demonstrates impressive results in multi-view reconstruction based on Gaussian explicit representations. However, the current Gaussian primitives only have a single view-dependent color and an opacity to represent the appearance and geometry of the scene, resulting in a non-compact representation. In this paper, we introduce a new method called SVGS (Spatially Varying Gaussian Splatting) that utilizes spatially varying colors and opacity in a single Gaussian primitive to improve its representation ability. We have implemented bilinear interpolation, movable kernels, and tiny neural networks as spatially varying functions. SVGS employs 2D Gaussian surfels as primitives, which significantly enhances novel-view synthesis while maintaining high-quality geometric reconstruction. This approach is particularly effective in practical applications, as scenes combining complex textures with relatively simple geometry occur frequently in real-world environments. Quantitative and qualitative experimental results demonstrate that all three functions outperform the baseline, with the best movable kernels achieving superior novel view synthesis performance on multiple datasets, highlighting the strong potential of spatially varying functions. Project page: https://ruixu.me/html/SuperGaussians/index.html
 
 ---
 

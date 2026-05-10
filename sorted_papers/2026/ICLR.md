@@ -1,6 +1,6 @@
 # ICLR 2026
 
-> **最后更新**： 2026-05-03 02:35:11
+> **最后更新**： 2026-05-10 02:37:29
 
 本页面包含 2026 年 ICLR 会议的论文列表。
 
@@ -38,8 +38,8 @@
 
 - **作者**: Suyi Chen, Haibin Ling
 - **发布时间**: 2025-08-06
-- **arXiv链接**: [arXiv:2508.04929v4](https://arxiv.org/abs/2508.04929v4)
-- **说明**: Accepted at ICLR 2026 (Camera-ready). Code available at https://github.com/Chen-Suyi/cryosplat
+- **arXiv链接**: [arXiv:2508.04929v5](https://arxiv.org/abs/2508.04929v5)
+- **说明**: Published at ICLR 2026 (Camera-ready). Code available at https://github.com/Chen-Suyi/cryosplat
 - **英文摘要**: As a critical modality for structural biology, cryogenic electron microscopy (cryo-EM) facilitates the determination of macromolecular structures at near-atomic resolution. The core computational task in single-particle cryo-EM is to reconstruct the 3D electrostatic potential of a molecule from noisy 2D projections acquired at unknown orientations. Gaussian mixture models (GMMs) provide a continuous, compact, and physically interpretable representation for molecular density and have recently gained interest in cryo-EM reconstruction. However, existing methods rely on external consensus maps or atomic models for initialization, limiting their use in self-contained pipelines. In parallel, differentiable rendering techniques such as Gaussian splatting have demonstrated remarkable scalability and efficiency for volumetric representations, suggesting a natural fit for GMM-based cryo-EM reconstruction. However, off-the-shelf Gaussian splatting methods are designed for photorealistic view synthesis and remain incompatible with cryo-EM due to mismatches in the image formation physics, reconstruction objectives, and coordinate systems. Addressing these issues, we propose cryoSplat, a GMM-based method that integrates Gaussian splatting with the physics of cryo-EM image formation. In particular, we develop an orthogonal projection-aware Gaussian splatting, with adaptations such as a view-dependent normalization term and FFT-aligned coordinate system tailored for cryo-EM imaging. These i...
 
 ---
