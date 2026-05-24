@@ -1,6 +1,6 @@
 # 未知会议 2024
 
-> **最后更新**： 2026-05-10 02:37:29
+> **最后更新**： 2026-05-24 02:54:02
 
 本页面包含 2024 年 未知会议 会议的论文列表。
 
@@ -711,16 +711,7 @@
 
 ---
 
-## 76. Compact 3D Gaussian Splatting For Dense Visual SLAM
-
-- **作者**: Tianchen Deng, Yaohui Chen, Leyan Zhang et al.
-- **发布时间**: 2024-03-17
-- **arXiv链接**: [arXiv:2403.11247v2](https://arxiv.org/abs/2403.11247v2)
-- **英文摘要**: Recent work has shown that 3D Gaussian-based SLAM enables high-quality reconstruction, accurate pose estimation, and real-time rendering of scenes. However, these approaches are built on a tremendous number of redundant 3D Gaussian ellipsoids, leading to high memory and storage costs, and slow training speed. To address the limitation, we propose a compact 3D Gaussian Splatting SLAM system that reduces the number and the parameter size of Gaussian ellipsoids. A sliding window-based masking strategy is first proposed to reduce the redundant ellipsoids. Then we observe that the covariance matrix (geometry) of most 3D Gaussian ellipsoids are extremely similar, which motivates a novel geometry codebook to compress 3D Gaussian geometric attributes, i.e., the parameters. Robust and accurate pose estimation is achieved by a global bundle adjustment method with reprojection loss. Extensive experiments demonstrate that our method achieves faster training and rendering speed while maintaining the state-of-the-art (SOTA) quality of the scene representation.
-
----
-
-## 77. GeoGS3D: Single-view 3D Reconstruction via Geometric-aware Diffusion Model and Gaussian Splatting
+## 76. GeoGS3D: Single-view 3D Reconstruction via Geometric-aware Diffusion Model and Gaussian Splatting
 
 - **作者**: Qijun Feng, Zhen Xing, Zuxuan Wu, Yu-Gang Jiang
 - **发布时间**: 2024-03-15
@@ -729,7 +720,7 @@
 
 ---
 
-## 78. Gaussian Splatting in Style
+## 77. Gaussian Splatting in Style
 
 - **作者**: Abhishek Saroha, Mariia Gladkova, Cecilia Curreli et al.
 - **发布时间**: 2024-03-13
@@ -739,7 +730,7 @@
 
 ---
 
-## 79. Learning Segmented 3D Gaussians via Efficient Feature Unprojection for Zero-shot Neural Scene Segmentation
+## 78. Learning Segmented 3D Gaussians via Efficient Feature Unprojection for Zero-shot Neural Scene Segmentation
 
 - **作者**: Bin Dou, Tianyu Zhang, Zhaohui Wang, Yongjia Ma, Zejian Yuan
 - **发布时间**: 2024-01-11
