@@ -1,10 +1,20 @@
 # TOG 2024
 
-> **最后更新**： 2026-05-31 03:02:39
+> **最后更新**： 2026-06-07 03:05:52
 
 本页面包含 2024 年 TOG 会议的论文列表。
 
-## 1. GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting
+## 1. GS-ROR$^2$: Bidirectional-guided 3DGS and SDF for Reflective Object Relighting and Reconstruction
+
+- **作者**: Zuo-Liang Zhu, Beibei Wang, Jian Yang
+- **发布时间**: 2024-05-22
+- **arXiv链接**: [arXiv:2406.18544v4](https://arxiv.org/abs/2406.18544v4)
+- **说明**: Accepted by ACM TOG
+- **英文摘要**: 3D Gaussian Splatting (3DGS) has shown a powerful capability for novel view synthesis due to its detailed expressive ability and highly efficient rendering speed. Unfortunately, creating relightable 3D assets and reconstructing faithful geometry with 3DGS is still problematic, particularly for reflective objects, as its discontinuous representation raises difficulties in constraining geometries. Volumetric signed distance field (SDF) methods provide robust geometry reconstruction, while the expensive ray marching hinders its real-time application and slows the training. Besides, these methods struggle to capture sharp geometric details. To this end, we propose to guide 3DGS and SDF bidirectionally in a complementary manner, including an SDF-aided Gaussian splatting for efficient optimization of the relighting model and a GS-guided SDF enhancement for high-quality geometry reconstruction. At the core of our SDF-aided Gaussian splatting is the mutual supervision of the depth and normal between blended Gaussians and SDF, which avoids the expensive volume rendering of SDF. Thanks to this mutual supervision, the learned blended Gaussians are well-constrained with a minimal time cost. As the Gaussians are rendered in a deferred shading mode, the alpha-blended Gaussians are smooth, while individual Gaussians may still be outliers, yielding floater artifacts. Therefore, we introduce an SDF-aware pruning strategy to remove Gaussian outliers located distant from the surface defined by ...
+
+---
+
+## 2. GaussianObject: High-Quality 3D Object Reconstruction from Four Views with Gaussian Splatting
 
 - **作者**: Chen Yang, Sikuang Li, Jiemin Fang et al.
 - **发布时间**: 2024-02-15
