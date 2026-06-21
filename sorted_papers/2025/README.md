@@ -1,6 +1,6 @@
 # 2025 年论文索引
 
-> **最后更新**： 2026-06-14 03:36:11
+> **最后更新**： 2026-06-21 03:41:08
 
 本页面包含 2025 年所有会议的论文索引。
 
@@ -17,9 +17,10 @@
 - [ICME (2篇)](ICME.md)
 - [AAAI (2篇)](AAAI.md)
 - [3DV (2篇)](3DV.md)
+- [TPAMI (1篇)](TPAMI.md)
 - [TOG (1篇)](TOG.md)
 - [ACM MM (1篇)](ACM_MM.md)
 - [ICML (1篇)](ICML.md)
 - [ICASSP (1篇)](ICASSP.md)
 - [BMVC (1篇)](BMVC.md)
-- [未归类会议 (155篇)](UnSorted.md)
+- [未归类会议 (154篇)](UnSorted.md)

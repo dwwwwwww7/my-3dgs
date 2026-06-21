@@ -1,3 +1,45 @@
+# 2026-06-21 03:31:28
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-06-14 03:25:52  
+**本次更新时间**: 2026-06-21 03:31:28  
+**新增论文数量**: 4  
+**变更论文数量**: 2  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [AIGS-Net: Compact Illumination Field Modeling via 2D Gaussian Splatting for Fast Low-Light Image Enhancement](https://arxiv.org/abs/2606.17998v1)** (ID: 2606.17998v1)
+
+#### **2. [Renderable Partial Representations for Dynamic Gaussian Splatting under Incomplete Delivery](https://arxiv.org/abs/2606.17212v1)** (ID: 2606.17212v1)
+
+#### **3. [PolyMerge: Compressing 3D Gaussian Splats with Polytope Coverings for Provably Safe Resource-Constrained Navigation](https://arxiv.org/abs/2606.16232v1)** (ID: 2606.16232v1)
+
+#### **4. [Dehaze-GaussianImage: Zero-Shot Dehazing via Efficient 2D Gaussian Splatting Representation](https://arxiv.org/abs/2606.16163v1)** (ID: 2606.16163v1)
+
+
+### 变更论文  
+#### **1. [Smol-GS: Compact Representations for Abstract 3D Gaussian Splatting](https://arxiv.org/abs/2512.00850v3)** (ID: 2512.00850v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2026-03-27  
+ ⏳新更新: 2026-06-18  
+
+#### **2. [A Survey on 3D Gaussian Splatting Applications: Segmentation, Editing, and Generation](https://arxiv.org/abs/2508.09977v5)** (ID: 2508.09977v5)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v4  
+ 📘新版本: v5  
+ ⏳原更新: 2026-04-11  
+ ⏳新更新: 2026-06-15  
+ 📝原说明: GitHub Repo: https://github.com/heshuting555/Awesome-3DGS-Applications  
+ 📝新说明: IEEE TPAMI, GitHub Repo: https://github.com/heshuting555/Awesome-3DGS-Applications  
+
+
+
+---
+
 # 2026-06-14 03:25:52
 
 # 论文更新日志  
