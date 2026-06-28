@@ -1,6 +1,6 @@
 # 3DV 2025
 
-> **最后更新**： 2026-06-21 03:41:08
+> **最后更新**： 2026-06-28 03:03:07
 
 本页面包含 2025 年 3DV 会议的论文列表。
 
@@ -14,11 +14,11 @@
 
 ---
 
-## 2. SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting
+## 2. SparseGS: Sparse View Synthesis using 3D Gaussian Splatting
 
-- **作者**: Haolin Xiong, Sairisheek Muttukuru, Rishi Upadhyay, Pradyumna Chari, Achuta Kadambi
+- **作者**: Haolin Xiong, Sairisheek Muttukuru, Hanyuan Xiao et al.
 - **发布时间**: 2023-11-30
-- **arXiv链接**: [arXiv:2312.00206v3](https://arxiv.org/abs/2312.00206v3)
+- **arXiv链接**: [arXiv:2312.00206v4](https://arxiv.org/abs/2312.00206v4)
 - **说明**: Version accepted to 3DV 2025. Project page: https://github.com/ForMyCat/SparseGS
 - **英文摘要**: 3D Gaussian Splatting (3DGS) has recently enabled real-time rendering of unbounded 3D scenes for novel view synthesis. However, this technique requires dense training views to accurately reconstruct 3D geometry. A limited number of input views will significantly degrade reconstruction quality, resulting in artifacts such as "floaters" and "background collapse" at unseen viewpoints. In this work, we introduce SparseGS, an efficient training pipeline designed to address the limitations of 3DGS in scenarios with sparse training views. SparseGS incorporates depth priors, novel depth rendering techniques, and a pruning heuristic to mitigate floater artifacts, alongside an Unseen Viewpoint Regularization module to alleviate background collapses. Our extensive evaluations on the Mip-NeRF360, LLFF, and DTU datasets demonstrate that SparseGS achieves high-quality reconstruction in both unbounded and forward-facing scenarios, with as few as 12 and 3 input images, respectively, while maintaining fast training and real-time rendering capabilities.
 

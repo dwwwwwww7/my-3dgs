@@ -1,3 +1,52 @@
+# 2026-06-28 02:52:46
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-06-21 03:31:28  
+**本次更新时间**: 2026-06-28 02:52:46  
+**新增论文数量**: 4  
+**变更论文数量**: 3  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Vis4GS: A Visual Analytic Tool for 3D Gaussian Splatting Reconstruction](https://arxiv.org/abs/2606.26985v1)** (ID: 2606.26985v1)
+
+#### **2. [Pocket-SLAM: Rendering-Area-Aware Pruning for Memory-Efficient 3DGS-SLAM](https://arxiv.org/abs/2606.24796v1)** (ID: 2606.24796v1)
+
+#### **3. [Multi4D: High-Fidelity Dynamic Gaussian Splatting via Multi-Level Competitive Allocation](https://arxiv.org/abs/2606.22197v1)** (ID: 2606.22197v1)
+
+#### **4. [ACE-GS: Acing the Trade-off with Accurate, Compact and Efficient 3D Gaussian Splatting](https://arxiv.org/abs/2606.21244v1)** (ID: 2606.21244v1)
+
+
+### 变更论文  
+#### **1. [REFINE: Super-efficient 3D Gaussian Splatting Pruning via Rendering-Free Primitive Importance](https://arxiv.org/abs/2606.09074v2)** (ID: 2606.09074v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-06-08  
+ ⏳新更新: 2026-06-19  
+
+#### **2. [SplatPainter: Interactive Authoring of 3D Gaussians from 2D Edits via Test-Time Training](https://arxiv.org/abs/2512.05354v2)** (ID: 2512.05354v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2025-12-05  
+ ⏳新更新: 2026-06-24  
+
+#### **3. [SparseGS: Sparse View Synthesis using 3D Gaussian Splatting](https://arxiv.org/abs/2312.00206v4)** (ID: 2312.00206v4)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化  
+ 🏷️原标题: SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting  
+ 🏷️新标题: SparseGS: Sparse View Synthesis using 3D Gaussian Splatting  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2025-03-26  
+ ⏳新更新: 2026-06-23  
+
+
+
+---
+
 # 2026-06-21 03:31:28
 
 # 论文更新日志  

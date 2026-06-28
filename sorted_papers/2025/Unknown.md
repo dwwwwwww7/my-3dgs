@@ -1,6 +1,6 @@
 # 未知会议 2025
 
-> **最后更新**： 2026-06-21 03:41:08
+> **最后更新**： 2026-06-28 03:03:07
 
 本页面包含 2025 年 未知会议 会议的论文列表。
 
@@ -112,9 +112,9 @@
 
 - **作者**: Yang Zheng, Hao Tan, Kai Zhang et al.
 - **发布时间**: 2025-12-05
-- **arXiv链接**: [arXiv:2512.05354v1](https://arxiv.org/abs/2512.05354v1)
+- **arXiv链接**: [arXiv:2512.05354v2](https://arxiv.org/abs/2512.05354v2)
 - **说明**: project page https://y-zheng18.github.io/SplatPainter/
-- **英文摘要**: The rise of 3D Gaussian Splatting has revolutionized photorealistic 3D asset creation, yet a critical gap remains for their interactive refinement and editing. Existing approaches based on diffusion or optimization are ill-suited for this task, as they are often prohibitively slow, destructive to the original asset's identity, or lack the precision for fine-grained control. To address this, we introduce \ourmethod, a state-aware feedforward model that enables continuous editing of 3D Gaussian assets from user-provided 2D view(s). Our method directly predicts updates to the attributes of a compact, feature-rich Gaussian representation and leverages Test-Time Training to create a state-aware, iterative workflow. The versatility of our approach allows a single architecture to perform diverse tasks, including high-fidelity local detail refinement, local paint-over, and consistent global recoloring, all at interactive speeds, paving the way for fluid and intuitive 3D content authoring.
+- **英文摘要**: The rise of 3D Gaussian Splatting has revolutionized photorealistic 3D asset creation, yet a critical gap remains for their interactive refinement and editing. Existing approaches based on diffusion or optimization are ill-suited for this task, as they are often prohibitively slow, destructive to the original asset's identity, or lack the precision for fine-grained control. To address this, we introduce SplatPainter, a state-aware feedforward model that enables continuous editing of 3D Gaussian assets from user-provided 2D view(s). Our method directly predicts updates to the attributes of a compact, feature-rich Gaussian representation and leverages Test-Time Training to create a state-aware, iterative workflow. The versatility of our approach allows a single architecture to perform diverse tasks, including high-fidelity local detail refinement, local paint-over, and consistent global recoloring, all at interactive speeds, paving the way for fluid and intuitive 3D content authoring.
 
 ---
 
