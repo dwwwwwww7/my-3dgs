@@ -1,10 +1,20 @@
 # 3DV 2026
 
-> **最后更新**： 2026-06-28 03:03:07
+> **最后更新**： 2026-07-05 07:34:00
 
 本页面包含 2026 年 3DV 会议的论文列表。
 
-## 1. Frequency-Aware Gaussian Splatting Decomposition
+## 1. PointSplat: Compact Gaussian Splatting via Human-Centric Prediction
+
+- **作者**: Yujie Guo, Yudong Jin, Lingteng Qiu et al.
+- **发布时间**: 2026-06-30
+- **arXiv链接**: [arXiv:2606.32036v1](https://arxiv.org/abs/2606.32036v1)
+- **说明**: Project Page: https://zju3dv.github.io/pointsplat
+- **英文摘要**: Producing 3D human representations from input views on the fly is essential for immersive live streaming systems, where representation compactness is as critical as high fidelity given limited computational power and transmission bandwidth. Although recent feed-forward reconstruction methods achieve impressive quality through the view-centric prediction of 3D representations, they repeatedly encode the same subject content across multiple views, leading to significant inter-view redundancy. Our key insight is to perform predictions directly in 3D space, enabling the network to learn and produce a highly compact representation. To this end, we propose PointSplat, a novel human-centric approach that directly infers Gaussian primitives from an input point set. The proposed method first estimates a coarse geometric proxy and performs ray casting to prune redundant points and establish explicit 2D--3D correspondences. Subsequently, it employs a Point-Image Transformer to fuse appearance and geometry features, predicting Gaussian attributes in a single forward pass. This design restricts predictions to foreground regions of interest, substantially reducing the total number of Gaussians while improving novel-view rendering quality. Extensive experiments demonstrate that PointSplat achieves higher efficiency and quality while exhibiting strong robustness to variations in view count and image resolution across multiple datasets.
+
+---
+
+## 2. Frequency-Aware Gaussian Splatting Decomposition
 
 - **作者**: Yishai Lavi, Leo Segre, Shai Avidan
 - **发布时间**: 2025-03-27

@@ -1,10 +1,37 @@
 # 未知会议 2026
 
-> **最后更新**： 2026-06-28 03:03:07
+> **最后更新**： 2026-07-05 07:34:00
 
 本页面包含 2026 年 未知会议 会议的论文列表。
 
-## 1. Vis4GS: A Visual Analytic Tool for 3D Gaussian Splatting Reconstruction
+## 1. DL-SLAM: Enabling High-Fidelity Gaussian Splatting SLAM in Dynamic Environments based on Dual-Level Probability
+
+- **作者**: Ziheng Xu, Qingfeng Li, Xuefeng Liu, Chen Chen, Jianwei Niu
+- **发布时间**: 2026-07-02
+- **arXiv链接**: [arXiv:2607.01860v1](https://arxiv.org/abs/2607.01860v1)
+- **英文摘要**: Recent advances in 3D Gaussian Splatting (3DGS) have enabled significant progress in dense dynamic Simultaneous Localization And Mapping (SLAM). Prevailing methods typically discard predefined dynamic objects, ignoring that transiently static objects offer valuable geometric constraints for pose estimation. A recent work attempts to leverage this potential by employing per-pixel uncertainty maps to quantify the magnitude of motion. While this approach enables transiently static objects to enhance pose estimation, it erroneously integrates these objects into the static map, resulting in persistent artifacts. Moreover, its reliance on purely geometric information leads to ambiguous object boundaries in the uncertainty maps. To overcome these limitations, we present DL-SLAM, a monocular Gaussian Splatting SLAM system built upon a novel dual-level probabilistic framework. Our method computes dynamic probability maps by combining semantic and geometric information. These pixel-level probabilities are lifted to 3D and aggregated to derive an object-level dynamic probability for each instance. Object-level probability enables the categorical pruning of dynamic Gaussians, resulting in an artifact-free static map. The static map, in turn, provides a geometrically consistent guidance to refine the pixel-wise probabilities, enhancing their reliability. Experimental results demonstrate that DL-SLAM outperforms existing approaches, improving tracking accuracy by up to 13\% while generatin...
+
+---
+
+## 2. Efficient Compression of Structured and Unstructured Volumes via Learned 3D Gaussian Representation
+
+- **作者**: Landon Dyken, Sharmistha Chakrabarti, Nathan Debardeleben et al.
+- **发布时间**: 2026-07-01
+- **arXiv链接**: [arXiv:2607.01164v1](https://arxiv.org/abs/2607.01164v1)
+- **英文摘要**: Recent work has shown that implicit neural representations (INRs) can be trained to effectively compress structured and unstructured volume data, allowing for direct data querying with a reduced memory footprint. However, as existing INRs for unstructured volumes do not encode geometry, they require partial mesh storage for later sampling, limiting achievable compression. At the same time, novel view synthesis methods have shown that explicit collections of 3D Gaussians can be used to accurately visualize volume data. In this work, we introduce an explicit model for volume data compression based on 3D Gaussian primitives. We reinterpret collections of 3D Gaussians as an explicit representation of a scalar field and use a sampling strategy that reconstructs scalar values at spatial locations through weighted aggregation of intersecting Gaussians. We develop optimized CUDA-accelerated pipelines for structured and unstructured model sampling, loss functions that encourage accurate domain encoding by our models, and a novel sampling-error based densification strategy. Our explicit formulation naturally encodes domain geometry, eliminating the need for mesh storage in unstructured volumes and introducing significantly higher compression opportunities. Compared to existing INRs, we demonstrate that our explicit model achieves competitive reconstruction quality with significant training speedups on structured volumes, while markedly outperforming in all metrics on unstructured volum...
+
+---
+
+## 3. Robust and Efficient Monocular 3D Gaussian SLAM for Kilometer-Scale Outdoor Scenes
+
+- **作者**: Sicheng Yu, Dongxu Shen, Beizhen Zhao, Guanzhi Ding, Hao Wang
+- **发布时间**: 2026-06-29
+- **arXiv链接**: [arXiv:2606.30436v1](https://arxiv.org/abs/2606.30436v1)
+- **英文摘要**: Scaling monocular 3D Gaussian Splatting (3DGS) SLAM to kilometer-level outdoor environments poses two tightly coupled challenges: fragile long-term pose tracking and excessive memory overhead during large-scale mapping. In this paper, we propose KiloGS-SLAM, a highly efficient and robust monocular 3DGS-SLAM system that jointly addresses both bottlenecks. Since high-fidelity scene reconstruction fundamentally relies on drift-free camera poses, we first introduce a motion-adaptive hybrid tracking module. This module features a condition-triggered three-tier solving pipeline. It dynamically switches between Essential matrix and PnP models to handle geometric degeneracies. An on-demand foundation model can also be activated to rescue the trajectory from catastrophic drift. To ensure the system can sustain these long trajectories without memory exhaustion, we subsequently design a lifecycle-managed Gaussian mapping strategy. By integrating probabilistic initialization with chunk-based multi-view densification and pruning, this full-pipeline optimization effectively reduces primitive redundancy while preserving high-frequency details. Together, the robust tracking guarantees the geometric foundation required for accurate mapping, while the memory-efficient lifecycle-managed mapping enables large-scale operation. Extensive experiments across three challenging outdoor datasets demonstrate that our approach achieves state-of-the-art tracking accuracy and rendering quality, successfull...
+
+---
+
+## 4. Vis4GS: A Visual Analytic Tool for 3D Gaussian Splatting Reconstruction
 
 - **作者**: Kai-Yuan Lin, Aryabima Mandala Putra, Jui-Chi Lee, Shih-Hsuan Hung
 - **发布时间**: 2026-06-25
@@ -13,7 +40,7 @@
 
 ---
 
-## 2. ACE-GS: Acing the Trade-off with Accurate, Compact and Efficient 3D Gaussian Splatting
+## 5. ACE-GS: Acing the Trade-off with Accurate, Compact and Efficient 3D Gaussian Splatting
 
 - **作者**: Jijian Zhao
 - **发布时间**: 2026-06-19
@@ -22,7 +49,7 @@
 
 ---
 
-## 3. AIGS-Net: Compact Illumination Field Modeling via 2D Gaussian Splatting for Fast Low-Light Image Enhancement
+## 6. AIGS-Net: Compact Illumination Field Modeling via 2D Gaussian Splatting for Fast Low-Light Image Enhancement
 
 - **作者**: Yuhan Chen, Kunyang Huang, Fuchen Li et al.
 - **发布时间**: 2026-06-16
@@ -31,7 +58,7 @@
 
 ---
 
-## 4. Renderable Partial Representations for Dynamic Gaussian Splatting under Incomplete Delivery
+## 7. Renderable Partial Representations for Dynamic Gaussian Splatting under Incomplete Delivery
 
 - **作者**: Faruk Alpay, Levent Sarioglu, Yaser Hadri
 - **发布时间**: 2026-06-15
@@ -41,7 +68,7 @@
 
 ---
 
-## 5. PolyMerge: Compressing 3D Gaussian Splats with Polytope Coverings for Provably Safe Resource-Constrained Navigation
+## 8. PolyMerge: Compressing 3D Gaussian Splats with Polytope Coverings for Provably Safe Resource-Constrained Navigation
 
 - **作者**: Jihoon Hong, Chih-Yuan Chiu, Sara Fridovich-Keil, Glen Chou
 - **发布时间**: 2026-06-15
@@ -50,7 +77,7 @@
 
 ---
 
-## 6. Dehaze-GaussianImage: Zero-Shot Dehazing via Efficient 2D Gaussian Splatting Representation
+## 9. Dehaze-GaussianImage: Zero-Shot Dehazing via Efficient 2D Gaussian Splatting Representation
 
 - **作者**: Yuhan Chen, Wenxuan Yu, Guofa Li et al.
 - **发布时间**: 2026-06-15
@@ -59,7 +86,7 @@
 
 ---
 
-## 7. Scene-Adaptive Nonlinear Tone Curves for Pseudo Ground-Truth Generation in Low-Light 3D Gaussian Splatting
+## 10. Scene-Adaptive Nonlinear Tone Curves for Pseudo Ground-Truth Generation in Low-Light 3D Gaussian Splatting
 
 - **作者**: Mingzhe Lyu, Jinqiang Cui, Hong Zhang
 - **发布时间**: 2026-06-10
@@ -68,25 +95,26 @@
 
 ---
 
-## 8. Path-Traced Inverse Rendering with Global Illumination in 3D Gaussian Fields
+## 11. PTIR-GS: Path-Traced Inverse Rendering with Global Illumination in 3D Gaussian Fields
 
 - **作者**: Junke Zhu, Hao Zhang, Yutian Zhu et al.
 - **发布时间**: 2026-06-08
-- **arXiv链接**: [arXiv:2606.09606v1](https://arxiv.org/abs/2606.09606v1)
+- **arXiv链接**: [arXiv:2606.09606v3](https://arxiv.org/abs/2606.09606v3)
+- **说明**: Project page: https://junkzhu.github.io/project_pages/PTIR/
 - **英文摘要**: Ray tracing enables 3D Gaussian fields to serve as a representation for physically based light transport. Faithful inverse rendering requires forward rendering and backward optimization to be defined within a consistent light-transport pipeline. Existing inverse rendering methods estimate G-buffers via splatting and optimize materials in screen space, tying the recovered properties to a rasterization-based pipeline. This pipeline mismatch, together with simplified rendering equations that neglect indirect illumination, often leads to inconsistent shading, visible artifacts, and inaccurate material-lighting estimation under path-traced rendering. Therefore, we propose a splatting-free path-traced inverse rendering framework for 3D Gaussian fields, where forward light transport and backward gradient propagation are defined within a unified ray-tracing pipeline. Our key idea is to define a path-space equivalent interaction model for overlapping Gaussian primitives, under which Monte-Carlo-based path tracing is unbiased for the induced light-transport integral, while pathwise gradients are replayed over the same ray-traced interactions rather than splatting-derived screen-space buffers. The framework optimizes materials and a compact Spherical-Gaussian environment under the full rendering equation with ray-traced visibility and multi-bounce light transport. Extensive experiments demonstrate competitive material inversion and improved path-traced rendering quality, producing more ...
 
 ---
 
-## 9. REFINE: Super-efficient 3D Gaussian Splatting Pruning via Rendering-Free Primitive Importance
+## 12. REFINE: Super-efficient 3D Gaussian Splatting Pruning via Rendering-Free Primitive Importance
 
 - **作者**: Zhang Chen, Shuai Wan, Mengting Yu, Fuzheng Yang, Junhui Hou
 - **发布时间**: 2026-06-08
-- **arXiv链接**: [arXiv:2606.09074v2](https://arxiv.org/abs/2606.09074v2)
-- **英文摘要**: Existing pruning methods for 3D Gaussian splatting (3DGS) suffer from either severe quality degradation or prohibitive computational overhead. In this paper, we propose REFINE, a highly accelerated 3DGS pruning framework centered on a novel rendering-free primitive importance metric. Our approach leverages an analytically approximated, rendering-aware Hessian field to quantify the expected perceptual error induced by the removal of individual primitives. By modeling the joint modulation of visibility, projection geometry and the content adaptive hyperparameter, we entirely bypass costly forward rendering passes and derive an anisotropic perceptual weight field that serves as a high-fidelity proxy for primitive importance. Extensive experiments across multiple benchmark datasets demonstrate that REFINE maintains highly competitive rendering quality while achieving an unprecedented $3,000\times$ reduction in pruning-related computational complexity compared to state-of-the-art pruning methods.
+- **arXiv链接**: [arXiv:2606.09074v3](https://arxiv.org/abs/2606.09074v3)
+- **英文摘要**: Existing pruning methods for 3D Gaussian splatting (3DGS) suffer from either severe quality degradation or prohibitive computational overhead. In this paper, we propose REFINE, a highly accelerated 3DGS pruning framework centered on a novel rendering-free primitive importance metric. Our approach leverages an analytically approximated, rendering-aware Hessian field to quantify the expected perceptual error induced by the removal of individual primitives. By modeling the joint modulation of visibility, projection geometry and the content adaptive hyperparameter, we entirely bypass costly forward rendering passes and derive an anisotropic perceptual weight field that serves as a high-fidelity proxy for primitive importance. Extensive experiments across multiple benchmark datasets demonstrate that REFINE maintains highly competitive rendering quality while achieving a $3,000\times$ reduction in pruning-related computational complexity, translating to a practical $\sim 20\times$ speedup in device latency compared to state-of-the-art pruning methods.
 
 ---
 
-## 10. MaterialClusterGS: Palette-Based Material Decomposition and Physically-Based Relighting with 2D Gaussian Splatting
+## 13. MaterialClusterGS: Palette-Based Material Decomposition and Physically-Based Relighting with 2D Gaussian Splatting
 
 - **作者**: Hao Zhang, Ang Li, Boyan Du et al.
 - **发布时间**: 2026-06-08
@@ -95,7 +123,7 @@
 
 ---
 
-## 11. EvoGS: Constructing Continuous-Layered Gaussian Splatting with Evolution Tree for Scalable 3D Streaming
+## 14. EvoGS: Constructing Continuous-Layered Gaussian Splatting with Evolution Tree for Scalable 3D Streaming
 
 - **作者**: Yuang Shi, Simone Gasparini, Géraldine Morin, Wei Tsang Ooi
 - **发布时间**: 2026-06-05
@@ -105,7 +133,7 @@
 
 ---
 
-## 12. GS-NFS: Bandwidth-adaptive Streaming of Dynamic Gaussian Splats and Point Clouds
+## 15. GS-NFS: Bandwidth-adaptive Streaming of Dynamic Gaussian Splats and Point Clouds
 
 - **作者**: Rajrup Ghosh, Haodong Wang, Haoran Hong et al.
 - **发布时间**: 2026-06-04
@@ -114,7 +142,7 @@
 
 ---
 
-## 13. SparseStreet: Sparse Gaussian Splatting for Real-Time Street Scene Simulation
+## 16. SparseStreet: Sparse Gaussian Splatting for Real-Time Street Scene Simulation
 
 - **作者**: Qingpo Wuwu, Xiaobao Wei, Peng Chen et al.
 - **发布时间**: 2026-06-02
@@ -123,7 +151,7 @@
 
 ---
 
-## 14. VEDAL: Variational Error-Driven Asynchronous Learning for 3D Gaussian Splatting Pruning
+## 17. VEDAL: Variational Error-Driven Asynchronous Learning for 3D Gaussian Splatting Pruning
 
 - **作者**: Aoduo Li, Jiancheng Li, Huan Ye et al.
 - **发布时间**: 2026-06-01
@@ -133,7 +161,7 @@
 
 ---
 
-## 15. Smaller and Faster 3DGS via Post-Training Dictionary Learning
+## 18. Smaller and Faster 3DGS via Post-Training Dictionary Learning
 
 - **作者**: Jiarong Gong, Jonas Unger, Ehsan Miandji
 - **发布时间**: 2026-05-28
@@ -142,7 +170,7 @@
 
 ---
 
-## 16. BitC-3DGS: High-Capacity 3D Gaussian Splatting Watermarking via Bit Compression
+## 19. BitC-3DGS: High-Capacity 3D Gaussian Splatting Watermarking via Bit Compression
 
 - **作者**: Yuquan Bi, Baosheng Yu, Yingke Lei et al.
 - **发布时间**: 2026-05-28
@@ -151,7 +179,7 @@
 
 ---
 
-## 17. GScomp-QA: A Subjective Dataset for Quality Assessment of Compressed Gaussian Splatting
+## 20. GScomp-QA: A Subjective Dataset for Quality Assessment of Compressed Gaussian Splatting
 
 - **作者**: Pedro Martin, António Rodrigues, João Ascenso, Maria Paula Queluz
 - **发布时间**: 2026-05-26
@@ -160,7 +188,7 @@
 
 ---
 
-## 18. R5DGS: Semantic-Aware 4D Gaussian Splatting with Rigid Body Constraints for Efficient Dynamic Scene Reconstruction
+## 21. R5DGS: Semantic-Aware 4D Gaussian Splatting with Rigid Body Constraints for Efficient Dynamic Scene Reconstruction
 
 - **作者**: Denis Gridusov, Maxim Popov, Sergey Kolyubin
 - **发布时间**: 2026-05-25
@@ -170,7 +198,7 @@
 
 ---
 
-## 19. CodecSplat: Ultra-Compact Latent Coding for Feed-Forward 3D Gaussian Splatting
+## 22. CodecSplat: Ultra-Compact Latent Coding for Feed-Forward 3D Gaussian Splatting
 
 - **作者**: Pengpeng Yu, Runqing Jiang, Qi Zhang et al.
 - **发布时间**: 2026-05-25
@@ -179,7 +207,7 @@
 
 ---
 
-## 20. OctCGS: Octree-Contextual Gaussian Splatting with Explicit Multi-Order Propagation Modeling for Channel Knowledge Map Construction
+## 23. OctCGS: Octree-Contextual Gaussian Splatting with Explicit Multi-Order Propagation Modeling for Channel Knowledge Map Construction
 
 - **作者**: Jinghan Zhang, Xitao Gong, Qi Wang, Richard A. Stirling-Gallacher, Giuseppe Caire
 - **发布时间**: 2026-05-21
@@ -189,7 +217,7 @@
 
 ---
 
-## 21. ForeSplat: Optimization-Aware Foresight for Feed-Forward 3D Gaussian Splatting
+## 24. ForeSplat: Optimization-Aware Foresight for Feed-Forward 3D Gaussian Splatting
 
 - **作者**: Yuke Li, Weihang Liu, Cheng Zhang et al.
 - **发布时间**: 2026-05-21
@@ -198,7 +226,7 @@
 
 ---
 
-## 22. AIR: Amortized Image Reconstruction Framework for Self-Supervised Feed-Forward 2D Gaussian Splatting
+## 25. AIR: Amortized Image Reconstruction Framework for Self-Supervised Feed-Forward 2D Gaussian Splatting
 
 - **作者**: Zhaojie Zeng, Yuesong Wang, Yawei Luo, Tao Guan
 - **发布时间**: 2026-05-20
@@ -208,7 +236,7 @@
 
 ---
 
-## 23. GLUT: 3D Gaussian Lookup Table for Continuous Color Transformation
+## 26. GLUT: 3D Gaussian Lookup Table for Continuous Color Transformation
 
 - **作者**: Danna Xue, David Serrano-Lozano, Shaolin Su, Javier Vazquez-Corral
 - **发布时间**: 2026-05-19
@@ -218,7 +246,7 @@
 
 ---
 
-## 24. MMGS: 10$\times$ Compressed 3DGS through Optimal Transport Aggregation based on Multi-view Ranking
+## 27. MMGS: 10$\times$ Compressed 3DGS through Optimal Transport Aggregation based on Multi-view Ranking
 
 - **作者**: Beizhen Zhao, Sicheng Yu, Ziran Yin, Dongxu Shen, Hao Wang
 - **发布时间**: 2026-05-19
@@ -228,7 +256,7 @@
 
 ---
 
-## 25. 3D Skew Gaussian Splatting with Any Camera Trajectory Visualization Engine
+## 28. 3D Skew Gaussian Splatting with Any Camera Trajectory Visualization Engine
 
 - **作者**: Beizhen Zhao, Yifan Zhou, Gaochao Song, Ziran Yin, Hao Wang
 - **发布时间**: 2026-05-18
@@ -238,7 +266,7 @@
 
 ---
 
-## 26. A Single Atlas is All You Need: Decoder-Side Gaussian Splatting for Immersive Video
+## 29. A Single Atlas is All You Need: Decoder-Side Gaussian Splatting for Immersive Video
 
 - **作者**: Dawid Mieloch, Stuart Perry
 - **发布时间**: 2026-05-16
@@ -247,7 +275,7 @@
 
 ---
 
-## 27. Smart target point control for Gaussian Splatting methods
+## 30. Smart target point control for Gaussian Splatting methods
 
 - **作者**: Pratik Singh Bisht, Andreas Kolb
 - **发布时间**: 2026-05-15
@@ -256,7 +284,7 @@
 
 ---
 
-## 28. Eff-WRFGS: Efficient Wireless Radiance Field Using 3D Gaussian Splatting
+## 31. Eff-WRFGS: Efficient Wireless Radiance Field Using 3D Gaussian Splatting
 
 - **作者**: Chenghong Bian, Meng Hua, Deniz Gunduz
 - **发布时间**: 2026-05-14
@@ -266,7 +294,7 @@
 
 ---
 
-## 29. Denoising-GS: Gaussian Splatting with Spatial-aware Denoising
+## 32. Denoising-GS: Gaussian Splatting with Spatial-aware Denoising
 
 - **作者**: Qingyuan Zhou, Xinyi Liu, Weidong Yang et al.
 - **发布时间**: 2026-05-14
@@ -275,7 +303,7 @@
 
 ---
 
-## 30. BlitzGS: City-Scale Gaussian Splatting at Lightning Speed
+## 33. BlitzGS: City-Scale Gaussian Splatting at Lightning Speed
 
 - **作者**: Zhongtao Wang, Huishan Au, Yilong Li et al.
 - **发布时间**: 2026-05-13
@@ -284,7 +312,7 @@
 
 ---
 
-## 31. Sparse Code Uplifting for Efficient 3D Language Gaussian Splatting
+## 34. Sparse Code Uplifting for Efficient 3D Language Gaussian Splatting
 
 - **作者**: Lovre Antonio Budimir, Yushi Guan, Steve Ryhner, Sven Lončarić, Nandita Vijaykumar
 - **发布时间**: 2026-05-13
@@ -294,7 +322,7 @@
 
 ---
 
-## 32. HarmoGS: Robust 3D Gaussian Splatting in the Wild via Conflict-Aware Gradient Harmonization
+## 35. HarmoGS: Robust 3D Gaussian Splatting in the Wild via Conflict-Aware Gradient Harmonization
 
 - **作者**: Yulei Kang, Tianze Zhu, Jian-Fang Hu, Jianhuang Lai, Wei-Shi Zheng
 - **发布时间**: 2026-05-13
@@ -303,7 +331,7 @@
 
 ---
 
-## 33. 3DGS$^3$: Joint Super Sampling and Frame Interpolation for Real-Time Large-Scale 3DGS Rendering
+## 36. 3DGS$^3$: Joint Super Sampling and Frame Interpolation for Real-Time Large-Scale 3DGS Rendering
 
 - **作者**: Yibo Zhao, Fan Gao, Youcheng Cai, Ligang Liu
 - **发布时间**: 2026-05-12
@@ -312,7 +340,7 @@
 
 ---
 
-## 34. PD-4DGS:Progressive Decomposition of 4D Gaussian Splatting for Bandwidth-Adaptive Dynamic Scene Streaming
+## 37. PD-4DGS:Progressive Decomposition of 4D Gaussian Splatting for Bandwidth-Adaptive Dynamic Scene Streaming
 
 - **作者**: Jiachen Li, Guangzhi Han, Jin Wan et al.
 - **发布时间**: 2026-05-12
@@ -321,7 +349,7 @@
 
 ---
 
-## 35. MAGS-SLAM: Monocular Multi-Agent Gaussian Splatting SLAM for Geometrically and Photometrically Consistent Reconstruction
+## 38. MAGS-SLAM: Monocular Multi-Agent Gaussian Splatting SLAM for Geometrically and Photometrically Consistent Reconstruction
 
 - **作者**: Zhihao Cao, Qi Shao, Shuhao Zhai et al.
 - **发布时间**: 2026-05-11
@@ -330,7 +358,7 @@
 
 ---
 
-## 36. Disambiguating 2D-3D Correspondences in Gaussian Splatting-based Feature Fields for Visual Localization
+## 39. Disambiguating 2D-3D Correspondences in Gaussian Splatting-based Feature Fields for Visual Localization
 
 - **作者**: Miso Lee, Sangeek Hyun, Yerim Jeon, Jae-Pil Heo
 - **发布时间**: 2026-05-08
@@ -339,17 +367,7 @@
 
 ---
 
-## 37. Large-Scale High-Quality 3D Gaussian Head Reconstruction from Multi-View Captures
-
-- **作者**: Evangelos Ntavelis, Sean Wu, Mohamad Shahbazi et al.
-- **发布时间**: 2026-05-05
-- **arXiv链接**: [arXiv:2605.04035v2](https://arxiv.org/abs/2605.04035v2)
-- **说明**: Project page: https://apple.github.io/ml-headsup/
-- **英文摘要**: We propose HeadsUp, a scalable feed-forward method for reconstructing high-quality 3D Gaussian heads from large-scale multi-camera setups. Our method employs an efficient encoder-decoder architecture that compresses input views into a compact latent representation. This latent representation is then decoded into a set of UV-parameterized 3D Gaussians anchored to a neutral head template. This UV representation decouples the number of 3D Gaussians from the number and resolution of input images, enabling training with many high-resolution input views. We train and evaluate our model on an internal dataset with more than 10,000 subjects, which is an order of magnitude larger than existing multi-view human head datasets. HeadsUp achieves state-of-the-art reconstruction quality and generalizes to novel identities without test-time optimization. We extensively analyze the scaling behavior of our model across identities, views, and model capacity, revealing practical insights for quality-compute trade-offs. Finally, we highlight the strength of our latent space by showcasing two downstream applications: generating novel 3D identities and animating the 3D heads with expression blendshapes.
-
----
-
-## 38. GETA-3DGS: Automatic Joint Structured Pruning and Quantization for 3D Gaussian Splatting
+## 40. GETA-3DGS: Automatic Joint Structured Pruning and Quantization for 3D Gaussian Splatting
 
 - **作者**: Baobing Zhang, Wanxin Sui
 - **发布时间**: 2026-05-03
@@ -358,7 +376,7 @@
 
 ---
 
-## 39. 2D-SuGaR: Surface-Aware Gaussian Splatting for Geometrically Accurate Mesh Reconstruction
+## 41. 2D-SuGaR: Surface-Aware Gaussian Splatting for Geometrically Accurate Mesh Reconstruction
 
 - **作者**: Prajwal Gupta C. R., Divyam Sheth, Jinjoo Ha, Mirela Ostrek, Justus Thies
 - **发布时间**: 2026-05-01
@@ -367,7 +385,7 @@
 
 ---
 
-## 40. MesonGS++: Post-training Compression of 3D Gaussian Splatting with Hyperparameter Searching
+## 42. MesonGS++: Post-training Compression of 3D Gaussian Splatting with Hyperparameter Searching
 
 - **作者**: Shuzhao Xie, Junchen Ge, Weixiang Zhang et al.
 - **发布时间**: 2026-04-29
@@ -377,7 +395,7 @@
 
 ---
 
-## 41. Generalizable 3D Gaussian Splatting enabled Semantic Coding for Real-Time Immersive Video Communications
+## 43. Generalizable 3D Gaussian Splatting enabled Semantic Coding for Real-Time Immersive Video Communications
 
 - **作者**: Dingxi Yang, Wenqi Guo, Yue Liu, Jungong Han, Zhijin Qin
 - **发布时间**: 2026-04-28
@@ -387,7 +405,7 @@
 
 ---
 
-## 42. Gaussians on a Diet: High-Quality Memory-Bounded 3D Gaussian Splatting Training
+## 44. Gaussians on a Diet: High-Quality Memory-Bounded 3D Gaussian Splatting Training
 
 - **作者**: Yangming Zhang, Jian Xu, Chaojian Li et al.
 - **发布时间**: 2026-04-21
@@ -396,7 +414,7 @@
 
 ---
 
-## 43. OT-UVGS: Revisiting UV Mapping for Gaussian Splatting as a Capacity Allocation Problem
+## 45. OT-UVGS: Revisiting UV Mapping for Gaussian Splatting as a Capacity Allocation Problem
 
 - **作者**: Byunghyun Kim
 - **发布时间**: 2026-04-21
@@ -406,7 +424,7 @@
 
 ---
 
-## 44. Incoherent Deformation, Not Capacity: Diagnosing and Mitigating Overfitting in Dynamic Gaussian Splatting
+## 46. Incoherent Deformation, Not Capacity: Diagnosing and Mitigating Overfitting in Dynamic Gaussian Splatting
 
 - **作者**: Ahmad Droby
 - **发布时间**: 2026-04-17
@@ -416,7 +434,7 @@
 
 ---
 
-## 45. Splats in Splats++: Robust and Generalizable 3D Gaussian Splatting Steganography
+## 47. Splats in Splats++: Robust and Generalizable 3D Gaussian Splatting Steganography
 
 - **作者**: Yijia Guo, Wenkai Huang, Tong Hu et al.
 - **发布时间**: 2026-04-17
@@ -425,7 +443,7 @@
 
 ---
 
-## 46. GaussianFlow SLAM: Monocular Gaussian Splatting SLAM Guided by GaussianFlow
+## 48. GaussianFlow SLAM: Monocular Gaussian Splatting SLAM Guided by GaussianFlow
 
 - **作者**: Dong-Uk Seo, Jinwoo Jeon, Eungchang Mason Lee, Hyun Myung
 - **发布时间**: 2026-04-17
@@ -435,7 +453,7 @@
 
 ---
 
-## 47. GlobalSplat: Efficient Feed-Forward 3D Gaussian Splatting via Global Scene Tokens
+## 49. GlobalSplat: Efficient Feed-Forward 3D Gaussian Splatting via Global Scene Tokens
 
 - **作者**: Roni Itkin, Noam Issachar, Yehonatan Keypur et al.
 - **发布时间**: 2026-04-16
@@ -444,7 +462,7 @@
 
 ---
 
-## 48. Unfolding 3D Gaussian Splatting via Iterative Gaussian Synopsis
+## 50. Unfolding 3D Gaussian Splatting via Iterative Gaussian Synopsis
 
 - **作者**: Yuqin Lu, Yang Zhou, Yihua Dai, Guiqing Li, Shengfeng He
 - **发布时间**: 2026-04-13
@@ -453,7 +471,7 @@
 
 ---
 
-## 49. GS4City: Hierarchical Semantic Gaussian Splatting via City-Model Priors
+## 51. GS4City: Hierarchical Semantic Gaussian Splatting via City-Model Priors
 
 - **作者**: Qilin Zhang, Jinyu Zhu, Olaf Wysocki, Benjamin Busam, Boris Jutzi
 - **发布时间**: 2026-04-13
@@ -462,7 +480,7 @@
 
 ---
 
-## 50. Naka-GS: A Bionics-inspired Dual-Branch Naka Correction and Progressive Point Pruning for Low-Light 3DGS
+## 52. Naka-GS: A Bionics-inspired Dual-Branch Naka Correction and Progressive Point Pruning for Low-Light 3DGS
 
 - **作者**: Runyu Zhu, SiXun Dong, Zhiqiang Zhang, Qingxia Ye, Zhihua Xu
 - **发布时间**: 2026-04-13
@@ -471,7 +489,7 @@
 
 ---
 
-## 51. A 129FPS Full HD Real-Time Accelerator for 3D Gaussian Splatting
+## 53. A 129FPS Full HD Real-Time Accelerator for 3D Gaussian Splatting
 
 - **作者**: Fang-Chi Chang, Tian-Sheuan Chang
 - **发布时间**: 2026-04-11
@@ -480,7 +498,7 @@
 
 ---
 
-## 52. DOC-GS: Dual-Domain Observation and Calibration for Reliable Sparse-View Gaussian Splatting
+## 54. DOC-GS: Dual-Domain Observation and Calibration for Reliable Sparse-View Gaussian Splatting
 
 - **作者**: Hantang Li, Qiang Zhu, Xiandong Meng, Debin Zhao, Xiaopeng Fan
 - **发布时间**: 2026-04-08
@@ -490,7 +508,7 @@
 
 ---
 
-## 53. GaussFly: Contrastive Reinforcement Learning for Visuomotor Policies in 3D Gaussian Fields
+## 55. GaussFly: Contrastive Reinforcement Learning for Visuomotor Policies in 3D Gaussian Fields
 
 - **作者**: Yuhang Zhang, Mingsheng Li, Yujing Shang et al.
 - **发布时间**: 2026-04-06
@@ -499,7 +517,7 @@
 
 ---
 
-## 54. Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM
+## 56. Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM
 
 - **作者**: Zicheng Zhang, Ke Wu, Xiangting Meng et al.
 - **发布时间**: 2026-04-03
@@ -508,7 +526,7 @@
 
 ---
 
-## 55. SparseSplat: Towards Applicable Feed-Forward 3D Gaussian Splatting with Pixel-Unaligned Prediction
+## 57. SparseSplat: Towards Applicable Feed-Forward 3D Gaussian Splatting with Pixel-Unaligned Prediction
 
 - **作者**: Zicheng Zhang, Xiangting Meng, Ke Wu, Wenchao Ding
 - **发布时间**: 2026-04-03
@@ -517,7 +535,7 @@
 
 ---
 
-## 56. GS^2: Graph-based Spatial Distribution Optimization for Compact 3D Gaussian Splatting
+## 58. GS^2: Graph-based Spatial Distribution Optimization for Compact 3D Gaussian Splatting
 
 - **作者**: Xianben Yang, Tao Wang, Yuxuan Li, Yi Jin, Haibin Ling
 - **发布时间**: 2026-04-02
@@ -526,7 +544,7 @@
 
 ---
 
-## 57. FaCT-GS: Fast and Scalable CT Reconstruction with Gaussian Splatting
+## 59. FaCT-GS: Fast and Scalable CT Reconstruction with Gaussian Splatting
 
 - **作者**: Pawel Tomasz Pieta, Rasmus Juul Pedersen, Sina Borgi et al.
 - **发布时间**: 2026-04-02
@@ -535,7 +553,7 @@
 
 ---
 
-## 58. Autoregressive Appearance Prediction for 3D Gaussian Avatars
+## 60. Autoregressive Appearance Prediction for 3D Gaussian Avatars
 
 - **作者**: Michael Steiner, Zhang Chen, Alexander Richard et al.
 - **发布时间**: 2026-04-01
@@ -545,7 +563,7 @@
 
 ---
 
-## 59. Compact Keyframe-Optimized Multi-Agent Gaussian Splatting SLAM
+## 61. Compact Keyframe-Optimized Multi-Agent Gaussian Splatting SLAM
 
 - **作者**: Monica M. Q. Li, Pierre-Yves Lajoie, Jialiang Liu, Giovanni Beltrame
 - **发布时间**: 2026-04-01
@@ -554,7 +572,7 @@
 
 ---
 
-## 60. Gleanmer: A 6 mW SoC for Real-Time 3D Gaussian Occupancy Mapping
+## 62. Gleanmer: A 6 mW SoC for Real-Time 3D Gaussian Occupancy Mapping
 
 - **作者**: Zih-Sing Fu, Peter Zhi Xuan Li, Sertac Karaman, Vivienne Sze
 - **发布时间**: 2026-03-30
@@ -564,7 +582,7 @@
 
 ---
 
-## 61. LG-HCC: Local Geometry-Aware Hierarchical Context Compression for 3D Gaussian Splatting
+## 63. LG-HCC: Local Geometry-Aware Hierarchical Context Compression for 3D Gaussian Splatting
 
 - **作者**: Xuan Deng, Xiandong Meng, Hengyu Man et al.
 - **发布时间**: 2026-03-30
@@ -574,32 +592,12 @@
 
 ---
 
-## 62. GaussianGPT: Towards Autoregressive 3D Gaussian Scene Generation
-
-- **作者**: Nicolas von Lützow, Barbara Rössle, Katharina Schmid, Matthias Nießner
-- **发布时间**: 2026-03-27
-- **arXiv链接**: [arXiv:2603.26661v1](https://arxiv.org/abs/2603.26661v1)
-- **说明**: Project page: https://nicolasvonluetzow.github.io/GaussianGPT/ - Project video: https://youtu.be/zVnMHkFzHDg
-- **英文摘要**: Most recent advances in 3D generative modeling rely on diffusion or flow-matching formulations. We instead explore a fully autoregressive alternative and introduce GaussianGPT, a transformer-based model that directly generates 3D Gaussians via next-token prediction, thus facilitating full 3D scene generation. We first compress Gaussian primitives into a discrete latent grid using a sparse 3D convolutional autoencoder with vector quantization. The resulting tokens are serialized and modeled using a causal transformer with 3D rotary positional embedding, enabling sequential generation of spatial structure and appearance. Unlike diffusion-based methods that refine scenes holistically, our formulation constructs scenes step-by-step, naturally supporting completion, outpainting, controllable sampling via temperature, and flexible generation horizons. This formulation leverages the compositional inductive biases and scalability of autoregressive modeling while operating on explicit representations compatible with modern neural rendering pipelines, positioning autoregressive transformers as a complementary paradigm for controllable and context-aware 3D generation.
-
----
-
-## 63. FilterGS: Traversal-Free Parallel Filtering and Adaptive Shrinking for Large-Scale LoD 3D Gaussian Splatting
+## 64. FilterGS: Traversal-Free Parallel Filtering and Adaptive Shrinking for Large-Scale LoD 3D Gaussian Splatting
 
 - **作者**: Yixian Wang, Haolin Yu, Jiadong Tang et al.
 - **发布时间**: 2026-03-25
 - **arXiv链接**: [arXiv:2603.23891v1](https://arxiv.org/abs/2603.23891v1)
 - **英文摘要**: 3D Gaussian Splatting has revolutionized neural rendering with real-time performance. However, scaling this approach to large scenes using Level-of-Detail methods faces critical challenges: inefficient serial traversal consuming over 60\% of rendering time, and redundant Gaussian-tile pairs that incur unnecessary processing overhead. To address these limitations, we introduce FilterGS, featuring a parallel filtering mechanism with two complementary filters that select Gaussian elements efficiently without tree traversal. Additionally, we propose a novel GTC metric that quantifies the redundancy of Gaussian-tile key-value pairs. Based on this metric, we introduce a scene-adaptive Gaussian shrinking strategy that effectively reduces redundant pairs. Extensive experiments demonstrate that FilterGS achieves state-of-the-art rendering speeds while maintaining competitive visual quality across multiple large-scale datasets. Project page: https://github.com/xenon-w/FilterGS
-
----
-
-## 64. Drop-In Perceptual Optimization for 3D Gaussian Splatting
-
-- **作者**: Ezgi Ozyilkan, Zhiqi Chen, Oren Rippel, Jona Ballé, Kedar Tatwawadi
-- **发布时间**: 2026-03-23
-- **arXiv链接**: [arXiv:2603.23297v1](https://arxiv.org/abs/2603.23297v1)
-- **说明**: Project page: https://apple.github.io/ml-perceptual-3dgs
-- **英文摘要**: Despite their output being ultimately consumed by human viewers, 3D Gaussian Splatting (3DGS) methods often rely on ad-hoc combinations of pixel-level losses, resulting in blurry renderings. To address this, we systematically explore perceptual optimization strategies for 3DGS by searching over a diverse set of distortion losses. We conduct the first-of-its-kind large-scale human subjective study on 3DGS, involving 39,320 pairwise ratings across several datasets and 3DGS frameworks. A regularized version of Wasserstein Distortion, which we call WD-R, emerges as the clear winner, excelling at recovering fine textures without incurring a higher splat count. WD-R is preferred by raters more than $2.3\times$ over the original 3DGS loss, and $1.5\times$ over current best method Perceptual-GS. WD-R also consistently achieves state-of-the-art LPIPS, DISTS, and FID scores across various datasets, and generalizes across recent frameworks, such as Mip-Splatting and Scaffold-GS, where replacing the original loss with WD-R consistently enhances perceptual quality within a similar resource budget (number of splats for Mip-Splatting, model size for Scaffold-GS), and leads to reconstructions being preferred by human raters $1.8\times$ and $3.6\times$, respectively. We also find that this carries over to the task of 3DGS scene compression, with $\approx 50\%$ bitrate savings for comparable perceptual metric performance.
 
 ---
 

@@ -1,6 +1,6 @@
 # 未知会议 2025
 
-> **最后更新**： 2026-06-28 03:03:07
+> **最后更新**： 2026-07-05 07:34:00
 
 本页面包含 2025 年 未知会议 会议的论文列表。
 
@@ -414,7 +414,7 @@
 
 - **作者**: Yuanyuan Gao, Yuning Gong, Yifei Liu et al.
 - **发布时间**: 2025-09-29
-- **arXiv链接**: [arXiv:2509.24421v4](https://arxiv.org/abs/2509.24421v4)
+- **arXiv链接**: [arXiv:2509.24421v5](https://arxiv.org/abs/2509.24421v5)
 - **说明**: Project page: https://visionary-laboratory.github.io/Proxy-GS
 - **英文摘要**: 3D Gaussian Splatting (3DGS) has emerged as an efficient approach for achieving photorealistic rendering. Recent MLP-based variants further improve visual fidelity but introduce substantial decoding overhead during rendering. To alleviate computation cost, several pruning strategies and level-of-detail (LOD) techniques have been introduced, aiming to effectively reduce the number of Gaussian primitives in large-scale scenes. However, our analysis reveals that significant redundancy still remains due to the lack of occlusion awareness. In this work, we propose Proxy-GS, a novel pipeline that exploits a proxy to introduce Gaussian occlusion awareness from any view. At the core of our approach is a fast proxy system capable of producing precise occlusion depth maps at a resolution of 1000x1000 under 1ms. This proxy serves two roles: first, it guides the culling of anchors and Gaussians to accelerate rendering speed. Second, it guides the densification towards surfaces during training, avoiding inconsistencies in occluded regions, and improving the rendering quality. In heavily occluded scenarios, such as the MatrixCity Streets dataset, Proxy-GS not only equips MLP-based Gaussian splatting with stronger rendering capability but also achieves faster rendering speed. Specifically, it achieves more than 2.5x speedup over Octree-GS, and consistently delivers substantially higher rendering quality. Code will be public upon acceptance.
 

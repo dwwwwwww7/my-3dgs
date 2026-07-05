@@ -1,6 +1,6 @@
 # 未知会议 2024
 
-> **最后更新**： 2026-06-28 03:03:07
+> **最后更新**： 2026-07-05 07:34:00
 
 本页面包含 2024 年 未知会议 会议的论文列表。
 
@@ -288,7 +288,7 @@
 
 - **作者**: Joanna Waczyńska, Tomasz Szczepanik, Piotr Borycki et al.
 - **发布时间**: 2024-10-02
-- **arXiv链接**: [arXiv:2410.01521v2](https://arxiv.org/abs/2410.01521v2)
+- **arXiv链接**: [arXiv:2410.01521v3](https://arxiv.org/abs/2410.01521v3)
 - **英文摘要**: Implicit Neural Representations (INRs) approximate discrete data through continuous functions and are commonly used for encoding 2D images. Traditional image-based INRs employ neural networks to map pixel coordinates to RGB values, capturing shapes, colors, and textures within the network's weights. Recently, GaussianImage has been proposed as an alternative, using Gaussian functions instead of neural networks to achieve comparable quality and compression. Such a solution obtains a quality and compression ratio similar to classical INR models but does not allow image modification. In contrast, our work introduces a novel method, MiraGe, which uses mirror reflections to perceive 2D images in 3D space and employs flat-controlled Gaussians for precise 2D image editing. Our approach improves the rendering quality and allows realistic image modifications, including human-inspired perception of photos in the 3D world. Thanks to modeling images in 3D space, we obtain the illusion of 3D-based modification in 2D images. We also show that our Gaussian representation can be easily combined with a physics engine to produce physics-based modification of 2D images. Consequently, MiraGe allows for better quality than the standard approach and natural modification of 2D images
 
 ---
