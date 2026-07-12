@@ -1,3 +1,48 @@
+# 2026-07-12 02:16:57
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-06-14 03:25:52  
+**本次更新时间**: 2026-07-12 02:16:57  
+**新增论文数量**: 3  
+**变更论文数量**: 3  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [AdaptiveSplat:Texture Aware Controllable 3D Gaussian Allocation for Feed-Forward Reconstruction](http://arxiv.org/abs/2607.04256v1)** (ID: 2607.04256v1)
+
+#### **2. [Real-Time LiDAR Gaussian Splatting SLAM](http://arxiv.org/abs/2607.04127v1)** (ID: 2607.04127v1)
+
+#### **3. [Provable Pruning for Efficient 3D Gaussian Splatting via Coresets](http://arxiv.org/abs/2607.02721v1)** (ID: 2607.02721v1)
+
+
+### 变更论文  
+#### **1. [DL-SLAM: Enabling High-Fidelity Gaussian Splatting SLAM in Dynamic Environments based on Dual-Level Probability](http://arxiv.org/abs/2607.01860v2)** (ID: 2607.01860v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-07-02  
+ ⏳新更新: 2026-07-03  
+
+#### **2. [PixGS: Pixel-Space Diffusion for Direct 3D Gaussian Splat Generation](http://arxiv.org/abs/2607.01803v2)** (ID: 2607.01803v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-07-02  
+ ⏳新更新: 2026-07-04  
+
+#### **3. [CubifyGS: Object-Centric 3D Gaussian Splatting for Lifelong Dynamic Scene Maintenance](http://arxiv.org/abs/2606.28720v2)** (ID: 2606.28720v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-06-27  
+ ⏳新更新: 2026-07-04  
+
+
+
+---
+
 # 2026-07-05 07:23:34
 
 # 论文更新日志  
