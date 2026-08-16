@@ -1,6 +1,6 @@
 # 3DV 2024
 
-> **最后更新**： 2026-07-12 02:26:50
+> **最后更新**： 2026-08-16 01:20:46
 
 本页面包含 2024 年 3DV 会议的论文列表。
 
@@ -8,7 +8,7 @@
 
 - **作者**: Michael Niemeyer, Fabian Manhardt, Marie-Julie Rakotosaona et al.
 - **发布时间**: 2024-03-20
-- **arXiv链接**: [arXiv:2403.13806v2](http://arxiv.org/abs/2403.13806v2)
+- **arXiv链接**: [arXiv:2403.13806v2](https://arxiv.org/abs/2403.13806v2)
 - **说明**: Project page at https://m-niemeyer.github.io/radsplat/ and presented at 3DV (Oral)
 - **英文摘要**: Recent advances in view synthesis and real-time rendering have achieved photorealistic quality at impressive rendering speeds. While Radiance Field-based methods achieve state-of-the-art quality in challenging scenarios such as in-the-wild captures and large-scale scenes, they often suffer from excessively high compute requirements linked to volumetric rendering. Gaussian Splatting-based methods, on the other hand, rely on rasterization and naturally achieve real-time rendering but suffer from brittle optimization heuristics that underperform on more challenging scenes. In this work, we present RadSplat, a lightweight method for robust real-time rendering of complex scenes. Our main contributions are threefold. First, we use radiance fields as a prior and supervision signal for optimizing point-based scene representations, leading to improved quality and more robust optimization. Next, we develop a novel pruning technique reducing the overall point count while maintaining high quality, leading to smaller and more compact scene representations with faster inference speeds. Finally, we propose a novel test-time filtering approach that further accelerates rendering and allows to scale to larger, house-sized scenes. We find that our method enables state-of-the-art synthesis of complex captures at 900+ FPS.
 
