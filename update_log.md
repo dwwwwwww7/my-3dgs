@@ -1,3 +1,55 @@
+# 2026-08-23 00:57:13
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-08-16 00:56:05  
+**本次更新时间**: 2026-08-23 00:57:13  
+**新增论文数量**: 8  
+**变更论文数量**: 2  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [DyG$^2$T: Modeling Object Dynamics with 3D Gaussian Temporal-Spatial Particle Graph Transformer](https://arxiv.org/abs/2608.18498v1)** (ID: 2608.18498v1)
+
+#### **2. [CoMVS-GS: Collaborative Multi-View Stereo and 3D Gaussian Splatting for Surface Reconstruction](https://arxiv.org/abs/2608.18413v1)** (ID: 2608.18413v1)
+
+#### **3. [QuARC-GS: Quantized Anchored Residual Coding for Compact Dynamic Scene Streaming with Gaussian Splatting](https://arxiv.org/abs/2608.18285v1)** (ID: 2608.18285v1)
+
+#### **4. [GroupForward: Building Referable 3D Scenes via Instance-Grouped Feed-Forward Gaussian Splatting](https://arxiv.org/abs/2608.17535v1)** (ID: 2608.17535v1)
+
+#### **5. [3D Gaussian Accelerated Ray Tracing: Fast training through particle-based backward propagation](https://arxiv.org/abs/2608.17298v1)** (ID: 2608.17298v1)
+
+#### **6. [GaussianDWM++: Language-Grounded 3D Gaussian Driving World Model for Unified Scene Understanding, Editing, and Multi-Modal Generation](https://arxiv.org/abs/2608.16234v1)** (ID: 2608.16234v1)
+
+#### **7. [RoofGS: Roofline-Guided End-to-End Acceleration of 3D Gaussian Splatting](https://arxiv.org/abs/2608.15785v1)** (ID: 2608.15785v1)
+
+#### **8. [OctoSplat: Hybrid OctoMap-Gaussian Splatting for Active Semantic Mapping and Phenotyping with Horticultural Robots](https://arxiv.org/abs/2601.12122v2)** (ID: 2601.12122v2)
+
+
+### 变更论文  
+#### **1. [REFINE: Super-efficient 3D Gaussian Splatting Pruning via Rendering-Free Primitive Importance](https://arxiv.org/abs/2606.09074v4)** (ID: 2606.09074v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2026-06-26  
+ ⏳新更新: 2026-08-17  
+ 📝原说明:   
+ 📝新说明: We corrected the results of LightGaussian and MesonGS  
+
+#### **2. [Camera-Agnostic Pruning of 3D Gaussian Splats via Descriptor-Based Beta Evidence](https://arxiv.org/abs/2603.21933v2)** (ID: 2603.21933v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-03-23  
+ ⏳新更新: 2026-08-17  
+ 📝原说明: 14 pages, 3 figures, 2 tables  
+ 📝新说明: 16 pages, 3 figures, 3 tables. Accepted for publication in the Proceedings of the British Machine Vision Conference (BMVC), 2026  
+
+
+
+---
+
 # 2026-08-16 00:56:05
 
 # 论文更新日志  
