@@ -1,3 +1,251 @@
+# 2026-09-06 02:40:55
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-05-31 02:52:32  
+**本次更新时间**: 2026-09-06 02:40:55  
+**新增论文数量**: 36  
+**变更论文数量**: 18  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [Atlas: Algorithm-Hardware Co-Design for On-Device City-Scale 3D Gaussian Splatting in VR](http://arxiv.org/abs/2609.02352v1)** (ID: 2609.02352v1)
+
+#### **2. [CC-4DGS: Computational Deformation and Point-Cloud Compression for Storage-Efficient Dynamic Gaussian Splatting](http://arxiv.org/abs/2609.02184v1)** (ID: 2609.02184v1)
+
+#### **3. [VCAR: Training-Free 3DGS Segmentation via View Completeness and Axis-Aware Boundary Refinement](http://arxiv.org/abs/2608.30870v1)** (ID: 2608.30870v1)
+
+#### **4. [ATGS: Anchored Temporal Gaussian Splatting for Long Volumetric Video Representation](http://arxiv.org/abs/2608.30184v1)** (ID: 2608.30184v1)
+
+#### **5. [Non-Uniform Quantisation for 3DGS Compression](http://arxiv.org/abs/2608.28272v1)** (ID: 2608.28272v1)
+
+#### **6. [VersaGauss: A Versatile Framework for Generating Multiphase Dynamics with 3D Gaussians](http://arxiv.org/abs/2608.28069v1)** (ID: 2608.28069v1)
+
+#### **7. [KISS-GS: 3D Gaussian Splatting Compression Kept Simple](http://arxiv.org/abs/2608.26948v1)** (ID: 2608.26948v1)
+
+#### **8. [GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation](http://arxiv.org/abs/2608.25659v1)** (ID: 2608.25659v1)
+
+#### **9. [PAGS: Autofocusing Photoacoustic Tomography via Speed-of-Sound-Adaptive Gaussian Splatting](http://arxiv.org/abs/2608.25472v1)** (ID: 2608.25472v1)
+
+#### **10. [SACHA: Semantic-Aware Compression for 3D Gaussian Head Avatars](http://arxiv.org/abs/2608.23133v1)** (ID: 2608.23133v1)
+
+#### **11. [M$^3$ISR: A Multi-Modal Multi-View Benchmark for 3D/4D Gaussian Splatting and Feedforward Compression](http://arxiv.org/abs/2608.22465v1)** (ID: 2608.22465v1)
+
+#### **12. [Fast and Compact 3D Gaussian Splatting with Polarized Opacity Prior](http://arxiv.org/abs/2608.22344v1)** (ID: 2608.22344v1)
+
+#### **13. [Atlas: Algorithm-Hardware Co-Design for On-Device City-Scale 3D Gaussian Splatting in VR](http://arxiv.org/abs/2609.02352v1)** (ID: 2609.02352v1)
+
+#### **14. [CC-4DGS: Computational Deformation and Point-Cloud Compression for Storage-Efficient Dynamic Gaussian Splatting](http://arxiv.org/abs/2609.02184v1)** (ID: 2609.02184v1)
+
+#### **15. [VCAR: Training-Free 3DGS Segmentation via View Completeness and Axis-Aware Boundary Refinement](http://arxiv.org/abs/2608.30870v1)** (ID: 2608.30870v1)
+
+#### **16. [ATGS: Anchored Temporal Gaussian Splatting for Long Volumetric Video Representation](http://arxiv.org/abs/2608.30184v1)** (ID: 2608.30184v1)
+
+#### **17. [Non-Uniform Quantisation for 3DGS Compression](http://arxiv.org/abs/2608.28272v1)** (ID: 2608.28272v1)
+
+#### **18. [VersaGauss: A Versatile Framework for Generating Multiphase Dynamics with 3D Gaussians](http://arxiv.org/abs/2608.28069v1)** (ID: 2608.28069v1)
+
+#### **19. [KISS-GS: 3D Gaussian Splatting Compression Kept Simple](http://arxiv.org/abs/2608.26948v1)** (ID: 2608.26948v1)
+
+#### **20. [GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation](http://arxiv.org/abs/2608.25659v1)** (ID: 2608.25659v1)
+
+#### **21. [PAGS: Autofocusing Photoacoustic Tomography via Speed-of-Sound-Adaptive Gaussian Splatting](http://arxiv.org/abs/2608.25472v1)** (ID: 2608.25472v1)
+
+#### **22. [SACHA: Semantic-Aware Compression for 3D Gaussian Head Avatars](http://arxiv.org/abs/2608.23133v1)** (ID: 2608.23133v1)
+
+#### **23. [M$^3$ISR: A Multi-Modal Multi-View Benchmark for 3D/4D Gaussian Splatting and Feedforward Compression](http://arxiv.org/abs/2608.22465v1)** (ID: 2608.22465v1)
+
+#### **24. [Fast and Compact 3D Gaussian Splatting with Polarized Opacity Prior](http://arxiv.org/abs/2608.22344v1)** (ID: 2608.22344v1)
+
+#### **25. [Atlas: Algorithm-Hardware Co-Design for On-Device City-Scale 3D Gaussian Splatting in VR](http://arxiv.org/abs/2609.02352v1)** (ID: 2609.02352v1)
+
+#### **26. [CC-4DGS: Computational Deformation and Point-Cloud Compression for Storage-Efficient Dynamic Gaussian Splatting](http://arxiv.org/abs/2609.02184v1)** (ID: 2609.02184v1)
+
+#### **27. [VCAR: Training-Free 3DGS Segmentation via View Completeness and Axis-Aware Boundary Refinement](http://arxiv.org/abs/2608.30870v1)** (ID: 2608.30870v1)
+
+#### **28. [ATGS: Anchored Temporal Gaussian Splatting for Long Volumetric Video Representation](http://arxiv.org/abs/2608.30184v1)** (ID: 2608.30184v1)
+
+#### **29. [Non-Uniform Quantisation for 3DGS Compression](http://arxiv.org/abs/2608.28272v1)** (ID: 2608.28272v1)
+
+#### **30. [VersaGauss: A Versatile Framework for Generating Multiphase Dynamics with 3D Gaussians](http://arxiv.org/abs/2608.28069v1)** (ID: 2608.28069v1)
+
+#### **31. [KISS-GS: 3D Gaussian Splatting Compression Kept Simple](http://arxiv.org/abs/2608.26948v1)** (ID: 2608.26948v1)
+
+#### **32. [GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation](http://arxiv.org/abs/2608.25659v1)** (ID: 2608.25659v1)
+
+#### **33. [PAGS: Autofocusing Photoacoustic Tomography via Speed-of-Sound-Adaptive Gaussian Splatting](http://arxiv.org/abs/2608.25472v1)** (ID: 2608.25472v1)
+
+#### **34. [SACHA: Semantic-Aware Compression for 3D Gaussian Head Avatars](http://arxiv.org/abs/2608.23133v1)** (ID: 2608.23133v1)
+
+#### **35. [M$^3$ISR: A Multi-Modal Multi-View Benchmark for 3D/4D Gaussian Splatting and Feedforward Compression](http://arxiv.org/abs/2608.22465v1)** (ID: 2608.22465v1)
+
+#### **36. [Fast and Compact 3D Gaussian Splatting with Polarized Opacity Prior](http://arxiv.org/abs/2608.22344v1)** (ID: 2608.22344v1)
+
+
+### 变更论文  
+#### **1. [Compact Feed-Forward 3D Gaussians via Saliency-Guided Primitive Merging](http://arxiv.org/abs/2608.10712v2)** (ID: 2608.10712v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-08-11  
+ ⏳新更新: 2026-08-26  
+
+#### **2. [P-WRFGS: Pruning 3D Gaussians for Efficient Wireless Radiance Field Construction](http://arxiv.org/abs/2605.15324v2)** (ID: 2605.15324v2)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化, 说明变更  
+ 🏷️原标题: Eff-WRFGS: Efficient Wireless Radiance Field Using 3D Gaussian Splatting  
+ 🏷️新标题: P-WRFGS: Pruning 3D Gaussians for Efficient Wireless Radiance Field Construction  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-05-14  
+ ⏳新更新: 2026-08-23  
+ 📝原说明: 5 pages, for possible IEEE journal publication  
+ 📝新说明: Accepted to IEEE Wireless Communication Letter  
+
+#### **3. [Compact Feed-Forward 3D Gaussians via Saliency-Guided Primitive Merging](http://arxiv.org/abs/2608.10712v2)** (ID: 2608.10712v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-08-11  
+ ⏳新更新: 2026-08-26  
+
+#### **4. [P-WRFGS: Pruning 3D Gaussians for Efficient Wireless Radiance Field Construction](http://arxiv.org/abs/2605.15324v2)** (ID: 2605.15324v2)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化, 说明变更  
+ 🏷️原标题: Eff-WRFGS: Efficient Wireless Radiance Field Using 3D Gaussian Splatting  
+ 🏷️新标题: P-WRFGS: Pruning 3D Gaussians for Efficient Wireless Radiance Field Construction  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-05-14  
+ ⏳新更新: 2026-08-23  
+ 📝原说明: 5 pages, for possible IEEE journal publication  
+ 📝新说明: Accepted to IEEE Wireless Communication Letter  
+
+#### **5. [FaCT-GS: Fast and Scalable CT Reconstruction with Gaussian Splatting](http://arxiv.org/abs/2604.01844v2)** (ID: 2604.01844v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-04-02  
+ ⏳新更新: 2026-08-23  
+ 📝原说明:   
+ 📝新说明: Accepted at the European Conference on Computer Vision (ECCV) 2026  
+
+#### **6. [Camera-Agnostic Pruning of 3D Gaussian Splats via Descriptor-Based Beta Evidence](http://arxiv.org/abs/2603.21933v3)** (ID: 2603.21933v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2026-08-17  
+ ⏳新更新: 2026-08-28  
+
+#### **7. [F4Splat: Feed-Forward Predictive Densification for Feed-Forward 3D Gaussian Splatting](http://arxiv.org/abs/2603.21304v3)** (ID: 2603.21304v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2026-03-25  
+ ⏳新更新: 2026-09-03  
+
+#### **8. [NanoGS: Training-Free Gaussian Splat Simplification](http://arxiv.org/abs/2603.16103v3)** (ID: 2603.16103v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2026-07-14  
+ ⏳新更新: 2026-09-01  
+ 📝原说明:   
+ 📝新说明: ECCV 2026  
+
+#### **9. [ReCoSplat: Online Feed-Forward Gaussian Splatting via Render-and-Compare](http://arxiv.org/abs/2603.09968v2)** (ID: 2603.09968v2)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化, 说明变更  
+ 🏷️原标题: ReCoSplat: Autoregressive Feed-Forward Gaussian Splatting Using Render-and-Compare  
+ 🏷️新标题: ReCoSplat: Online Feed-Forward Gaussian Splatting via Render-and-Compare  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-03-10  
+ ⏳新更新: 2026-09-02  
+ 📝原说明:   
+ 📝新说明: v2: Corrected OF3GS evaluation results after fixing an implementation bug, added baseline evaluations, updated efficiency benchmarks following a codebase refactor, and added code and pretrained model release links  
+
+#### **10. [ReSplat: Learning Recurrent Gaussian Splatting](http://arxiv.org/abs/2510.08575v4)** (ID: 2510.08575v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2026-03-12  
+ ⏳新更新: 2026-08-26  
+ 📝原说明: Project page: https://haofeixu.github.io/resplat/ Code: https://github.com/cvg/resplat  
+ 📝新说明: ECCV 2026, Spotlight. Project page: https://haofeixu.github.io/resplat/ Code: https://github.com/cvg/resplat  
+
+#### **11. [Compact Feed-Forward 3D Gaussians via Saliency-Guided Primitive Merging](http://arxiv.org/abs/2608.10712v2)** (ID: 2608.10712v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-08-11  
+ ⏳新更新: 2026-08-26  
+
+#### **12. [P-WRFGS: Pruning 3D Gaussians for Efficient Wireless Radiance Field Construction](http://arxiv.org/abs/2605.15324v2)** (ID: 2605.15324v2)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化, 说明变更  
+ 🏷️原标题: Eff-WRFGS: Efficient Wireless Radiance Field Using 3D Gaussian Splatting  
+ 🏷️新标题: P-WRFGS: Pruning 3D Gaussians for Efficient Wireless Radiance Field Construction  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-05-14  
+ ⏳新更新: 2026-08-23  
+ 📝原说明: 5 pages, for possible IEEE journal publication  
+ 📝新说明: Accepted to IEEE Wireless Communication Letter  
+
+#### **13. [FaCT-GS: Fast and Scalable CT Reconstruction with Gaussian Splatting](http://arxiv.org/abs/2604.01844v2)** (ID: 2604.01844v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-04-02  
+ ⏳新更新: 2026-08-23  
+ 📝原说明:   
+ 📝新说明: Accepted at the European Conference on Computer Vision (ECCV) 2026  
+
+#### **14. [Camera-Agnostic Pruning of 3D Gaussian Splats via Descriptor-Based Beta Evidence](http://arxiv.org/abs/2603.21933v3)** (ID: 2603.21933v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2026-08-17  
+ ⏳新更新: 2026-08-28  
+
+#### **15. [F4Splat: Feed-Forward Predictive Densification for Feed-Forward 3D Gaussian Splatting](http://arxiv.org/abs/2603.21304v3)** (ID: 2603.21304v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2026-03-25  
+ ⏳新更新: 2026-09-03  
+
+#### **16. [NanoGS: Training-Free Gaussian Splat Simplification](http://arxiv.org/abs/2603.16103v3)** (ID: 2603.16103v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2026-07-14  
+ ⏳新更新: 2026-09-01  
+ 📝原说明:   
+ 📝新说明: ECCV 2026  
+
+#### **17. [ReCoSplat: Online Feed-Forward Gaussian Splatting via Render-and-Compare](http://arxiv.org/abs/2603.09968v2)** (ID: 2603.09968v2)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化, 说明变更  
+ 🏷️原标题: ReCoSplat: Autoregressive Feed-Forward Gaussian Splatting Using Render-and-Compare  
+ 🏷️新标题: ReCoSplat: Online Feed-Forward Gaussian Splatting via Render-and-Compare  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-03-10  
+ ⏳新更新: 2026-09-02  
+ 📝原说明:   
+ 📝新说明: v2: Corrected OF3GS evaluation results after fixing an implementation bug, added baseline evaluations, updated efficiency benchmarks following a codebase refactor, and added code and pretrained model release links  
+
+#### **18. [ReSplat: Learning Recurrent Gaussian Splatting](http://arxiv.org/abs/2510.08575v4)** (ID: 2510.08575v4)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2026-03-12  
+ ⏳新更新: 2026-08-26  
+ 📝原说明: Project page: https://haofeixu.github.io/resplat/ Code: https://github.com/cvg/resplat  
+ 📝新说明: ECCV 2026, Spotlight. Project page: https://haofeixu.github.io/resplat/ Code: https://github.com/cvg/resplat  
+
+
+
+---
+
 # 2026-08-23 00:57:13
 
 # 论文更新日志  
