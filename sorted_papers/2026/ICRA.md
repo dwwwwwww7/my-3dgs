@@ -1,10 +1,20 @@
 # ICRA 2026
 
-> **最后更新**： 2026-09-20 03:21:03
+> **最后更新**： 2026-10-12 10:46:20
 
 本页面包含 2026 年 ICRA 会议的论文列表。
 
-## 1. Pocket-SLAM: Rendering-Area-Aware Pruning for Memory-Efficient 3DGS-SLAM
+## 1. GARO: Geometry-Aware Redundancy Optimization for Real-Time and High-Fidelity Dynamic Gaussian Splatting
+
+- **作者**: Huiwen Xue, Kaixing Zhao, Zuheng Ming, Tingcheng Li
+- **发布时间**: 2026-09-20
+- **arXiv链接**: [arXiv:2609.23509v1](https://arxiv.org/abs/2609.23509v1)
+- **说明**: 8 pages. Accepted to IEEE ICRA 2026
+- **英文摘要**: Novel view synthesis is a key task for dynamic scene reconstruction, where high rendering speed is essential for applications such as virtual reality. Existing deformable Gaussian Splatting methods achieve high-fidelity dynamic scene modeling, but still face limitations in memory usage and rendering efficiency due to the large number of redundant Gaussians. To address these challenges, we propose Geometry-Aware Redundancy Optimization (GARO), a unified redundancy measurement framework in the adaptive density control stage of the traditional dynamic scene reconstruction pipeline. This framework first selects low-gradient candidates using an optimization activity assessment strategy, and then evaluates geometric complexity through low curvature analysis to further filter and prune redundant points, resulting in a compact and expressive Gaussian representation. Extensive experiments on synthetic and real-world datasets demonstrate that GARO achieves robust trade-offs between quality and speed, with PSNR remaining stable and rendering speed improved by 2x, validating the efficiency and effectiveness of GARO.
+
+---
+
+## 2. Pocket-SLAM: Rendering-Area-Aware Pruning for Memory-Efficient 3DGS-SLAM
 
 - **作者**: Leshu Li, Jie Peng, Yang Zhao
 - **发布时间**: 2026-06-23

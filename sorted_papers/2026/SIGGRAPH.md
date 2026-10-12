@@ -1,10 +1,20 @@
 # SIGGRAPH 2026
 
-> **最后更新**： 2026-09-20 03:21:03
+> **最后更新**： 2026-10-12 10:46:20
 
 本页面包含 2026 年 SIGGRAPH 会议的论文列表。
 
-## 1. ATGS: Anchored Temporal Gaussian Splatting for Long Volumetric Video Representation
+## 1. OceanXL: Large-scale Underwater 3D Gaussian Splatting via Block Partitioning and Adaptive Pruning
+
+- **作者**: Haoran Wang, Shaoyu Cai, Adrian Azzarelli et al.
+- **发布时间**: 2026-09-24
+- **arXiv链接**: [arXiv:2609.29985v1](https://arxiv.org/abs/2609.29985v1)
+- **说明**: SIGGRAPH ASIA 2026
+- **英文摘要**: Underwater 3D reconstruction is critical for marine exploration, ecological monitoring, and subsea infrastructure inspection, yet remains challenging at large scale due to light attenuation, scattering, and limited capture coverage. While 3D Gaussian Splatting (3DGS) enables high-quality real-time rendering, its application to large underwater scenes is constrained by high memory consumption and inefficient optimization over extensive areas. We propose OceanXL, a fast and scalable 3DGS-based framework for large-scale underwater reconstruction. OceanXL adopts a divide-and-conquer strategy, partitioning scenes into spatially coherent blocks to enable efficient optimization while preserving global geometric consistency. We further introduce an adaptive pruning scheme tailored to underwater conditions that removes redundant primitives, producing compact representations without sacrificing visual fidelity. Together, these components improve training efficiency and rendering performance for large scenes. We also introduce a large-scale underwater dataset covering diverse marine environments. Experiments on five large-scale scenes demonstrate favorable scalability, compactness, and efficiency--quality trade-offs over large-scene baselines. Controlled comparisons on the small-scale SeaThru-NeRF dataset further show competitive reconstruction quality with substantially smaller model sizes than underwater-specific methods.
+
+---
+
+## 2. ATGS: Anchored Temporal Gaussian Splatting for Long Volumetric Video Representation
 
 - **作者**: Jiahao Wu, Jie Liang, Die Hu et al.
 - **发布时间**: 2026-08-31
@@ -14,7 +24,7 @@
 
 ---
 
-## 2. CAGS: Color-Adaptive Volumetric Video Streaming with Dynamic 3D Gaussian Splatting
+## 3. CAGS: Color-Adaptive Volumetric Video Streaming with Dynamic 3D Gaussian Splatting
 
 - **作者**: Daheng Yin, Yili Jin, Jianxin Shi et al.
 - **发布时间**: 2026-05-10
@@ -24,7 +34,7 @@
 
 ---
 
-## 3. Generative 3D Gaussians with Learned Density Control
+## 4. Generative 3D Gaussians with Learned Density Control
 
 - **作者**: Runjie Yan, Yan-Pei Cao, Peng Wang, Ding Liang, Yuan-Chen Guo
 - **发布时间**: 2026-05-08
