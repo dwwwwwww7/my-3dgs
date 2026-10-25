@@ -1,6 +1,6 @@
 # 未知会议 2025
 
-> **最后更新**： 2026-10-12 10:46:20
+> **最后更新**： 2026-10-25 03:15:39
 
 本页面包含 2025 年 未知会议 会议的论文列表。
 
@@ -1353,16 +1353,7 @@
 
 ---
 
-## 145. GoDe: Gaussians on Demand for Progressive Level of Detail and Scalable Compression
-
-- **作者**: Francesco Di Sario, Riccardo Renzulli, Marco Grangetto, Akihiro Sugimoto, Enzo Tartaglione
-- **发布时间**: 2025-01-23
-- **arXiv链接**: [arXiv:2501.13558v3](https://arxiv.org/abs/2501.13558v3)
-- **英文摘要**: Recent progress in compressing explicit radiance field representations, particularly 3D Gaussian Splatting, has substantially reduced memory consumption while improving real-time rendering performance. However, existing approaches remain inherently single-rate: each compression level requires a separately optimized model, yielding a set of fixed operating points rather than a truly scalable representation. This limits deployment in scenarios where memory, bandwidth, or computational budgets vary across devices or over time. We argue that scalability should be an intrinsic property of the representation. We show that trained explicit radiance models exhibit a structured distribution of information, which can be revealed using standard optimization signals available during training. In particular, aggregated gradient sensitivity provides a simple, model-agnostic criterion to organize primitives from coarse structure to finer refinements. Building on this, we introduce GoDe (Gaussians on Demand), a general framework for scalable compression and progressive level-of-detail control, instantiated for 3D Gaussian Splatting. Starting from a single trained model, GoDe reorganizes Gaussian primitives into a fixed progressive hierarchy supporting multiple rate-distortion operating points without retraining or per-level fine-tuning. A single quantization-aware fine-tuning stage ensures consistent behavior across all levels under low-precision storage. Extensive experiments on standard be...
-
----
-
-## 146. Sketch and Patch: Efficient 3D Gaussian Representation for Man-Made Scenes
+## 145. Sketch and Patch: Efficient 3D Gaussian Representation for Man-Made Scenes
 
 - **作者**: Yuang Shi, Simone Gasparini, Géraldine Morin, Chenggang Yang, Wei Tsang Ooi
 - **发布时间**: 2025-01-22
@@ -1371,7 +1362,7 @@
 
 ---
 
-## 147. GSVC: Efficient Video Representation and Compression Through 2D Gaussian Splatting
+## 146. GSVC: Efficient Video Representation and Compression Through 2D Gaussian Splatting
 
 - **作者**: Longan Wang, Yuang Shi, Wei Tsang Ooi
 - **发布时间**: 2025-01-21
@@ -1380,7 +1371,7 @@
 
 ---
 
-## 148. Object-Centric 2D Gaussian Splatting: Background Removal and Occlusion-Aware Pruning for Compact Object Models
+## 147. Object-Centric 2D Gaussian Splatting: Background Removal and Occlusion-Aware Pruning for Compact Object Models
 
 - **作者**: Marcel Rogge, Didier Stricker
 - **发布时间**: 2025-01-14
@@ -1390,7 +1381,7 @@
 
 ---
 
-## 149. GaussianVideo: Efficient Video Representation via Hierarchical Gaussian Splatting
+## 148. GaussianVideo: Efficient Video Representation via Hierarchical Gaussian Splatting
 
 - **作者**: Andrew Bond, Jui-Hsien Wang, Long Mai, Erkut Erdem, Aykut Erdem
 - **发布时间**: 2025-01-08
@@ -1400,7 +1391,7 @@
 
 ---
 
-## 150. Compression of 3D Gaussian Splatting with Optimized Feature Planes and Standard Video Codecs
+## 149. Compression of 3D Gaussian Splatting with Optimized Feature Planes and Standard Video Codecs
 
 - **作者**: Soonbin Lee, Fangwen Shu, Yago Sanchez, Thomas Schierl, Cornelius Hellge
 - **发布时间**: 2025-01-06
@@ -1409,7 +1400,7 @@
 
 ---
 
-## 151. 4DRGS: 4D Radiative Gaussian Splatting for Efficient 3D Vessel Reconstruction from Sparse-View Dynamic DSA Images
+## 150. 4DRGS: 4D Radiative Gaussian Splatting for Efficient 3D Vessel Reconstruction from Sparse-View Dynamic DSA Images
 
 - **作者**: Zhentao Liu, Ruyi Zha, Huangxuan Zhao, Hongdong Li, Zhiming Cui
 - **发布时间**: 2024-12-17
@@ -1419,7 +1410,7 @@
 
 ---
 
-## 152. CLIP-GS: CLIP-Informed Gaussian Splatting for View-Consistent 3D Indoor Semantic Understanding
+## 151. CLIP-GS: CLIP-Informed Gaussian Splatting for View-Consistent 3D Indoor Semantic Understanding
 
 - **作者**: Guibiao Liao, Jiankun Li, Zhenyu Bao et al.
 - **发布时间**: 2024-04-22

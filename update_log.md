@@ -1,3 +1,120 @@
+# 2026-10-25 02:46:39
+
+# 论文更新日志  
+
+**上次更新时间**: 2026-09-20 02:54:46  
+**本次更新时间**: 2026-10-25 02:46:39  
+**新增论文数量**: 18  
+**变更论文数量**: 7  
+
+## 更新详情  
+
+### 新增论文  
+#### **1. [H-2DGS: Height-Field Gaussian Splatting for Sharp and Deformable Neurosurgical Surface Reconstruction](https://arxiv.org/abs/2610.30910v1)** (ID: 2610.30910v1)
+
+#### **2. [SplatLab: Autonomous Scientific Discovery for 3DGS Research](https://arxiv.org/abs/2610.30468v1)** (ID: 2610.30468v1)
+
+#### **3. [ClunoGS: Compact Language 3D Gaussian Splatting via Unified Optimization](https://arxiv.org/abs/2610.30013v1)** (ID: 2610.30013v1)
+
+#### **4. [KoalaGS: Complexity-Aware Continuous Level of Detail for Gaussian Splatting](https://arxiv.org/abs/2610.28615v1)** (ID: 2610.28615v1)
+
+#### **5. [RLSplat: Resource-Linear Budget Control for Feed-forward 3D Gaussian Splatting](https://arxiv.org/abs/2610.27712v1)** (ID: 2610.27712v1)
+
+#### **6. [RoMo-GS: Efficient Online 3D Gaussian Splatting for Robot Mapping via Exposure-Integrated Motion Blur](https://arxiv.org/abs/2610.24605v1)** (ID: 2610.24605v1)
+
+#### **7. [Codec-Compatible Learned Compression for 3D Gaussian Splatting](https://arxiv.org/abs/2610.26920v1)** (ID: 2610.26920v1)
+
+#### **8. [X-Splat: Unified Gaussian Splatting for Joint RGB and X-ray 3D Reconstruction](https://arxiv.org/abs/2610.23237v1)** (ID: 2610.23237v1)
+
+#### **9. [TriFold: Folding irregular 3D Gaussians into structured latents for 3D Scene Generation](https://arxiv.org/abs/2610.23050v2)** (ID: 2610.23050v2)
+
+#### **10. [Anchor3DGS: Feed-Forward 3D Gaussian Splatting with Compact Anchor-Based Representation](https://arxiv.org/abs/2610.21634v1)** (ID: 2610.21634v1)
+
+#### **11. [Feed-Forward Multi-View Feature Coding for 3D Gaussian Splatting](https://arxiv.org/abs/2610.20590v1)** (ID: 2610.20590v1)
+
+#### **12. [Where Should the Gaussians Go? Reusable Label-Aware Allocation for Budget-Constrained Gaussian Splatting of Cinematic CT](https://arxiv.org/abs/2610.20397v1)** (ID: 2610.20397v1)
+
+#### **13. [RDCompGS: Rate-Distortion Optimization for Compression of 3D Gaussian Splatting with Image Codecs](https://arxiv.org/abs/2610.19538v1)** (ID: 2610.19538v1)
+
+#### **14. [DoReMe: Dual optimization of Reconstruction and Motion estimation for self-navigated free-breathing abdominal MRI using Gaussian Splatting](https://arxiv.org/abs/2610.19120v1)** (ID: 2610.19120v1)
+
+#### **15. [CoTL: Compact Token Learning for 3D Scene Representation](https://arxiv.org/abs/2610.18446v2)** (ID: 2610.18446v2)
+
+#### **16. [PLEDGE: Progressive Lossy Error-Bounded Compression of 3D Gaussian Splatting](https://arxiv.org/abs/2610.17605v1)** (ID: 2610.17605v1)
+
+#### **17. [Gaussian Splatting for Real-Time Scene Reconstruction: Methods, Systems, and Trade-offs](https://arxiv.org/abs/2610.17513v1)** (ID: 2610.17513v1)
+
+#### **18. [TETRIS-4DGS: Efficient Post-Training Compression of 4D Gaussian Splatting](https://arxiv.org/abs/2610.14663v1)** (ID: 2610.14663v1)
+
+
+### 变更论文  
+#### **1. [Mobile-4DGS: Unified Static-Dynamic Real-time Mobile Gaussian Splatting](https://arxiv.org/abs/2610.05289v2)** (ID: 2610.05289v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-10-04  
+ ⏳新更新: 2026-10-10  
+
+#### **2. [CodecSplat: Ultra-Compact Latent Coding for Feed-Forward 3D Gaussian Splatting](https://arxiv.org/abs/2605.25563v2)** (ID: 2605.25563v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-05-25  
+ ⏳新更新: 2026-10-15  
+ 📝原说明:   
+ 📝新说明: Accepted to NeurIPS 2026  
+
+#### **3. [MAGS-SLAM: Monocular Multi-Agent Gaussian Splatting SLAM for Geometrically and Photometrically Consistent Reconstruction](https://arxiv.org/abs/2605.10760v3)** (ID: 2605.10760v3)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v2  
+ 📘新版本: v3  
+ ⏳原更新: 2026-07-27  
+ ⏳新更新: 2026-10-19  
+ 📝原说明:   
+ 📝新说明: Accepted to IEEE Transactions on Automation Science and Engineering (T-ASE) 2026, project website: https://mags-slam.github.io  
+
+#### **4. [Unfolding 3D Gaussian Splatting via Iterative Gaussian Synopsis](https://arxiv.org/abs/2604.11685v2)** (ID: 2604.11685v2)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-04-13  
+ ⏳新更新: 2026-10-21  
+ 📝原说明:   
+ 📝新说明: Project page: https://cs-luyq.github.io/UnfoldingGS  
+
+#### **5. [Naka-GS: Naka-Guided Chroma Correction and Point-Prior Compaction for Low-Light 3D Gaussian Splatting](https://arxiv.org/abs/2604.11142v2)** (ID: 2604.11142v2)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化  
+ 🏷️原标题: Naka-GS: A Bionics-inspired Dual-Branch Naka Correction and Progressive Point Pruning for Low-Light 3DGS  
+ 🏷️新标题: Naka-GS: Naka-Guided Chroma Correction and Point-Prior Compaction for Low-Light 3D Gaussian Splatting  
+ 📘原版本: v1  
+ 📘新版本: v2  
+ ⏳原更新: 2026-04-13  
+ ⏳新更新: 2026-10-14  
+
+#### **6. [CryoSplat: Gaussian Splatting for Cryo-EM Homogeneous Reconstruction](https://arxiv.org/abs/2508.04929v6)** (ID: 2508.04929v6)  
+   **变更类型**: arXiv版本更新, 更新日期变化, 说明变更  
+ 📘原版本: v5  
+ 📘新版本: v6  
+ ⏳原更新: 2026-05-01  
+ ⏳新更新: 2026-10-16  
+ 📝原说明: Published at ICLR 2026 (Camera-ready). Code available at https://github.com/Chen-Suyi/cryosplat  
+ 📝新说明: Published at ICLR 2026. This version includes corrections to several equations; the conclusions remain unchanged. Code available at https://github.com/Chen-Suyi/cryosplat  
+
+#### **7. [GoDe: Gaussians on Demand for Backbone-Agnostic Progressive Compression](https://arxiv.org/abs/2501.13558v4)** (ID: 2501.13558v4)  
+   **变更类型**: 标题变更, arXiv版本更新, 更新日期变化, 说明变更  
+ 🏷️原标题: GoDe: Gaussians on Demand for Progressive Level of Detail and Scalable Compression  
+ 🏷️新标题: GoDe: Gaussians on Demand for Backbone-Agnostic Progressive Compression  
+ 📘原版本: v3  
+ 📘新版本: v4  
+ ⏳原更新: 2026-03-19  
+ ⏳新更新: 2026-10-16  
+ 📝原说明:   
+ 📝新说明: Accepted at WACV27. Previously titled "GoDe: Gaussians on Demand for Progressive Level-of-Detail and Scalable Compression"  
+
+
+
+---
+
 # 2026-10-12 10:18:03
 
 # 论文更新日志  
